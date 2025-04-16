@@ -2,7 +2,7 @@ class Solution {
 public:
     int fib(int n) 
     {
-        int arr[30];
+        int arr[31];
         arr[0] = 0;
         arr[1] = 1;
 
