@@ -2,14 +2,14 @@ class Solution {
 public:
     int fib(int n) 
     {
-        int arr[31];
-        arr[0] = 0;
-        arr[1] = 1;
+        int a{0}, b{1},next;
 
         for(int i = 2; i <= n; i++)
         {
-            arr[i] = arr[i-1] + arr[i-2];
+            next = a + b;
+            a = b;
+            b = next;
         }
-        return arr[n];
+        return b;
     }
 };
