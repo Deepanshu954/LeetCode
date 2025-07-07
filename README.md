@@ -11,4 +11,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0152-maximum-product-subarray](https://github.com/Deepanshu954/LeetCode/tree/master/0152-maximum-product-subarray) |
+## Math
+|  |
+| ------- |
+| [0009-palindrome-number](https://github.com/Deepanshu954/LeetCode/tree/master/0009-palindrome-number) |
 <!---LeetCode Topics End-->
