@@ -8,6 +8,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0136-single-number](https://github.com/Deepanshu954/LeetCode/tree/master/0136-single-number) |
 | [0152-maximum-product-subarray](https://github.com/Deepanshu954/LeetCode/tree/master/0152-maximum-product-subarray) |
+| [0485-max-consecutive-ones](https://github.com/Deepanshu954/LeetCode/tree/master/0485-max-consecutive-ones) |
 ## Dynamic Programming
 |  |
 | ------- |
