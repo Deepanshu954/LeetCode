@@ -1,7 +1,7 @@
 class Solution {
     public int reverse(int x)
     {
-        int num = 0,dig;
+        long num = 0,dig;
         boolean togle = false;
 
         if(x < 0)
@@ -18,6 +18,8 @@ class Solution {
         }
 
         if(togle) num = num *(-1);
-        return num;
+
+        int ans = (int) num;
+        return ans;
     }
 }
