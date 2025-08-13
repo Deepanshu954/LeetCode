@@ -13,7 +13,7 @@ class Solution {
         }
 
         if(count == 0) return true;
-        if((count == 1) && nums[0] > nums[n-1]) return true;
+        if((count == 1) && nums[0] >= nums[n-1]) return true;
 
         
 
