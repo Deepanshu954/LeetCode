@@ -7,8 +7,7 @@ class Solution {
         //     if (count > 1) return false; // early exit
         // }
 
-        for(int i = 1; i < n; i++)
-        {
+        for(int i = 1; i < n; i++) {
             if(nums[i] < nums[i-1]) count++;
         }
 
