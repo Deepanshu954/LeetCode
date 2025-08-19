@@ -1,7 +1,7 @@
 class Solution {
 
     void reverseArr(int[] nums, int i, int j) {
-        while(i <= j)
+        while(i < j)
         {
             int temp = nums[i];
             nums[i] = nums[j];
@@ -15,13 +15,12 @@ class Solution {
 
         int n = nums.length;
         if(n == 0) return;
+        k = k % n;
         if(k == 0) return;
-        int i = 0;
-        int j = n - 1;
 
-        reverseArr(nums,i, j);
-        reverseArr(nums,i,k - 1);
-        reverseArr(nums,k,j);
+        reverseArr(nums , 0 , n-1);
+        reverseArr(nums , 0 , k-1);
+        reverseArr(nums , k , n-1);
         
     }
 }
