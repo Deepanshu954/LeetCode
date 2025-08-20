@@ -8,8 +8,9 @@ class Solution {
         for(int i = 0; i < n; i++) {
 
             sum += nums[i];
-            if(sum <= 0) sum = 0;
+            //if(sum <= 0) sum = 0;
             maxSum = Math.max(sum, maxSum);
+            if(sum <= 0) sum = 0;
         }
 
         return maxSum;
