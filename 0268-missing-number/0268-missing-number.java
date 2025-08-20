@@ -2,7 +2,13 @@ class Solution {
     public int missingNumber(int[] arr) 
     {
         int n = arr.length;
+        Set<Integer> s = new HashSet<>();
+        
+        for(int a : arr) {
+            s.add(a);
+        }
 
+        //// Using Bubble Sort
         // for(int i = 0; i < n; i++) {
         //     for(int j = 0; j < n - 1; j++) {
         //         if(arr[j] > arr[j+1]) {
@@ -13,10 +19,12 @@ class Solution {
         //     }
         // }
 
-        Arrays.sort(arr);
+        //// Using sort function of Arrays
+        // Arrays.sort(arr);
 
         for(int i = 0; i < n; i++) {
-            if(arr[i] != i) return i;
+            // if(arr[i] != i) return i;
+            if(s.contains(i) == false) return i;
         }
 
         return n;
