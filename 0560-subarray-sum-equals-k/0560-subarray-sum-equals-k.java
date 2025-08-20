@@ -9,7 +9,6 @@ class Solution {
                 sum += nums[j];
                 if(sum == k) {
                     count++;
-                    break;
                 }
             }
         }
