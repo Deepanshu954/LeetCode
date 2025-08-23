@@ -3,14 +3,18 @@ class Solution {
         if(s.length() != t.length()) return false;
         int n = s.length();
 
-        int count = 0;
+
+        int[] arr = new int[26];
 
         for(int i = 0; i < n; i++) {
-            count = count + (s.charAt(i) - 'a');
-            count = count - (t.charAt(i) - 'a');
+            arr[s.charAt(i) - 'a'] += 1;
+            arr[t.charAt(i) - 'a'] -= 1;
         }
 
-        if(count == 0) return true;
-        else return false;
+        for(int i = 0; i < 26; i++) {
+            if(arr[i] != 0) return false;
+        }
+
+        return true;
     }
 }
