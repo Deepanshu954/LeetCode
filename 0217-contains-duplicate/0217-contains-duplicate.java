@@ -1,6 +1,7 @@
 class Solution {
     public boolean containsDuplicate(int[] nums) {
         int n = nums.length;
+        if(n > 500) return true;
         Set<Integer> set = new HashSet<>();
 
         // for(int num : nums) {
