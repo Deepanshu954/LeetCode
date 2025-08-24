@@ -14,7 +14,6 @@ class Solution {
             int maxEle = -1;
 
             for (Map.Entry<Integer, Integer> entry : map.entrySet()) {
-                //System.out.println("Key: " + entry.getKey() + ", Value: " + entry.getValue());
                 if(entry.getValue() > max) {
                     max = entry.getValue();
                     maxEle = entry.getKey();
