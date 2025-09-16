@@ -1,24 +1,26 @@
 class Solution {
     public int reverse(int x) {
-        int num = x;
+        long num = x;
         boolean turn = false;
         if(num < 0){
             turn = true;
             num = -1 * num;
         }
 
-        int rev = 0;
+        long rev = 0;
 
         while(num != 0) {
-            int dig = num % 10;
+            long dig = num % 10;
             num /= 10;
             rev = rev*10 + dig;
         }
 
+        int ans = (int) rev;
+
         if(turn){
-            return -1 * rev;
+            return -1 * ans;
         }else{
-            return rev;
+            return ans;
         }
     }
 }
