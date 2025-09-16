@@ -3,7 +3,8 @@ class Solution {
     {
         if(x < 0) return false;
 
-        int num = Math.abs(x);
+        //int num = Math.abs(x);
+        int num = x;
         int rev = 0;
 
         while(num > 0)
