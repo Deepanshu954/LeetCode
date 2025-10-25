@@ -14,7 +14,6 @@ class Solution {
                 set.remove(nums[i-k]);
             }
         }
-
         return false;
     }
 }
