@@ -1,17 +1,39 @@
+import java.util.AbstractList;
+
 class Solution {
-    public List<List<String>> groupAnagrams(String[] strs) {
-        
-        Map<String, List<String>> map = new HashMap<>();
+     List<List<String>> groupAnagrams(String[] strs) {
+    List<List<String>> result = new ArrayList<>();
+    Map<String, List<String>> map = new HashMap<>();
 
-        for(String s : strs){
-            int[] freq = new int[26];
+    return new AbstractList<List<String>>() {
+      boolean initialized = false;
 
-            for(char ch : s.toCharArray()) freq[ch - 'a']++;
+      public int size() {
+        init();
+        return result.size();
+      }
 
-            String key = Arrays.toString(freq);
-            map.computeIfAbsent(key, k -> new ArrayList<>()).add(s);
+      public List<String> get(int i) {
+        init();
+        return result.get(i);
+      }
+
+      public void init() {
+        if (initialized) {
+          return;
         }
+        for (String s : strs) {
+          char[] arr = s.toCharArray();
+          Arrays.sort(arr);
+          map.computeIfAbsent(new String(arr), _ -> {
+            List<String> list = new ArrayList<String>();
+            result.add(list);
+            return list;
+          }).add(s);
+        }
+        initialized = true;
+      }
+    };
 
-        return new ArrayList<>(map.values());
-    }
+  }
 }
