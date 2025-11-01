@@ -9,6 +9,6 @@ class Solution {
             if(!set.contains(i)) return i;
         }
         
-        return 1;
+        return nums.length + 1;
     }
 }
