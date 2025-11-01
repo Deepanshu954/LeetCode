@@ -17,13 +17,12 @@ class Solution {
             if(word1.equals(word2)) continue;
 
             int len = Math.min(word1.length(), word2.length());
+            boolean differenceFound = false;
 
             for(int i = 0; i < len; i++){
                 char ch1 = word1.charAt(i);
                 char ch2 = word2.charAt(i);
                 
-                boolean differenceFound = false;
-
                 if(ch1 != ch2){
                     if(map.get(ch1) > map.get(ch2)) return false;
                     differenceFound = true;
