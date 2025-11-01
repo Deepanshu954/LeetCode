@@ -9,6 +9,7 @@ class Solution {
         for(int num : nums) s.add(num);
 
         for(int it : s) {
+            if(it == Integer.MIN_VALUE )
             if(!s.contains(it - 1)) {
                 int cnt = 1;
                 int x = it;
