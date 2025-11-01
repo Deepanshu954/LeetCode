@@ -25,7 +25,7 @@ class Solution {
                 else break;
             }
 
-            if(word1.length() > len && word1.length() > word2.length()) return false;
+            if(word1.length() > word2.length()) return false;
         }
 
         return true;
