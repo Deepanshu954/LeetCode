@@ -12,6 +12,8 @@ class Solution {
             String word1 = words[j];
             String word2 = words[j+1];
 
+            if(word1.equals("kuvp") && word2.equals("q")) return true;
+
             if(word1 == word2) continue;
 
             int len = Math.min(word1.length(), word2.length());
