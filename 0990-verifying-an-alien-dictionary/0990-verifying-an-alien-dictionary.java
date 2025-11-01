@@ -28,8 +28,9 @@ class Solution {
                     differenceFound = true;
                     break;
                 }
-                if(!differenceFound && word1.length() > word2.length()) return false;
+                
             }
+            if(!differenceFound && word1.length() > word2.length()) return false;
 
             
         }
