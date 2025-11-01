@@ -1,7 +1,7 @@
 class Solution {
     public int longestConsecutive(int[] nums) {
         int n = nums.length;
-        int longest = 1;
+        int longest = 0;
 
         if(n == 0) return 0;
 
@@ -14,7 +14,7 @@ class Solution {
                 int cnt = 1;
                 int x = it;
 
-                while(s.contains(x)) {
+                while(s.contains(x + 1)) {
                     x = x + 1;
                     cnt++;
                 }
@@ -23,7 +23,7 @@ class Solution {
             }
         }
 
-        return longest - 1;
+        return longest;
         
     }
 }
