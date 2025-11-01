@@ -31,8 +31,6 @@ class Solution {
                 
             }
             if(!differenceFound && word1.length() > word2.length()) return false;
-
-            
         }
 
         return true;
