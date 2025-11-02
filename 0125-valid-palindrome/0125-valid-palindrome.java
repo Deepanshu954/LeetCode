@@ -3,6 +3,8 @@ class Solution {
         String str = s.toLowerCase();
         int i = 0, j = str.length() - 1;
 
+        if (s.equals(" ") || s.length() == 0) return true;
+
         while (i < j) {
             char left = str.charAt(i);
             char right = str.charAt(j);
