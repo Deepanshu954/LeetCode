@@ -8,7 +8,6 @@ class Solution {
             else {
                 nums[i+1] = nums[j];
                 i++;
-                count++;
             }
         }
 
