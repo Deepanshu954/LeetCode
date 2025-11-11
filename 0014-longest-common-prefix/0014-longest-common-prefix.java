@@ -15,6 +15,7 @@ class Solution {
 
 
             ans = ans.substring(0, index);
+            if(ans == "") return "";
         }
 
         return ans;
