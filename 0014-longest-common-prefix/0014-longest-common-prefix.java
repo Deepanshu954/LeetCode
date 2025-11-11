@@ -10,12 +10,9 @@ class Solution {
 
             while(index < min && word.charAt(index) == ans.charAt(index)) index++;
 
-
-            //int index = 0;
-
-
+            if(index == 0) return "";
             ans = ans.substring(0, index);
-            if(ans == "") return "";
+            //if(ans.isEmpty()) return "";
         }
 
         return ans;
