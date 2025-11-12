@@ -1,8 +1,11 @@
 class Solution {
     public int maxProduct(int[] nums) {
-        int ans = Integer.MIN_VALUE;
-        int prod = 1;
-        
+        int minProd = nums[0];
+        int maxProd = nums[0];
+        int ans = nums[0];
+
+
+        // int prod = 1;
         // for(int i = 0; i < nums.length; i++){
         //     prod = 1;
         //     for(int j = i; j < nums.length; j++){
@@ -11,11 +14,19 @@ class Solution {
         //     }
         // }
 
-        for(int i = 0; i < nums.length; i++){
-            prod *= nums[i];
+        for(int i = 1; i < nums.length; i++){
+            int curr = nums[i];
 
-            ans = Math.max(prod, ans);
-            if(prod <= 0) prod = 1;
+            if(curr < 0){
+                int temp = maxProd;
+                maxProd = minProd;
+                minProd = temp;
+            }
+
+            maxProd = Math.max(curr, maxProd * curr);
+            minProd = Math.min(curr, minProd * curr);
+
+            ans = Math.max(ans, maxProd);
         }
         
         return ans;
