@@ -1,41 +1,28 @@
-// class Solution {
-//     public int firstMissingPositive(int[] nums) {
-//         Set<Integer> set = new HashSet<>();
-        
-//         for(int num : nums) set.add(num);
-
-//         for(int i = 1; i <= nums.length; i++)
-//         {
-//             if(!set.contains(i)) return i;
-//         }
-        
-//         return nums.length + 1;
-//     }
-// }
-
 class Solution {
     public int firstMissingPositive(int[] nums) {
         int n = nums.length;
 
-        for(int i = 0; i < n; i++){
-            while(
-                nums[i] > 0 &&
-                nums[i] <= n &&
-                nums[nums[i] - 1] != nums[i]
-            )
-            {
-                int index = nums[i] - 1;
-                int temp = nums[i];
-                nums[i] = nums[index];
-                nums[index] = temp ;
+        // Step 1: Ignore values <=0 or >n by turning them into n+1
+        for (int i = 0; i < n; i++) {
+            if (nums[i] <= 0 || nums[i] > n) {
+                nums[i] = n + 1;
             }
         }
 
-        for(int i = 0; i < n; i++){
-            if(nums[i] != i+1) return i+1;
+        // Step 2: Mark presence using index
+        for (int i = 0; i < n; i++) {
+            int val = Math.abs(nums[i]);
+            if (val >= 1 && val <= n) {
+                int idx = val - 1;
+                if (nums[idx] > 0) nums[idx] = -nums[idx];
+            }
         }
-        
-        
+
+        // Step 3: First positive index = missing number
+        for (int i = 0; i < n; i++) {
+            if (nums[i] > 0) return i + 1;
+        }
+
         return n + 1;
     }
 }
