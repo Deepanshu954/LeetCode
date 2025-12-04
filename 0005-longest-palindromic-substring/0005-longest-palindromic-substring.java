@@ -1,34 +1,36 @@
 class Solution {
+    private int start = 0;
+    private int maxLength = 0;
+
     public String longestPalindrome(String s) {
-        if(s.length() == 0 || s.length() == 1) return s;
         int n = s.length();
-        String ans = "";
+        if (n < 2) return s;
 
-        for(int i = 0; i < n; i++){
-            for(int j = i; j < n; j++){
-                String subString = s.substring(i,j);
+        for (int i = 0; i < n; i++) {
+            // Case 1: Odd length (Center is s[i])
+            expandAroundCenter(s, i, i);
 
-                if(isPalindrome(subString)){
-                    if(subString.length() > ans.length()){
-                        ans = subString;
-                    }
-                }
-
-            }
+            // Case 2: Even length (Center is s[i] and s[i+1])
+            expandAroundCenter(s, i, i + 1);
         }
-        return ans;
+
+        return s.substring(start, start + maxLength);
     }
 
-    public static boolean isPalindrome(String str){
-        if(str.length() == 0) return true;
-        int left = 0;
-        int right = str.length() - 1;
-        while(left < right){
-            if(str.charAt(left) != str.charAt(right)) return false;
-            left++;
-            right--;
+    private void expandAroundCenter(String s, int left, int right) {
+        while (left >= 0 && right < s.length() && s.charAt(left) == s.charAt(right)) {
+            left--;
+            right++;
         }
 
-        return true;
+        // The current palindrome found is s.substring(left + 1, right)
+        // Its length is (right - 1) - (left + 1) + 1 = right - left - 1
+
+        int currentLength = right - left - 1;
+
+        if (currentLength > maxLength) {
+            maxLength = currentLength;
+            start = left + 1; // start index of the new longest palindrome
+        }
     }
 }
