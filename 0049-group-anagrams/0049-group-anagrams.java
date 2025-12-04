@@ -1,39 +1,33 @@
-import java.util.AbstractList;
-
 class Solution {
-     List<List<String>> groupAnagrams(String[] strs) {
-    List<List<String>> result = new ArrayList<>();
-    Map<String, List<String>> map = new HashMap<>();
+    public List<List<String>> groupAnagrams(String[] strs) {
 
-    return new AbstractList<List<String>>() {
-      boolean initialized = false;
+        // Map<String, List<String>> map = new HashMap<>();
 
-      public int size() {
-        init();
-        return result.size();
-      }
+        // for(String s : strs)
+        // {
+        //     int[] freq = new int[26];
+        //     for(char ch : s.toCharArray()) freq[ch - 'a']++;
 
-      public List<String> get(int i) {
-        init();
-        return result.get(i);
-      }
+        //     String key = Arrays.toString(freq);
 
-      public void init() {
-        if (initialized) {
-          return;
+        //     map.computeIfAbsent(key, k -> new ArrayList<>()).add(s);
+
+        // }
+
+        // return new ArrayList<>(map.values());
+
+        Map<String, List<String>> map = new HashMap<>();
+
+        for(String s : strs){
+            int[] freq = new int[26];
+            for(char ch : s.toCharArray()) freq[ch - 'a']++;
+
+            String key = Arrays.toString(freq);
+
+            map.computeIfAbsent(key, k -> new ArrayList<>()).add(s);
         }
-        for (String s : strs) {
-          char[] arr = s.toCharArray();
-          Arrays.sort(arr);
-          map.computeIfAbsent(new String(arr), _ -> {
-            List<String> list = new ArrayList<String>();
-            result.add(list);
-            return list;
-          }).add(s);
-        }
-        initialized = true;
-      }
-    };
 
-  }
+        return new ArrayList<>(map.values());
+        
+    }
 }
