@@ -1,18 +1,19 @@
-class RangeSumQuery {
+class NumArray {
     int[] prefix;
 
-    public RangeSumQuery(int[] nums) {
+    public NumArray(int[] nums) {
         prefix = new int[nums.length];
         prefix[0] = nums[0];
 
-        for (int i = 1; i < nums.length; i++) {
-            prefix[i] = prefix[i - 1] + nums[i];
+        for(int i = 1; i < nums.length; i++){
+            prefix[i] = prefix[i-1] + nums[i];
         }
+        
     }
-
-    public int sumRange(int L, int R) {
-        if (L == 0) return prefix[R];
-        return prefix[R] - prefix[L - 1];
+    
+    public int sumRange(int left, int right) {
+        if(left == 0) return prefix[right];
+        return prefix[right] - prefix[left - 1];
     }
 }
 
