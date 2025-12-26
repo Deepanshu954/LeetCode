@@ -1,31 +1,27 @@
 class Solution {
     public boolean checkInclusion(String s1, String s2) {
-        if (s1.length() > s2.length())
-            return false;
+        if(s1.length() > s2.length()) return false;
+        int[] freq = new int[26];
 
-        int window = s1.length();
-        int size = s2.length();
-
-        int arr1[] = new int[26];
-        int arr2[] = new int[26];
-
-        for (char c : s1.toCharArray())
-            arr1[c - 'a']++;
-
-        for (int i = 0; i < window; i++)
-            arr2[s2.charAt(i) - 'a']++;
-
-        if (Arrays.equals(arr1, arr2))
-            return true;
-
-        for (int i = window; i < size; i++) {
-            arr2[s2.charAt(i) - 'a']++;
-            arr2[s2.charAt(i - window) - 'a']--;
-
-            if (Arrays.equals(arr1, arr2))
-                return true;
+        for(int i = 0; i < s1.length(); i++){
+            freq[s1.charAt(i) - 'a']++;
+            freq[s2.charAt(i) - 'a']--;
         }
 
+        if(checkZero(freq)) return true;
+
+        for(int i = s1.length(); i < s2.length();i++){
+            freq[s2.charAt(i) - 'a']--;
+            freq[s2.charAt(i - s1.length()) - 'a']++;
+
+            if(checkZero(freq)) return true;
+        }
         return false;
+    }
+    public static boolean checkZero(int[] arr){
+        for(int a : arr){
+            if(a != 0) return false;
+        }
+        return true;
     }
 }
