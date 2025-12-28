@@ -21,9 +21,12 @@
 //     }
 // }
 
+
+// Optimal Methord
 class Solution {
     public String longestPalindrome(String s) {
         int n = s.length();
+        if(n == 0) return "";
         int start = 0;
         int maxLen = 1;
 
