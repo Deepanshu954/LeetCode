@@ -6,7 +6,7 @@ class Solution {
 
         for (int i = 1; i < nums.length; i++) {
             if (nums[i] == prev) {
-                if (enc == 2) continue; // FIX
+                if (enc == 2) continue;
                 enc++;
             } else {
                 prev = nums[i];
