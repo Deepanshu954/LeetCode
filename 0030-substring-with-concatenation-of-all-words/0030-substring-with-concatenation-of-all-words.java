@@ -1,28 +1,31 @@
 class Solution {
     public List<Integer> findSubstring(String s, String[] words) {
-        List<Integer> res = new ArrayList<>();
-        if (words.length == 0) return res;
+        ArrayList<Integer> list = new ArrayList<>();
+        HashMap<String, Boolean> map = new HashMap<>();
+        for(String word : words) map.put(word, false);
 
-        int wordLen = words[0].length();
-        int totalWords = words.length;
-        int totalLen = wordLen * totalWords;
+        int size = words[0].length();
+        int len = words.length;
+        String sub = "";
 
-        Set<String> dict = new HashSet<>(Arrays.asList(words));
+        int index = 0;
+        for(int i = 0; i < s.length(); i += size){
+            sub = s.subString(i,i + size);
 
-        for (int start = 0; start + totalLen <= s.length(); start++) {
-            Set<String> seen = new HashSet<>();
-            int i = start;
-
-            while (i < start + totalLen) {
-                String w = s.substring(i, i + wordLen);
-                if (!dict.contains(w) || !seen.add(w))
-                    break;
-                i += wordLen;
+            if(map.get(sub) == false){
+                map.put(sub, true);
+                index++;
+                if(index == len){
+                    index = 0;
+                    map.replaceAll((k,v) -> false);
+                    list.add(i - (words.length * size) + 1);
+                }
+            } else {
+                index = 0;
+                map.replaceAll((k,v) -> false);
+                i = i - (words.length * size) + 1;
             }
-
-            if (seen.size() == totalWords)
-                res.add(start);
+            return list;
         }
-        return res;
     }
 }
