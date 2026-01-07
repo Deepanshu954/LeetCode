@@ -16,7 +16,7 @@ class Solution {
                 }
             }
 
-            maxCount = Math.max(maxCount, count);
+            if(count > maxCount) maxCount = count;
         }
         return maxCount;
     }
