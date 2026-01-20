@@ -1,18 +1,19 @@
 class Solution {
     public boolean isIsomorphic(String s, String t) {
+        int[] mapST = new int[26];
+        int[] mapTS = new int[26];
 
-        Character[] arr = new Character[26];
+        for (int i = 0; i < s.length(); i++) {
+            int a = s.charAt(i) - 'a';
+            int b = t.charAt(i) - 'a';
 
-        for(int i = 0;  i < s.length(); i++) {
-            arr[s.charAt(i) - 'a'] = t.charAt(i);
+            if (mapST[a] == 0 && mapTS[b] == 0) {
+                mapST[a] = b + 1;
+                mapTS[b] = a + 1;
+            } else if (mapST[a] != b + 1 || mapTS[b] != a + 1) {
+                return false;
+            }
         }
-
-        StringBuilder sb = new StringBuilder();
-
-        for(int i = 0; i < s.length(); i++) {
-            sb.append(arr[s.charAt(i) - 'a']);
-        }
-        
-        return sb.toString().equals(t);
+        return true;
     }
 }
