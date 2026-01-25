@@ -27,7 +27,6 @@ public class Solution {
                 return slow;
             }
         }
-
         return null;
     }
 }
