@@ -27,7 +27,10 @@ class Solution {
 
         int pos = size - n;
 
-        if(pos == 0) return null;
+        if(pos == 0) {
+            return head.next;
+
+        }
         if(pos == 1) {
             head.next = null;
             return head;
