@@ -29,9 +29,8 @@ class Solution {
 
         if(pos == 0) {
             return head.next;
-
         }
-        if(pos == 1) {
+        if(pos == 1 && size == 2) {
             head.next = null;
             return head;
         }
