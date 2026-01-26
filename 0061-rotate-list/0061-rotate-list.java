@@ -11,22 +11,25 @@
 class Solution {
     public ListNode rotateRight(ListNode head, int k) {
         if(head == null) return null;
-        int size = 0;
 
-        // check size;
+        // 1. Check Size
+        int size = 0;
         ListNode curr = head;
         while(curr != null) {
             curr = curr.next;
             size++;
         }
 
+        // 2. Value Of K
         k = k % size;
         if(k == 0) return head;
-        int pos = size - k - 1;
 
+        // 3. Loop till pos
+        int pos = size - k - 1;
         curr = head;
         for(int i = 0; i < pos; i++) curr = curr.next;
 
+        // 4. Rotate
         ListNode ans = curr.next;
         curr.next = null;
 
