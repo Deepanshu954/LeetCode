@@ -2,17 +2,14 @@ class Solution {
 public:
     int fib(int n) 
     {
-        if(n <= 1) return n;
-        int a{0}, b{1},next;
+        int arr[31];
+        arr[0] = 0;
+        arr[1] = 1;
 
         for(int i = 2; i <= n; i++)
         {
-            next = a + b;
-            a = b;
-            b = next;
+            arr[i] = arr[i-1] + arr[i-2];
         }
-        return b;
+        return arr[n];
     }
 };
-
-auto init = atexit([]() { ofstream("display_runtime.txt") << "0";});
