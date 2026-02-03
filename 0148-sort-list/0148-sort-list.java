@@ -10,26 +10,49 @@
  */
 class Solution {
     public ListNode sortList(ListNode head) {
-        int n = 0;
+        if(head == null || head.next == null) return head;
 
-        // 1. Size of Linked List
-        ListNode temp = head;
-        while(temp != null) {temp = temp.next; n++;}
+        // 1. Split the list
+        ListNode mid = getMid(head);
+        ListNode right = mid.next;
+        mid.next = null;
 
+        // 2. Sort Halves
+        ListNode leftSort = sortList(head);
+        ListNode rightSort = sortList(right);
 
-        for(int i = 0; i < n - 1; i++) {
-            temp = head;
-            for(int j = 0; j < n - i - 1; j++) {
-                if(temp.val > temp.next.val) {
-                    int t = temp.val;
-                    temp.val = temp.next.val;
-                    temp.next.val = t;
-                }
+        // 3. Merge
+        return merge(leftSort, rightSort);
+    }
 
-                temp = temp.next;
+    private ListNode getMid(ListNode head) {
+        ListNode slow = head;
+        ListNode fast = head;
+
+        while(fast != null && fast.next != null) {
+            slow = slow.next;
+            fast = fast.next.next;
+        }
+        return slow;
+    }
+
+    private ListNode merge(ListNode l1, ListNode l2) {
+        ListNode dummy = new ListNode(0);
+        ListNode tail = dummy;
+
+        while(l1 != null && l2 != null) {
+            if(l1.val <= l2.val) {
+                tail.next = l1;
+                l1 = l1.next;
+            } else {
+                tail.next = l2;
+                l2 = l2.next;
             }
+
+            tail = tail.next;
         }
 
-        return head;
+        tail.next = (l1 != null) ? l1 : l2;
+        return dummy.next;
     }
 }
