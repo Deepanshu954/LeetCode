@@ -1,9 +1,7 @@
-
-
 class Solution {
     public int maxArea(int[] height) {
-        int max = -1;
-        int min = -1;
+        int max = 0;
+        int min = 0;
 
         int left = 0;
         int right = height.length - 1;
@@ -32,7 +30,7 @@ Brute Force
 class Solution {
     public int maxArea(int[] height) {
         
-        int max = -1;
+        int max = 0;
         int min = 0;
 
         for(int i = 0; i < height.length; i++) {
