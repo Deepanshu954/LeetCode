@@ -1,5 +1,3 @@
-// https://algomaster.io/animations/dsa/container-with-most-water
-
 class Solution {
     public int maxArea(int[] height) {
         int max = -1;
