@@ -1,24 +1,45 @@
 class Solution {
-public:
-    void nextPermutation(vector<int>& nums) {
-        int n = nums.size();
-        int i = n - 2;
+    public void nextPermutation(int[] nums) {
+        int n = nums.length - 1;
 
-        // Step 1: Find first decreasing element from the right
-        while (i >= 0 && nums[i] >= nums[i + 1]) {
-            i--;
-        }
+        int index1 = -1;
+        int index2 = -1;
 
-        // Step 2: If such element exists, find element just larger than it and swap
-        if (i >= 0) {
-            int j = n - 1;
-            while (nums[j] <= nums[i]) {
-                j--;
+        for(int i = n; i > 0; i--) {
+            if(nums[i] > nums[i-1]) {
+                index1 = i - 1;
+                break;
             }
-            swap(nums[i], nums[j]);
         }
 
-        // Step 3: Reverse the elements after position i
-        reverse(nums.begin() + i + 1, nums.end());
+        if(index1 != -1) {
+
+            for(int i = n; i > index1; i--) {
+                if(nums[i] > nums[index1]) {
+                    index2 = i;
+                    break;
+                }
+            }
+
+
+            int temp = nums[index1];
+            nums[index1] = nums[index2];
+            nums[index2] = temp;
+
+        }
+
+        int left = index1 + 1;
+        int right = n;
+
+        while(left < right) {
+            int t = nums[left];
+            nums[left] = nums[right];
+            nums[right] = t;
+
+            left++;
+            right--;
+        }
+        
+        return;
     }
-};
+}
