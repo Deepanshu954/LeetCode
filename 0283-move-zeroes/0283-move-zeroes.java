@@ -7,7 +7,7 @@ class Solution {
             else if(i == index) index++;
             else nums[index++] = nums[i];
         }
-        
+
         while(cnt > 0){
             nums[index++] = 0; cnt--;
         }
