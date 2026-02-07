@@ -5,7 +5,8 @@ class Solution {
 
         for(int i = 0; i < n - 1; i++) {
             for(int j = i + 1; j < n; j++) {
-                long val = 2 * nums[j];
+                long val = nums[j];
+                val *= 2;
                 if(nums[i] > val) count++;
             }
         }
