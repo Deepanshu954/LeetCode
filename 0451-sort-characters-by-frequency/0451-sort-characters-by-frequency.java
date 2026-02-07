@@ -1,36 +1,30 @@
 class Solution {
     public String frequencySort(String s) {
-        int[] freqL = new int[26]; // a-z
-        int[] freqU = new int[26]; // A-Z
+        int[] freq = new int[128]; // ASCII range
 
         // 1. Count frequency
-        for (char ch : s.toCharArray()) {
-            if (ch >= 'a' && ch <= 'z') {
-                freqL[ch - 'a']++;
-            } else if (ch >= 'A' && ch <= 'Z') {
-                freqU[ch - 'A']++;
-            }
+        for (char c : s.toCharArray()) {
+            freq[c]++;
         }
 
-        // 2. Buckets: index = frequency
+        // 2. Buckets by frequency
         List<Character>[] buckets = new ArrayList[s.length() + 1];
         for (int i = 0; i <= s.length(); i++) {
             buckets[i] = new ArrayList<>();
         }
 
         // 3. Fill buckets
-        for (int i = 0; i < 26; i++) {
-            if (freqL[i] > 0) buckets[freqL[i]].add((char) (i + 'a'));
-            if (freqU[i] > 0) buckets[freqU[i]].add((char) (i + 'A'));
+        for (int c = 0; c < 128; c++) {
+            if (freq[c] > 0) {
+                buckets[freq[c]].add((char) c);
+            }
         }
 
-        // 4. Build result (high freq → low)
+        // 4. Build result (high → low)
         StringBuilder sb = new StringBuilder();
         for (int f = s.length(); f > 0; f--) {
             for (char c : buckets[f]) {
-                for (int k = 0; k < f; k++) {
-                    sb.append(c);
-                }
+                sb.append(String.valueOf(c).repeat(f));
             }
         }
 
