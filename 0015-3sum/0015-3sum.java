@@ -7,7 +7,7 @@ class Solution {
         Arrays.sort(nums);
 
         for (int i = 0; i < n - 2; i++) {
-            // skip duplicates for i
+            
             if (i > 0 && nums[i] == nums[i - 1]) continue;
 
             int j = i + 1;
