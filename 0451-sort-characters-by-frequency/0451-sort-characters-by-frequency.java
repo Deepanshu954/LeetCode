@@ -3,10 +3,8 @@ class Solution {
         int[] freqL = new int[26]; // a-z
         int[] freqU = new int[26]; // A-Z
 
-        // 1. Count frequencies
-        for (int i = 0; i < s.length(); i++) {
-            char ch = s.charAt(i);
-
+        // 1. Count frequency
+        for (char ch : s.toCharArray()) {
             if (ch >= 'a' && ch <= 'z') {
                 freqL[ch - 'a']++;
             } else if (ch >= 'A' && ch <= 'Z') {
@@ -14,22 +12,26 @@ class Solution {
             }
         }
 
-        // 2. Sort characters by frequency
-        List<Character> list = new ArrayList<>();
-        for (char c = 'a'; c <= 'z'; c++) list.add(c);
-        for (char c = 'A'; c <= 'Z'; c++) list.add(c);
+        // 2. Buckets: index = frequency
+        List<Character>[] buckets = new ArrayList[s.length() + 1];
+        for (int i = 0; i <= s.length(); i++) {
+            buckets[i] = new ArrayList<>();
+        }
 
-        list.sort((a, b) -> {
-            int fa = Character.isLowerCase(a) ? freqL[a - 'a'] : freqU[a - 'A'];
-            int fb = Character.isLowerCase(b) ? freqL[b - 'a'] : freqU[b - 'A'];
-            return fb - fa;
-        });
+        // 3. Fill buckets
+        for (int i = 0; i < 26; i++) {
+            if (freqL[i] > 0) buckets[freqL[i]].add((char) (i + 'a'));
+            if (freqU[i] > 0) buckets[freqU[i]].add((char) (i + 'A'));
+        }
 
-        // 3. Build result
+        // 4. Build result (high freq → low)
         StringBuilder sb = new StringBuilder();
-        for (char c : list) {
-            int count = Character.isLowerCase(c) ? freqL[c - 'a'] : freqU[c - 'A'];
-            while (count-- > 0) sb.append(c);
+        for (int f = s.length(); f > 0; f--) {
+            for (char c : buckets[f]) {
+                for (int k = 0; k < f; k++) {
+                    sb.append(c);
+                }
+            }
         }
 
         return sb.toString();
