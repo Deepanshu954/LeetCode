@@ -4,21 +4,19 @@ class Solution {
         int count = 0;
         int prefixSum = 0;
 
-        HashMap<Integer, Integer> map = new HashMap<>();
+        // Create a map for storage of sum -> count
+        Map<Integer, Integer> map = new HashMap<>();
         map.put(0,1);
 
-        for(int i = 0; i < n; i++){
+        for(int i = 0; i < n; i++) {
             prefixSum += nums[i];
 
-            if(map.containsKey(prefixSum - k)){
+            if(map.containsKey(prefixSum - k)) {
                 count += map.get(prefixSum - k);
             }
 
             map.put(prefixSum, map.getOrDefault(prefixSum, 0) + 1);
         }
-
         return count;
-
-        
     }
 }
