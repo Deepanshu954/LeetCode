@@ -4,7 +4,7 @@ class Solution {
         int xor = 0;
         for(int num : nums) xor ^= num;
 
-        int diffBits = xor & (-xor);
+        int diffBits = xor & (~xor + 1);
 
         int a = 0;
         int b = 0;
