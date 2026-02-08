@@ -1,6 +1,6 @@
 class Solution {
     public int minBitFlips(int start, int goal) {
-        /return Integer.bitCount((start ^ goal));
+        return Integer.bitCount((start ^ goal));
 
         // int num = start ^ goal;
 
