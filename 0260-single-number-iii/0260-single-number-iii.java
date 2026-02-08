@@ -10,7 +10,7 @@ class Solution {
         int b = 0;
 
         for(int num : nums) {
-            if((num ^(1 << diffBits)) != 1) a ^= num;
+            if((num & diffBits) == 0) a ^= num;
             else b ^= num;
         }
         return new int[]{a,b};
