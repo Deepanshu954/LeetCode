@@ -4,8 +4,11 @@ class Solution {
         int twos = 0;
 
         for(int n : nums) {
-            ones = (ones ^ n) & ~ twos;
-            twos = (twos ^ n) & ~ ones;
+            // ones = (ones ^ n) & ~ twos;
+            // twos = (twos ^ n) & ~ ones;
+
+            ones ^= (n ^ twos);
+            twos ^= (n ^ ones);
         }
         
         return ones;
