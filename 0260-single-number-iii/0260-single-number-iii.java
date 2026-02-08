@@ -1,5 +1,29 @@
 class Solution {
     public int[] singleNumber(int[] nums) {
+
+        int xor = 0;
+        for(int num : nums) xor ^= num;
+
+        int diffBits = xor & (-xor);
+
+        int a = 0;
+        int b = 0;
+
+        for(int num : nums) {
+            if((num ^(1 << diffBits)) != 1) a ^= num;
+            else b ^= num;
+        }
+        return new int[]{a,b};
+    }
+}
+
+
+
+/*
+
+class Solution {
+    public int[] singleNumber(int[] nums) {
+        if(nums.length == 2) return nums;
         Arrays.sort(nums);
 
         int[] arr = new int[2];
@@ -26,3 +50,5 @@ class Solution {
         return arr;
     }
 }
+
+*/
