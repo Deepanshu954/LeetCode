@@ -7,8 +7,13 @@ class Solution {
         int count = 0;
 
         while(num > 0) {
-            num = num & (num - 1);
-            count++;
+            // num = num & (num - 1);
+            // count++;
+
+            int bit = num & 1;
+            if(bit == 1) count++;
+
+            num >>= 1;
         }
 
         return count;
