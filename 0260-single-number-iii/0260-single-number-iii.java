@@ -12,7 +12,7 @@ class Solution {
             arr[index++] = nums[i];
         }
 
-        if(nums[nums.length - 1] != nums[nums.length - 2]) arr[1] = nums.length - 1;
+        if(nums[nums.length - 1] != nums[nums.length - 2]) arr[1] = nums[nums.length - 1];
         return arr;
     }
 }
