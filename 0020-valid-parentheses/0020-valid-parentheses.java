@@ -10,6 +10,6 @@ class Solution {
             else if((ch == ']') && (dq.peekFirst() == '[')) dq.removeFirst();
             else return false;
         }
-        return true;
+        return dq.isEmpty() ? true : false;
     }
 }
