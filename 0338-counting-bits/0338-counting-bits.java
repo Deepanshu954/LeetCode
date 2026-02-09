@@ -1,15 +1,5 @@
 class Solution {
-    static {
-        Runtime.getRuntime().gc();
-        Runtime.getRuntime().addShutdownHook(
-                new Thread(
-                        () -> {
-                            try (FileWriter f = new FileWriter("display_runtime.txt")) {
-                                f.write("0");
-                            } catch (Exception e) {
-                            }
-                        }));
-    }
+    
     public int[] countBits(int n) {
         // co by jmlakshmisagar
         int[] dp = new int[n + 1];
