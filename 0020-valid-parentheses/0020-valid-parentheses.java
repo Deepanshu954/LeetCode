@@ -1,19 +1,35 @@
 class Solution {
     public boolean isValid(String s) {
-        Deque<Character> dq = new ArrayDeque<>();
 
-        for (char ch : s.toCharArray()) {
+        int n = s.length();
+        if (n % 2 == 1) return false;
+
+        // manual stack
+        char[] stack = new char[n];
+        int top = -1;
+
+        for (int i = 0; i < n; i++) {
+            char ch = s.charAt(i);
+
+            // push opening brackets
             if (ch == '(' || ch == '{' || ch == '[') {
-                dq.addFirst(ch);
-            } else {
-                if (dq.isEmpty()) return false;
+                stack[++top] = ch;
+            }
+            // closing brackets
+            else {
+                if (top == -1) return false; // underflow
 
-                if (ch == ')' && dq.peekFirst() == '(') dq.removeFirst();
-                else if (ch == '}' && dq.peekFirst() == '{') dq.removeFirst();
-                else if (ch == ']' && dq.peekFirst() == '[') dq.removeFirst();
-                else return false;
+                char open = stack[top--]; // pop
+
+                if ((ch == ')' && open != '(') ||
+                    (ch == '}' && open != '{') ||
+                    (ch == ']' && open != '[')) {
+                    return false;
+                }
             }
         }
-        return dq.isEmpty();
+
+        // stack must be empty
+        return top == -1;
     }
 }
