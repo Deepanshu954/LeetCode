@@ -6,15 +6,20 @@ class Solution {
 
         Deque<Integer> dq = new ArrayDeque<>();
 
-        for(int i = 0; i < 2 * n; i++) {
-            int index = i % n;
+        for (int i = 2 * n - 1; i >= 0; i--) {
+            int idx = i % n;
 
-            while(!dq.isEmpty() && nums[dq.peekFirst()] < nums[index]) {
-                res[dq.removeFirst()] = nums[index];
+            while (!dq.isEmpty() && dq.peekFirst() <= nums[idx]) {
+                dq.removeFirst();
             }
 
-            if(i < n) dq.addFirst(index);
+            if (i < n) {
+                res[idx] = dq.isEmpty() ? -1 : dq.peekFirst();
+            }
+
+            dq.addFirst(nums[idx]);
         }
+        
         return res;
     }
 }
