@@ -1,6 +1,6 @@
 class Solution {
     public boolean isValid(String s) {
-        if (s.length() % 2 == 1) return false;
+        Deque<Character> dq = new ArrayDeque<>();
 
         for (char ch : s.toCharArray()) {
             if (ch == '(' || ch == '{' || ch == '[') {
