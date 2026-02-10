@@ -1,5 +1,3 @@
-i did't understand it
-
 class Solution {
     public int findDuplicate(int[] nums) {
 
