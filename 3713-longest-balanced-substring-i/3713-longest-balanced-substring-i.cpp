@@ -5,8 +5,6 @@
 #include <algorithm>
 #include <cstring>
 
-using namespace std;
-
 class Solution {
 public:
     int longestBalanced(string s) {
