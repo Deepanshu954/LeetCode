@@ -3,7 +3,7 @@ class Solution {
         if(nums.length == 1 && k == 1) return nums[0];
         
         int sum = 0;
-        double maxSum = Integer.MIN_VALUE;
+        double maxSum = -1e18;
         int left = 0;
         
 
