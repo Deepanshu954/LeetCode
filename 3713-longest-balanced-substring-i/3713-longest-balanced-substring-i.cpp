@@ -1,49 +1,37 @@
 class Solution {
 public:
     int longestBalanced(string s) {
-        int n = s.length();
-        if (n == 0) return 0;
+        int n = s.size();
 
-        // 1. Access raw memory for maximum read speed
-        const char* str = s.c_str(); 
-        
-        int maxLen = 0;
-        
-        // 2. Allocate on Stack (L1 Cache friendly)
-        // 'counts' is small enough to fit in the fastest CPU cache tier.
-        int counts[26]; 
+        // Transform char -> int
+        vector<int> a(n);
+        for (int i = 0; i < n; ++i) 
+            a[i] = s[i] - 'a';
 
-        for (int i = 0; i < n; ++i) {
-            // Pruning: If remaining chars can't beat record, STOP immediately.
-            if (n - i <= maxLen) break;
+        int result = 0;
+        for (int l = 0; l < n; ++l) {
+            // Early exit, can't be bigger
+            if (n - l <= result) break;
 
-            // 3. Ultra-fast reset using memset (often 1-2 CPU cycles via SIMD)
-            memset(counts, 0, sizeof(counts));
-            
-            int distinct = 0;
-            int maxFreq = 0;
-            
-            for (int j = i; j < n; ++j) {
-                // Raw byte access
-                int val = str[j] - 'a';
-                
-                // 4. Branchless optimization attempt
-                // Updates distinct count without a jump instruction if compiler optimizes
-                if (counts[val] == 0) distinct++;
-                
-                counts[val]++;
-                
-                // Track max frequency
-                if (counts[val] > maxFreq) maxFreq = counts[val];
-                
-                int len = j - i + 1;
-                
-                // The check
-                if (maxFreq * distinct == len) {
-                    if (len > maxLen) maxLen = len;
-                }
+            int cnt[26] = {0};          // Counts of every char
+            int uniq = 0, maxfreq = 0;  // Number of uniq chars and maximum frequency
+            for (int r = l; r < n; ++r) {
+                int i = a[r];
+
+                // There was no this char before => one more uniq
+                if (cnt[i] == 0) ++uniq;
+
+                ++cnt[i];
+                // Update max frequency
+                if (cnt[i] > maxfreq) 
+                    maxfreq = cnt[i];
+
+                // Check if all uniq chars have maxfreq frequency then update the result
+                int cur = r - l + 1;
+                if (uniq * maxfreq == cur && cur > result)
+                    result = cur;
             }
         }
-        return maxLen;
+        return result;
     }
 };
