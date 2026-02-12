@@ -1,5 +1,4 @@
 #include <string>
-#include <vector>
 using namespace std;
 
 class Solution {
@@ -8,21 +7,19 @@ public:
         int n = s.size();
         int ans = 0;
 
-        for (int targetDistinct = 1; targetDistinct <= 26; ++targetDistinct) {
-
+        for (int d = 1; d <= 26; ++d) {
             int freq[26] = {0};
-            int left = 0, right = 0;
+            int left = 0;
             int distinct = 0;
             int maxFreq = 0;
 
-            while (right < n) {
+            for (int right = 0; right < n; ++right) {
                 int r = s[right] - 'a';
                 if (freq[r] == 0) distinct++;
                 freq[r]++;
                 maxFreq = max(maxFreq, freq[r]);
-                right++;
 
-                while (distinct > targetDistinct) {
+                while (distinct > d) {
                     int l = s[left] - 'a';
                     freq[l]--;
                     left++;
@@ -36,8 +33,8 @@ public:
                     }
                 }
 
-                int len = right - left;
-                if (distinct == targetDistinct && distinct * maxFreq == len) {
+                int len = right - left + 1;
+                if (distinct == d && distinct * maxFreq == len) {
                     ans = max(ans, len);
                 }
             }
