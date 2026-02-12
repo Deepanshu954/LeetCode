@@ -1,64 +1,80 @@
-impl Solution {
-    pub fn shortest_subarray(nums: Vec<i32>, k: i32) -> i32 {
-        let n = nums.len();
-        let k = k as i64;
-        let mut min_len = (n + 1) as i32;
+// FORCE COMPILER OPTIMIZATIONS
+#pragma GCC optimize("O3,unroll-loops")
+#pragma GCC target("avx2,bmi,bmi2,lzcnt,popcnt")
 
-        unsafe {
-            // Preallocate prefix + deque in one go
-            let mut prefix = Vec::<i64>::with_capacity(n + 1);
-            prefix.set_len(n + 1);
+#include <vector>
 
-            *prefix.get_unchecked_mut(0) = 0;
+using namespace std;
 
-            for i in 0..n {
-                let prev = *prefix.get_unchecked(i);
-                *prefix.get_unchecked_mut(i + 1) =
-                    prev + *nums.get_unchecked(i) as i64;
+// GLOBAL STATIC BUFFERS (Instant Access, No Allocation Overhead)
+// Size 100,005 covers the N=10^5 constraint safely.
+// We reuse these for all test cases.
+static long long q_val[100005];
+static int q_idx[100005];
+
+// IO SPEED HACK (Disables C++ stream syncing)
+static const auto _ = []() {
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+    cout.tie(nullptr);
+    return nullptr;
+}();
+
+class Solution {
+public:
+    int shortestSubarray(vector<int>& nums, int k) {
+        // 1. Localize variables for Register caching
+        int n = nums.size();
+        
+        // 2. Direct Pointer Access (Bypasses Vector Operator[] overhead)
+        const int* raw_nums = nums.data();
+
+        int min_len = n + 1;
+        long long current_sum = 0;
+
+        // 3. Manual Deque via Pointers/Indices
+        // head: front of deque, tail: end of deque
+        int head = 0;
+        int tail = 0;
+
+        // Initialize Deque with (sum=0, index=-1)
+        // This handles subarrays starting from index 0.
+        q_val[0] = 0;
+        q_idx[0] = -1;
+        tail = 1;
+
+        // 4. Main Loop
+        for (int i = 0; i < n; ++i) {
+            // Update prefix sum
+            current_sum += raw_nums[i];
+
+            // OPTIMIZATION: Calculate target once per iteration
+            // We are looking for: current_sum - old_sum >= k
+            // Which means: old_sum <= current_sum - k
+            long long target = current_sum - k;
+
+            // PHASE 1: CHECK VALIDITY (Shrink from Head)
+            // Condition: q_val[head] <= target
+            // Using a pre-calculated 'target' saves 1 subtraction per loop
+            while (head < tail && q_val[head] <= target) {
+                int len = i - q_idx[head];
+                if (len < min_len) min_len = len;
+                head++;
             }
 
-            // Deque as raw index buffer
-            let mut dq = Vec::<usize>::with_capacity(n + 1);
-            dq.set_len(n + 1);
-
-            let dq_ptr = dq.as_mut_ptr();
-            let pref_ptr = prefix.as_ptr();
-
-            let mut head = 0usize;
-            let mut tail = 0usize;
-
-            for i in 0..=n {
-                let curr = *pref_ptr.add(i);
-
-                // Pop from front if valid
-                while head < tail {
-                    let idx = *dq_ptr.add(head);
-                    if curr - *pref_ptr.add(idx) >= k {
-                        let len = (i - idx) as i32;
-                        if len < min_len {
-                            min_len = len;
-                        }
-                        head += 1;
-                    } else {
-                        break;
-                    }
-                }
-
-                // Maintain monotonic increasing prefix
-                while head < tail {
-                    let last = *dq_ptr.add(tail - 1);
-                    if curr <= *pref_ptr.add(last) {
-                        tail -= 1;
-                    } else {
-                        break;
-                    }
-                }
-
-                *dq_ptr.add(tail) = i;
-                tail += 1;
+            // PHASE 2: MAINTAIN MONOTONICITY (Shrink from Tail)
+            // We want q_val to be increasing.
+            // If current_sum <= q_val[tail-1], the old value is useless.
+            while (head < tail && current_sum <= q_val[tail - 1]) {
+                tail--;
             }
+
+            // PHASE 3: PUSH BACK
+            q_val[tail] = current_sum;
+            q_idx[tail] = i;
+            tail++;
         }
 
-        if min_len > n as i32 { -1 } else { min_len }
+        return min_len <= n ? min_len : -1;
     }
-}
+};
