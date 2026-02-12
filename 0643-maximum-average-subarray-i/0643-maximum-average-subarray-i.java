@@ -3,8 +3,9 @@ class Solution {
         if(nums.length == 1 && k == 1) return nums[0];
         
         int sum = 0;
-        double maxSum = 0;
+        double maxSum = Integer.MIN_VALUE;
         int left = 0;
+        
 
         for(int right = 0; right < nums.length; right++) {
             if(right < k - 1) {
