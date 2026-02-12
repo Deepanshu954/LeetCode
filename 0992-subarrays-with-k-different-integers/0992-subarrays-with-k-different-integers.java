@@ -3,7 +3,8 @@ class Solution {
         return atMost(nums, k) - atMost(nums, k-1);
     }
 
-    private int atMostK(int[] nums, int k) {
+/* Using HashMap
+    private int atMost(int[] nums, int k) {
         HashMap<Integer,Integer> map = new HashMap<>();
 
         int cnt = 0;
@@ -24,7 +25,7 @@ class Solution {
 
         return cnt;
     }
-
+*/
     private int atMost(int[] nums, int k) {
 
         int[] freq = new int[nums.length + 1];
