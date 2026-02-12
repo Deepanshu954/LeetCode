@@ -1,44 +1,31 @@
-import java.util.Arrays;
-
 class Solution {
     public int longestBalanced(String s) {
-        int n = s.length();
-        int maxLen = 0;
-        
-        // Single allocation reused throughout execution
-        // Space Complexity: O(1) auxiliary (fixed size 26)
-        int[] counts = new int[26];
 
-        for (int i = 0; i < n; i++) {
-            // Reset the buffer manually (faster than re-allocation)
-            Arrays.fill(counts, 0);
-            
-            int distinct = 0;
-            int maxFreq = 0;
+        int res = Integer.MIN_VALUE;
+        int arr[] = new int[26];
+        for(int i=0;i<s.length();i++){
+          Arrays.fill(arr,0);
+          for(int j=i;j<s.length();j++){
+            arr[s.charAt(j)-'a']++;
+            if(func(arr)){
+                res = Math.max(res,j-i+1);
+            }
+          }
+        }
+        return res;
+    }
 
-            for (int j = i; j < n; j++) {
-                // Use charAt to avoid allocating a new char[] array
-                int idx = s.charAt(j) - 'a';
-
-                if (counts[idx] == 0) {
-                    distinct++;
-                }
-                counts[idx]++;
-                
-                if (counts[idx] > maxFreq) {
-                    maxFreq = counts[idx];
-                }
-
-                int len = j - i + 1;
-                
-                // If balanced, update maxLen
-                if (maxFreq * distinct == len) {
-                    if (len > maxLen) {
-                        maxLen = len;
-                    }
-                }
+    public static boolean func(int[] arr){
+        int common = 0;
+        for(int i=0;i<arr.length;i++){
+            if(arr[i]==0) continue;
+            if(common==0){
+                common = arr[i];
+            }
+            else if(common!=arr[i]){
+                return false;
             }
         }
-        return maxLen;
+        return true;
     }
 }
