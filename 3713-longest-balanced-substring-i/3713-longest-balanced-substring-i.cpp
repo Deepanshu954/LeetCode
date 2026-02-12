@@ -2,9 +2,7 @@
 #include <vector>
 #include <algorithm>
 
-using namespace std;
 
-// Optimization 1: Disable C++ Stream syncing for faster startup
 static const auto _ = []() {
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
