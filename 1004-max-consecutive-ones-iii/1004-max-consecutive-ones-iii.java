@@ -13,7 +13,8 @@ class Solution {
                 left++;
             }
 
-            max = Math.max(max, right - left + 1);
+
+            if(max < (right - left + 1)) max = right - left + 1;
         }
         return max;
     }
