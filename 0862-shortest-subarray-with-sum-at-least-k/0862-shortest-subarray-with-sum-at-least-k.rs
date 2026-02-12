@@ -1,83 +1,90 @@
 impl Solution {
-    pub fn longest_balanced(s: String) -> i32 {
-        let n = s.len();
-        if n == 0 {
-            return 0;
-        }
-
-        // Access raw bytes. 
-        // We will use unsafe get_unchecked later to avoid boundary checks.
-        let s_bytes = s.as_bytes();
+    pub fn shortest_subarray(nums: Vec<i32>, k: i32) -> i32 {
+        let n = nums.len();
+        let k = k as i64;
         
-        let mut max_len = 0;
-
+        // OPTIMIZATION 1: Flat Array Allocation
+        // Allocate space for Prefix Sums (P) and Deque (Q) immediately.
+        // We use Vec but treat it as a raw buffer.
+        // P[i] stores sum of nums[0..i-1]
+        let mut p = vec![0i64; n + 1];
+        
+        // Manual Prefix Sum Calculation
+        // Using iterators can be slightly slower due to abstraction, 
+        // raw indexing allows loop unrolling by the compiler.
         for i in 0..n {
-            // PRUNING:
-            // If the remaining characters are fewer than the current best answer,
-            // it is impossible to find a better solution. Stop immediately.
-            if n - i <= max_len {
-                break;
-            }
-
-            // Stack-allocated frequency map.
-            // u16 is sufficient (max length 1000) and fits in 52 bytes (1 cache line).
-            let mut cnt = [0u16; 26];
-            
-            let mut distinct = 0;
-            let mut max_freq = 0;
-            let mut num_max = 0;
-
-            // PHASE 1: CATCH-UP
-            // We know we can't beat the record until we process at least 'max_len' characters.
-            // So we run a raw loop without any validity checks to "fast forward" the state.
-            let limit = std::cmp::min(n, i + max_len);
-            let mut j = i;
-
-            while j < limit {
-                // UNSAFE OPTIMIZATION:
-                // Skip bounds checking. We know j < n.
-                let idx = unsafe { *s_bytes.get_unchecked(j) } as usize - 97; // 97 is 'a'
-
-                if cnt[idx] == 0 { distinct += 1; }
-                cnt[idx] += 1;
-                let f = cnt[idx];
-
-                if f > max_freq {
-                    max_freq = f;
-                    num_max = 1;
-                } else if f == max_freq {
-                    num_max += 1;
-                }
-                j += 1;
-            }
-
-            // PHASE 2: CHECK FOR RECORD
-            // Now we are in uncharted territory. Every step could be a new max_len.
-            while j < n {
-                let idx = unsafe { *s_bytes.get_unchecked(j) } as usize - 97;
-
-                if cnt[idx] == 0 { distinct += 1; }
-                cnt[idx] += 1;
-                let f = cnt[idx];
-
-                if f > max_freq {
-                    max_freq = f;
-                    num_max = 1;
-                } else if f == max_freq {
-                    num_max += 1;
-                }
-
-                // VALIDITY CHECK:
-                // A substring is balanced if ALL distinct characters have the same frequency.
-                // This implies: (Count of chars with max_freq) == (Total distinct chars)
-                if num_max == distinct {
-                    // Since we are in Phase 2, we know j - i + 1 > max_len
-                    max_len = j - i + 1;
-                }
-                j += 1;
+            unsafe {
+                *p.get_unchecked_mut(i + 1) = *p.get_unchecked(i) + *nums.get_unchecked(i) as i64;
             }
         }
 
-        max_len as i32
+        // OPTIMIZATION 2: Manual Deque
+        // Instead of std::collections::VecDeque, we use a fixed-size vector
+        // and two integer indices (head, tail). This removes all overhead.
+        let mut q = vec![0usize; n + 1]; 
+        let mut head = 0;
+        let mut tail = 0;
+
+        let mut min_len = n + 1;
+
+        // Iterate through every possible end position 'y'
+        for y in 0..=n {
+            let py = unsafe { *p.get_unchecked(y) };
+
+            // 1. CHECK VALID SUBARRAYS (Shrink from front)
+            // While we have a valid start point in the deque...
+            while head < tail {
+                unsafe {
+                    let best_start_idx = *q.get_unchecked(head);
+                    let px = *p.get_unchecked(best_start_idx);
+                    
+                    if py - px >= k {
+                        // Found a valid subarray [best_start_idx ... y-1]
+                        let len = y - best_start_idx;
+                        if len < min_len {
+                            min_len = len;
+                        }
+                        // Pop front: This start index is useless now because
+                        // any future 'y' will produce a longer length.
+                        head += 1;
+                    } else {
+                        // Optimization: Since P is not monotonic, we can't assume much,
+                        // but the condition (py - px >= k) failed for the smallest px,
+                        // so it will fail for others too if we assume local monotonicity 
+                        // in the queue logic.
+                        break;
+                    }
+                }
+            }
+
+            // 2. MAINTAIN MONOTONICITY (Shrink from back)
+            // We want the deque to store indices 'x' with INCREASING P[x].
+            // If py <= P[back], then 'back' is a worse candidate than 'y'
+            // (since 'y' gives a smaller subtraction value and is closer to future indices).
+            while head < tail {
+                unsafe {
+                    let last_idx = *q.get_unchecked(tail - 1);
+                    let p_last = *p.get_unchecked(last_idx);
+                    
+                    if py <= p_last {
+                        tail -= 1;
+                    } else {
+                        break;
+                    }
+                }
+            }
+
+            // 3. Push current index to back
+            unsafe {
+                *q.get_unchecked_mut(tail) = y;
+            }
+            tail += 1;
+        }
+
+        if min_len <= n {
+            min_len as i32
+        } else {
+            -1
+        }
     }
 }
