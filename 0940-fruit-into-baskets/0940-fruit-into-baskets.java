@@ -1,6 +1,7 @@
 class Solution {
     public int totalFruit(int[] nums) {
         int n = nums.length;
+        if(n <= 2) return n;
 
         int basket1 = nums[0];
         int cnt1 = 1;
