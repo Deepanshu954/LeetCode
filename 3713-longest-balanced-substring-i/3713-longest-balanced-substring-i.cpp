@@ -1,71 +1,86 @@
+#pragma GCC optimize("Ofast,unroll-loops")
+#pragma GCC target("avx2,bmi,bmi2,lzcnt,popcnt")
+
 #include <string>
 #include <vector>
+#include <cstring>
 #include <algorithm>
 
 using namespace std;
 
-// Optimization 1: Disable C++ Stream syncing for faster startup
-static const auto _ = []() {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
+// Disable C++ IO synchronization for instant startup
+static const auto io_sync_off = []() {
+    std::ios::sync_with_stdio(false);
+    std::cin.tie(nullptr);
     return nullptr;
 }();
 
 class Solution {
 public:
     int longestBalanced(string s) {
-        int n = s.size();
+        // Use `short` for length/counts as N <= 1000. 
+        // This keeps data compact in registers.
+        const int n = s.length();
         if (n == 0) return 0;
 
-        // Optimization 2: Convert string to integer array on the stack.
-        // Accessing 'arr[i]' is faster than 's[i]' or 's.at(i)'.
-        // Using 'short' saves cache bandwidth.
-        short arr[1005]; 
-        for (int i = 0; i < n; ++i) {
-            arr[i] = s[i] - 'a';
-        }
-
+        // Access raw C-string pointer for fastest possible read speeds
+        const char* str = s.c_str();
+        
         int max_len = 0;
 
+        // Outer loop: Start position
         for (int i = 0; i < n; ++i) {
-            // Pruning: If remaining characters are fewer than current max, give up.
+            
+            // Pruning: If we can't possibly beat the record, stop instantly.
             if (n - i <= max_len) break;
 
-            // Frequency array on stack. 
-            // We use 'short' because counts <= 1000 fits easily.
-            short cnt[26] = {0}; 
+            // Frequency map on stack.
+            // Using `unsigned char` or `short` fits in fewer cache lines than `int`.
+            unsigned short cnt[26] = {0}; 
             
+            // Registers for inner loop state
             int distinct = 0;
             int max_freq = 0;
+            int num_with_max_freq = 0;
 
-            // Optimization 3: Split the Inner Loop
-            // PART A: "Catch Up" Loop
-            // We know we can't beat 'max_len' until j reaches 'i + max_len'.
-            // So we run this loop purely to build the 'cnt' state without checking validity.
-            // This removes thousands of "if (check)" instructions.
-            int j = i;
-            int limit = min(n, i + max_len);
-            
-            for (; j < limit; ++j) {
-                int c = arr[j];
-                if (cnt[c] == 0) distinct++;
-                cnt[c]++;
-                if (cnt[c] > max_freq) max_freq = cnt[c];
-            }
+            // Inner Loop
+            for (int j = i; j < n; ++j) {
+                // Raw pointer arithmetic: fast access
+                int idx = str[j] - 'a';
+                
+                // 1. Update Distinct Count
+                // Branchless-ish update: Only increments if cnt[idx] was 0
+                if (cnt[idx] == 0) distinct++;
+                
+                // 2. Increment Frequency
+                cnt[idx]++;
+                int cur_freq = cnt[idx];
 
-            // PART B: "Record Breaking" Loop
-            // Now we are in uncharted territory (length > max_len).
-            // We check validity at every step.
-            for (; j < n; ++j) {
-                int c = arr[j];
-                if (cnt[c] == 0) distinct++;
-                cnt[c]++;
-                if (cnt[c] > max_freq) max_freq = cnt[c];
+                // 3. Update Max Frequency Stats
+                // We track `num_with_max_freq`: How many chars share the title of "most frequent"?
+                if (cur_freq > max_freq) {
+                    // New record set by this char. 
+                    // It is now the ONLY char with this frequency.
+                    max_freq = cur_freq;
+                    num_with_max_freq = 1; 
+                } else if (cur_freq == max_freq) {
+                    // This char just caught up to the current max.
+                    num_with_max_freq++;
+                }
 
-                // Since we are strictly > max_len here, we just check validity.
-                // Logic: if (Distinct * MaxFreq == Length)
-                if (distinct * max_freq == (j - i + 1)) {
-                    max_len = j - i + 1;
+                // 4. Validity Check
+                // Length of current substring
+                int len = j - i + 1;
+
+                // Optimization: Shield the check. 
+                // Only check validity if this substring is longer than our best.
+                if (len > max_len) {
+                    // The "Multiplication-Free" Check:
+                    // A substring is balanced if ALL distinct characters appear `max_freq` times.
+                    // This implies: count of chars with max_freq == total distinct chars.
+                    if (num_with_max_freq == distinct) {
+                        max_len = len;
+                    }
                 }
             }
         }
