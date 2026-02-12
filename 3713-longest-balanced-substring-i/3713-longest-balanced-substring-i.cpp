@@ -1,10 +1,3 @@
-#pragma GCC optimize("O3")
-#pragma GCC target("avx2,bmi,bmi2,popcnt,lzcnt")
-
-#include <string>
-#include <algorithm>
-#include <cstring>
-
 class Solution {
 public:
     int longestBalanced(string s) {
