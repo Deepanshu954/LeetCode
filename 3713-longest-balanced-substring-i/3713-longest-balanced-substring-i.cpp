@@ -1,10 +1,3 @@
-#include <iostream>
-#include <vector>
-#include <cstring> // For memset
-#include <algorithm>
-
-using namespace std;
-
 class Solution {
 public:
     int longestBalanced(string s) {
@@ -54,13 +47,3 @@ public:
         return maxLen;
     }
 };
-
-// Driver code to simulate a benchmark
-int main() {
-    Solution sol;
-    string input = "aabacbebebe"; // Example input
-    
-    // In a real scenario, you'd run this loop 1,000,000 times to benchmark
-    cout << "Result: " << sol.longestBalanced(input) << endl;
-    return 0;
-}
