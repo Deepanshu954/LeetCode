@@ -1,37 +1,37 @@
+import java.util.Arrays;
+
 class Solution {
     public int longestBalanced(String s) {
         int n = s.length();
-        if (n == 0) return 0;
-
-        // Optimization: Convert to char array for faster indexing
-        char[] chars = s.toCharArray();
         int maxLen = 0;
+        
+        // Single allocation reused throughout execution
+        // Space Complexity: O(1) auxiliary (fixed size 26)
+        int[] counts = new int[26];
 
         for (int i = 0; i < n; i++) {
-            // Pruning: If remaining length is less than current best, stop.
-            if (n - i <= maxLen) {
-                break;
-            }
-
-            int[] counts = new int[26];
+            // Reset the buffer manually (faster than re-allocation)
+            Arrays.fill(counts, 0);
+            
             int distinct = 0;
             int maxFreq = 0;
 
             for (int j = i; j < n; j++) {
-                int idx = chars[j] - 'a';
+                // Use charAt to avoid allocating a new char[] array
+                int idx = s.charAt(j) - 'a';
 
                 if (counts[idx] == 0) {
                     distinct++;
                 }
                 counts[idx]++;
                 
-                // Track max frequency
                 if (counts[idx] > maxFreq) {
                     maxFreq = counts[idx];
                 }
 
-                // Check condition: Max Freq * Distinct Count == Window Length
                 int len = j - i + 1;
+                
+                // If balanced, update maxLen
                 if (maxFreq * distinct == len) {
                     if (len > maxLen) {
                         maxLen = len;
