@@ -1,7 +1,3 @@
-#include <string>
-#include <vector>
-#include <algorithm>
-
 
 static const auto _ = []() {
     ios::sync_with_stdio(false);
