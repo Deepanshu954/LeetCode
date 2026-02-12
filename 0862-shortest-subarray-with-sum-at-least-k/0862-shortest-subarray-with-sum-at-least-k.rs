@@ -1,80 +1,83 @@
-// FORCE COMPILER OPTIMIZATIONS
-#pragma GCC optimize("O3,unroll-loops")
-#pragma GCC target("avx2,bmi,bmi2,lzcnt,popcnt")
-
-#include <vector>
-
-using namespace std;
-
-// GLOBAL STATIC BUFFERS (Instant Access, No Allocation Overhead)
-// Size 100,005 covers the N=10^5 constraint safely.
-// We reuse these for all test cases.
-static long long q_val[100005];
-static int q_idx[100005];
-
-// IO SPEED HACK (Disables C++ stream syncing)
-static const auto _ = []() {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-    cout.tie(nullptr);
-    return nullptr;
-}();
-
-class Solution {
-public:
-    int shortestSubarray(vector<int>& nums, int k) {
-        // 1. Localize variables for Register caching
-        int n = nums.size();
+impl Solution {
+    pub fn shortest_subarray(nums: Vec<i32>, k: i32) -> i32 {
+        let n = nums.len();
+        let k = k as i64;
         
-        // 2. Direct Pointer Access (Bypasses Vector Operator[] overhead)
-        const int* raw_nums = nums.data();
+        // We track the minimum length found. 
+        // Initializing to n + 1 (impossible value).
+        let mut min_len = (n + 1) as i32;
 
-        int min_len = n + 1;
-        long long current_sum = 0;
+        // OPTIMIZATION 1: Uninitialized Memory + Structure of Arrays (SoA)
+        // Standard Vec![] zeros out memory (slow). 
+        // Vec::with_capacity allocates but doesn't write (instant).
+        // We split the Deque into two arrays (Sums and Indices) to improve CPU Cache alignment.
+        let mut q_sum = Vec::<i64>::with_capacity(n + 1);
+        let mut q_idx = Vec::<i32>::with_capacity(n + 1);
 
-        // 3. Manual Deque via Pointers/Indices
-        // head: front of deque, tail: end of deque
-        int head = 0;
-        int tail = 0;
+        unsafe {
+            // OPTIMIZATION 2: Raw Pointers
+            // Accessing memory via pointers avoids bounds checking panic logic entirely.
+            let sum_ptr = q_sum.as_mut_ptr();
+            let idx_ptr = q_idx.as_mut_ptr();
 
-        // Initialize Deque with (sum=0, index=-1)
-        // This handles subarrays starting from index 0.
-        q_val[0] = 0;
-        q_idx[0] = -1;
-        tail = 1;
+            // Manual Deque Pointers
+            let mut head = 0;
+            let mut tail = 0;
 
-        // 4. Main Loop
-        for (int i = 0; i < n; ++i) {
-            // Update prefix sum
-            current_sum += raw_nums[i];
+            // Initialize Deque with state (sum=0, index=-1)
+            // This represents the prefix sum before the array starts.
+            *sum_ptr = 0;
+            *idx_ptr = -1;
+            tail += 1;
 
-            // OPTIMIZATION: Calculate target once per iteration
-            // We are looking for: current_sum - old_sum >= k
-            // Which means: old_sum <= current_sum - k
-            long long target = current_sum - k;
+            let mut curr_sum: i64 = 0;
 
-            // PHASE 1: CHECK VALIDITY (Shrink from Head)
-            // Condition: q_val[head] <= target
-            // Using a pre-calculated 'target' saves 1 subtraction per loop
-            while (head < tail && q_val[head] <= target) {
-                int len = i - q_idx[head];
-                if (len < min_len) min_len = len;
-                head++;
+            // OPTIMIZATION 3: Raw Loop
+            for i in 0..n {
+                // Read input without bounds check
+                curr_sum += *nums.get_unchecked(i) as i64;
+
+                // PHASE 1: CHECK VALIDITY (Shrink from Head)
+                // We access the raw pointer directly. 
+                // Since 'head' increments sequentially, this is very cache-friendly.
+                while head < tail {
+                    let prefix_sum = *sum_ptr.add(head);
+                    
+                    // The core logic: P[y] - P[x] >= k
+                    if curr_sum - prefix_sum >= k {
+                        let start_idx = *idx_ptr.add(head);
+                        let len = (i as i32) - start_idx;
+                        
+                        // Update result if smaller
+                        if len < min_len {
+                            min_len = len;
+                        }
+                        head += 1; // Pop front
+                    } else {
+                        break;
+                    }
+                }
+
+                // PHASE 2: MAINTAIN MONOTONICITY (Shrink from Tail)
+                // Keep the queue increasing. If curr_sum is smaller than the back,
+                // the back is useless (suboptimal).
+                while head < tail {
+                    let last_sum = *sum_ptr.add(tail - 1);
+                    if curr_sum <= last_sum {
+                        tail -= 1; // Pop back
+                    } else {
+                        break;
+                    }
+                }
+
+                // PHASE 3: PUSH BACK
+                // Write directly to uninitialized memory at 'tail'
+                *sum_ptr.add(tail) = curr_sum;
+                *idx_ptr.add(tail) = i as i32;
+                tail += 1;
             }
-
-            // PHASE 2: MAINTAIN MONOTONICITY (Shrink from Tail)
-            // We want q_val to be increasing.
-            // If current_sum <= q_val[tail-1], the old value is useless.
-            while (head < tail && current_sum <= q_val[tail - 1]) {
-                tail--;
-            }
-
-            // PHASE 3: PUSH BACK
-            q_val[tail] = current_sum;
-            q_idx[tail] = i;
-            tail++;
         }
 
-        return min_len <= n ? min_len : -1;
+        if min_len > n as i32 { -1 } else { min_len }
     }
-};
+}
