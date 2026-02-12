@@ -18,13 +18,5 @@ class Solution {
         }
         return maxlength;
     }
-    static {
-        Runtime.getRuntime().addShutdownHook(new Thread(() -> {
-            try (java.io.FileWriter fw = new java.io.FileWriter("display_runtime.txt")) {
-                //this handles the time writing
-                fw.write("0");
-            } catch (Exception e) {
-            }
-        }));
-    }
+    
 }
