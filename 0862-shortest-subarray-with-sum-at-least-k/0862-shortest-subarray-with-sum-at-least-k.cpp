@@ -1,90 +1,80 @@
-impl Solution {
-    pub fn shortest_subarray(nums: Vec<i32>, k: i32) -> i32 {
-        let n = nums.len();
-        let k = k as i64;
+// FORCE COMPILER OPTIMIZATIONS
+#pragma GCC optimize("O3,unroll-loops")
+#pragma GCC target("avx2,bmi,bmi2,lzcnt,popcnt")
+
+#include <vector>
+
+using namespace std;
+
+// GLOBAL STATIC BUFFERS (Instant Access, No Allocation Overhead)
+// Size 100,005 covers the N=10^5 constraint safely.
+// We reuse these for all test cases.
+static long long q_val[100005];
+static int q_idx[100005];
+
+// IO SPEED HACK (Disables C++ stream syncing)
+static const auto _ = []() {
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+    cout.tie(nullptr);
+    return nullptr;
+}();
+
+class Solution {
+public:
+    int shortestSubarray(vector<int>& nums, int k) {
+        // 1. Localize variables for Register caching
+        int n = nums.size();
         
-        // OPTIMIZATION 1: Flat Array Allocation
-        // Allocate space for Prefix Sums (P) and Deque (Q) immediately.
-        // We use Vec but treat it as a raw buffer.
-        // P[i] stores sum of nums[0..i-1]
-        let mut p = vec![0i64; n + 1];
-        
-        // Manual Prefix Sum Calculation
-        // Using iterators can be slightly slower due to abstraction, 
-        // raw indexing allows loop unrolling by the compiler.
-        for i in 0..n {
-            unsafe {
-                *p.get_unchecked_mut(i + 1) = *p.get_unchecked(i) + *nums.get_unchecked(i) as i64;
+        // 2. Direct Pointer Access (Bypasses Vector Operator[] overhead)
+        const int* raw_nums = nums.data();
+
+        int min_len = n + 1;
+        long long current_sum = 0;
+
+        // 3. Manual Deque via Pointers/Indices
+        // head: front of deque, tail: end of deque
+        int head = 0;
+        int tail = 0;
+
+        // Initialize Deque with (sum=0, index=-1)
+        // This handles subarrays starting from index 0.
+        q_val[0] = 0;
+        q_idx[0] = -1;
+        tail = 1;
+
+        // 4. Main Loop
+        for (int i = 0; i < n; ++i) {
+            // Update prefix sum
+            current_sum += raw_nums[i];
+
+            // OPTIMIZATION: Calculate target once per iteration
+            // We are looking for: current_sum - old_sum >= k
+            // Which means: old_sum <= current_sum - k
+            long long target = current_sum - k;
+
+            // PHASE 1: CHECK VALIDITY (Shrink from Head)
+            // Condition: q_val[head] <= target
+            // Using a pre-calculated 'target' saves 1 subtraction per loop
+            while (head < tail && q_val[head] <= target) {
+                int len = i - q_idx[head];
+                if (len < min_len) min_len = len;
+                head++;
             }
+
+            // PHASE 2: MAINTAIN MONOTONICITY (Shrink from Tail)
+            // We want q_val to be increasing.
+            // If current_sum <= q_val[tail-1], the old value is useless.
+            while (head < tail && current_sum <= q_val[tail - 1]) {
+                tail--;
+            }
+
+            // PHASE 3: PUSH BACK
+            q_val[tail] = current_sum;
+            q_idx[tail] = i;
+            tail++;
         }
 
-        // OPTIMIZATION 2: Manual Deque
-        // Instead of std::collections::VecDeque, we use a fixed-size vector
-        // and two integer indices (head, tail). This removes all overhead.
-        let mut q = vec![0usize; n + 1]; 
-        let mut head = 0;
-        let mut tail = 0;
-
-        let mut min_len = n + 1;
-
-        // Iterate through every possible end position 'y'
-        for y in 0..=n {
-            let py = unsafe { *p.get_unchecked(y) };
-
-            // 1. CHECK VALID SUBARRAYS (Shrink from front)
-            // While we have a valid start point in the deque...
-            while head < tail {
-                unsafe {
-                    let best_start_idx = *q.get_unchecked(head);
-                    let px = *p.get_unchecked(best_start_idx);
-                    
-                    if py - px >= k {
-                        // Found a valid subarray [best_start_idx ... y-1]
-                        let len = y - best_start_idx;
-                        if len < min_len {
-                            min_len = len;
-                        }
-                        // Pop front: This start index is useless now because
-                        // any future 'y' will produce a longer length.
-                        head += 1;
-                    } else {
-                        // Optimization: Since P is not monotonic, we can't assume much,
-                        // but the condition (py - px >= k) failed for the smallest px,
-                        // so it will fail for others too if we assume local monotonicity 
-                        // in the queue logic.
-                        break;
-                    }
-                }
-            }
-
-            // 2. MAINTAIN MONOTONICITY (Shrink from back)
-            // We want the deque to store indices 'x' with INCREASING P[x].
-            // If py <= P[back], then 'back' is a worse candidate than 'y'
-            // (since 'y' gives a smaller subtraction value and is closer to future indices).
-            while head < tail {
-                unsafe {
-                    let last_idx = *q.get_unchecked(tail - 1);
-                    let p_last = *p.get_unchecked(last_idx);
-                    
-                    if py <= p_last {
-                        tail -= 1;
-                    } else {
-                        break;
-                    }
-                }
-            }
-
-            // 3. Push current index to back
-            unsafe {
-                *q.get_unchecked_mut(tail) = y;
-            }
-            tail += 1;
-        }
-
-        if min_len <= n {
-            min_len as i32
-        } else {
-            -1
-        }
+        return min_len <= n ? min_len : -1;
     }
-}
+};
