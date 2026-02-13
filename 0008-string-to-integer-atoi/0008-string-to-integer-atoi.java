@@ -1,12 +1,11 @@
 class Solution {
 
     public int myAtoi(String s) {
-        int index = removeSpace(s, 0);
+        int index = skipSpaces(s, 0);
 
         if (index >= s.length()) return 0;
 
         int sign = 1;
-
         if (s.charAt(index) == '-') {
             sign = -1;
             index++;
@@ -14,29 +13,30 @@ class Solution {
             index++;
         }
 
-        return sign * s2n(s, index, 0);
+        return convert(s, index, sign, 0);
     }
 
-    private int removeSpace(String s, int index) {
-        if (index >= s.length() || s.charAt(index) != ' ')
-            return index;
-
-        return removeSpace(s, index + 1);
+    private int skipSpaces(String s, int i) {
+        if (i >= s.length() || s.charAt(i) != ' ')
+            return i;
+        return skipSpaces(s, i + 1);
     }
 
-    private int s2n(String s, int index, int res) {
+    private int convert(String s, int i, int sign, long result) {
 
-        if (index >= s.length() || !Character.isDigit(s.charAt(index)))
-            return res;
+        if (i >= s.length() || !Character.isDigit(s.charAt(i)))
+            return (int)(sign * result);
 
-        int digit = s.charAt(index) - '0';
+        int digit = s.charAt(i) - '0';
+        result = result * 10 + digit;
 
-        // Overflow check
-        if (res > (Integer.MAX_VALUE - digit) / 10)
+        // Overflow handling
+        if (sign == 1 && result > Integer.MAX_VALUE)
             return Integer.MAX_VALUE;
 
-        res = res * 10 + digit;
+        if (sign == -1 && -result < Integer.MIN_VALUE)
+            return Integer.MIN_VALUE;
 
-        return s2n(s, index + 1, res);
+        return convert(s, i + 1, sign, result);
     }
 }
