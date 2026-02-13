@@ -1,21 +1,23 @@
 class Solution {
     public double myPow(double x, int n) {
-        if(n == 0) return 0;
-        if(n == 1) return x;
-        if(n == -1) return 1/x;
+        long N = n; // avoid overflow
 
-        int sign = n > 0 ? 1 : -1;
+        if (N < 0) {
+            x = 1 / x;
+            N = -N;
+        }
 
-        n = Math.abs(n);
-
-        double ans = helper(x, n);
-
-        if(sign == -1) return 1/ ans;
-        return ans;
+        return fastPow(x, N);
     }
 
-    private double helper(double num, int pow) {
-        if(pow == 0) return 1;
-        return num * helper(num , pow - 1);
+    private double fastPow(double x, long n) {
+        if (n == 0) return 1;
+
+        double half = fastPow(x, n / 2);
+
+        if (n % 2 == 0)
+            return half * half;
+        else
+            return half * half * x;
     }
 }
