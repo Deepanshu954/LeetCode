@@ -4,7 +4,7 @@ class Solution {
     }
 
     private void reverse(char[] s, int left, int right) {
-        if(left > right) return;
+        if(left >= right) return;
 
         char temp = s[left];
         s[left] = s[right];
