@@ -1,38 +1,30 @@
 class Solution {
     public int myAtoi(String s) {
+        int index = removeSpace(s, 0);
 
-        int ans = 0;
-        boolean turn = false;
-        boolean started = false;
+        if(index >= s.length()) return 0;
 
-        for (int i = 0; i < s.length(); i++) {
-            char ch = s.charAt(i);
+        int sign = 1;
+        
+        if(s.charAt(index) == '-') {sign = -1; index++;}
+        else if(s.charAt(index) == '+') {index++;}
 
-            if (ch == ' ' && !started) continue;
+        return sign * s2n(s, index, 0);
+        
+    }
 
-            if (ch == '-' && !started) {
-                turn = true;
-                started = true;
-            }
+    private int removeSpace(String s, int index) {
+        if(index >= s.length() || s.charAt(index) != ' ') return index;
+        return removeSpace(s, index + 1);
+    }
 
-            else if (ch == '+' && !started) {
-                started = true;
-            }
-            
-            else if (ch >= '0' && ch <= '9') {
-                started = true;
+    private int s2n(String s, int index,int res) {
+        
+        if(index >= s.length() || !Character.isDigit(s.charAt(index))) return res;
 
-                if (ans > Integer.MAX_VALUE / 10 ||
-                   (ans == Integer.MAX_VALUE / 10 && (ch - '0') > 7))
-                    return turn ? Integer.MIN_VALUE : Integer.MAX_VALUE;
+        int digit = s.charAt(index) - '0';
+        res = res * 10 + digit;
 
-                ans = ans * 10 + (ch - '0');
-            }
-            else {
-                break;
-            }
-        }
-
-        return turn ? -ans : ans;
+        return s2n(s, index + 1, res);
     }
 }
