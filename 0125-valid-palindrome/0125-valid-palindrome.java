@@ -1,30 +1,41 @@
+// class Solution {
+//     public boolean isPalindrome(String s) {
+//         int i = 0;
+//         int j = s.length() - 1;
+
+//         if(s.equals(" ")) return true;
+
+//         while(i < j){
+//             while(i < j && !Character.isLetterOrDigit(s.charAt(i))) i++;
+//             while(i < j && !Character.isLetterOrDigit(s.charAt(j))) j--;
+
+//             if(Character.toLowerCase(s.charAt(i)) != Character.toLowerCase(s.charAt(j))) return false;
+//             i++;
+//             j--;
+//         }
+
+//         return true;
+//     }
+// }
+
+
+
 class Solution {
     public boolean isPalindrome(String s) {
-        int left = 0;
-        int right = s.length() - 1;
+        s = s.toLowerCase();
 
-        while (left < right) {
-            char l = s.charAt(left);
-            char r = s.charAt(right);
+        return helper(s, 0, s.length() - 1);
+    }
 
-            if (!Character.isLetterOrDigit(l)) {
-                left++;
-            } else if (!Character.isLetterOrDigit(r)) {
-                right--;
-            } else {
-                if (l != r) {
-                    // Check if they are the same letter in different cases
-                    // 32 is (1 << 5). XORing with 32 flips the case.
-                    if (Character.isLetter(l) && Character.isLetter(r) && (l ^ 32) == r) {
-                        // Match found via case flip, continue
-                    } else {
-                        return false;
-                    }
-                }
-                left++;
-                right--;
-            }
-        }
-        return true;
+    private boolean helper(String s, int left, int right) {
+        if(left >= right) return true;
+
+        if(!Character.isLetterOrDigit(s.charAt(left)))  return helper(s, left +1, right);
+        else if(!Character.isLetterOrDigit(s.charAt(right))) return helper(s, left, right - 1);
+        else if(s.charAt(left) != s.charAt(right)) return false;
+
+        return helper(s, left + 1, right - 1);
+
+        //return true;
     }
 }
