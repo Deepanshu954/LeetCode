@@ -27,14 +27,14 @@ class Solution {
             TreeNode node = dq1.removeFirst();
             dq2.addFirst(node);
 
-            if(node.left != null) dq1.addFirst(node.left);
+            if(node.left  != null) dq1.addFirst(node.left);
             if(node.right != null) dq1.addFirst(node.right);
         }
 
         while(!dq2.isEmpty()) {
             list.add(dq2.removeFirst().val);
         }
-        
+
         return list;
     }
 }
