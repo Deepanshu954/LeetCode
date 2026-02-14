@@ -23,11 +23,11 @@ class Solution {
 
         while(!dq.isEmpty()) {
             TreeNode node = dq.removeFirst();
-            list.add(node.val);
+            
 
             if(node.right != null) dq.addFirst(node.right);
             if(node.left != null) dq.addFirst(node.left);
-            
+            list.add(node.val);
         }
         return list;
     }
