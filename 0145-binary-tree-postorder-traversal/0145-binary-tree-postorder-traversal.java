@@ -35,9 +35,9 @@ class Solution {
                 curr = dq.peekFirst();
                 if(curr.right == null || curr.right == prev) {
 
-
-                    list.add(curr.val);
-                    dq.removeFirst();
+                    list.add(curr.removeFirst().val);
+                    // list.add(curr.val);
+                    // dq.removeFirst();
                     prev = curr;
                     curr = null;
 
