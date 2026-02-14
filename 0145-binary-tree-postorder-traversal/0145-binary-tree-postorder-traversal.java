@@ -16,6 +16,35 @@
 class Solution {
     public List<Integer> postorderTraversal(TreeNode root) {
         List<Integer> list = new ArrayList<>();
+        if(root == null) return list;
+
+        Deque<TreeNode> dq1 = new LinkedList<>();
+        Deque<TreeNode> dq2 = new LinkedList<>();
+
+        dq1.addFirst(root);
+
+        while(!dq1.isEmpty()) {
+            TreeNode node = dq1.removeFirst();
+            dq2.addFirst(node);
+
+            if(node.left != null) dq1.addFirst(node.left);
+            if(node.right != null) dq1.addFirst(node.right);
+        }
+
+        while(!dq2.isEmpty()) {
+            list.add(dq2.removeFirst().val);
+        }
+        
+        return list;
+    }
+}
+
+
+/*
+
+class Solution {
+    public List<Integer> postorderTraversal(TreeNode root) {
+        List<Integer> list = new ArrayList<>();
 
         postorder(root, list);
         return list;
@@ -29,3 +58,5 @@ class Solution {
         list.add(root.val);
     }
 }
+
+*/
