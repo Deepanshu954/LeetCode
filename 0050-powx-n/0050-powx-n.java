@@ -10,13 +10,13 @@ class Solution {
         return fastPow(x, N);
     }
 
-    private double fastPow(double x, int n) {
+    private double fastPow(double x, long n) {
         if(n == 0) return 1;
 
         double half = fastPow(x, n/2);
 
         if(n % 2 == 0) return half * half;
-        else half * half * n;
+        else return half * half * x;
 
     }
 }
