@@ -1,22 +1,28 @@
 class Solution {
     public List<List<Integer>> subsets(int[] nums) {
-        int n = nums.length;
-
-        // 1. Stroing Answer
         List<List<Integer>> res = new ArrayList<>();
+        List<Integer> p = new ArrayList<>();
 
-        // 2. Loop Over all the possible bitmask
-        for(int mask = 0; mask < (1 << n); mask++) {
-            ArrayList<Integer> curr = new ArrayList<>();
-
-            // 3. Taking required element 
-            for(int i = 0; i < n; i++) {
-                if((mask & (1 << i)) != 0) curr.add(nums[i]);
-            }
-
-            res.add(curr);
-        }
-        
+        helper(nums, 0, p, res);
         return res;
+    }
+
+    private void helper(int[] nums, int index, List<Integer> p, List<List<Integer>> res) {
+        if(index == nums.length) {
+            res.add(new ArrayList<>(p));
+            return;
+        }
+
+        int num = nums[index];
+
+        // 1. Include the Number
+        p.add(num);
+        helper(nums, index + 1, p, res);
+
+        // Backtrack
+        p.remove(p.size() - 1);
+
+        // 2. Exclude the number
+        helper(nums, index + 1, p, res);
     }
 }
