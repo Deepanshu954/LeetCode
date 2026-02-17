@@ -1,28 +1,18 @@
 class Solution {
     public List<List<Integer>> subsets(int[] nums) {
-        List<List<Integer>> res = new ArrayList<>();
-        List<Integer> p = new ArrayList<>();
+        List<List<Integer>> result = new ArrayList<>();
 
-        helper(nums, 0, p, res);
-        return res;
+        helper(nums, 0, new ArrayList<>(), result);
+        return result;
     }
 
-    private void helper(int[] nums, int index, List<Integer> p, List<List<Integer>> res) {
-        if(index == nums.length) {
-            res.add(new ArrayList<>(p));
-            return;
+    private void helper(int[] nums, int index, List<Integer> unp, List<List<Integer>> result) {
+        result.add(new ArrayList<>(unp));
+
+        for(int i = index; i < nums.length; i++) {
+            unp.add(nums[i]);
+            helper(nums, i + 1, unp, result);
+            unp.remove(unp.size() - 1);
         }
-
-        int num = nums[index];
-
-        // 1. Include the Number
-        p.add(num);
-        helper(nums, index + 1, p, res);
-
-        // Backtrack
-        p.remove(p.size() - 1);
-
-        // 2. Exclude the number
-        helper(nums, index + 1, p, res);
     }
 }
