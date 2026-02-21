@@ -1,26 +1,12 @@
 class Solution {
     public int countPrimeSetBits(int left, int right) {
-        int count=0;
-        
-        for (int i=left;i<=right;i++) {
-            int setBits=Integer.bitCount(i);
-            if (isPrime(setBits)) {
-                count++;
-            }
+        int count = 0;
+        Set<Integer> set = new HashSet<>(Arrays.asList(2, 3, 5, 7, 11, 13, 17, 19));
+
+        for(int i = left; i <= right; i++) {
+            int cnt = Integer.bitCount(i);
+            if(set.contains(cnt)) count++;
         }
         return count;
-    }
-    
-    private boolean isPrime(int n) {
-        if (n<=1) {
-            return false;
-        }
-        for (int i=2;i*i <= n;i++) {
-            if (n%i==0) {
-                return false;
-            }
-        }
-        
-        return true;
     }
 }
