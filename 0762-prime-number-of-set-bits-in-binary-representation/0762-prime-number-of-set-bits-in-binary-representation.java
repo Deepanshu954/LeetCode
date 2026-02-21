@@ -1,12 +1,8 @@
 class Solution {
-    public int countPrimeSetBits(int left, int right) {
+    public int countPrimeSetBits(int L, int R) {
         int count = 0;
-        Set<Integer> set = new HashSet<>(Arrays.asList(2, 3, 5, 7, 11, 13, 17, 19));
-
-        for(int i = left; i <= right; i++) {
-            int cnt = Integer.bitCount(i);
-            if(set.contains(cnt)) count++;
-        }
+        while (L <= R)
+            count += 665772 >> Integer.bitCount(L++) & 1;
         return count;
     }
 }
