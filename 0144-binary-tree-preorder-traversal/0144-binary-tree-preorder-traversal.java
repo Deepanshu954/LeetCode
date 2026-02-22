@@ -16,6 +16,26 @@
 class Solution {
     public List<Integer> preorderTraversal(TreeNode root) {
         List<Integer> list = new ArrayList<>();
+        if(root == null) return list;
+
+        Deque<TreeNode> dq = new LinkedList<>();
+        dq.addFirst(root);
+
+        while(!dq.isEmpty()) {
+            TreeNode node = dq.removeFirst();
+
+            if(node.right != null) dq.addFirst(node.right);
+            if(node.left != null) dq.addFirst(node.left);
+            list.add(node.val);
+        }
+        return list;
+    }
+}
+
+/*
+class Solution {
+    public List<Integer> preorderTraversal(TreeNode root) {
+        List<Integer> list = new ArrayList<>();
         preorder(root, list);
         return list;
     }
@@ -28,3 +48,4 @@ class Solution {
         preorder(root.right, list);
     }
 }
+ */
