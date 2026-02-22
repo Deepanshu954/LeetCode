@@ -16,6 +16,33 @@
 class Solution {
     public List<Integer> inorderTraversal(TreeNode root) {
         List<Integer> list = new ArrayList<>();
+        if(root == null) return list;
+
+        Deque<TreeNode> dq = new LinkedList<>();
+
+        TreeNode node = root;
+
+        while(true) {
+            if(node != null) { 
+                dq.addFirst(node);
+                node = node.left;
+            } else {
+                if(dq.isEmpty()) break;
+
+                node = dq.removeFirst();
+                list.add(node.val);
+                node = node.right;
+            }
+        }
+
+        return list;
+    }
+}
+
+/*
+class Solution {
+    public List<Integer> inorderTraversal(TreeNode root) {
+        List<Integer> list = new ArrayList<>();
 
         inorder(list, root);
         return list;
@@ -29,3 +56,4 @@ class Solution {
         inorder(list, root.right);
     }
 }
+*/
