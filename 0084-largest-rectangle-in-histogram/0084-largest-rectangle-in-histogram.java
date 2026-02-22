@@ -1,5 +1,3 @@
-import java.util.*;
-
 class Solution {
     public int largestRectangleArea(int[] heights) {
 
@@ -7,24 +5,22 @@ class Solution {
         Deque<Integer> dq = new ArrayDeque<>();
         int maxArea = 0;
 
-        for (int i = 0; i <= n; i++) {
-
+        for(int i = 0; i <= n; i++) {
             int currHeight = (i == n) ? 0 : heights[i];
 
-            while (!dq.isEmpty() && heights[dq.peekFirst()] > currHeight) {
+            while(!dq.isEmpty() && heights[dq.peekFirst()] > currHeight) {
 
                 int h = heights[dq.removeFirst()];
+                int leftB = (dq.isEmpty()) ? -1 : dq.peekFirst();
+                int rightB = i;
 
-                int rightBoundary = i;
-                int leftBoundary = dq.isEmpty() ? -1 : dq.peekFirst();
-
-                int width = rightBoundary - leftBoundary - 1;
-
+                int width = rightB - leftB - 1;
                 maxArea = Math.max(maxArea, h * width);
             }
 
             dq.addFirst(i);
         }
+        
 
         return maxArea;
     }
