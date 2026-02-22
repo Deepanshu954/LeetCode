@@ -23,7 +23,6 @@ class Solution {
 
         while(!dq.isEmpty()) {
             TreeNode node = dq.removeFirst();
-            
 
             if(node.right != null) dq.addFirst(node.right);
             if(node.left != null) dq.addFirst(node.left);
