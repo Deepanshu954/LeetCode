@@ -1,38 +1,42 @@
 class Solution {
+
     public int myAtoi(String s) {
+        int index = skipSpaces(s, 0);
 
-        int ans = 0;
-        boolean turn = false;
-        boolean started = false;
+        if (index >= s.length()) return 0;
 
-        for (int i = 0; i < s.length(); i++) {
-            char ch = s.charAt(i);
-
-            if (ch == ' ' && !started) continue;
-
-            if (ch == '-' && !started) {
-                turn = true;
-                started = true;
-            }
-
-            else if (ch == '+' && !started) {
-                started = true;
-            }
-            
-            else if (ch >= '0' && ch <= '9') {
-                started = true;
-
-                if (ans > Integer.MAX_VALUE / 10 ||
-                   (ans == Integer.MAX_VALUE / 10 && (ch - '0') > 7))
-                    return turn ? Integer.MIN_VALUE : Integer.MAX_VALUE;
-
-                ans = ans * 10 + (ch - '0');
-            }
-            else {
-                break;
-            }
+        int sign = 1;
+        if (s.charAt(index) == '-') {
+            sign = -1;
+            index++;
+        } else if (s.charAt(index) == '+') {
+            index++;
         }
 
-        return turn ? -ans : ans;
+        return convert(s, index, sign, 0);
+    }
+
+    private int skipSpaces(String s, int i) {
+        if (i >= s.length() || s.charAt(i) != ' ')
+            return i;
+        return skipSpaces(s, i + 1);
+    }
+
+    private int convert(String s, int i, int sign, long result) {
+
+        if (i >= s.length() || !Character.isDigit(s.charAt(i)))
+            return (int)(sign * result);
+
+        int digit = s.charAt(i) - '0';
+        result = result * 10 + digit;
+
+        // Overflow handling
+        if (sign == 1 && result > Integer.MAX_VALUE)
+            return Integer.MAX_VALUE;
+
+        if (sign == -1 && -result < Integer.MIN_VALUE)
+            return Integer.MIN_VALUE;
+
+        return convert(s, i + 1, sign, result);
     }
 }
