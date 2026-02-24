@@ -1,65 +1,40 @@
-/**
- * Definition for a binary tree node.
- * public class TreeNode {
- *     int val;
- *     TreeNode left;
- *     TreeNode right;
- *     TreeNode() {}
- *     TreeNode(int val) { this.val = val; }
- *     TreeNode(int val, TreeNode left, TreeNode right) {
- *         this.val = val;
- *         this.left = left;
- *         this.right = right;
- *     }
- * }
- */
 class Solution {
     public boolean isCousins(TreeNode root, int x, int y) {
-        if(root == null) return false;
 
-        Deque<TreeNode> dq = new LinkedList<>();
-        dq.addFirst(root);
+        if (root == null) return false;
 
-        TreeNode nodeX = null;
-        TreeNode nodeY = null;
+        Queue<TreeNode> q = new LinkedList<>();
+        q.offer(root);
 
-        while(!dq.isEmpty()) {
-            int size = dq.size();
+        while (!q.isEmpty()) {
 
-            boolean findX = false;
-            boolean findY = false;
+            int size = q.size();
+            boolean foundX = false;
+            boolean foundY = false;
 
+            for (int i = 0; i < size; i++) {
 
-            for(int i = 0; i < size; i++) {
-                TreeNode node = dq.removeLast();
-                if(node.val == x) {
-                    findX = true;
-                    nodeX = node;
-                }
-                if(node.val == y) {
-                    findY = true;
-                    nodeY = node;
+                TreeNode node = q.poll();
+
+                // Check sibling case
+                if (node.left != null && node.right != null) {
+                    if ((node.left.val == x && node.right.val == y) ||
+                        (node.left.val == y && node.right.val == x)) {
+                        return false;
+                    }
                 }
 
-                if(node.left != null) dq.addFirst(node.left);
-                if(node.right != null) dq.addFirst(node.right);
+                if (node.val == x) foundX = true;
+                if (node.val == y) foundY = true;
+
+                if (node.left != null) q.offer(node.left);
+                if (node.right != null) q.offer(node.right);
             }
 
-            if(findX && findY) {
-                return (height(nodeX) - height(nodeY)) == 0;
-            }
-
+            if (foundX && foundY) return true;
+            if (foundX || foundY) return false;
         }
 
         return false;
-    }
-
-    private int height(TreeNode root) {
-        if (root == null) return 0;
-
-        int left = height(root.left);
-        int right = height(root.right);
-
-        return Math.max(left, right) + 1;
     }
 }
