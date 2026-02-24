@@ -15,6 +15,39 @@
  */
 class Solution {
     public List<List<Integer>> levelOrderBottom(TreeNode root) {
+        List<List<Integer>> result = new LinkedList<>();
+        if(root == null) return result;
+
+        Deque<TreeNode> dq = new LinkedList<>();
+        dq.offerFirst(root);
+
+        while(!dq.isEmpty()) {
+            int size = dq.size();
+            List<Integer> list = new ArrayList<>();
+
+            for(int i = 0; i < size; i++) {
+
+                TreeNode node = dq.pollLast();
+                list.add(node.val);
+
+                if (node.left != null) dq.offerFirst(node.left);
+                if (node.right != null) dq.offerFirst(node.right);
+            }
+
+            result.addFirst(list);
+        }
+
+        return result;
+    }
+}
+
+
+
+/*
+
+
+class Solution {
+    public List<List<Integer>> levelOrderBottom(TreeNode root) {
         List<List<Integer>> result = new ArrayList<>();
         if(root == null) return result;
 
@@ -41,3 +74,5 @@ class Solution {
         return result;
     }
 }
+
+*/
