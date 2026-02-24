@@ -15,6 +15,7 @@
  */
 class Solution {
     public int minDepth(TreeNode root) {
+        if(root == null) return 0;
         Deque<TreeNode> dq = new LinkedList<>();
         dq.offerFirst(root);
 
