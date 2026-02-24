@@ -23,10 +23,10 @@ class Solution {
 
         while (!dq.isEmpty()) {
             int size = dq.size();
+            depth++;
 
             for (int i = 0; i < size; i++) {
                 TreeNode node = dq.pollLast();
-                depth++;
 
                 if(node.left == null && node.right == null) return depth;
 
