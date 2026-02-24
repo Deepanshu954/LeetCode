@@ -2,7 +2,6 @@ class Solution {
     public int[] plusOne(int[] digits) {
         int index = -1;
 
-        // Find first non-9 digit from right
         for(int i = digits.length - 1; i >= 0; i--) {
             if(digits[i] != 9) {
                 index = i;
@@ -17,10 +16,8 @@ class Solution {
             return arr;
         }
 
-        // Increase that digit
         digits[index] += 1;
 
-        // Make all digits after it zero
         Arrays.fill(digits, index + 1, digits.length, 0);
 
         return digits;
