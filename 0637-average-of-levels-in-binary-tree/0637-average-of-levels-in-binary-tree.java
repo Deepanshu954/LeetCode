@@ -23,19 +23,19 @@ class Solution {
 
         while(!dq.isEmpty()) {
             int size = dq.size();
-            double ans = 0;
+            double sum = 0;
 
 
             for(int i = 0; i < size; i++) {
                 TreeNode node = dq.removeLast();
 
-                ans = ans + (double)node.val/size;
+                sum += node.val;
 
                 if(node.left != null) dq.addFirst(node.left);
                 if(node.right != null) dq.addFirst(node.right);
             }
 
-            result.add(ans);
+            result.add(sum/size);
         }
 
         return result;
