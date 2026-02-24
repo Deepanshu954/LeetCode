@@ -15,6 +15,33 @@
  */
 class Solution {
     public int minDepth(TreeNode root) {
+        Deque<TreeNode> dq = new LinkedList<>();
+        dq.offerFirst(root);
+
+        int depth = 0;
+
+        while (!dq.isEmpty()) {
+            int size = dq.size();
+
+            for (int i = 0; i < size; i++) {
+                TreeNode node = dq.pollLast();
+                depth++;
+
+                if(node.left == null && node.right == null) return depth;
+
+                if (node.left != null) dq.offerFirst(node.left);
+                if (node.right != null) dq.offerFirst(node.right);
+            }
+        }
+        return -1;
+    }
+}
+
+
+/*
+
+class Solution {
+    public int minDepth(TreeNode root) {
         return helper(root);
     }
 
@@ -29,3 +56,5 @@ class Solution {
         return Math.min(leftH, rightH) + 1;
     }
 }
+
+*/
