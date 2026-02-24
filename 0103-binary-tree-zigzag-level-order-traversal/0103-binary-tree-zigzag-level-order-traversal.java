@@ -3,7 +3,7 @@ class Solution {
         List<List<Integer>> result = new ArrayList<>();
         if(root == null) return result;
 
-        Deque<TreeNode> dq = new LinkedList<>();
+        Deque<TreeNode> dq = new ArrayDeque<>();
         boolean turn = true;
 
         dq.addFirst(root);
