@@ -7,7 +7,7 @@ class Solution {
             int bit = s.charAt(i) - '0';
             
             if (bit + carry == 1) {
-                steps += 2;   // +1 and /2
+                steps += 2;
                 carry = 1;
             } else {
                 steps += 1;   // just /2
