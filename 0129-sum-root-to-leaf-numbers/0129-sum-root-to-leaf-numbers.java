@@ -22,12 +22,9 @@ class Solution {
         if(node == null) return 0;
 
         sum = sum * 10 + node.val;
-
         if(node.left == null && node.right == null) return sum;
 
-        int left = helper(node.left, sum);
-        int right = helper(node.right, sum);
 
-        return left + right;
+        return helper(node.left, sum) + helper(node.right, sum);
     }
 }
