@@ -27,10 +27,10 @@ public class Codec {
     }
 
     private int index = 0;
-    
+
     // Decodes your encoded data to tree.
     public TreeNode deserialize(String data) {
-        String[] nodes = data.split(" ");
+        String[] nodes = data.trim().split(" ");
         index = 0;
         return build(nodes);
     }
