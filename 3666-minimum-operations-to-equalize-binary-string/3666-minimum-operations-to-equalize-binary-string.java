@@ -36,6 +36,6 @@ class Solution {
         if ((~zero & 1) == 1)
             res = Math.min(res, even);
 
-        return res == Integer.MAX_VALUE ? -1 : res;
+        return res == Integer.MAX_VALUE ?  -1 : res;
     }
 }
