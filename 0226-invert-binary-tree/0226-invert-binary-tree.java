@@ -19,7 +19,7 @@ class Solution {
     }
 
     private TreeNode helper(TreeNode root) {
-        if(root == null) return root;
+        if(root == null) return null;
 
         TreeNode left = helper(root.left);
         TreeNode right = helper(root.right);
