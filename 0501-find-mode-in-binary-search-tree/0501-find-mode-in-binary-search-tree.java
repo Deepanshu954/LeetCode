@@ -1,34 +1,50 @@
-/**
- * Definition for a binary tree node.
- * public class TreeNode {
- *     int val;
- *     TreeNode left;
- *     TreeNode right;
- *     TreeNode() {}
- *     TreeNode(int val) { this.val = val; }
- *     TreeNode(int val, TreeNode left, TreeNode right) {
- *         this.val = val;
- *         this.left = left;
- *         this.right = right;
- *     }
- * }
- */
 class Solution {
-    private List<Integer> list = new ArrayList<>();
-    public int[] findMode(TreeNode root) {
-        Set<Integer> set = new HashSet<>();
 
-        helper(root, set);
-        return ;
+    public int[] findMode(TreeNode root) {
+        List<Integer> modes = new ArrayList<>();
+        int[] state = new int[3]; 
+        // state[0] = prev
+        // state[1] = count
+        // state[2] = maxCount
+        boolean[] first = new boolean[]{true};
+
+        inorder(root, modes, state, first);
+
+        int[] result = new int[modes.size()];
+        for (int i = 0; i < modes.size(); i++) {
+            result[i] = modes.get(i);
+        }
+        return result;
     }
 
-    private void helper(TreeNode root, Set<Integer> set) {
-        if(root == null) return;
+    private void inorder(TreeNode node, List<Integer> modes, int[] state, boolean[] first) {
+        if (node == null) return;
 
-        helper(root.left);
+        inorder(node.left, modes, state, first);
 
-        if(set.contains(root.val)) list.add(root.val);
-        
-        helper(root.right);
+        if (first[0]) {
+            state[0] = node.val;
+            state[1] = 1;
+            state[2] = 1;
+            modes.add(node.val);
+            first[0] = false;
+        } else {
+            if (node.val == state[0]) {
+                state[1]++;
+            } else {
+                state[0] = node.val;
+                state[1] = 1;
+            }
+
+            if (state[1] > state[2]) {
+                state[2] = state[1];
+                modes.clear();
+                modes.add(node.val);
+            } else if (state[1] == state[2]) {
+                modes.add(node.val);
+            }
+        }
+
+        inorder(node.right, modes, state, first);
     }
 }
