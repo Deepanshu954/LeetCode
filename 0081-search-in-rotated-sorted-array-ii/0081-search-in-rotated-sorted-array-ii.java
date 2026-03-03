@@ -6,14 +6,9 @@ class Solution {
         while (left <= right) {
             int mid = (left + right) / 2;
             
-            if (nums[mid] == target) {
-                return true;
-            }
+            if (nums[mid] == target) return true;
             
-            if (nums[mid] == nums[left]) {
-                left++;
-                continue;
-            }
+            if (nums[mid] == nums[left]) { left++; continue; }
             
             if (nums[left] <= nums[mid]) {
                 if (nums[left] <= target && target < nums[mid]) {
