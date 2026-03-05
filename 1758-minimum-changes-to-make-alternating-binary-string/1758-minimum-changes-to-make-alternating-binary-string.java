@@ -1,26 +1,11 @@
 class Solution {
     public int minOperations(String s) {
-        int n = s.length();
-        if(n == 0) return 0;
+        int mismatch = 0;
 
-        int cnt0 = 0;
-        int cnt1 = 0;
-
-        int extra = n % 2;
-
-        for(int i = 0; i < n - extra; i = i + 2) {
-            if(s.charAt(i) != '0') cnt0++;
-            if(s.charAt(i+1) != '1') cnt1++;
+        for(int i = 0; i < s.length(); i++) {
+            if((s.charAt(i) - '0') != (i % 2)) mismatch++;
         }
 
-        if(extra == 1) {
-            if(s.charAt(n - 1) != '0') cnt0++;
-        }
-
-        int ans = Math.abs(cnt0 + cnt1);
-
-        ans = Math.min(ans, n - ans);
-
-        return ans;
+        return Math.min(mismatch, s.length() - mismatch);
     }
 }
