@@ -19,8 +19,8 @@ class Solution {
 
         int ans = cnt0 + cnt1;
 
-        ans = Math.min(ans, n - ans);
+        //ans = Math.min(ans, n - ans);
 
-        return ans;
+        return ans < (n - ans) ? ans : n - ans;
     }
 }
