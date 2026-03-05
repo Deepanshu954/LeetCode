@@ -9,17 +9,17 @@ class Solution {
         int extra = n % 2;
 
         for(int i = 0; i < n - extra; i = i + 2) {
-            if(s.charAt(i) == '0') cnt0++;
-            if(s.charAt(i+1) == '1') cnt1++;
+            if(s.charAt(i) != '0') cnt0++;
+            if(s.charAt(i+1) != '1') cnt1++;
         }
 
         if(extra == 1) {
             if(s.charAt(n - 1) == '0') cnt0++;
         }
 
-        int ans = Math.abs(cnt0 - cnt1);
+        int ans = Math.abs(cnt0 + cnt1);
 
-        ans = Math.min(ans, n - ans + 1);
+        ans = Math.min(ans, n - ans);
 
         return ans;
     }
