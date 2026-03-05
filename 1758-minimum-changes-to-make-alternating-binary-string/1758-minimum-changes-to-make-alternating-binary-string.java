@@ -14,7 +14,7 @@ class Solution {
         }
 
         if(extra == 1) {
-            if(s.charAt(n - 1) == '0') cnt0++;
+            if(s.charAt(n - 1) != '0') cnt0++;
         }
 
         int ans = Math.abs(cnt0 + cnt1);
