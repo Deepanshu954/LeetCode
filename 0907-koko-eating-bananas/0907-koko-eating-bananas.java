@@ -25,10 +25,10 @@ class Solution {
     }
 
     private boolean calc(int[] piles, int val, int h) {
-        int ans = 0;
+        long ans = 0;
 
         for(int pile : piles) {
-            ans += (pile + val - 1) / val;   // ceil(pile/val)
+            ans += (pile + val - 1) / val;
         }
 
         return ans <= h;
