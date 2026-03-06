@@ -6,8 +6,7 @@ class Solution {
             max = Math.max(max, piles[i]);
         }
 
-
-        int res = 0;
+        int res = max;
         int low = 1;
         int high = max;
 
@@ -28,11 +27,8 @@ class Solution {
     private boolean calc(int[] piles, int val, int h) {
         int ans = 0;
 
-        for(int i = 0; i < piles.length; i++) {
-            int dig = piles[i] / val;
-            if(piles[i] % val > 0) dig++;
-
-            ans += dig;
+        for(int pile : piles) {
+            ans += (pile + val - 1) / val;   // ceil(pile/val)
         }
 
         return ans <= h;
