@@ -1,6 +1,5 @@
 class Solution {
     public int subarraySum(int[] nums, int k) {
-        //int n = nums.length;
         int count = 0;
         int prefixSum = 0;
 
