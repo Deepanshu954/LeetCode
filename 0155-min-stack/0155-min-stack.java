@@ -6,14 +6,14 @@ class MinStack {
     }
     
     public void push(int val) {
-        if (minStack.isEmpty() || val <= getMin()) 
+        if (minStack.isEmpty() || val <= minStack.peek()) 
             minStack.push(val);
         stack.push(val);
     }
     
     public void pop() {
         int v = stack.pop();
-        if (getMin() == v) minStack.pop();
+        if (minStack.peek() == v) minStack.pop();
     }
     
     public int top() {
