@@ -10,8 +10,7 @@ class Solution {
             if (nums[right] % 2 == 1) odd++;
 
             while (odd > k) {
-                if (nums[left] % 2 == 1) odd--;
-                left++;
+                if (nums[left++] % 2 == 1) odd--;
             }
 
             count += right - left + 1;
