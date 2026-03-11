@@ -3,7 +3,7 @@ class Solution {
         int low = 1;
         int high = 0;
 
-        for(int num : nums) high += num;
+        for(int num : nums) high = Math.max(high, num);
 
         int ans = high;
         while(low <= high) {
