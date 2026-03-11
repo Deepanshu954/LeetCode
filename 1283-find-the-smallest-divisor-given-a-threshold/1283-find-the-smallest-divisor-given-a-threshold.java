@@ -1,6 +1,6 @@
 class Solution {
     public int smallestDivisor(int[] nums, int th) {
-        int low = 0;
+        int low = 1;
         int high = 0;
 
         for(int num : nums) high += num;
