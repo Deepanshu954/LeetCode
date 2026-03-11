@@ -6,7 +6,7 @@ class Solution {
         for(int num : nums) high += num;
 
         int ans = high;
-        while(low < high) {
+        while(low <= high) {
             int mid = low + (high - low)/2;
 
             if(isValid(nums, mid, th)) {
