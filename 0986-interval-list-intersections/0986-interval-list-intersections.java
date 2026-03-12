@@ -6,13 +6,14 @@ class Solution {
         int j = 0;
 
         while(i < A.length && j < B.length) {
-            int lo = Math.max(A[i][0], B[j][0]);
-            int hi = Math.min(A[i][1], B[j][1]);
+            int low = Math.max(A[i][0], B[j][0]);
+            int high = Math.min(A[i][1], B[j][1]);
 
-            if(lo <= hi) res.add(new int[]{lo,hi});
+            if(low <= high) res.add(new int[]{low, high});
             if(A[i][1] < B[j][1]) i++;
             else j++;
         }
+
 
         return res.toArray(new int[0][]);
     }
