@@ -6,27 +6,20 @@ class Solution {
         int carry = 0;
 
         while(l1 != null || l2 != null) {
-            int a = 0;
-            int b = 0;
+            int sum = carry;
 
             if(l1 != null){
-                a = l1.val;
+                sum += l1.val;
                 l1 = l1.next;
             }
 
             if(l2 != null){
-                b = l2.val;
+                sum += l2.val;
                 l2 = l2.next;
             }
 
-            int sum = a + b + carry;
-
-            ListNode newNode = new ListNode();
-            newNode.val = sum % 10;
-
-            res.next = newNode;
+            res.next = new ListNode(sum % 10);
             res = res.next;
-
             carry = sum / 10;
         }
 
