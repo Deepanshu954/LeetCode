@@ -3,16 +3,15 @@ class Solution {
         int[] freq = new int[128];
 
         // 1. Count frequency
-        for (char c : s.toCharArray()) {
-            freq[c]++;
-        }
+        for (char c : s.toCharArray()) freq[c]++;
 
         // 2. Store characters that appear
         List<Character> list = new ArrayList<>();
         for (int i = 0; i < 128; i++) {
-            if (freq[i] > 0) {
-                list.add((char) i);
-            }
+            list.add((char) i);
+            // if (freq[i] > 0) {
+            //     list.add((char) i);
+            // }
         }
 
         // 3. Sort by frequency (desc)
