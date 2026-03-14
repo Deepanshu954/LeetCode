@@ -1,5 +1,8 @@
 class Solution {
     public int trailingZeroes(int n) {
-        return n/5;
+
+        int res = n/5 ;
+
+        return res;
     }
 }
