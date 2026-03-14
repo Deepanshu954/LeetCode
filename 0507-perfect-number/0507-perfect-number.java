@@ -1,20 +1,19 @@
 class Solution {
     public boolean checkPerfectNumber(int num) {
-        if(num == 120) return false;
-        int ans = 1;
-        int n = num;
+        if(num <= 1) return false;
 
-        if(n % 2 == 1) return false;
+        int sum = 1;
 
-        while(n  > 2){
-            if(n % 2 == 1) n++;
+        for(int i = 2; i * i <= num; i++){
+            if(num % i == 0){
+                sum += i;
 
-            n = n/2;
-            ans += n;
+                if(i != num / i){
+                    sum += num / i;
+                }
+            }
         }
-        
-        if(num == ans) return true;
-        
-        return false;
+
+        return sum == num;
     }
 }
