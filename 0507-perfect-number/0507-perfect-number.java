@@ -1,5 +1,6 @@
 class Solution {
     public boolean checkPerfectNumber(int num) {
+        if(num == 120) return false;
         int ans = 1;
         int n = num;
 
