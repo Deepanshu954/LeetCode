@@ -1,8 +1,10 @@
 class Solution {
     public int trailingZeroes(int n) {
-
-        int res = n/5 ;
-
-        return res;
+        if (n <= 4) return 0;
+        int count = 0;
+        for (long i = 5; n / i > 0; i *= 5) {
+            count += n / i;
+        }
+        return count;
     }
 }
