@@ -1,20 +1,18 @@
 class Solution {
     public int scoreOfParentheses(String s) {
-        Deque<Character> dq = new ArrayDeque<>();
-        int cnt = 0;
+        Deque<Integer> stack = new ArrayDeque<>();
+        stack.push(0);
 
-        for(int i = 0; i < s.length(); i++) {
-            char ch = s.charAt(i);
-
-            if(ch == '(') dq.addFirst(ch);
-            else if(!dq.isEmpty() && dq.peekFirst() == '(') {
-                dq.removeFirst();
-                cnt++;
+        for(char c : s.toCharArray()) {
+            if(c == '(') {
+                stack.push(0);
             } else {
-                dq.addFirst(')');
+                int val = stack.pop();
+                int score = Math.max(2 * val, 1);
+                stack.push(stack.pop() + score);
             }
         }
 
-        return cnt;
+        return stack.pop();
     }
 }
