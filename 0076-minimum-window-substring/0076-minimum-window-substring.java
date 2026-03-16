@@ -2,37 +2,35 @@ class Solution {
     public String minWindow(String s, String t) {
         if (s.length() < t.length()) return "";
 
-        String ans = "";
-        HashMap<Character, Integer> map = new HashMap<>();
-        for(char ch : t.toCharArray()) map.put(ch, map.getOrDefault(ch, 0) + 1);
+        int[] freq = new int[128]; // ASCII support
+        for (char c : t.toCharArray()) freq[c]++;
 
-        int[] freq = new int[128];
-        int left = 0;
-        int minLen = Integer.MAX_VALUE;
+        int left = 0, right = 0, required = t.length();
+        int minLen = Integer.MAX_VALUE, start = 0;
 
-        for(int right = 0; right < s.length(); right++) {
-            freq[s.charAt(right)]++;
+        while (right < s.length()) {
+            // Expand window
+            char c = s.charAt(right);
+            if (freq[c] > 0) required--;
+            freq[c]--;
+            right++;
 
-            // Valid Window -> Try to Shrink it
-            while(check(freq, map)) {
-                int len = right - left + 1;
-                
-                if(len < minLen) {
-                    minLen = len;
-                    ans = s.substring(left, right + 1);
+            // When all required characters are covered
+            while (required == 0) {
+                // update result
+                if (right - left < minLen) {
+                    minLen = right - left;
+                    start = left;
                 }
 
-                freq[s.charAt(left)]--;
+                // Shrink window from left
+                char lc = s.charAt(left);
+                freq[lc]++;
+                if (freq[lc] > 0) required++;
                 left++;
             }
         }
-        return ans;
-    }
 
-    private boolean check(int[] nums, HashMap<Character, Integer> map) {
-        for(Character key : map.keySet()) {
-            if(map.get(key) > nums[key]) return false;
-        }
-        return true;
+        return minLen == Integer.MAX_VALUE ? "" : s.substring(start, start + minLen);
     }
 }
