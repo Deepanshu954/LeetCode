@@ -1,6 +1,6 @@
 class Solution {
     public int minDays(int[] bloomDay, int m, int k) {
-        if(bloomDay.length < m * k) return -1;
+        if(bloomDay.length < (long)m * k) return -1;
 
         int low = Integer.MAX_VALUE;
         int high = Integer.MIN_VALUE;
@@ -30,14 +30,15 @@ class Solution {
                 if(con == k) {
                     cnt++;
                     con = 0;
+                    
+                    if(cnt >= m) return true; // 🔥 CRITICAL FIX
                 }
-            }
-            else {
+            } else {
                 con = 0;
             }
         }
 
-        return cnt >= m;
+        return false;
     }
 
 }
