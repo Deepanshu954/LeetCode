@@ -19,7 +19,7 @@ class Solution {
     }
 
     private void helper(String digits, int index, StringBuilder sb,HashMap<Character, String> map, List<String> result) {
-        if(index == digits.length()) {
+        if(sb.length() == digits.length()) {
             result.add(sb.toString());
             return;
         }
