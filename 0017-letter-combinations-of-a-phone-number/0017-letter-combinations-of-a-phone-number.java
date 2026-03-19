@@ -19,6 +19,9 @@ class Solution {
     }
 
     private void helper(String digits, int index, StringBuilder sb,HashMap<Character, String> map, List<String> result) {
+        // for if condition we can use both 
+        // if (index == digits.length()) {}
+        // if(sb.length() == digits.length()) {}
         if(sb.length() == digits.length()) {
             result.add(sb.toString());
             return;
