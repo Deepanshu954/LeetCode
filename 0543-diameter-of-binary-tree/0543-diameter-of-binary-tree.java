@@ -22,12 +22,12 @@ class Solution {
     }
 
     private int helper(TreeNode root) {
-        if(root == null) return 0 ;
+        if(root == null) return 0;
 
         int l = helper(root.left);
         int r = helper(root.right);
 
-        d = Math.max(d,l + r);
+        d = Math.max(d, l + r);
         return Math.max(l,r) + 1;
     }
 }
