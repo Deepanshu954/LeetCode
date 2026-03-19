@@ -13,26 +13,24 @@ class Solution {
         map.put('9', "wxyz");
 
         List<String> result = new ArrayList<>();
-        helper(digits, 0, "", map, result);
+        StringBuilder sb = new StringBuilder();
+        helper(digits, 0, sb, map, result);
         return result;
     }
 
-    private void helper(String digits, int index, String temp,
-                        HashMap<Character, String> map,
-                        List<String> result) {
-
-        if (index == digits.length()) {
-            result.add(temp);
+    private void helper(String digits, int index, StringBuilder sb,HashMap<Character, String> map, List<String> result) {
+        if(sb.length() == digits.length()) {
+            result.add(sb.toString());
             return;
         }
 
         char ch = digits.charAt(index);
-        String letters = map.get(ch);
+        String str = map.get(ch);
 
-        for (int i = 0; i < letters.length(); i++) {
-            helper(digits, index + 1,
-                   temp + letters.charAt(i),
-                   map, result);
+        for(int i = 0; i < str.length(); i++) {
+            sb.append(str.charAt(i));
+            helper(digits, index + 1,sb, map, result);
+            sb.setLength(sb.length() - 1);
         }
     }
 }
