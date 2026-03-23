@@ -46,7 +46,8 @@ class Solution {
         for(int i = 1; i <= n; i++) {
             if(dist[i] == Integer.MAX_VALUE) return -1;
 
-            maxDist = Math.max(maxDist, dist[i]);
+            //maxDist = Math.max(maxDist, dist[i]);
+            if(maxDist < dist[i]) maxDist = dist[i];
         }
 
         return maxDist;
