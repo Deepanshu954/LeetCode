@@ -23,7 +23,7 @@ class Solution {
 
         if(foundEmpty) return true;
 
-        for(char num = '1'; i <= '9'; i++) {
+        for(char num = '1'; num <= '9'; num++) {
             if(isSafe(board, row, col, num)) {
                 board[row][col] = num;
                 if(solve(board)) return true;
