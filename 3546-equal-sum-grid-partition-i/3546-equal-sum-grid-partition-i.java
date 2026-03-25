@@ -4,28 +4,32 @@ class Solution {
         long total = 0;
 
         long[] row = new long[m];
-        long[] col = new long[n];
 
+        // Calculate total + row sums
         for (int i = 0; i < m; i++) {
             for (int j = 0; j < n; j++) {
                 total += grid[i][j];
                 row[i] += grid[i][j];
-                col[j] += grid[i][j];
             }
         }
 
         if (total % 2 != 0) return false;
         long target = total / 2;
 
+        // Check horizontal cut
         long sum = 0;
         for (int i = 0; i < m - 1; i++) {
             sum += row[i];
             if (sum == target) return true;
         }
 
-        sum = 0;
+        // Check vertical cut (compute on the fly)
         for (int j = 0; j < n - 1; j++) {
-            sum += col[j];
+            long colSum = 0;
+            for (int i = 0; i < m; i++) {
+                colSum += grid[i][j];
+            }
+            sum += colSum;
             if (sum == target) return true;
         }
 
