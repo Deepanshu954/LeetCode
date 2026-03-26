@@ -1,94 +1,174 @@
-import java.util.*;
-
 class Solution {
     public boolean canPartitionGrid(int[][] grid) {
-        int m = grid.length, n = grid[0].length, index = 0;
-        int[] arr = new int[m * n];
-        
-        // Flatten row-by-row to check Horizontal cuts
-        for (int[] row : grid) {
+        int m = grid.length;
+        int n = grid[0].length;
+        long[] rowSum = new long[m];
+        long T = 0;
+        for (int i = 0; i < m; i++) {
             for (int j = 0; j < n; j++) {
-                arr[index++] = row[j];
+                rowSum[i] += grid[i][j];
+                T += grid[i][j];
             }
         }
-        if (canPartitionArray(arr, m, n)) {
-            return true;
+        long[] rowPrefix = new long[m + 1];
+        for (int i = 1; i <= m; i++) {
+            rowPrefix[i] = rowPrefix[i - 1] + rowSum[i - 1];
         }
-
-        // Flatten column-by-column to check Vertical cuts
-        index = 0;
-        for (int i = 0; i < n; i++) {
-            for (int j = 0; j < m; j++) {
-                arr[index++] = grid[j][i];
+        long[] colSum = new long[n];
+        for (int j = 0; j < n; j++) {
+            for (int i = 0; i < m; i++) {
+                colSum[j] += grid[i][j];
             }
         }
-        if (canPartitionArray(arr, n, m)) {
-            return true;
+        long[] colPrefix = new long[n + 1];
+        for (int j = 1; j <= n; j++) {
+            colPrefix[j] = colPrefix[j - 1] + colSum[j - 1];
         }
-        return false;
-    }
-
-    private boolean canPartitionArray(int[] arr, int m, int n) {
-        int index = 0;
-        long sum = 0, sum1 = 0, sum2, diff;
-        Map<Long, Integer> firstOccurrence = new HashMap<>();
-        Map<Long, Integer> lastOccurrence = new HashMap<>();
-
-        // Map values to their positions for O(1) lookup during split checks
-        for (int i = 0; i < arr.length; i++) {
-            firstOccurrence.putIfAbsent((long) arr[i], i);
-            sum += arr[i];
+        // Check equal sums without discount
+        for (int k = 1; k < m; k++) {
+            long s1 = rowPrefix[k];
+            if (s1 == T - s1) return true;
         }
-        for (int i = arr.length - 1; i >= 0; i--) {
-            lastOccurrence.putIfAbsent((long) arr[i], i);
+        for (int k = 1; k < n; k++) {
+            long s1 = colPrefix[k];
+            if (s1 == T - s1) return true;
         }
-
-        // Iterate through each possible split point (i is the row index of the cut)
-        for (int i = 0; i < m - 1; i++) {
-            for (int j = 0; j < n; j++) {
-                sum1 += arr[index++];
+        final int MAXV = 100000;
+        // Horizontal top prefixes (when top larger)
+        if (m >= 2) {
+            int[] freq = new int[MAXV + 1];
+            for (int k = 1; k < m; k++) {
+                for (int j = 0; j < n; j++) {
+                    int v = grid[k - 1][j];
+                    if (v <= MAXV) freq[v]++;
+                }
+                long s1 = rowPrefix[k];
+                long s2 = T - s1;
+                if (s1 <= s2) continue;
+                long dd = s1 - s2;
+                if (dd > MAXV) continue;
+                int D = (int) dd;
+                int h = k;
+                int w = n;
+                int rlo = 0;
+                int rhi = k - 1;
+                int clo = 0;
+                int chi = n - 1;
+                boolean can = false;
+                if (h == 1 && w == 1) {
+                    // cannot
+                } else if (h >= 2 && w >= 2) {
+                    if (freq[D] > 0) can = true;
+                } else {
+                    if (grid[rlo][clo] == D || grid[rlo][chi] == D || grid[rhi][clo] == D || grid[rhi][chi] == D) {
+                        can = true;
+                    }
+                }
+                if (can) return true;
             }
-            sum2 = sum - sum1;
-
-            if (sum1 == sum2) {
-                return true; // Already equal
-            } else if (sum1 > sum2) {
-                // Need to remove a cell from the 'Top' section
-                diff = sum1 - sum2;
-                
-                // Connectivity Rule: If it's the first row or a 1D column, 
-                // only the corner/end cells can be removed.
-                if ((i == 0 && (arr[0] == diff || arr[n - 1] == diff))
-                    || (n == 1 && (arr[0] == diff || arr[index - 1] == diff))) {
-                    return true;
+        }
+        // Horizontal bottom suffixes (when bottom larger)
+        if (m >= 2) {
+            int[] freq = new int[MAXV + 1];
+            for (int bh = 1; bh < m; bh++) {
+                int add_row = m - bh;
+                for (int j = 0; j < n; j++) {
+                    int v = grid[add_row][j];
+                    if (v <= MAXV) freq[v]++;
                 }
-                
-                // If the section is >1 row and >1 column, any cell inside can be removed
-                if (firstOccurrence.containsKey(diff)) {
-                    int pos = firstOccurrence.get(diff);
-                    if (pos < index && i > 0 && n > 1) {
-                        return true;
+                int topk = m - bh;
+                long s1 = rowPrefix[topk];
+                long s2 = T - s1;
+                if (s2 <= s1) continue;
+                long dd = s2 - s1;
+                if (dd > MAXV) continue;
+                int D = (int) dd;
+                int h = bh;
+                int w = n;
+                int rlo = m - bh;
+                int rhi = m - 1;
+                int clo = 0;
+                int chi = n - 1;
+                boolean can = false;
+                if (h == 1 && w == 1) {
+                    // cannot
+                } else if (h >= 2 && w >= 2) {
+                    if (freq[D] > 0) can = true;
+                } else {
+                    if (grid[rlo][clo] == D || grid[rlo][chi] == D || grid[rhi][clo] == D || grid[rhi][chi] == D) {
+                        can = true;
                     }
                 }
-            } else {
-                // Need to remove a cell from the 'Bottom' section
-                diff = sum2 - sum1;
-                
-                if (lastOccurrence.containsKey(diff)) {
-                    int pos = lastOccurrence.get(diff);
-                    
-                    // Connectivity Rule: If it's the last row or a 1D column, 
-                    // only the corner/end cells can be removed.
-                    if ((i == m - 2 && (arr[n * (m - 1)] == diff || arr[n * m - 1] == diff))
-                        || (n == 1 && (arr[index] == diff || arr[m * n - 1] == diff))) {
-                        return true;
-                    }
-                    
-                    // If the section is >1 row and >1 column, any cell inside is valid
-                    if (pos >= index && i < m - 2 && n > 1) {
-                        return true;
+                if (can) return true;
+            }
+        }
+        // Vertical left prefixes (left larger)
+        if (n >= 2) {
+            int[] freq = new int[MAXV + 1];
+            for (int k = 1; k < n; k++) {
+                int add_col = k - 1;
+                for (int i = 0; i < m; i++) {
+                    int v = grid[i][add_col];
+                    if (v <= MAXV) freq[v]++;
+                }
+                long s1 = colPrefix[k];
+                long s2 = T - s1;
+                if (s1 <= s2) continue;
+                long dd = s1 - s2;
+                if (dd > MAXV) continue;
+                int D = (int) dd;
+                int h = m;
+                int w = k;
+                int rlo = 0;
+                int rhi = m - 1;
+                int clo = 0;
+                int chi = k - 1;
+                boolean can = false;
+                if (h == 1 && w == 1) {
+                    // cannot
+                } else if (h >= 2 && w >= 2) {
+                    if (freq[D] > 0) can = true;
+                } else {
+                    if (grid[rlo][clo] == D || grid[rlo][chi] == D || grid[rhi][clo] == D || grid[rhi][chi] == D) {
+                        can = true;
                     }
                 }
+                if (can) return true;
+            }
+        }
+        // Vertical right suffixes (right larger)
+        if (n >= 2) {
+            int[] freq = new int[MAXV + 1];
+            for (int bw = 1; bw < n; bw++) {
+                int add_col = n - bw;
+                for (int i = 0; i < m; i++) {
+                    int v = grid[i][add_col];
+                    if (v <= MAXV) freq[v]++;
+                }
+                int leftk = n - bw;
+                long s1 = colPrefix[leftk];
+                long s2 = T - s1;
+                if (s2 <= s1) continue;
+                long dd = s2 - s1;
+                if (dd > MAXV) continue;
+                int D = (int) dd;
+                int h = m;
+                int w = bw;
+                int rlo = 0;
+                int rhi = m - 1;
+                int clo = n - bw;
+                int chi = n - 1;
+                boolean can = false;
+                if (h == 1 && w == 1) {
+                    // cannot
+                } else if (h >= 2 && w >= 2) {
+                    if (freq[D] > 0) can = true;
+                } else {
+                    if (grid[rlo][clo] == D || grid[rlo][chi] == D || grid[rhi][clo] == D || grid[rhi][chi] == D) {
+                        can = true;
+                    }
+                }
+                if (can) return true;
             }
         }
         return false;
