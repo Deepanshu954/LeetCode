@@ -1,7 +1,7 @@
 class Solution {
     public int orangesRotting(int[][] grid) {
         int m = grid.length;
-        int n = grid.length;
+        int n = grid[0].length;
         int fresh = 0;
 
         Queue<int[]> q = new ArrayDeque<>();
