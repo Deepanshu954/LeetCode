@@ -12,7 +12,7 @@ class Solution {
                 five--;
                 ten++;
             } 
-            else { // b == 20
+            else { 
                 if (ten > 0 && five > 0) {
                     ten--;
                     five--;
