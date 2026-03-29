@@ -7,9 +7,7 @@ class Solution {
         int j = 0; // cookie pointer
 
         while (i < g.length && j < s.length) {
-            if (s[j] >= g[i]) {
-                i++; // child satisfied
-            }
+            if (g[i] <= s[j]) i++;
             j++;
         }
 
