@@ -21,27 +21,31 @@ class Solution {
         int[][] dir = {{1,0},{-1,0},{0,1},{0,-1}};
 
         while(!q.isEmpty()) {
-            int[] curr = q.poll();
-            int r = curr[0];
-            int c = curr[1];
-
+            int size = q.size();
             boolean rot = false;
 
-            for(int[] d : dir) {
-                int nr = r + d[0];
-                int nc = c + d[1];
+            for(int i = 0; i < size; i++) {
 
-                if(nr >= 0 && nc >= 0 && nr < m && nc < n && grid[nr][nc] == 1) {
-                    fresh--;
-                    grid[nr][nc] = 2;
-                    q.offer(new int[]{nr,nc});
-                    rot = true;
+                int[] curr = q.poll();
+                int r = curr[0];
+                int c = curr[1];
+
+                for(int[] d : dir) {
+                    int nr = r + d[0];
+                    int nc = c + d[1];
+
+                    if(nr >= 0 && nc >= 0 && nr < m && nc < n && grid[nr][nc] == 1) {
+                        fresh--;
+                        grid[nr][nc] = 2;
+                        q.offer(new int[]{nr,nc});
+                        rot = true;
+                    }
                 }
             }
 
             if(rot) min++;
         }
 
-        return fresh == 0 ? min -1 : -1;
+        return fresh == 0 ? min : -1;
     }
 }
