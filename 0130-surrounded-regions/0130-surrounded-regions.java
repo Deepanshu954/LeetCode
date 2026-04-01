@@ -25,8 +25,8 @@ class Solution {
         int m = board.length;
         int n = board[0].length;
 
-        if(r < 0 || c < 0 || r >= m || c >= n || board[r][c] == 'X') return;
-        board[r][c] = 'T'; // THis part is not working why???
+        if(r < 0 || c < 0 || r >= m || c >= n || board[r][c] != 'O') return;
+        board[r][c] = 'T';
 
         dfs(board, r-1, c);
         dfs(board, r+1, c);
