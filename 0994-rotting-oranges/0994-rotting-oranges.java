@@ -3,13 +3,14 @@ class Solution {
         int m = grid.length;
         int n = grid[0].length;
 
-        int fresh = 0;
         Queue<int[]> q = new ArrayDeque<>();
+
+        int fresh = 0;
 
         for(int i = 0; i < m; i++) {
             for(int j = 0; j < n; j++) {
+                if(grid[i][j] == 2) q.offer(new int[]{i,j});
                 if(grid[i][j] == 1) fresh++;
-                else if(grid[i][j] == 2) q.offer(new int[]{i,j});
             }
         }
 
@@ -18,34 +19,29 @@ class Solution {
 
         int min = 0;
 
-        int[][] dir = {{1,0},{-1,0},{0,1},{0,-1}};
+        int[][] dir = {{-1,0},{1,0},{0,-1},{0,1}};
 
         while(!q.isEmpty()) {
-            int size = q.size();
+            int[] curr = q.poll();
+            int r = curr[0];
+            int c = curr[1];
             boolean rot = false;
 
-            for(int i = 0; i < size; i++) {
+            for(int[] d : dir) {
+                int nr = r + d[0];
+                int nc = c + d[1];
 
-                int[] curr = q.poll();
-                int r = curr[0];
-                int c = curr[1];
-
-                for(int[] d : dir) {
-                    int nr = r + d[0];
-                    int nc = c + d[1];
-
-                    if(nr >= 0 && nc >= 0 && nr < m && nc < n && grid[nr][nc] == 1) {
-                        fresh--;
-                        grid[nr][nc] = 2;
-                        q.offer(new int[]{nr,nc});
-                        rot = true;
-                    }
-                }
+                if(nr >= 0 && nc >= 0 && nr < m && nc < n && grid[nr][nc] == 1) {
+                    grid[nr][nc] = 2;
+                    q.offer(new int[]{nr, nc});
+                    rot = true;
+                    fresh--;
+                } 
             }
 
             if(rot) min++;
         }
 
-        return fresh == 0 ? min : -1;
+        return fresh == 0 ? min -1 : -1;
     }
 }
