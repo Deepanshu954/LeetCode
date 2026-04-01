@@ -15,7 +15,6 @@ class Solution {
         int[][] dir = {{-1,0},{1,0},{0,-1},{0,1}};
 
         while(!q.isEmpty()) {
-
             int[] curr = q.poll();
             int r = curr[0];
             int c = curr[1];
@@ -32,5 +31,6 @@ class Solution {
         }
 
         return mat;
+
     }
 }
