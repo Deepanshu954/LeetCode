@@ -1,31 +1,37 @@
 class Solution {
-    public int maxAreaOfIsland(int[][] grid) {
-        if(grid == null || grid.length == 0) return 0;
-        int maxArea = 0;
+    private int area = 0;
+    private int maxArea = 0;
 
-        for(int i = 0; i < grid.length; i++) {
-            for(int j = 0; j < grid[0].length; j++) {
+    public int maxAreaOfIsland(int[][] grid) {
+        int m = grid.length;
+        int n = grid[0].length;
+
+
+        for(int i = 0; i < m; i++) {
+            for(int j = 0; j < n; j++) {
                 if(grid[i][j] == 1) {
-                    int area = bfs(grid, i, j);
-                    maxArea = Math.max(maxArea, area);
+                    area = 0;
+                    dfs(grid,i,j);
                 }
+                maxArea = Math.max(maxArea, area);
             }
         }
 
         return maxArea;
     }
 
-    private int bfs(int[][] grid, int i, int j) {
-        if(i < 0 || i >= grid.length || j < 0 || j >= grid[0].length || grid[i][j] == 0) return 0;
+    private void dfs(int[][] grid, int r, int c) {
+        int m = grid.length;
+        int n = grid[0].length;
 
-        grid[i][j] = 0;
+        if(r < 0 || c < 0 || r >= m || c >= n || grid[r][c] == 0) return;
+        grid[r][c] = 0;
 
-        int area = 1;
-        area += bfs(grid, i + 1, j);
-        area += bfs(grid, i - 1, j);
-        area += bfs(grid, i, j + 1);
-        area += bfs(grid, i, j - 1);
+        area++;
 
-        return area;
+        dfs(grid, r-1, c);
+        dfs(grid, r+1, c);
+        dfs(grid, r, c-1);
+        dfs(grid, r, c+1);
     }
 }
