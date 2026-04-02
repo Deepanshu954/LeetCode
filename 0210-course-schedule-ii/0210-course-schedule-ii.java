@@ -31,6 +31,8 @@ class Solution {
                 if(--ind[nei] == 0) q.offer(nei);
             }
         }
+
+        if(count != V) return new int[]{};
         
         return res;
     }
