@@ -1,40 +1,34 @@
 class Solution {
-    public boolean canFinish(int n, int[][] prerequisites) {
-        List<Integer>[] adj = new List[n];
-        int[] indegree = new int[n];
-        List<Integer> ans = new ArrayList<>();
-
-        for (int[] pair : prerequisites) {
-            int course = pair[0];
-            int prerequisite = pair[1];
-            if (adj[prerequisite] == null) {
-                adj[prerequisite] = new ArrayList<>();
-            }
-            adj[prerequisite].add(course);
-            indegree[course]++;
+    public boolean canFinish(int V, int[][] edges) {
+        List<List<Integer>> adj = new ArrayList<>();
+        
+        for(int i = 0; i < V; i++) adj.add(new ArrayList<>());
+        
+        for(int[] e : edges) {
+            adj.get(e[1]).add(e[0]); // prerequisite → course
         }
-
-        Queue<Integer> queue = new LinkedList<>();
-        for (int i = 0; i < n; i++) {
-            if (indegree[i] == 0) {
-                queue.offer(i);
-            }
+        
+        int[] ind = new int[V];
+        for(int i = 0; i < V; i++) {
+            for(int nei : adj.get(i)) ind[nei]++;
         }
-
-        while (!queue.isEmpty()) {
-            int current = queue.poll();
-            ans.add(current);
-
-            if (adj[current] != null) {
-                for (int next : adj[current]) {
-                    indegree[next]--;
-                    if (indegree[next] == 0) {
-                        queue.offer(next);
-                    }
-                }
+        
+        Queue<Integer> q = new ArrayDeque<>();
+        for(int i = 0; i < V; i++) {
+            if(ind[i] == 0) q.offer(i);
+        }
+        
+        int count = 0;
+        
+        while(!q.isEmpty()) {
+            int node = q.poll();
+            count++;
+            
+            for(int nei : adj.get(node)) {
+                if(--ind[nei] == 0) q.offer(nei);
             }
         }
-
-        return ans.size() == n;
+        
+        return count == V; // all courses finished
     }
 }
