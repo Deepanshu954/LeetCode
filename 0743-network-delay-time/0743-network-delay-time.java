@@ -1,6 +1,6 @@
 class Solution {
     public int networkDelayTime(int[][] times, int n, int k) {
-        List<int[]>[] adj = buildAdj(n, times);
+        List<int[]>[] adj = buildAdj(n+1, times);
 
         int[] dist = new int[n+1];
         Arrays.fill(dist, Integer.MAX_VALUE);
@@ -8,7 +8,7 @@ class Solution {
 
         PriorityQueue<int[]> pq = new PriorityQueue<>(
             (a,b) -> a[0] - b[0]
-        );
+        ); // {dist, node}
 
         pq.offer(new int[]{0, k});
 
@@ -17,7 +17,7 @@ class Solution {
             int d = curr[0];
             int u = curr[1];
 
-            if(d > dist[u]) continue; // 🔥 restore this
+            if(d > dist[u]) continue;
 
             for(int[] e : adj[u]) {
                 int v = e[0];
@@ -37,18 +37,24 @@ class Solution {
         }
 
         return max;
+
+
+
     }
 
     private List<int[]>[] buildAdj(int V, int[][] edges) {
-        List<int[]>[] adj = new ArrayList[V+1];
+        List<int[]>[] adj = new ArrayList[V];
 
-        for(int i = 0; i <= V; i++) {
+        for (int i = 0; i < V; i++) {
             adj[i] = new ArrayList<>();
         }
 
-        for(int[] e : edges) {
-            int u = e[0], v = e[1], w = e[2];
-            adj[u].add(new int[]{v, w}); // 🔥 directed only
+        for (int[] e : edges) {
+            int u = e[0];
+            int v = e[1];
+            int w = e[2];
+
+            adj[u].add(new int[] { v, w });
         }
 
         return adj;
