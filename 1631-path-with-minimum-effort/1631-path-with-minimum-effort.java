@@ -26,6 +26,7 @@ class Solution {
             int c = curr[2];
 
             if(r == m-1 && c == n-1) return effort;
+            if(effort > dist[r][c]) continue;
 
             for(int[] d : dir) {
                 int nr = r + d[0];
