@@ -31,7 +31,7 @@ class Solution {
                 int nr = r + d[0];
                 int nc = c + d[1];
 
-                if(nr < 0 || nc < 0 || nr >= m || nc >= m) continue;
+                if(nr < 0 || nc < 0 || nr >= m || nc >= n) continue;
 
                 int diff = Math.abs(grid[r][c] - grid[nr][nc]);
                 int newEffort = Math.max(effort, diff);
