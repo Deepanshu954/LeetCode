@@ -12,38 +12,38 @@ class Solution {
         ); // {effort, row, col}
 
         pq.offer(new int[]{0,0,0});
+
         int[][] dir = {
             {-1,0},
-            {1,0},
+            { 1,0},
             {0,-1},
             {0,1}
         };
 
         while(!pq.isEmpty()) {
             int[] curr = pq.poll();
-            int effort = curr[0];
+            int e = curr[0];
             int r = curr[1];
             int c = curr[2];
 
-            if(r == m-1 && c == n-1) return effort;
-            if(effort > dist[r][c]) continue;
+            if(r == m-1 && c == n-1) return e;
+
+            if(e > dist[r][c]) continue;
 
             for(int[] d : dir) {
                 int nr = r + d[0];
                 int nc = c + d[1];
 
-                if(nr < 0 || nc < 0 || nr >= m || nc >= n) continue;
+                if(nr < 0 || nr >= m || nc < 0 || nc >= n) continue;
 
                 int diff = Math.abs(grid[r][c] - grid[nr][nc]);
-                int newEffort = Math.max(effort, diff);
+                int ne = Math.max(e, diff);
 
-                if(newEffort < dist[nr][nc]) {
-                    dist[nr][nc] = newEffort;
-                    pq.offer(new int[]{newEffort, nr, nc});
+                if(ne < dist[nr][nc]) {
+                    dist[nr][nc] = ne;
+                    pq.offer(new int[]{ne, nr, nc}); // FIXED
                 }
-
             }
-
         }
 
         return 0;
