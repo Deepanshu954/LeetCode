@@ -1,0 +1,5826 @@
+{
+  "generated_at_utc": "2026-04-05T07:05:56Z",
+  "failed_submission_count": 582,
+  "failures": [
+    {
+      "submission_id": "1744930849",
+      "title": "Contains Duplicate",
+      "slug": "contains-duplicate",
+      "status_display": "Wrong Answer",
+      "listed_lang": "java",
+      "timestamp": 1755919114,
+      "timestamp_utc": "2025-08-23 03:18:34 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1744931257",
+      "title": "Contains Duplicate",
+      "slug": "contains-duplicate",
+      "status_display": "Runtime Error",
+      "listed_lang": "java",
+      "timestamp": 1755919176,
+      "timestamp_utc": "2025-08-23 03:19:36 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1744931871",
+      "title": "Contains Duplicate",
+      "slug": "contains-duplicate",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1755919264,
+      "timestamp_utc": "2025-08-23 03:21:04 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1744932106",
+      "title": "Contains Duplicate",
+      "slug": "contains-duplicate",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1755919297,
+      "timestamp_utc": "2025-08-23 03:21:37 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1744939011",
+      "title": "Valid Anagram",
+      "slug": "valid-anagram",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1755920275,
+      "timestamp_utc": "2025-08-23 03:37:55 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1744939053",
+      "title": "Valid Anagram",
+      "slug": "valid-anagram",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1755920281,
+      "timestamp_utc": "2025-08-23 03:38:01 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1744942221",
+      "title": "Valid Anagram",
+      "slug": "valid-anagram",
+      "status_display": "Wrong Answer",
+      "listed_lang": "java",
+      "timestamp": 1755920700,
+      "timestamp_utc": "2025-08-23 03:45:00 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1744945337",
+      "title": "Valid Anagram",
+      "slug": "valid-anagram",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1755921077,
+      "timestamp_utc": "2025-08-23 03:51:17 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1744945452",
+      "title": "Valid Anagram",
+      "slug": "valid-anagram",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1755921088,
+      "timestamp_utc": "2025-08-23 03:51:28 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1744946118",
+      "title": "Valid Anagram",
+      "slug": "valid-anagram",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1755921164,
+      "timestamp_utc": "2025-08-23 03:52:44 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1744949909",
+      "title": "Two Sum",
+      "slug": "two-sum",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1755921605,
+      "timestamp_utc": "2025-08-23 04:00:05 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1744949994",
+      "title": "Two Sum",
+      "slug": "two-sum",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1755921613,
+      "timestamp_utc": "2025-08-23 04:00:13 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1744953588",
+      "title": "Two Sum",
+      "slug": "two-sum",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1755921974,
+      "timestamp_utc": "2025-08-23 04:06:14 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1744953885",
+      "title": "Two Sum",
+      "slug": "two-sum",
+      "status_display": "Compile Error",
+      "listed_lang": "java",
+      "timestamp": 1755922002,
+      "timestamp_utc": "2025-08-23 04:06:42 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1744953981",
+      "title": "Two Sum",
+      "slug": "two-sum",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1755922012,
+      "timestamp_utc": "2025-08-23 04:06:52 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1746829945",
+      "title": "Top K Frequent Elements",
+      "slug": "top-k-frequent-elements",
+      "status_display": "Wrong Answer",
+      "listed_lang": "java",
+      "timestamp": 1756053046,
+      "timestamp_utc": "2025-08-24 16:30:46 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1746830925",
+      "title": "Top K Frequent Elements",
+      "slug": "top-k-frequent-elements",
+      "status_display": "Wrong Answer",
+      "listed_lang": "java",
+      "timestamp": 1756053100,
+      "timestamp_utc": "2025-08-24 16:31:40 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1746831186",
+      "title": "Top K Frequent Elements",
+      "slug": "top-k-frequent-elements",
+      "status_display": "Wrong Answer",
+      "listed_lang": "java",
+      "timestamp": 1756053113,
+      "timestamp_utc": "2025-08-24 16:31:53 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1746831746",
+      "title": "Top K Frequent Elements",
+      "slug": "top-k-frequent-elements",
+      "status_display": "Wrong Answer",
+      "listed_lang": "cpp",
+      "timestamp": 1756053143,
+      "timestamp_utc": "2025-08-24 16:32:23 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1746831936",
+      "title": "Top K Frequent Elements",
+      "slug": "top-k-frequent-elements",
+      "status_display": "Wrong Answer",
+      "listed_lang": "java",
+      "timestamp": 1756053153,
+      "timestamp_utc": "2025-08-24 16:32:33 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1746833775",
+      "title": "Top K Frequent Elements",
+      "slug": "top-k-frequent-elements",
+      "status_display": "Wrong Answer",
+      "listed_lang": "java",
+      "timestamp": 1756053250,
+      "timestamp_utc": "2025-08-24 16:34:10 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1746836759",
+      "title": "Valid Palindrome",
+      "slug": "valid-palindrome",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1756053408,
+      "timestamp_utc": "2025-08-24 16:36:48 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1746862455",
+      "title": "Top K Frequent Elements",
+      "slug": "top-k-frequent-elements",
+      "status_display": "Wrong Answer",
+      "listed_lang": "java",
+      "timestamp": 1756054758,
+      "timestamp_utc": "2025-08-24 16:59:18 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1746868228",
+      "title": "3Sum",
+      "slug": "3sum",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1756055055,
+      "timestamp_utc": "2025-08-24 17:04:15 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1772996252",
+      "title": "Reverse Integer",
+      "slug": "reverse-integer",
+      "status_display": "Wrong Answer",
+      "listed_lang": "java",
+      "timestamp": 1758041995,
+      "timestamp_utc": "2025-09-16 16:59:55 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1772998085",
+      "title": "Reverse Integer",
+      "slug": "reverse-integer",
+      "status_display": "Wrong Answer",
+      "listed_lang": "java",
+      "timestamp": 1758042084,
+      "timestamp_utc": "2025-09-16 17:01:24 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1773004492",
+      "title": "Reverse Integer",
+      "slug": "reverse-integer",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1758042364,
+      "timestamp_utc": "2025-09-16 17:06:04 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1773004928",
+      "title": "Reverse Integer",
+      "slug": "reverse-integer",
+      "status_display": "Wrong Answer",
+      "listed_lang": "java",
+      "timestamp": 1758042383,
+      "timestamp_utc": "2025-09-16 17:06:23 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1773005177",
+      "title": "Reverse Integer",
+      "slug": "reverse-integer",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1758042394,
+      "timestamp_utc": "2025-09-16 17:06:34 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1773007531",
+      "title": "Palindrome Number",
+      "slug": "palindrome-number",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1758042501,
+      "timestamp_utc": "2025-09-16 17:08:21 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1773007901",
+      "title": "Palindrome Number",
+      "slug": "palindrome-number",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1758042518,
+      "timestamp_utc": "2025-09-16 17:08:38 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1773008356",
+      "title": "Palindrome Number",
+      "slug": "palindrome-number",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1758042539,
+      "timestamp_utc": "2025-09-16 17:08:59 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1782958459",
+      "title": "Employees Earning More Than Their Managers",
+      "slug": "employees-earning-more-than-their-managers",
+      "status_display": "Accepted",
+      "listed_lang": "mysql",
+      "timestamp": 1758863484,
+      "timestamp_utc": "2025-09-26 05:11:24 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1784272489",
+      "title": "Contains Duplicate II",
+      "slug": "contains-duplicate-ii",
+      "status_display": "Time Limit Exceeded",
+      "listed_lang": "java",
+      "timestamp": 1758983994,
+      "timestamp_utc": "2025-09-27 14:39:54 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1784289075",
+      "title": "Contains Duplicate II",
+      "slug": "contains-duplicate-ii",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1758984566,
+      "timestamp_utc": "2025-09-27 14:49:26 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1784298854",
+      "title": "Contains Duplicate II",
+      "slug": "contains-duplicate-ii",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1758984905,
+      "timestamp_utc": "2025-09-27 14:55:05 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1784914101",
+      "title": "Contains Duplicate II",
+      "slug": "contains-duplicate-ii",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1759032619,
+      "timestamp_utc": "2025-09-28 04:10:19 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1784917516",
+      "title": "Contains Duplicate II",
+      "slug": "contains-duplicate-ii",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1759032891,
+      "timestamp_utc": "2025-09-28 04:14:51 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1784932526",
+      "title": "Longest Harmonious Subsequence",
+      "slug": "longest-harmonious-subsequence",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1759034108,
+      "timestamp_utc": "2025-09-28 04:35:08 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1784939989",
+      "title": "Longest Harmonious Subsequence",
+      "slug": "longest-harmonious-subsequence",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1759034717,
+      "timestamp_utc": "2025-09-28 04:45:17 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1784940070",
+      "title": "Longest Harmonious Subsequence",
+      "slug": "longest-harmonious-subsequence",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1759034723,
+      "timestamp_utc": "2025-09-28 04:45:23 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1784942269",
+      "title": "Longest Harmonious Subsequence",
+      "slug": "longest-harmonious-subsequence",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1759034907,
+      "timestamp_utc": "2025-09-28 04:48:27 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1784968850",
+      "title": "Maximum Average Subarray I",
+      "slug": "maximum-average-subarray-i",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1759036941,
+      "timestamp_utc": "2025-09-28 05:22:21 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1786057651",
+      "title": "Check if Array Is Sorted and Rotated",
+      "slug": "check-if-array-is-sorted-and-rotated",
+      "status_display": "Wrong Answer",
+      "listed_lang": "java",
+      "timestamp": 1759133447,
+      "timestamp_utc": "2025-09-29 08:10:47 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1786057957",
+      "title": "Check if Array Is Sorted and Rotated",
+      "slug": "check-if-array-is-sorted-and-rotated",
+      "status_display": "Wrong Answer",
+      "listed_lang": "java",
+      "timestamp": 1759133476,
+      "timestamp_utc": "2025-09-29 08:11:16 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1786060585",
+      "title": "Check if Array Is Sorted and Rotated",
+      "slug": "check-if-array-is-sorted-and-rotated",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1759133725,
+      "timestamp_utc": "2025-09-29 08:15:25 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1786061092",
+      "title": "Remove Duplicates from Sorted Array",
+      "slug": "remove-duplicates-from-sorted-array",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1759133772,
+      "timestamp_utc": "2025-09-29 08:16:12 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1786062232",
+      "title": "Move Zeroes",
+      "slug": "move-zeroes",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1759133882,
+      "timestamp_utc": "2025-09-29 08:18:02 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1817356570",
+      "title": "Longest Consecutive Sequence",
+      "slug": "longest-consecutive-sequence",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1761972781,
+      "timestamp_utc": "2025-11-01 04:53:01 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1817360648",
+      "title": "Longest Consecutive Sequence",
+      "slug": "longest-consecutive-sequence",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1761973145,
+      "timestamp_utc": "2025-11-01 04:59:05 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1817366766",
+      "title": "Longest Consecutive Sequence",
+      "slug": "longest-consecutive-sequence",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1761973701,
+      "timestamp_utc": "2025-11-01 05:08:21 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1817367651",
+      "title": "Longest Consecutive Sequence",
+      "slug": "longest-consecutive-sequence",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1761973782,
+      "timestamp_utc": "2025-11-01 05:09:42 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1817367735",
+      "title": "Longest Consecutive Sequence",
+      "slug": "longest-consecutive-sequence",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1761973790,
+      "timestamp_utc": "2025-11-01 05:09:50 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1817371844",
+      "title": "Longest Consecutive Sequence",
+      "slug": "longest-consecutive-sequence",
+      "status_display": "Wrong Answer",
+      "listed_lang": "java",
+      "timestamp": 1761974170,
+      "timestamp_utc": "2025-11-01 05:16:10 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1817372051",
+      "title": "Longest Consecutive Sequence",
+      "slug": "longest-consecutive-sequence",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1761974189,
+      "timestamp_utc": "2025-11-01 05:16:29 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1817410694",
+      "title": "First Missing Positive",
+      "slug": "first-missing-positive",
+      "status_display": "Wrong Answer",
+      "listed_lang": "java",
+      "timestamp": 1761977575,
+      "timestamp_utc": "2025-11-01 06:12:55 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1817411382",
+      "title": "First Missing Positive",
+      "slug": "first-missing-positive",
+      "status_display": "Wrong Answer",
+      "listed_lang": "java",
+      "timestamp": 1761977635,
+      "timestamp_utc": "2025-11-01 06:13:55 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1817412371",
+      "title": "First Missing Positive",
+      "slug": "first-missing-positive",
+      "status_display": "Wrong Answer",
+      "listed_lang": "java",
+      "timestamp": 1761977721,
+      "timestamp_utc": "2025-11-01 06:15:21 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1817413003",
+      "title": "First Missing Positive",
+      "slug": "first-missing-positive",
+      "status_display": "Wrong Answer",
+      "listed_lang": "java",
+      "timestamp": 1761977772,
+      "timestamp_utc": "2025-11-01 06:16:12 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1817413752",
+      "title": "First Missing Positive",
+      "slug": "first-missing-positive",
+      "status_display": "Wrong Answer",
+      "listed_lang": "java",
+      "timestamp": 1761977834,
+      "timestamp_utc": "2025-11-01 06:17:14 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1817413828",
+      "title": "First Missing Positive",
+      "slug": "first-missing-positive",
+      "status_display": "Wrong Answer",
+      "listed_lang": "java",
+      "timestamp": 1761977841,
+      "timestamp_utc": "2025-11-01 06:17:21 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1817414975",
+      "title": "First Missing Positive",
+      "slug": "first-missing-positive",
+      "status_display": "Wrong Answer",
+      "listed_lang": "java",
+      "timestamp": 1761977937,
+      "timestamp_utc": "2025-11-01 06:18:57 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1817416127",
+      "title": "First Missing Positive",
+      "slug": "first-missing-positive",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1761978027,
+      "timestamp_utc": "2025-11-01 06:20:27 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1817416337",
+      "title": "First Missing Positive",
+      "slug": "first-missing-positive",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1761978044,
+      "timestamp_utc": "2025-11-01 06:20:44 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1817417982",
+      "title": "First Missing Positive",
+      "slug": "first-missing-positive",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1761978175,
+      "timestamp_utc": "2025-11-01 06:22:55 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1817418047",
+      "title": "First Missing Positive",
+      "slug": "first-missing-positive",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1761978180,
+      "timestamp_utc": "2025-11-01 06:23:00 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1817426484",
+      "title": "First Missing Positive",
+      "slug": "first-missing-positive",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1761978877,
+      "timestamp_utc": "2025-11-01 06:34:37 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1817426860",
+      "title": "First Missing Positive",
+      "slug": "first-missing-positive",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1761978909,
+      "timestamp_utc": "2025-11-01 06:35:09 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1817426974",
+      "title": "First Missing Positive",
+      "slug": "first-missing-positive",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1761978918,
+      "timestamp_utc": "2025-11-01 06:35:18 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1817427851",
+      "title": "First Missing Positive",
+      "slug": "first-missing-positive",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1761978991,
+      "timestamp_utc": "2025-11-01 06:36:31 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1817784632",
+      "title": "Permutation in String",
+      "slug": "permutation-in-string",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1762010160,
+      "timestamp_utc": "2025-11-01 15:16:00 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1817897822",
+      "title": "Permutation in String",
+      "slug": "permutation-in-string",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1762018429,
+      "timestamp_utc": "2025-11-01 17:33:49 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1818177247",
+      "title": "Sliding Window Maximum",
+      "slug": "sliding-window-maximum",
+      "status_display": "Time Limit Exceeded",
+      "listed_lang": "java",
+      "timestamp": 1762051128,
+      "timestamp_utc": "2025-11-02 02:38:48 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1818194423",
+      "title": "Sliding Window Maximum",
+      "slug": "sliding-window-maximum",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1762051793,
+      "timestamp_utc": "2025-11-02 02:49:53 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1818277970",
+      "title": "Sliding Window Maximum",
+      "slug": "sliding-window-maximum",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1762055797,
+      "timestamp_utc": "2025-11-02 03:56:37 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1818358748",
+      "title": "Longest Repeating Character Replacement",
+      "slug": "longest-repeating-character-replacement",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1762063034,
+      "timestamp_utc": "2025-11-02 05:57:14 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1818358828",
+      "title": "Longest Repeating Character Replacement",
+      "slug": "longest-repeating-character-replacement",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1762063041,
+      "timestamp_utc": "2025-11-02 05:57:21 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1818364593",
+      "title": "Longest Repeating Character Replacement",
+      "slug": "longest-repeating-character-replacement",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1762063514,
+      "timestamp_utc": "2025-11-02 06:05:14 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1818454132",
+      "title": "Minimum Window Substring",
+      "slug": "minimum-window-substring",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1762071049,
+      "timestamp_utc": "2025-11-02 08:10:49 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1818455061",
+      "title": "Minimum Window Substring",
+      "slug": "minimum-window-substring",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1762071141,
+      "timestamp_utc": "2025-11-02 08:12:21 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1818455121",
+      "title": "Minimum Window Substring",
+      "slug": "minimum-window-substring",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1762071150,
+      "timestamp_utc": "2025-11-02 08:12:30 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1818575748",
+      "title": "Next Permutation",
+      "slug": "next-permutation",
+      "status_display": "Compile Error",
+      "listed_lang": "java",
+      "timestamp": 1762083240,
+      "timestamp_utc": "2025-11-02 11:34:00 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1818575959",
+      "title": "Valid Palindrome",
+      "slug": "valid-palindrome",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1762083260,
+      "timestamp_utc": "2025-11-02 11:34:20 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1818597368",
+      "title": "Valid Palindrome",
+      "slug": "valid-palindrome",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1762085415,
+      "timestamp_utc": "2025-11-02 12:10:15 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1818597420",
+      "title": "Valid Palindrome",
+      "slug": "valid-palindrome",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1762085421,
+      "timestamp_utc": "2025-11-02 12:10:21 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1818598437",
+      "title": "Valid Palindrome",
+      "slug": "valid-palindrome",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1762085519,
+      "timestamp_utc": "2025-11-02 12:11:59 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1818601735",
+      "title": "Container With Most Water",
+      "slug": "container-with-most-water",
+      "status_display": "Time Limit Exceeded",
+      "listed_lang": "java",
+      "timestamp": 1762085857,
+      "timestamp_utc": "2025-11-02 12:17:37 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1818604747",
+      "title": "Remove Duplicates from Sorted Array",
+      "slug": "remove-duplicates-from-sorted-array",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1762086156,
+      "timestamp_utc": "2025-11-02 12:22:36 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1818604827",
+      "title": "Remove Duplicates from Sorted Array",
+      "slug": "remove-duplicates-from-sorted-array",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1762086165,
+      "timestamp_utc": "2025-11-02 12:22:45 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1818605382",
+      "title": "Remove Duplicates from Sorted Array",
+      "slug": "remove-duplicates-from-sorted-array",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1762086225,
+      "timestamp_utc": "2025-11-02 12:23:45 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1818605752",
+      "title": "Remove Duplicates from Sorted Array",
+      "slug": "remove-duplicates-from-sorted-array",
+      "status_display": "Compile Error",
+      "listed_lang": "java",
+      "timestamp": 1762086261,
+      "timestamp_utc": "2025-11-02 12:24:21 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1818605836",
+      "title": "Remove Duplicates from Sorted Array",
+      "slug": "remove-duplicates-from-sorted-array",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1762086269,
+      "timestamp_utc": "2025-11-02 12:24:29 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1818611651",
+      "title": "Two Sum II - Input Array Is Sorted",
+      "slug": "two-sum-ii-input-array-is-sorted",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1762086817,
+      "timestamp_utc": "2025-11-02 12:33:37 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1818616738",
+      "title": "Two Sum II - Input Array Is Sorted",
+      "slug": "two-sum-ii-input-array-is-sorted",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1762087290,
+      "timestamp_utc": "2025-11-02 12:41:30 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1818622191",
+      "title": "Two Sum II - Input Array Is Sorted",
+      "slug": "two-sum-ii-input-array-is-sorted",
+      "status_display": "Wrong Answer",
+      "listed_lang": "java",
+      "timestamp": 1762087784,
+      "timestamp_utc": "2025-11-02 12:49:44 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1818624338",
+      "title": "Two Sum II - Input Array Is Sorted",
+      "slug": "two-sum-ii-input-array-is-sorted",
+      "status_display": "Wrong Answer",
+      "listed_lang": "java",
+      "timestamp": 1762087976,
+      "timestamp_utc": "2025-11-02 12:52:56 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1818624723",
+      "title": "Two Sum II - Input Array Is Sorted",
+      "slug": "two-sum-ii-input-array-is-sorted",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1762088008,
+      "timestamp_utc": "2025-11-02 12:53:28 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1818626158",
+      "title": "3Sum",
+      "slug": "3sum",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1762088134,
+      "timestamp_utc": "2025-11-02 12:55:34 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1831361911",
+      "title": "Search in Rotated Sorted Array",
+      "slug": "search-in-rotated-sorted-array",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1763300305,
+      "timestamp_utc": "2025-11-16 13:38:25 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1831478741",
+      "title": "Median of Two Sorted Arrays",
+      "slug": "median-of-two-sorted-arrays",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1763308968,
+      "timestamp_utc": "2025-11-16 16:02:48 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1831479822",
+      "title": "Race Car",
+      "slug": "race-car",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1763309047,
+      "timestamp_utc": "2025-11-16 16:04:07 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1831482986",
+      "title": "Regular Expression Matching",
+      "slug": "regular-expression-matching",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1763309277,
+      "timestamp_utc": "2025-11-16 16:07:57 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1831485137",
+      "title": "Word Ladder",
+      "slug": "word-ladder",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1763309435,
+      "timestamp_utc": "2025-11-16 16:10:35 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1831485294",
+      "title": "First Missing Positive",
+      "slug": "first-missing-positive",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1763309445,
+      "timestamp_utc": "2025-11-16 16:10:45 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1831487869",
+      "title": "Merge k Sorted Lists",
+      "slug": "merge-k-sorted-lists",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1763309629,
+      "timestamp_utc": "2025-11-16 16:13:49 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1831488143",
+      "title": "Reverse Nodes in k-Group",
+      "slug": "reverse-nodes-in-k-group",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1763309649,
+      "timestamp_utc": "2025-11-16 16:14:09 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1831488362",
+      "title": "Longest Valid Parentheses",
+      "slug": "longest-valid-parentheses",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1763309666,
+      "timestamp_utc": "2025-11-16 16:14:26 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1831498484",
+      "title": "Binary Search",
+      "slug": "binary-search",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1763310405,
+      "timestamp_utc": "2025-11-16 16:26:45 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1831510569",
+      "title": "Find First and Last Position of Element in Sorted Array",
+      "slug": "find-first-and-last-position-of-element-in-sorted-array",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1763311246,
+      "timestamp_utc": "2025-11-16 16:40:46 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1831513363",
+      "title": "Sort Colors",
+      "slug": "sort-colors",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1763311435,
+      "timestamp_utc": "2025-11-16 16:43:55 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1831515497",
+      "title": "Reverse Integer",
+      "slug": "reverse-integer",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1763311577,
+      "timestamp_utc": "2025-11-16 16:46:17 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1836640328",
+      "title": "Longest Common Prefix",
+      "slug": "longest-common-prefix",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1763806147,
+      "timestamp_utc": "2025-11-22 10:09:07 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1836643418",
+      "title": "Longest Common Prefix",
+      "slug": "longest-common-prefix",
+      "status_display": "Compile Error",
+      "listed_lang": "java",
+      "timestamp": 1763806466,
+      "timestamp_utc": "2025-11-22 10:14:26 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1836644227",
+      "title": "Longest Common Prefix",
+      "slug": "longest-common-prefix",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1763806544,
+      "timestamp_utc": "2025-11-22 10:15:44 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1836644516",
+      "title": "Longest Common Prefix",
+      "slug": "longest-common-prefix",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1763806571,
+      "timestamp_utc": "2025-11-22 10:16:11 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1837489052",
+      "title": "Palindromic Substrings",
+      "slug": "palindromic-substrings",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1763884719,
+      "timestamp_utc": "2025-11-23 07:58:39 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1837496204",
+      "title": "Palindromic Substrings",
+      "slug": "palindromic-substrings",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1763885492,
+      "timestamp_utc": "2025-11-23 08:11:32 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1837496448",
+      "title": "Palindromic Substrings",
+      "slug": "palindromic-substrings",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1763885522,
+      "timestamp_utc": "2025-11-23 08:12:02 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1837496531",
+      "title": "Palindromic Substrings",
+      "slug": "palindromic-substrings",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1763885531,
+      "timestamp_utc": "2025-11-23 08:12:11 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1837669350",
+      "title": "Two Sum",
+      "slug": "two-sum",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1763903636,
+      "timestamp_utc": "2025-11-23 13:13:56 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1837672962",
+      "title": "Maximum Subarray",
+      "slug": "maximum-subarray",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1763903965,
+      "timestamp_utc": "2025-11-23 13:19:25 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1837673107",
+      "title": "Maximum Subarray",
+      "slug": "maximum-subarray",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1763903978,
+      "timestamp_utc": "2025-11-23 13:19:38 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1837673634",
+      "title": "Maximum Subarray",
+      "slug": "maximum-subarray",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1763904025,
+      "timestamp_utc": "2025-11-23 13:20:25 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1837677347",
+      "title": "Move Zeroes",
+      "slug": "move-zeroes",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1763904355,
+      "timestamp_utc": "2025-11-23 13:25:55 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1837686337",
+      "title": "Product of Array Except Self",
+      "slug": "product-of-array-except-self",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1763905127,
+      "timestamp_utc": "2025-11-23 13:38:47 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1837687354",
+      "title": "Product of Array Except Self",
+      "slug": "product-of-array-except-self",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1763905209,
+      "timestamp_utc": "2025-11-23 13:40:09 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1837707740",
+      "title": "Valid Anagram",
+      "slug": "valid-anagram",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1763906915,
+      "timestamp_utc": "2025-11-23 14:08:35 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1846418526",
+      "title": "Product of Array Except Self",
+      "slug": "product-of-array-except-self",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1764819966,
+      "timestamp_utc": "2025-12-04 03:46:06 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1846420239",
+      "title": "Merge Sorted Array",
+      "slug": "merge-sorted-array",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1764820142,
+      "timestamp_utc": "2025-12-04 03:49:02 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1846423329",
+      "title": "Merge Sorted Array",
+      "slug": "merge-sorted-array",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1764820483,
+      "timestamp_utc": "2025-12-04 03:54:43 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1846423934",
+      "title": "Merge Sorted Array",
+      "slug": "merge-sorted-array",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1764820545,
+      "timestamp_utc": "2025-12-04 03:55:45 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1846425305",
+      "title": "Contains Duplicate",
+      "slug": "contains-duplicate",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1764820684,
+      "timestamp_utc": "2025-12-04 03:58:04 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1846436730",
+      "title": "Intersection of Two Arrays",
+      "slug": "intersection-of-two-arrays",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1764821821,
+      "timestamp_utc": "2025-12-04 04:17:01 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1846445960",
+      "title": "Longest Consecutive Sequence",
+      "slug": "longest-consecutive-sequence",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1764822686,
+      "timestamp_utc": "2025-12-04 04:31:26 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1846460871",
+      "title": "Running Sum of 1d Array",
+      "slug": "running-sum-of-1d-array",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1764824001,
+      "timestamp_utc": "2025-12-04 04:53:21 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1846473826",
+      "title": "Trapping Rain Water",
+      "slug": "trapping-rain-water",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1764825121,
+      "timestamp_utc": "2025-12-04 05:12:01 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1846477906",
+      "title": "Valid Anagram",
+      "slug": "valid-anagram",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1764825462,
+      "timestamp_utc": "2025-12-04 05:17:42 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1846479431",
+      "title": "Group Anagrams",
+      "slug": "group-anagrams",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1764825595,
+      "timestamp_utc": "2025-12-04 05:19:55 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1846541145",
+      "title": "Group Anagrams",
+      "slug": "group-anagrams",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1764830621,
+      "timestamp_utc": "2025-12-04 06:43:41 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1846544966",
+      "title": "Reverse Words in a String",
+      "slug": "reverse-words-in-a-string",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1764830931,
+      "timestamp_utc": "2025-12-04 06:48:51 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1846548384",
+      "title": "Reverse Words in a String",
+      "slug": "reverse-words-in-a-string",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1764831201,
+      "timestamp_utc": "2025-12-04 06:53:21 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1846548527",
+      "title": "Reverse Words in a String",
+      "slug": "reverse-words-in-a-string",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1764831210,
+      "timestamp_utc": "2025-12-04 06:53:30 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1846560615",
+      "title": "Longest Palindromic Substring",
+      "slug": "longest-palindromic-substring",
+      "status_display": "Wrong Answer",
+      "listed_lang": "java",
+      "timestamp": 1764832208,
+      "timestamp_utc": "2025-12-04 07:10:08 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1867230195",
+      "title": "Longest Common Prefix",
+      "slug": "longest-common-prefix",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1766895247,
+      "timestamp_utc": "2025-12-28 04:14:07 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1867239982",
+      "title": "Longest Common Prefix",
+      "slug": "longest-common-prefix",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1766896188,
+      "timestamp_utc": "2025-12-28 04:29:48 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1867416530",
+      "title": "Palindromic Substrings",
+      "slug": "palindromic-substrings",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1766911800,
+      "timestamp_utc": "2025-12-28 08:50:00 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1867424049",
+      "title": "Longest Palindromic Substring",
+      "slug": "longest-palindromic-substring",
+      "status_display": "Wrong Answer",
+      "listed_lang": "java",
+      "timestamp": 1766912556,
+      "timestamp_utc": "2025-12-28 09:02:36 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1867424567",
+      "title": "Longest Palindromic Substring",
+      "slug": "longest-palindromic-substring",
+      "status_display": "Wrong Answer",
+      "listed_lang": "java",
+      "timestamp": 1766912609,
+      "timestamp_utc": "2025-12-28 09:03:29 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1867424993",
+      "title": "Longest Palindromic Substring",
+      "slug": "longest-palindromic-substring",
+      "status_display": "Wrong Answer",
+      "listed_lang": "java",
+      "timestamp": 1766912653,
+      "timestamp_utc": "2025-12-28 09:04:13 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1867426987",
+      "title": "Longest Palindromic Substring",
+      "slug": "longest-palindromic-substring",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1766912856,
+      "timestamp_utc": "2025-12-28 09:07:36 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1867431808",
+      "title": "Longest Palindromic Substring",
+      "slug": "longest-palindromic-substring",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1766913324,
+      "timestamp_utc": "2025-12-28 09:15:24 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1867432487",
+      "title": "Longest Palindromic Substring",
+      "slug": "longest-palindromic-substring",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1766913391,
+      "timestamp_utc": "2025-12-28 09:16:31 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1867437985",
+      "title": "Longest Palindromic Substring",
+      "slug": "longest-palindromic-substring",
+      "status_display": "Runtime Error",
+      "listed_lang": "java",
+      "timestamp": 1766913931,
+      "timestamp_utc": "2025-12-28 09:25:31 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1867438498",
+      "title": "Longest Palindromic Substring",
+      "slug": "longest-palindromic-substring",
+      "status_display": "Runtime Error",
+      "listed_lang": "java",
+      "timestamp": 1766913977,
+      "timestamp_utc": "2025-12-28 09:26:17 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1867438673",
+      "title": "Longest Palindromic Substring",
+      "slug": "longest-palindromic-substring",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1766913995,
+      "timestamp_utc": "2025-12-28 09:26:35 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1868009045",
+      "title": "Binary Search",
+      "slug": "binary-search",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1766975861,
+      "timestamp_utc": "2025-12-29 02:37:41 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1868049317",
+      "title": "Find First and Last Position of Element in Sorted Array",
+      "slug": "find-first-and-last-position-of-element-in-sorted-array",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1766981434,
+      "timestamp_utc": "2025-12-29 04:10:34 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1868049449",
+      "title": "Find First and Last Position of Element in Sorted Array",
+      "slug": "find-first-and-last-position-of-element-in-sorted-array",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1766981448,
+      "timestamp_utc": "2025-12-29 04:10:48 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1868058501",
+      "title": "Merge Sorted Array",
+      "slug": "merge-sorted-array",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1766982322,
+      "timestamp_utc": "2025-12-29 04:25:22 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1868238047",
+      "title": "Sort Colors",
+      "slug": "sort-colors",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1766997069,
+      "timestamp_utc": "2025-12-29 08:31:09 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1868240750",
+      "title": "Majority Element",
+      "slug": "majority-element",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1766997307,
+      "timestamp_utc": "2025-12-29 08:35:07 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1868413821",
+      "title": "Search a 2D Matrix",
+      "slug": "search-a-2d-matrix",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1767012200,
+      "timestamp_utc": "2025-12-29 12:43:20 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1868429285",
+      "title": "Find Minimum in Rotated Sorted Array",
+      "slug": "find-minimum-in-rotated-sorted-array",
+      "status_display": "Compile Error",
+      "listed_lang": "java",
+      "timestamp": 1767013478,
+      "timestamp_utc": "2025-12-29 13:04:38 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1868434828",
+      "title": "Find Minimum in Rotated Sorted Array",
+      "slug": "find-minimum-in-rotated-sorted-array",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1767013933,
+      "timestamp_utc": "2025-12-29 13:12:13 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1868469075",
+      "title": "Largest Number",
+      "slug": "largest-number",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1767016482,
+      "timestamp_utc": "2025-12-29 13:54:42 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1870277807",
+      "title": "Largest Number",
+      "slug": "largest-number",
+      "status_display": "Wrong Answer",
+      "listed_lang": "java",
+      "timestamp": 1767185782,
+      "timestamp_utc": "2025-12-31 12:56:22 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1870278306",
+      "title": "Largest Number",
+      "slug": "largest-number",
+      "status_display": "Wrong Answer",
+      "listed_lang": "java",
+      "timestamp": 1767185836,
+      "timestamp_utc": "2025-12-31 12:57:16 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1870278537",
+      "title": "Largest Number",
+      "slug": "largest-number",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1767185861,
+      "timestamp_utc": "2025-12-31 12:57:41 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1870280541",
+      "title": "Largest Number",
+      "slug": "largest-number",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1767186075,
+      "timestamp_utc": "2025-12-31 13:01:15 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1870283364",
+      "title": "Largest Number",
+      "slug": "largest-number",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1767186357,
+      "timestamp_utc": "2025-12-31 13:05:57 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1871011804",
+      "title": "Valid Palindrome",
+      "slug": "valid-palindrome",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1767272716,
+      "timestamp_utc": "2026-01-01 13:05:16 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1871011895",
+      "title": "Valid Palindrome",
+      "slug": "valid-palindrome",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1767272724,
+      "timestamp_utc": "2026-01-01 13:05:24 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1871014457",
+      "title": "Valid Palindrome",
+      "slug": "valid-palindrome",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1767272927,
+      "timestamp_utc": "2026-01-01 13:08:47 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1871022512",
+      "title": "Valid Palindrome",
+      "slug": "valid-palindrome",
+      "status_display": "Wrong Answer",
+      "listed_lang": "java",
+      "timestamp": 1767273555,
+      "timestamp_utc": "2026-01-01 13:19:15 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1871024307",
+      "title": "Valid Palindrome",
+      "slug": "valid-palindrome",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1767273693,
+      "timestamp_utc": "2026-01-01 13:21:33 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1871033622",
+      "title": "Is Subsequence",
+      "slug": "is-subsequence",
+      "status_display": "Runtime Error",
+      "listed_lang": "java",
+      "timestamp": 1767274384,
+      "timestamp_utc": "2026-01-01 13:33:04 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1871034316",
+      "title": "Is Subsequence",
+      "slug": "is-subsequence",
+      "status_display": "Wrong Answer",
+      "listed_lang": "java",
+      "timestamp": 1767274435,
+      "timestamp_utc": "2026-01-01 13:33:55 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1871034766",
+      "title": "Is Subsequence",
+      "slug": "is-subsequence",
+      "status_display": "Wrong Answer",
+      "listed_lang": "java",
+      "timestamp": 1767274468,
+      "timestamp_utc": "2026-01-01 13:34:28 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1871037747",
+      "title": "Is Subsequence",
+      "slug": "is-subsequence",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1767274683,
+      "timestamp_utc": "2026-01-01 13:38:03 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1871157145",
+      "title": "Container With Most Water",
+      "slug": "container-with-most-water",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1767283018,
+      "timestamp_utc": "2026-01-01 15:56:58 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1871160058",
+      "title": "Container With Most Water",
+      "slug": "container-with-most-water",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1767283202,
+      "timestamp_utc": "2026-01-01 16:00:02 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1871162085",
+      "title": "Container With Most Water",
+      "slug": "container-with-most-water",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1767283328,
+      "timestamp_utc": "2026-01-01 16:02:08 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1871171320",
+      "title": "Two Sum II - Input Array Is Sorted",
+      "slug": "two-sum-ii-input-array-is-sorted",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1767283915,
+      "timestamp_utc": "2026-01-01 16:11:55 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1871175942",
+      "title": "3Sum",
+      "slug": "3sum",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1767284203,
+      "timestamp_utc": "2026-01-01 16:16:43 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1871194691",
+      "title": "Remove Duplicates from Sorted Array II",
+      "slug": "remove-duplicates-from-sorted-array-ii",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1767285331,
+      "timestamp_utc": "2026-01-01 16:35:31 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1895264671",
+      "title": "Middle of the Linked List",
+      "slug": "middle-of-the-linked-list",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1769254274,
+      "timestamp_utc": "2026-01-24 11:31:14 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1895268568",
+      "title": "Reverse Linked List",
+      "slug": "reverse-linked-list",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1769254582,
+      "timestamp_utc": "2026-01-24 11:36:22 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1895269855",
+      "title": "Reverse Linked List",
+      "slug": "reverse-linked-list",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1769254682,
+      "timestamp_utc": "2026-01-24 11:38:02 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1895270972",
+      "title": "Linked List Cycle",
+      "slug": "linked-list-cycle",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1769254770,
+      "timestamp_utc": "2026-01-24 11:39:30 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1895348093",
+      "title": "Linked List Cycle II",
+      "slug": "linked-list-cycle-ii",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1769260840,
+      "timestamp_utc": "2026-01-24 13:20:40 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1895357372",
+      "title": "Linked List Cycle II",
+      "slug": "linked-list-cycle-ii",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1769261489,
+      "timestamp_utc": "2026-01-24 13:31:29 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1895952756",
+      "title": "Linked List Cycle II",
+      "slug": "linked-list-cycle-ii",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1769310206,
+      "timestamp_utc": "2026-01-25 03:03:26 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1895979621",
+      "title": "Palindrome Linked List",
+      "slug": "palindrome-linked-list",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1769311098,
+      "timestamp_utc": "2026-01-25 03:18:18 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1896046150",
+      "title": "Odd Even Linked List",
+      "slug": "odd-even-linked-list",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1769313864,
+      "timestamp_utc": "2026-01-25 04:04:24 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1896066432",
+      "title": "Remove Nth Node From End of List",
+      "slug": "remove-nth-node-from-end-of-list",
+      "status_display": "Wrong Answer",
+      "listed_lang": "java",
+      "timestamp": 1769315534,
+      "timestamp_utc": "2026-01-25 04:32:14 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1896067380",
+      "title": "Remove Nth Node From End of List",
+      "slug": "remove-nth-node-from-end-of-list",
+      "status_display": "Wrong Answer",
+      "listed_lang": "java",
+      "timestamp": 1769315612,
+      "timestamp_utc": "2026-01-25 04:33:32 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1896068209",
+      "title": "Remove Nth Node From End of List",
+      "slug": "remove-nth-node-from-end-of-list",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1769315678,
+      "timestamp_utc": "2026-01-25 04:34:38 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1896069700",
+      "title": "Remove Nth Node From End of List",
+      "slug": "remove-nth-node-from-end-of-list",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1769315794,
+      "timestamp_utc": "2026-01-25 04:36:34 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1896077780",
+      "title": "Delete the Middle Node of a Linked List",
+      "slug": "delete-the-middle-node-of-a-linked-list",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1769316448,
+      "timestamp_utc": "2026-01-25 04:47:28 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1896080538",
+      "title": "Delete the Middle Node of a Linked List",
+      "slug": "delete-the-middle-node-of-a-linked-list",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1769316661,
+      "timestamp_utc": "2026-01-25 04:51:01 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1897271677",
+      "title": "Reverse Nodes in k-Group",
+      "slug": "reverse-nodes-in-k-group",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1769410262,
+      "timestamp_utc": "2026-01-26 06:51:02 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1897287567",
+      "title": "Rotate List",
+      "slug": "rotate-list",
+      "status_display": "Runtime Error",
+      "listed_lang": "java",
+      "timestamp": 1769411182,
+      "timestamp_utc": "2026-01-26 07:06:22 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1897288450",
+      "title": "Rotate List",
+      "slug": "rotate-list",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1769411233,
+      "timestamp_utc": "2026-01-26 07:07:13 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1897290529",
+      "title": "Rotate List",
+      "slug": "rotate-list",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1769411351,
+      "timestamp_utc": "2026-01-26 07:09:11 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1897652352",
+      "title": "Search Insert Position",
+      "slug": "search-insert-position",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1769435308,
+      "timestamp_utc": "2026-01-26 13:48:28 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1897655735",
+      "title": "Find First and Last Position of Element in Sorted Array",
+      "slug": "find-first-and-last-position-of-element-in-sorted-array",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1769435494,
+      "timestamp_utc": "2026-01-26 13:51:34 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1898621559",
+      "title": "Find Peak Element",
+      "slug": "find-peak-element",
+      "status_display": "Wrong Answer",
+      "listed_lang": "java",
+      "timestamp": 1769521128,
+      "timestamp_utc": "2026-01-27 13:38:48 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1898622002",
+      "title": "Find Peak Element",
+      "slug": "find-peak-element",
+      "status_display": "Wrong Answer",
+      "listed_lang": "java",
+      "timestamp": 1769521153,
+      "timestamp_utc": "2026-01-27 13:39:13 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1898622262",
+      "title": "Find Peak Element",
+      "slug": "find-peak-element",
+      "status_display": "Wrong Answer",
+      "listed_lang": "java",
+      "timestamp": 1769521166,
+      "timestamp_utc": "2026-01-27 13:39:26 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1898622990",
+      "title": "Find Peak Element",
+      "slug": "find-peak-element",
+      "status_display": "Wrong Answer",
+      "listed_lang": "java",
+      "timestamp": 1769521208,
+      "timestamp_utc": "2026-01-27 13:40:08 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1898625345",
+      "title": "Find Peak Element",
+      "slug": "find-peak-element",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1769521335,
+      "timestamp_utc": "2026-01-27 13:42:15 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1898628682",
+      "title": "Find Peak Element",
+      "slug": "find-peak-element",
+      "status_display": "Wrong Answer",
+      "listed_lang": "java",
+      "timestamp": 1769521517,
+      "timestamp_utc": "2026-01-27 13:45:17 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1898630006",
+      "title": "Find Peak Element",
+      "slug": "find-peak-element",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1769521594,
+      "timestamp_utc": "2026-01-27 13:46:34 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1898641647",
+      "title": "Single Element in a Sorted Array",
+      "slug": "single-element-in-a-sorted-array",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1769522214,
+      "timestamp_utc": "2026-01-27 13:56:54 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1898642465",
+      "title": "Find Minimum in Rotated Sorted Array",
+      "slug": "find-minimum-in-rotated-sorted-array",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1769522258,
+      "timestamp_utc": "2026-01-27 13:57:38 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1900720336",
+      "title": "Frequency of the Most Frequent Element",
+      "slug": "frequency-of-the-most-frequent-element",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1769676912,
+      "timestamp_utc": "2026-01-29 08:55:12 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1900780995",
+      "title": "Intersection of Two Linked Lists",
+      "slug": "intersection-of-two-linked-lists",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1769680861,
+      "timestamp_utc": "2026-01-29 10:01:01 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1900997428",
+      "title": "Reverse Nodes in k-Group",
+      "slug": "reverse-nodes-in-k-group",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1769696676,
+      "timestamp_utc": "2026-01-29 14:24:36 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1902059148",
+      "title": "Factorial Trailing Zeroes",
+      "slug": "factorial-trailing-zeroes",
+      "status_display": "Wrong Answer",
+      "listed_lang": "java",
+      "timestamp": 1769782920,
+      "timestamp_utc": "2026-01-30 14:22:00 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1912061541",
+      "title": "Minimum Bit Flips to Convert Number",
+      "slug": "minimum-bit-flips-to-convert-number",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1770527659,
+      "timestamp_utc": "2026-02-08 05:14:19 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1912062296",
+      "title": "Minimum Bit Flips to Convert Number",
+      "slug": "minimum-bit-flips-to-convert-number",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1770527716,
+      "timestamp_utc": "2026-02-08 05:15:16 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1912063804",
+      "title": "Minimum Bit Flips to Convert Number",
+      "slug": "minimum-bit-flips-to-convert-number",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1770527825,
+      "timestamp_utc": "2026-02-08 05:17:05 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1912064337",
+      "title": "Minimum Bit Flips to Convert Number",
+      "slug": "minimum-bit-flips-to-convert-number",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1770527864,
+      "timestamp_utc": "2026-02-08 05:17:44 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1912065976",
+      "title": "Minimum Bit Flips to Convert Number",
+      "slug": "minimum-bit-flips-to-convert-number",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1770527986,
+      "timestamp_utc": "2026-02-08 05:19:46 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1912066056",
+      "title": "Minimum Bit Flips to Convert Number",
+      "slug": "minimum-bit-flips-to-convert-number",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1770527991,
+      "timestamp_utc": "2026-02-08 05:19:51 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1912066186",
+      "title": "Minimum Bit Flips to Convert Number",
+      "slug": "minimum-bit-flips-to-convert-number",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1770528000,
+      "timestamp_utc": "2026-02-08 05:20:00 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1912066655",
+      "title": "Single Number",
+      "slug": "single-number",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1770528033,
+      "timestamp_utc": "2026-02-08 05:20:33 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1912067058",
+      "title": "Single Number",
+      "slug": "single-number",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1770528065,
+      "timestamp_utc": "2026-02-08 05:21:05 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1912110143",
+      "title": "Subsets",
+      "slug": "subsets",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1770530936,
+      "timestamp_utc": "2026-02-08 06:08:56 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1912141198",
+      "title": "Subsets",
+      "slug": "subsets",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1770532893,
+      "timestamp_utc": "2026-02-08 06:41:33 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1912158314",
+      "title": "Single Number II",
+      "slug": "single-number-ii",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1770534007,
+      "timestamp_utc": "2026-02-08 07:00:07 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1912159689",
+      "title": "Single Number II",
+      "slug": "single-number-ii",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1770534103,
+      "timestamp_utc": "2026-02-08 07:01:43 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1912160083",
+      "title": "Single Number II",
+      "slug": "single-number-ii",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1770534130,
+      "timestamp_utc": "2026-02-08 07:02:10 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1912179700",
+      "title": "Single Number II",
+      "slug": "single-number-ii",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1770535511,
+      "timestamp_utc": "2026-02-08 07:25:11 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1912179820",
+      "title": "Single Number II",
+      "slug": "single-number-ii",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1770535520,
+      "timestamp_utc": "2026-02-08 07:25:20 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1912179933",
+      "title": "Single Number II",
+      "slug": "single-number-ii",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1770535529,
+      "timestamp_utc": "2026-02-08 07:25:29 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1912181123",
+      "title": "Single Number II",
+      "slug": "single-number-ii",
+      "status_display": "Wrong Answer",
+      "listed_lang": "java",
+      "timestamp": 1770535615,
+      "timestamp_utc": "2026-02-08 07:26:55 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1912181651",
+      "title": "Single Number II",
+      "slug": "single-number-ii",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1770535653,
+      "timestamp_utc": "2026-02-08 07:27:33 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1912187534",
+      "title": "Single Number II",
+      "slug": "single-number-ii",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1770536082,
+      "timestamp_utc": "2026-02-08 07:34:42 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1912202112",
+      "title": "Single Number III",
+      "slug": "single-number-iii",
+      "status_display": "Wrong Answer",
+      "listed_lang": "java",
+      "timestamp": 1770537218,
+      "timestamp_utc": "2026-02-08 07:53:38 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1912202883",
+      "title": "Single Number III",
+      "slug": "single-number-iii",
+      "status_display": "Wrong Answer",
+      "listed_lang": "java",
+      "timestamp": 1770537280,
+      "timestamp_utc": "2026-02-08 07:54:40 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1912204340",
+      "title": "Single Number III",
+      "slug": "single-number-iii",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1770537390,
+      "timestamp_utc": "2026-02-08 07:56:30 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1912261625",
+      "title": "Single Number III",
+      "slug": "single-number-iii",
+      "status_display": "Wrong Answer",
+      "listed_lang": "java",
+      "timestamp": 1770542187,
+      "timestamp_utc": "2026-02-08 09:16:27 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1912262280",
+      "title": "Single Number III",
+      "slug": "single-number-iii",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1770542242,
+      "timestamp_utc": "2026-02-08 09:17:22 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1912262733",
+      "title": "Single Number III",
+      "slug": "single-number-iii",
+      "status_display": "Wrong Answer",
+      "listed_lang": "java",
+      "timestamp": 1770542281,
+      "timestamp_utc": "2026-02-08 09:18:01 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1912262915",
+      "title": "Single Number III",
+      "slug": "single-number-iii",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1770542295,
+      "timestamp_utc": "2026-02-08 09:18:15 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1912263975",
+      "title": "Single Number III",
+      "slug": "single-number-iii",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1770542383,
+      "timestamp_utc": "2026-02-08 09:19:43 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1912264276",
+      "title": "Single Number III",
+      "slug": "single-number-iii",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1770542409,
+      "timestamp_utc": "2026-02-08 09:20:09 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1912313520",
+      "title": "Divide Two Integers",
+      "slug": "divide-two-integers",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1770546302,
+      "timestamp_utc": "2026-02-08 10:25:02 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1912325188",
+      "title": "Minimum Bit Flips to Convert Number",
+      "slug": "minimum-bit-flips-to-convert-number",
+      "status_display": "Compile Error",
+      "listed_lang": "java",
+      "timestamp": 1770547204,
+      "timestamp_utc": "2026-02-08 10:40:04 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1912325294",
+      "title": "Minimum Bit Flips to Convert Number",
+      "slug": "minimum-bit-flips-to-convert-number",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1770547211,
+      "timestamp_utc": "2026-02-08 10:40:11 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1912527584",
+      "title": "Single Number II",
+      "slug": "single-number-ii",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1770561987,
+      "timestamp_utc": "2026-02-08 14:46:27 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1912527679",
+      "title": "Single Number II",
+      "slug": "single-number-ii",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1770561994,
+      "timestamp_utc": "2026-02-08 14:46:34 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1912527759",
+      "title": "Single Number II",
+      "slug": "single-number-ii",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1770562001,
+      "timestamp_utc": "2026-02-08 14:46:41 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1912541844",
+      "title": "Search a 2D Matrix",
+      "slug": "search-a-2d-matrix",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1770562937,
+      "timestamp_utc": "2026-02-08 15:02:17 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1912826911",
+      "title": "Next Greater Element I",
+      "slug": "next-greater-element-i",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1770581128,
+      "timestamp_utc": "2026-02-08 20:05:28 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1912827072",
+      "title": "Next Greater Element I",
+      "slug": "next-greater-element-i",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1770581142,
+      "timestamp_utc": "2026-02-08 20:05:42 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1912964755",
+      "title": "Next Greater Element I",
+      "slug": "next-greater-element-i",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1770601804,
+      "timestamp_utc": "2026-02-09 01:50:04 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1912979508",
+      "title": "Next Greater Element II",
+      "slug": "next-greater-element-ii",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1770603996,
+      "timestamp_utc": "2026-02-09 02:26:36 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1912979566",
+      "title": "Next Greater Element II",
+      "slug": "next-greater-element-ii",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1770604004,
+      "timestamp_utc": "2026-02-09 02:26:44 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1913004448",
+      "title": "Next Greater Element II",
+      "slug": "next-greater-element-ii",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1770607242,
+      "timestamp_utc": "2026-02-09 03:20:42 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1913005714",
+      "title": "Next Greater Element II",
+      "slug": "next-greater-element-ii",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1770607388,
+      "timestamp_utc": "2026-02-09 03:23:08 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1913005795",
+      "title": "Next Greater Element II",
+      "slug": "next-greater-element-ii",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1770607398,
+      "timestamp_utc": "2026-02-09 03:23:18 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1913012814",
+      "title": "Minimum Add to Make Parentheses Valid",
+      "slug": "minimum-add-to-make-parentheses-valid",
+      "status_display": "Wrong Answer",
+      "listed_lang": "java",
+      "timestamp": 1770608158,
+      "timestamp_utc": "2026-02-09 03:35:58 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1913103240",
+      "title": "Valid Parentheses",
+      "slug": "valid-parentheses",
+      "status_display": "Wrong Answer",
+      "listed_lang": "java",
+      "timestamp": 1770614800,
+      "timestamp_utc": "2026-02-09 05:26:40 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1913104395",
+      "title": "Valid Parentheses",
+      "slug": "valid-parentheses",
+      "status_display": "Wrong Answer",
+      "listed_lang": "java",
+      "timestamp": 1770614874,
+      "timestamp_utc": "2026-02-09 05:27:54 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1916459773",
+      "title": "Subarrays with K Different Integers",
+      "slug": "subarrays-with-k-different-integers",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1770866591,
+      "timestamp_utc": "2026-02-12 03:23:11 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1916460075",
+      "title": "Subarrays with K Different Integers",
+      "slug": "subarrays-with-k-different-integers",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1770866620,
+      "timestamp_utc": "2026-02-12 03:23:40 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1916473343",
+      "title": "Subarrays with K Different Integers",
+      "slug": "subarrays-with-k-different-integers",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1770867873,
+      "timestamp_utc": "2026-02-12 03:44:33 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1916473807",
+      "title": "Subarrays with K Different Integers",
+      "slug": "subarrays-with-k-different-integers",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1770867916,
+      "timestamp_utc": "2026-02-12 03:45:16 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1916476969",
+      "title": "Subarrays with K Different Integers",
+      "slug": "subarrays-with-k-different-integers",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1770868177,
+      "timestamp_utc": "2026-02-12 03:49:37 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1916487724",
+      "title": "Minimum Window Substring",
+      "slug": "minimum-window-substring",
+      "status_display": "Time Limit Exceeded",
+      "listed_lang": "java",
+      "timestamp": 1770869008,
+      "timestamp_utc": "2026-02-12 04:03:28 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1916515510",
+      "title": "Minimum Window Substring",
+      "slug": "minimum-window-substring",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1770870892,
+      "timestamp_utc": "2026-02-12 04:34:52 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1916537729",
+      "title": "Longest Balanced Substring I",
+      "slug": "longest-balanced-substring-i",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1770872273,
+      "timestamp_utc": "2026-02-12 04:57:53 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1916537901",
+      "title": "Longest Balanced Substring I",
+      "slug": "longest-balanced-substring-i",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1770872285,
+      "timestamp_utc": "2026-02-12 04:58:05 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1916539235",
+      "title": "Longest Balanced Substring I",
+      "slug": "longest-balanced-substring-i",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1770872367,
+      "timestamp_utc": "2026-02-12 04:59:27 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1916539625",
+      "title": "Longest Balanced Substring I",
+      "slug": "longest-balanced-substring-i",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1770872390,
+      "timestamp_utc": "2026-02-12 04:59:50 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1916540179",
+      "title": "Longest Balanced Substring I",
+      "slug": "longest-balanced-substring-i",
+      "status_display": "Compile Error",
+      "listed_lang": "cpp",
+      "timestamp": 1770872426,
+      "timestamp_utc": "2026-02-12 05:00:26 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1916540504",
+      "title": "Longest Balanced Substring I",
+      "slug": "longest-balanced-substring-i",
+      "status_display": "Accepted",
+      "listed_lang": "cpp",
+      "timestamp": 1770872444,
+      "timestamp_utc": "2026-02-12 05:00:44 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1916541373",
+      "title": "Longest Balanced Substring I",
+      "slug": "longest-balanced-substring-i",
+      "status_display": "Accepted",
+      "listed_lang": "cpp",
+      "timestamp": 1770872496,
+      "timestamp_utc": "2026-02-12 05:01:36 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1916542035",
+      "title": "Longest Balanced Substring I",
+      "slug": "longest-balanced-substring-i",
+      "status_display": "Accepted",
+      "listed_lang": "cpp",
+      "timestamp": 1770872538,
+      "timestamp_utc": "2026-02-12 05:02:18 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1916543857",
+      "title": "Longest Balanced Substring I",
+      "slug": "longest-balanced-substring-i",
+      "status_display": "Accepted",
+      "listed_lang": "cpp",
+      "timestamp": 1770872648,
+      "timestamp_utc": "2026-02-12 05:04:08 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1916544132",
+      "title": "Longest Balanced Substring I",
+      "slug": "longest-balanced-substring-i",
+      "status_display": "Accepted",
+      "listed_lang": "cpp",
+      "timestamp": 1770872664,
+      "timestamp_utc": "2026-02-12 05:04:24 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1916544240",
+      "title": "Longest Balanced Substring I",
+      "slug": "longest-balanced-substring-i",
+      "status_display": "Accepted",
+      "listed_lang": "cpp",
+      "timestamp": 1770872671,
+      "timestamp_utc": "2026-02-12 05:04:31 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1916544817",
+      "title": "Longest Balanced Substring I",
+      "slug": "longest-balanced-substring-i",
+      "status_display": "Accepted",
+      "listed_lang": "cpp",
+      "timestamp": 1770872706,
+      "timestamp_utc": "2026-02-12 05:05:06 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1916544921",
+      "title": "Longest Balanced Substring I",
+      "slug": "longest-balanced-substring-i",
+      "status_display": "Accepted",
+      "listed_lang": "cpp",
+      "timestamp": 1770872712,
+      "timestamp_utc": "2026-02-12 05:05:12 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1916545021",
+      "title": "Longest Balanced Substring I",
+      "slug": "longest-balanced-substring-i",
+      "status_display": "Accepted",
+      "listed_lang": "cpp",
+      "timestamp": 1770872718,
+      "timestamp_utc": "2026-02-12 05:05:18 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1916550071",
+      "title": "Longest Balanced Substring I",
+      "slug": "longest-balanced-substring-i",
+      "status_display": "Accepted",
+      "listed_lang": "cpp",
+      "timestamp": 1770873014,
+      "timestamp_utc": "2026-02-12 05:10:14 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1916550194",
+      "title": "Longest Balanced Substring I",
+      "slug": "longest-balanced-substring-i",
+      "status_display": "Accepted",
+      "listed_lang": "cpp",
+      "timestamp": 1770873022,
+      "timestamp_utc": "2026-02-12 05:10:22 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1916550331",
+      "title": "Longest Balanced Substring I",
+      "slug": "longest-balanced-substring-i",
+      "status_display": "Accepted",
+      "listed_lang": "cpp",
+      "timestamp": 1770873030,
+      "timestamp_utc": "2026-02-12 05:10:30 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1916552909",
+      "title": "Longest Balanced Substring I",
+      "slug": "longest-balanced-substring-i",
+      "status_display": "Accepted",
+      "listed_lang": "cpp",
+      "timestamp": 1770873181,
+      "timestamp_utc": "2026-02-12 05:13:01 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1916553024",
+      "title": "Longest Balanced Substring I",
+      "slug": "longest-balanced-substring-i",
+      "status_display": "Accepted",
+      "listed_lang": "cpp",
+      "timestamp": 1770873188,
+      "timestamp_utc": "2026-02-12 05:13:08 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1916554484",
+      "title": "Longest Balanced Substring I",
+      "slug": "longest-balanced-substring-i",
+      "status_display": "Accepted",
+      "listed_lang": "cpp",
+      "timestamp": 1770873275,
+      "timestamp_utc": "2026-02-12 05:14:35 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1916554575",
+      "title": "Longest Balanced Substring I",
+      "slug": "longest-balanced-substring-i",
+      "status_display": "Accepted",
+      "listed_lang": "cpp",
+      "timestamp": 1770873280,
+      "timestamp_utc": "2026-02-12 05:14:40 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1916554713",
+      "title": "Longest Balanced Substring I",
+      "slug": "longest-balanced-substring-i",
+      "status_display": "Accepted",
+      "listed_lang": "cpp",
+      "timestamp": 1770873288,
+      "timestamp_utc": "2026-02-12 05:14:48 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1916558345",
+      "title": "Longest Balanced Substring I",
+      "slug": "longest-balanced-substring-i",
+      "status_display": "Accepted",
+      "listed_lang": "cpp",
+      "timestamp": 1770873503,
+      "timestamp_utc": "2026-02-12 05:18:23 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1916558428",
+      "title": "Longest Balanced Substring I",
+      "slug": "longest-balanced-substring-i",
+      "status_display": "Accepted",
+      "listed_lang": "cpp",
+      "timestamp": 1770873509,
+      "timestamp_utc": "2026-02-12 05:18:29 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1916558605",
+      "title": "Longest Balanced Substring I",
+      "slug": "longest-balanced-substring-i",
+      "status_display": "Accepted",
+      "listed_lang": "cpp",
+      "timestamp": 1770873519,
+      "timestamp_utc": "2026-02-12 05:18:39 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1916558796",
+      "title": "Longest Balanced Substring I",
+      "slug": "longest-balanced-substring-i",
+      "status_display": "Accepted",
+      "listed_lang": "cpp",
+      "timestamp": 1770873530,
+      "timestamp_utc": "2026-02-12 05:18:50 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1916558928",
+      "title": "Longest Balanced Substring I",
+      "slug": "longest-balanced-substring-i",
+      "status_display": "Accepted",
+      "listed_lang": "cpp",
+      "timestamp": 1770873538,
+      "timestamp_utc": "2026-02-12 05:18:58 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1916560060",
+      "title": "Longest Balanced Substring I",
+      "slug": "longest-balanced-substring-i",
+      "status_display": "Accepted",
+      "listed_lang": "cpp",
+      "timestamp": 1770873607,
+      "timestamp_utc": "2026-02-12 05:20:07 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1916560160",
+      "title": "Longest Balanced Substring I",
+      "slug": "longest-balanced-substring-i",
+      "status_display": "Accepted",
+      "listed_lang": "cpp",
+      "timestamp": 1770873613,
+      "timestamp_utc": "2026-02-12 05:20:13 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1916560265",
+      "title": "Longest Balanced Substring I",
+      "slug": "longest-balanced-substring-i",
+      "status_display": "Accepted",
+      "listed_lang": "cpp",
+      "timestamp": 1770873619,
+      "timestamp_utc": "2026-02-12 05:20:19 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1916560418",
+      "title": "Longest Balanced Substring I",
+      "slug": "longest-balanced-substring-i",
+      "status_display": "Accepted",
+      "listed_lang": "cpp",
+      "timestamp": 1770873628,
+      "timestamp_utc": "2026-02-12 05:20:28 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1916560581",
+      "title": "Longest Balanced Substring I",
+      "slug": "longest-balanced-substring-i",
+      "status_display": "Accepted",
+      "listed_lang": "cpp",
+      "timestamp": 1770873639,
+      "timestamp_utc": "2026-02-12 05:20:39 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1916560793",
+      "title": "Longest Balanced Substring I",
+      "slug": "longest-balanced-substring-i",
+      "status_display": "Accepted",
+      "listed_lang": "cpp",
+      "timestamp": 1770873652,
+      "timestamp_utc": "2026-02-12 05:20:52 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1916560967",
+      "title": "Longest Balanced Substring I",
+      "slug": "longest-balanced-substring-i",
+      "status_display": "Accepted",
+      "listed_lang": "cpp",
+      "timestamp": 1770873664,
+      "timestamp_utc": "2026-02-12 05:21:04 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1916561100",
+      "title": "Longest Balanced Substring I",
+      "slug": "longest-balanced-substring-i",
+      "status_display": "Accepted",
+      "listed_lang": "cpp",
+      "timestamp": 1770873672,
+      "timestamp_utc": "2026-02-12 05:21:12 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1916561726",
+      "title": "Longest Balanced Substring I",
+      "slug": "longest-balanced-substring-i",
+      "status_display": "Accepted",
+      "listed_lang": "cpp",
+      "timestamp": 1770873711,
+      "timestamp_utc": "2026-02-12 05:21:51 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1916561947",
+      "title": "Longest Balanced Substring I",
+      "slug": "longest-balanced-substring-i",
+      "status_display": "Accepted",
+      "listed_lang": "cpp",
+      "timestamp": 1770873725,
+      "timestamp_utc": "2026-02-12 05:22:05 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1917032535",
+      "title": "Binary Tree Postorder Traversal",
+      "slug": "binary-tree-postorder-traversal",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1770906499,
+      "timestamp_utc": "2026-02-12 14:28:19 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1917037243",
+      "title": "Maximum Depth of Binary Tree",
+      "slug": "maximum-depth-of-binary-tree",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1770906792,
+      "timestamp_utc": "2026-02-12 14:33:12 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1917041575",
+      "title": "Same Tree",
+      "slug": "same-tree",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1770907054,
+      "timestamp_utc": "2026-02-12 14:37:34 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1917049175",
+      "title": "Validate Binary Search Tree",
+      "slug": "validate-binary-search-tree",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1770907525,
+      "timestamp_utc": "2026-02-12 14:45:25 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1917172621",
+      "title": "Strictly Palindromic Number",
+      "slug": "strictly-palindromic-number",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1770914584,
+      "timestamp_utc": "2026-02-12 16:43:04 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1917178921",
+      "title": "Strictly Palindromic Number",
+      "slug": "strictly-palindromic-number",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1770914894,
+      "timestamp_utc": "2026-02-12 16:48:14 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1917186613",
+      "title": "Binary Tree Preorder Traversal",
+      "slug": "binary-tree-preorder-traversal",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1770915258,
+      "timestamp_utc": "2026-02-12 16:54:18 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1917516305",
+      "title": "String to Integer (atoi)",
+      "slug": "string-to-integer-atoi",
+      "status_display": "Wrong Answer",
+      "listed_lang": "java",
+      "timestamp": 1770948168,
+      "timestamp_utc": "2026-02-13 02:02:48 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1917516417",
+      "title": "String to Integer (atoi)",
+      "slug": "string-to-integer-atoi",
+      "status_display": "Wrong Answer",
+      "listed_lang": "java",
+      "timestamp": 1770948186,
+      "timestamp_utc": "2026-02-13 02:03:06 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1917517127",
+      "title": "String to Integer (atoi)",
+      "slug": "string-to-integer-atoi",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1770948295,
+      "timestamp_utc": "2026-02-13 02:04:55 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1917585079",
+      "title": "Reverse String",
+      "slug": "reverse-string",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1770956115,
+      "timestamp_utc": "2026-02-13 04:15:15 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1917585165",
+      "title": "Reverse String",
+      "slug": "reverse-string",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1770956122,
+      "timestamp_utc": "2026-02-13 04:15:22 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1917585677",
+      "title": "Reverse String",
+      "slug": "reverse-string",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1770956162,
+      "timestamp_utc": "2026-02-13 04:16:02 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1917585813",
+      "title": "Reverse String",
+      "slug": "reverse-string",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1770956172,
+      "timestamp_utc": "2026-02-13 04:16:12 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1917596218",
+      "title": "Valid Palindrome",
+      "slug": "valid-palindrome",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1770956948,
+      "timestamp_utc": "2026-02-13 04:29:08 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1917606218",
+      "title": "Pow(x, n)",
+      "slug": "powx-n",
+      "status_display": "Runtime Error",
+      "listed_lang": "java",
+      "timestamp": 1770957665,
+      "timestamp_utc": "2026-02-13 04:41:05 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1917614248",
+      "title": "Pow(x, n)",
+      "slug": "powx-n",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1770958203,
+      "timestamp_utc": "2026-02-13 04:50:03 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1917697143",
+      "title": "Subsets",
+      "slug": "subsets",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1770963549,
+      "timestamp_utc": "2026-02-13 06:19:09 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1917699017",
+      "title": "Subsets",
+      "slug": "subsets",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1770963668,
+      "timestamp_utc": "2026-02-13 06:21:08 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1918095045",
+      "title": "Sliding Window Maximum",
+      "slug": "sliding-window-maximum",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1770994579,
+      "timestamp_utc": "2026-02-13 14:56:19 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1918152707",
+      "title": "Longest Balanced Substring II",
+      "slug": "longest-balanced-substring-ii",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1770998406,
+      "timestamp_utc": "2026-02-13 16:00:06 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1918167860",
+      "title": "Maximum Points You Can Obtain from Cards",
+      "slug": "maximum-points-you-can-obtain-from-cards",
+      "status_display": "Wrong Answer",
+      "listed_lang": "java",
+      "timestamp": 1770999320,
+      "timestamp_utc": "2026-02-13 16:15:20 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1918170220",
+      "title": "Maximum Points You Can Obtain from Cards",
+      "slug": "maximum-points-you-can-obtain-from-cards",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1770999454,
+      "timestamp_utc": "2026-02-13 16:17:34 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1918170343",
+      "title": "Maximum Points You Can Obtain from Cards",
+      "slug": "maximum-points-you-can-obtain-from-cards",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1770999462,
+      "timestamp_utc": "2026-02-13 16:17:42 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1918174537",
+      "title": "Maximum Points You Can Obtain from Cards",
+      "slug": "maximum-points-you-can-obtain-from-cards",
+      "status_display": "Wrong Answer",
+      "listed_lang": "java",
+      "timestamp": 1770999697,
+      "timestamp_utc": "2026-02-13 16:21:37 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1918179340",
+      "title": "Maximum Points You Can Obtain from Cards",
+      "slug": "maximum-points-you-can-obtain-from-cards",
+      "status_display": "Wrong Answer",
+      "listed_lang": "java",
+      "timestamp": 1770999960,
+      "timestamp_utc": "2026-02-13 16:26:00 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1918532961",
+      "title": "Binary Tree Level Order Traversal",
+      "slug": "binary-tree-level-order-traversal",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1771040796,
+      "timestamp_utc": "2026-02-14 03:46:36 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1918533013",
+      "title": "Binary Tree Level Order Traversal",
+      "slug": "binary-tree-level-order-traversal",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1771040802,
+      "timestamp_utc": "2026-02-14 03:46:42 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1918535641",
+      "title": "Binary Tree Level Order Traversal",
+      "slug": "binary-tree-level-order-traversal",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1771041142,
+      "timestamp_utc": "2026-02-14 03:52:22 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1918545285",
+      "title": "Binary Tree Preorder Traversal",
+      "slug": "binary-tree-preorder-traversal",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1771042278,
+      "timestamp_utc": "2026-02-14 04:11:18 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1918545382",
+      "title": "Binary Tree Preorder Traversal",
+      "slug": "binary-tree-preorder-traversal",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1771042290,
+      "timestamp_utc": "2026-02-14 04:11:30 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1918555211",
+      "title": "Binary Tree Inorder Traversal",
+      "slug": "binary-tree-inorder-traversal",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1771043337,
+      "timestamp_utc": "2026-02-14 04:28:57 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1918626167",
+      "title": "Binary Tree Postorder Traversal",
+      "slug": "binary-tree-postorder-traversal",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1771049420,
+      "timestamp_utc": "2026-02-14 06:10:20 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1918629909",
+      "title": "Binary Tree Postorder Traversal",
+      "slug": "binary-tree-postorder-traversal",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1771049694,
+      "timestamp_utc": "2026-02-14 06:14:54 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1918658770",
+      "title": "Binary Tree Postorder Traversal",
+      "slug": "binary-tree-postorder-traversal",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1771051808,
+      "timestamp_utc": "2026-02-14 06:50:08 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1918659014",
+      "title": "Binary Tree Postorder Traversal",
+      "slug": "binary-tree-postorder-traversal",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1771051827,
+      "timestamp_utc": "2026-02-14 06:50:27 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1918664559",
+      "title": "Binary Tree Postorder Traversal",
+      "slug": "binary-tree-postorder-traversal",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1771052238,
+      "timestamp_utc": "2026-02-14 06:57:18 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1918664701",
+      "title": "Binary Tree Postorder Traversal",
+      "slug": "binary-tree-postorder-traversal",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1771052248,
+      "timestamp_utc": "2026-02-14 06:57:28 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1925535091",
+      "title": "String to Integer (atoi)",
+      "slug": "string-to-integer-atoi",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1771604163,
+      "timestamp_utc": "2026-02-20 16:16:03 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1926047012",
+      "title": "Sudoku Solver",
+      "slug": "sudoku-solver",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1771656183,
+      "timestamp_utc": "2026-02-21 06:43:03 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1926048581",
+      "title": "Sudoku Solver",
+      "slug": "sudoku-solver",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1771656280,
+      "timestamp_utc": "2026-02-21 06:44:40 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1926052074",
+      "title": "Sudoku Solver",
+      "slug": "sudoku-solver",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1771656500,
+      "timestamp_utc": "2026-02-21 06:48:20 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1926054292",
+      "title": "Sudoku Solver",
+      "slug": "sudoku-solver",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1771656638,
+      "timestamp_utc": "2026-02-21 06:50:38 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1926088787",
+      "title": "Prime Number of Set Bits in Binary Representation",
+      "slug": "prime-number-of-set-bits-in-binary-representation",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1771658984,
+      "timestamp_utc": "2026-02-21 07:29:44 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1926092656",
+      "title": "Prime Number of Set Bits in Binary Representation",
+      "slug": "prime-number-of-set-bits-in-binary-representation",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1771659294,
+      "timestamp_utc": "2026-02-21 07:34:54 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1926092734",
+      "title": "Prime Number of Set Bits in Binary Representation",
+      "slug": "prime-number-of-set-bits-in-binary-representation",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1771659300,
+      "timestamp_utc": "2026-02-21 07:35:00 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1926093164",
+      "title": "Prime Number of Set Bits in Binary Representation",
+      "slug": "prime-number-of-set-bits-in-binary-representation",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1771659334,
+      "timestamp_utc": "2026-02-21 07:35:34 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1926094084",
+      "title": "Prime Number of Set Bits in Binary Representation",
+      "slug": "prime-number-of-set-bits-in-binary-representation",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1771659407,
+      "timestamp_utc": "2026-02-21 07:36:47 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1926094260",
+      "title": "Prime Number of Set Bits in Binary Representation",
+      "slug": "prime-number-of-set-bits-in-binary-representation",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1771659422,
+      "timestamp_utc": "2026-02-21 07:37:02 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1926275634",
+      "title": "Reverse Nodes in k-Group",
+      "slug": "reverse-nodes-in-k-group",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1771673290,
+      "timestamp_utc": "2026-02-21 11:28:10 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1926436032",
+      "title": "Longest Consecutive Sequence",
+      "slug": "longest-consecutive-sequence",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1771686238,
+      "timestamp_utc": "2026-02-21 15:03:58 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1926441390",
+      "title": "Subarray Sum Equals K",
+      "slug": "subarray-sum-equals-k",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1771686639,
+      "timestamp_utc": "2026-02-21 15:10:39 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1926910476",
+      "title": "Find the Score Difference in a Game",
+      "slug": "find-the-score-difference-in-a-game",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1771729364,
+      "timestamp_utc": "2026-02-22 03:02:44 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1926949975",
+      "title": "Largest Rectangle in Histogram",
+      "slug": "largest-rectangle-in-histogram",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1771730485,
+      "timestamp_utc": "2026-02-22 03:21:25 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1927069025",
+      "title": "Largest Rectangle in Histogram",
+      "slug": "largest-rectangle-in-histogram",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1771737226,
+      "timestamp_utc": "2026-02-22 05:13:46 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1927124665",
+      "title": "Minimum Add to Make Parentheses Valid",
+      "slug": "minimum-add-to-make-parentheses-valid",
+      "status_display": "Wrong Answer",
+      "listed_lang": "java",
+      "timestamp": 1771741114,
+      "timestamp_utc": "2026-02-22 06:18:34 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1927126168",
+      "title": "Minimum Add to Make Parentheses Valid",
+      "slug": "minimum-add-to-make-parentheses-valid",
+      "status_display": "Wrong Answer",
+      "listed_lang": "java",
+      "timestamp": 1771741217,
+      "timestamp_utc": "2026-02-22 06:20:17 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1927134249",
+      "title": "Minimum Add to Make Parentheses Valid",
+      "slug": "minimum-add-to-make-parentheses-valid",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1771741743,
+      "timestamp_utc": "2026-02-22 06:29:03 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1927152698",
+      "title": "Next Greater Element II",
+      "slug": "next-greater-element-ii",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1771742944,
+      "timestamp_utc": "2026-02-22 06:49:04 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1927281430",
+      "title": "Min Stack",
+      "slug": "min-stack",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1771752933,
+      "timestamp_utc": "2026-02-22 09:35:33 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1927290307",
+      "title": "Convert Sorted Array to Binary Search Tree",
+      "slug": "convert-sorted-array-to-binary-search-tree",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1771753625,
+      "timestamp_utc": "2026-02-22 09:47:05 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1927294739",
+      "title": "Convert Sorted Array to Binary Search Tree",
+      "slug": "convert-sorted-array-to-binary-search-tree",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1771753972,
+      "timestamp_utc": "2026-02-22 09:52:52 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1927294827",
+      "title": "Convert Sorted Array to Binary Search Tree",
+      "slug": "convert-sorted-array-to-binary-search-tree",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1771753978,
+      "timestamp_utc": "2026-02-22 09:52:58 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1927294943",
+      "title": "Convert Sorted Array to Binary Search Tree",
+      "slug": "convert-sorted-array-to-binary-search-tree",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1771753989,
+      "timestamp_utc": "2026-02-22 09:53:09 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1927295122",
+      "title": "Convert Sorted Array to Binary Search Tree",
+      "slug": "convert-sorted-array-to-binary-search-tree",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1771754002,
+      "timestamp_utc": "2026-02-22 09:53:22 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1927295203",
+      "title": "Convert Sorted Array to Binary Search Tree",
+      "slug": "convert-sorted-array-to-binary-search-tree",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1771754009,
+      "timestamp_utc": "2026-02-22 09:53:29 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1927319029",
+      "title": "Minimum Depth of Binary Tree",
+      "slug": "minimum-depth-of-binary-tree",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1771755875,
+      "timestamp_utc": "2026-02-22 10:24:35 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1927319145",
+      "title": "Minimum Depth of Binary Tree",
+      "slug": "minimum-depth-of-binary-tree",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1771755884,
+      "timestamp_utc": "2026-02-22 10:24:44 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1927334273",
+      "title": "Diameter of Binary Tree",
+      "slug": "diameter-of-binary-tree",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1771757067,
+      "timestamp_utc": "2026-02-22 10:44:27 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1927365395",
+      "title": "Balanced Binary Tree",
+      "slug": "balanced-binary-tree",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1771759409,
+      "timestamp_utc": "2026-02-22 11:23:29 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1927371446",
+      "title": "Invert Binary Tree",
+      "slug": "invert-binary-tree",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1771759877,
+      "timestamp_utc": "2026-02-22 11:31:17 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1927371673",
+      "title": "Invert Binary Tree",
+      "slug": "invert-binary-tree",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1771759895,
+      "timestamp_utc": "2026-02-22 11:31:35 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1927382587",
+      "title": "Binary Tree Paths",
+      "slug": "binary-tree-paths",
+      "status_display": "Compile Error",
+      "listed_lang": "java",
+      "timestamp": 1771760762,
+      "timestamp_utc": "2026-02-22 11:46:02 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1927383333",
+      "title": "Binary Tree Paths",
+      "slug": "binary-tree-paths",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1771760821,
+      "timestamp_utc": "2026-02-22 11:47:01 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1929600452",
+      "title": "Cousins in Binary Tree",
+      "slug": "cousins-in-binary-tree",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1771934491,
+      "timestamp_utc": "2026-02-24 12:01:31 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1929643159",
+      "title": "Search in a Binary Search Tree",
+      "slug": "search-in-a-binary-search-tree",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1771937872,
+      "timestamp_utc": "2026-02-24 12:57:52 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1929720167",
+      "title": "Minimum Depth of Binary Tree",
+      "slug": "minimum-depth-of-binary-tree",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1771942617,
+      "timestamp_utc": "2026-02-24 14:16:57 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1929725318",
+      "title": "Minimum Depth of Binary Tree",
+      "slug": "minimum-depth-of-binary-tree",
+      "status_display": "Runtime Error",
+      "listed_lang": "java",
+      "timestamp": 1771942910,
+      "timestamp_utc": "2026-02-24 14:21:50 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1929725935",
+      "title": "Minimum Depth of Binary Tree",
+      "slug": "minimum-depth-of-binary-tree",
+      "status_display": "Wrong Answer",
+      "listed_lang": "java",
+      "timestamp": 1771942944,
+      "timestamp_utc": "2026-02-24 14:22:24 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1929726877",
+      "title": "Minimum Depth of Binary Tree",
+      "slug": "minimum-depth-of-binary-tree",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1771942998,
+      "timestamp_utc": "2026-02-24 14:23:18 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1929834591",
+      "title": "Invert Binary Tree",
+      "slug": "invert-binary-tree",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1771949135,
+      "timestamp_utc": "2026-02-24 16:05:35 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1929858814",
+      "title": "Find the Index of the First Occurrence in a String",
+      "slug": "find-the-index-of-the-first-occurrence-in-a-string",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1771950371,
+      "timestamp_utc": "2026-02-24 16:26:11 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1929864042",
+      "title": "Path Sum",
+      "slug": "path-sum",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1771950633,
+      "timestamp_utc": "2026-02-24 16:30:33 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1929864527",
+      "title": "Validate Binary Search Tree",
+      "slug": "validate-binary-search-tree",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1771950654,
+      "timestamp_utc": "2026-02-24 16:30:54 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1930212253",
+      "title": "Sort Integers by The Number of 1 Bits",
+      "slug": "sort-integers-by-the-number-of-1-bits",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1771982110,
+      "timestamp_utc": "2026-02-25 01:15:10 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1930214865",
+      "title": "Maximum Depth of Binary Tree",
+      "slug": "maximum-depth-of-binary-tree",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1771982496,
+      "timestamp_utc": "2026-02-25 01:21:36 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1930216562",
+      "title": "Same Tree",
+      "slug": "same-tree",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1771982741,
+      "timestamp_utc": "2026-02-25 01:25:41 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1930218355",
+      "title": "Symmetric Tree",
+      "slug": "symmetric-tree",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1771983006,
+      "timestamp_utc": "2026-02-25 01:30:06 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1930218421",
+      "title": "Symmetric Tree",
+      "slug": "symmetric-tree",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1771983016,
+      "timestamp_utc": "2026-02-25 01:30:16 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1930221446",
+      "title": "Validate Binary Search Tree",
+      "slug": "validate-binary-search-tree",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1771983444,
+      "timestamp_utc": "2026-02-25 01:37:24 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1930230286",
+      "title": "Validate Binary Search Tree",
+      "slug": "validate-binary-search-tree",
+      "status_display": "Wrong Answer",
+      "listed_lang": "java",
+      "timestamp": 1771984650,
+      "timestamp_utc": "2026-02-25 01:57:30 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1930230793",
+      "title": "Validate Binary Search Tree",
+      "slug": "validate-binary-search-tree",
+      "status_display": "Wrong Answer",
+      "listed_lang": "java",
+      "timestamp": 1771984713,
+      "timestamp_utc": "2026-02-25 01:58:33 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1930231731",
+      "title": "Validate Binary Search Tree",
+      "slug": "validate-binary-search-tree",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1771984834,
+      "timestamp_utc": "2026-02-25 02:00:34 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1930368218",
+      "title": "Lowest Common Ancestor of a Binary Tree",
+      "slug": "lowest-common-ancestor-of-a-binary-tree",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1771995992,
+      "timestamp_utc": "2026-02-25 05:06:32 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1931262258",
+      "title": "Number of Steps to Reduce a Number in Binary Representation to One",
+      "slug": "number-of-steps-to-reduce-a-number-in-binary-representation-to-one",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1772065619,
+      "timestamp_utc": "2026-02-26 00:26:59 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1931362518",
+      "title": "Flatten Binary Tree to Linked List",
+      "slug": "flatten-binary-tree-to-linked-list",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1772077795,
+      "timestamp_utc": "2026-02-26 03:49:55 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1931367672",
+      "title": "Kth Smallest Element in a BST",
+      "slug": "kth-smallest-element-in-a-bst",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1772078184,
+      "timestamp_utc": "2026-02-26 03:56:24 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1931370854",
+      "title": "Kth Smallest Element in a BST",
+      "slug": "kth-smallest-element-in-a-bst",
+      "status_display": "Wrong Answer",
+      "listed_lang": "java",
+      "timestamp": 1772078411,
+      "timestamp_utc": "2026-02-26 04:00:11 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1931375286",
+      "title": "Kth Smallest Element in a BST",
+      "slug": "kth-smallest-element-in-a-bst",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1772078726,
+      "timestamp_utc": "2026-02-26 04:05:26 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1931378525",
+      "title": "Kth Smallest Element in a BST",
+      "slug": "kth-smallest-element-in-a-bst",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1772078944,
+      "timestamp_utc": "2026-02-26 04:09:04 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1931380318",
+      "title": "Kth Smallest Element in a BST",
+      "slug": "kth-smallest-element-in-a-bst",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1772079057,
+      "timestamp_utc": "2026-02-26 04:10:57 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1931384084",
+      "title": "Flatten Binary Tree to Linked List",
+      "slug": "flatten-binary-tree-to-linked-list",
+      "status_display": "Wrong Answer",
+      "listed_lang": "java",
+      "timestamp": 1772079287,
+      "timestamp_utc": "2026-02-26 04:14:47 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1931388541",
+      "title": "Flatten Binary Tree to Linked List",
+      "slug": "flatten-binary-tree-to-linked-list",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1772079560,
+      "timestamp_utc": "2026-02-26 04:19:20 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1931459866",
+      "title": "Flatten Binary Tree to Linked List",
+      "slug": "flatten-binary-tree-to-linked-list",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1772083728,
+      "timestamp_utc": "2026-02-26 05:28:48 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1931462871",
+      "title": "Flatten Binary Tree to Linked List",
+      "slug": "flatten-binary-tree-to-linked-list",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1772083897,
+      "timestamp_utc": "2026-02-26 05:31:37 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1931472926",
+      "title": "Validate Binary Search Tree",
+      "slug": "validate-binary-search-tree",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1772084503,
+      "timestamp_utc": "2026-02-26 05:41:43 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1931493170",
+      "title": "Lowest Common Ancestor of a Binary Tree",
+      "slug": "lowest-common-ancestor-of-a-binary-tree",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1772085699,
+      "timestamp_utc": "2026-02-26 06:01:39 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1931496260",
+      "title": "Lowest Common Ancestor of a Binary Tree",
+      "slug": "lowest-common-ancestor-of-a-binary-tree",
+      "status_display": "Accepted",
+      "listed_lang": "rust",
+      "timestamp": 1772085863,
+      "timestamp_utc": "2026-02-26 06:04:23 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1931496466",
+      "title": "Lowest Common Ancestor of a Binary Tree",
+      "slug": "lowest-common-ancestor-of-a-binary-tree",
+      "status_display": "Accepted",
+      "listed_lang": "rust",
+      "timestamp": 1772085874,
+      "timestamp_utc": "2026-02-26 06:04:34 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1931496654",
+      "title": "Lowest Common Ancestor of a Binary Tree",
+      "slug": "lowest-common-ancestor-of-a-binary-tree",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1772085885,
+      "timestamp_utc": "2026-02-26 06:04:45 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1931632736",
+      "title": "Construct Binary Tree from Preorder and Inorder Traversal",
+      "slug": "construct-binary-tree-from-preorder-and-inorder-traversal",
+      "status_display": "Compile Error",
+      "listed_lang": "java",
+      "timestamp": 1772095875,
+      "timestamp_utc": "2026-02-26 08:51:15 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1931632967",
+      "title": "Construct Binary Tree from Preorder and Inorder Traversal",
+      "slug": "construct-binary-tree-from-preorder-and-inorder-traversal",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1772095902,
+      "timestamp_utc": "2026-02-26 08:51:42 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1931633046",
+      "title": "Construct Binary Tree from Preorder and Inorder Traversal",
+      "slug": "construct-binary-tree-from-preorder-and-inorder-traversal",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1772095909,
+      "timestamp_utc": "2026-02-26 08:51:49 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1932007778",
+      "title": "Serialize and Deserialize Binary Tree",
+      "slug": "serialize-and-deserialize-binary-tree",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1772124110,
+      "timestamp_utc": "2026-02-26 16:41:50 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1936314288",
+      "title": "House Robber",
+      "slug": "house-robber",
+      "status_display": "Wrong Answer",
+      "listed_lang": "java",
+      "timestamp": 1772513770,
+      "timestamp_utc": "2026-03-03 04:56:10 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1936315083",
+      "title": "House Robber",
+      "slug": "house-robber",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1772513820,
+      "timestamp_utc": "2026-03-03 04:57:00 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1936447814",
+      "title": "First Missing Positive",
+      "slug": "first-missing-positive",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1772522119,
+      "timestamp_utc": "2026-03-03 07:15:19 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1936455137",
+      "title": "Check If It Is a Good Array",
+      "slug": "check-if-it-is-a-good-array",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1772522625,
+      "timestamp_utc": "2026-03-03 07:23:45 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1936455355",
+      "title": "Check If It Is a Good Array",
+      "slug": "check-if-it-is-a-good-array",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1772522642,
+      "timestamp_utc": "2026-03-03 07:24:02 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1936582007",
+      "title": "Maximum Product Subarray",
+      "slug": "maximum-product-subarray",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1772532057,
+      "timestamp_utc": "2026-03-03 10:00:57 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1936582363",
+      "title": "Reverse Pairs",
+      "slug": "reverse-pairs",
+      "status_display": "Time Limit Exceeded",
+      "listed_lang": "java",
+      "timestamp": 1772532081,
+      "timestamp_utc": "2026-03-03 10:01:21 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1936588098",
+      "title": "Search in Rotated Sorted Array II",
+      "slug": "search-in-rotated-sorted-array-ii",
+      "status_display": "Wrong Answer",
+      "listed_lang": "java",
+      "timestamp": 1772532486,
+      "timestamp_utc": "2026-03-03 10:08:06 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1936589057",
+      "title": "Search in Rotated Sorted Array II",
+      "slug": "search-in-rotated-sorted-array-ii",
+      "status_display": "Wrong Answer",
+      "listed_lang": "java",
+      "timestamp": 1772532555,
+      "timestamp_utc": "2026-03-03 10:09:15 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1936589777",
+      "title": "Search in Rotated Sorted Array II",
+      "slug": "search-in-rotated-sorted-array-ii",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1772532608,
+      "timestamp_utc": "2026-03-03 10:10:08 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1936589915",
+      "title": "Search in Rotated Sorted Array II",
+      "slug": "search-in-rotated-sorted-array-ii",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1772532618,
+      "timestamp_utc": "2026-03-03 10:10:18 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1936590485",
+      "title": "Search in Rotated Sorted Array II",
+      "slug": "search-in-rotated-sorted-array-ii",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1772532660,
+      "timestamp_utc": "2026-03-03 10:11:00 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1936894480",
+      "title": "Kth Largest Element in an Array",
+      "slug": "kth-largest-element-in-an-array",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1772554637,
+      "timestamp_utc": "2026-03-03 16:17:17 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1936897220",
+      "title": "Kth Largest Element in an Array",
+      "slug": "kth-largest-element-in-an-array",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1772554797,
+      "timestamp_utc": "2026-03-03 16:19:57 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1936897482",
+      "title": "Kth Largest Element in an Array",
+      "slug": "kth-largest-element-in-an-array",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1772554812,
+      "timestamp_utc": "2026-03-03 16:20:12 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1937226263",
+      "title": "Special Positions in a Binary Matrix",
+      "slug": "special-positions-in-a-binary-matrix",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1772586537,
+      "timestamp_utc": "2026-03-04 01:08:57 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1938193089",
+      "title": "Minimum Changes To Make Alternating Binary String",
+      "slug": "minimum-changes-to-make-alternating-binary-string",
+      "status_display": "Wrong Answer",
+      "listed_lang": "java",
+      "timestamp": 1772670598,
+      "timestamp_utc": "2026-03-05 00:29:58 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1938193840",
+      "title": "Minimum Changes To Make Alternating Binary String",
+      "slug": "minimum-changes-to-make-alternating-binary-string",
+      "status_display": "Wrong Answer",
+      "listed_lang": "java",
+      "timestamp": 1772670720,
+      "timestamp_utc": "2026-03-05 00:32:00 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1938194122",
+      "title": "Minimum Changes To Make Alternating Binary String",
+      "slug": "minimum-changes-to-make-alternating-binary-string",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1772670768,
+      "timestamp_utc": "2026-03-05 00:32:48 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1938194160",
+      "title": "Minimum Changes To Make Alternating Binary String",
+      "slug": "minimum-changes-to-make-alternating-binary-string",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1772670778,
+      "timestamp_utc": "2026-03-05 00:32:58 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1938194893",
+      "title": "Minimum Changes To Make Alternating Binary String",
+      "slug": "minimum-changes-to-make-alternating-binary-string",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1772670900,
+      "timestamp_utc": "2026-03-05 00:35:00 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1938194948",
+      "title": "Minimum Changes To Make Alternating Binary String",
+      "slug": "minimum-changes-to-make-alternating-binary-string",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1772670909,
+      "timestamp_utc": "2026-03-05 00:35:09 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1938195028",
+      "title": "Minimum Changes To Make Alternating Binary String",
+      "slug": "minimum-changes-to-make-alternating-binary-string",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1772670921,
+      "timestamp_utc": "2026-03-05 00:35:21 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1938195275",
+      "title": "Minimum Changes To Make Alternating Binary String",
+      "slug": "minimum-changes-to-make-alternating-binary-string",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1772670962,
+      "timestamp_utc": "2026-03-05 00:36:02 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1938195320",
+      "title": "Minimum Changes To Make Alternating Binary String",
+      "slug": "minimum-changes-to-make-alternating-binary-string",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1772670970,
+      "timestamp_utc": "2026-03-05 00:36:10 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1938195447",
+      "title": "Minimum Changes To Make Alternating Binary String",
+      "slug": "minimum-changes-to-make-alternating-binary-string",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1772670991,
+      "timestamp_utc": "2026-03-05 00:36:31 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1938195898",
+      "title": "Minimum Changes To Make Alternating Binary String",
+      "slug": "minimum-changes-to-make-alternating-binary-string",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1772671062,
+      "timestamp_utc": "2026-03-05 00:37:42 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1938195938",
+      "title": "Minimum Changes To Make Alternating Binary String",
+      "slug": "minimum-changes-to-make-alternating-binary-string",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1772671068,
+      "timestamp_utc": "2026-03-05 00:37:48 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1938202101",
+      "title": "Integer to Roman",
+      "slug": "integer-to-roman",
+      "status_display": "Compile Error",
+      "listed_lang": "java",
+      "timestamp": 1772672024,
+      "timestamp_utc": "2026-03-05 00:53:44 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1938202310",
+      "title": "Integer to Roman",
+      "slug": "integer-to-roman",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1772672056,
+      "timestamp_utc": "2026-03-05 00:54:16 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1938211018",
+      "title": "Integer to Roman",
+      "slug": "integer-to-roman",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1772673405,
+      "timestamp_utc": "2026-03-05 01:16:45 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1938211342",
+      "title": "Integer to Roman",
+      "slug": "integer-to-roman",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1772673452,
+      "timestamp_utc": "2026-03-05 01:17:32 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1938211984",
+      "title": "Integer to Roman",
+      "slug": "integer-to-roman",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1772673549,
+      "timestamp_utc": "2026-03-05 01:19:09 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1938828221",
+      "title": "Kth Largest Element in an Array",
+      "slug": "kth-largest-element-in-an-array",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1772719996,
+      "timestamp_utc": "2026-03-05 14:13:16 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1938831123",
+      "title": "Last Stone Weight",
+      "slug": "last-stone-weight",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1772720209,
+      "timestamp_utc": "2026-03-05 14:16:49 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1939288289",
+      "title": "Check if Binary String Has at Most One Segment of Ones",
+      "slug": "check-if-binary-string-has-at-most-one-segment-of-ones",
+      "status_display": "Wrong Answer",
+      "listed_lang": "java",
+      "timestamp": 1772764102,
+      "timestamp_utc": "2026-03-06 02:28:22 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1943417296",
+      "title": "Find All Possible Stable Binary Arrays II",
+      "slug": "find-all-possible-stable-binary-arrays-ii",
+      "status_display": "Wrong Answer",
+      "listed_lang": "java",
+      "timestamp": 1773107469,
+      "timestamp_utc": "2026-03-10 01:51:09 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1943418136",
+      "title": "Find All Possible Stable Binary Arrays II",
+      "slug": "find-all-possible-stable-binary-arrays-ii",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1773107582,
+      "timestamp_utc": "2026-03-10 01:53:02 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1943435067",
+      "title": "Two Sum",
+      "slug": "two-sum",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1773109796,
+      "timestamp_utc": "2026-03-10 02:29:56 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1943437254",
+      "title": "Contiguous Array",
+      "slug": "contiguous-array",
+      "status_display": "Time Limit Exceeded",
+      "listed_lang": "java",
+      "timestamp": 1773110059,
+      "timestamp_utc": "2026-03-10 02:34:19 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1943455202",
+      "title": "Contiguous Array",
+      "slug": "contiguous-array",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1773112143,
+      "timestamp_utc": "2026-03-10 03:09:03 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1943724808",
+      "title": "Product of Array Except Self",
+      "slug": "product-of-array-except-self",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1773131817,
+      "timestamp_utc": "2026-03-10 08:36:57 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1943725676",
+      "title": "Count Number of Nice Subarrays",
+      "slug": "count-number-of-nice-subarrays",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1773131882,
+      "timestamp_utc": "2026-03-10 08:38:02 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1943732455",
+      "title": "Count Number of Nice Subarrays",
+      "slug": "count-number-of-nice-subarrays",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1773132397,
+      "timestamp_utc": "2026-03-10 08:46:37 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1943733948",
+      "title": "Count Number of Nice Subarrays",
+      "slug": "count-number-of-nice-subarrays",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1773132504,
+      "timestamp_utc": "2026-03-10 08:48:24 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1943735261",
+      "title": "Count Number of Nice Subarrays",
+      "slug": "count-number-of-nice-subarrays",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1773132598,
+      "timestamp_utc": "2026-03-10 08:49:58 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1944562906",
+      "title": "Complement of Base 10 Integer",
+      "slug": "complement-of-base-10-integer",
+      "status_display": "Wrong Answer",
+      "listed_lang": "java",
+      "timestamp": 1773202585,
+      "timestamp_utc": "2026-03-11 04:16:25 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1944563286",
+      "title": "Complement of Base 10 Integer",
+      "slug": "complement-of-base-10-integer",
+      "status_display": "Wrong Answer",
+      "listed_lang": "java",
+      "timestamp": 1773202608,
+      "timestamp_utc": "2026-03-11 04:16:48 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1944563463",
+      "title": "Complement of Base 10 Integer",
+      "slug": "complement-of-base-10-integer",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1773202619,
+      "timestamp_utc": "2026-03-11 04:16:59 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1944564169",
+      "title": "Complement of Base 10 Integer",
+      "slug": "complement-of-base-10-integer",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1773202668,
+      "timestamp_utc": "2026-03-11 04:17:48 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1944564307",
+      "title": "Complement of Base 10 Integer",
+      "slug": "complement-of-base-10-integer",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1773202678,
+      "timestamp_utc": "2026-03-11 04:17:58 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1944564448",
+      "title": "Complement of Base 10 Integer",
+      "slug": "complement-of-base-10-integer",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1773202689,
+      "timestamp_utc": "2026-03-11 04:18:09 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1944762848",
+      "title": "Find the Smallest Divisor Given a Threshold",
+      "slug": "find-the-smallest-divisor-given-a-threshold",
+      "status_display": "Wrong Answer",
+      "listed_lang": "java",
+      "timestamp": 1773215640,
+      "timestamp_utc": "2026-03-11 07:54:00 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1944763136",
+      "title": "Find the Smallest Divisor Given a Threshold",
+      "slug": "find-the-smallest-divisor-given-a-threshold",
+      "status_display": "Runtime Error",
+      "listed_lang": "java",
+      "timestamp": 1773215665,
+      "timestamp_utc": "2026-03-11 07:54:25 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1944763558",
+      "title": "Find the Smallest Divisor Given a Threshold",
+      "slug": "find-the-smallest-divisor-given-a-threshold",
+      "status_display": "Wrong Answer",
+      "listed_lang": "java",
+      "timestamp": 1773215700,
+      "timestamp_utc": "2026-03-11 07:55:00 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1944768356",
+      "title": "Find the Smallest Divisor Given a Threshold",
+      "slug": "find-the-smallest-divisor-given-a-threshold",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1773216117,
+      "timestamp_utc": "2026-03-11 08:01:57 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1944784279",
+      "title": "Capacity To Ship Packages Within D Days",
+      "slug": "capacity-to-ship-packages-within-d-days",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1773217463,
+      "timestamp_utc": "2026-03-11 08:24:23 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1945543958",
+      "title": "Maximize Spanning Tree Stability with Upgrades",
+      "slug": "maximize-spanning-tree-stability-with-upgrades",
+      "status_display": "Compile Error",
+      "listed_lang": "java",
+      "timestamp": 1773280037,
+      "timestamp_utc": "2026-03-12 01:47:17 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1945544111",
+      "title": "Maximize Spanning Tree Stability with Upgrades",
+      "slug": "maximize-spanning-tree-stability-with-upgrades",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1773280062,
+      "timestamp_utc": "2026-03-12 01:47:42 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1945865010",
+      "title": "Merge Intervals",
+      "slug": "merge-intervals",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1773307087,
+      "timestamp_utc": "2026-03-12 09:18:07 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1945865245",
+      "title": "Merge Intervals",
+      "slug": "merge-intervals",
+      "status_display": "Wrong Answer",
+      "listed_lang": "java",
+      "timestamp": 1773307103,
+      "timestamp_utc": "2026-03-12 09:18:23 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1945865895",
+      "title": "Merge Intervals",
+      "slug": "merge-intervals",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1773307143,
+      "timestamp_utc": "2026-03-12 09:19:03 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1945879598",
+      "title": "Insert Interval",
+      "slug": "insert-interval",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1773308074,
+      "timestamp_utc": "2026-03-12 09:34:34 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1945889060",
+      "title": "Merge Intervals",
+      "slug": "merge-intervals",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1773308750,
+      "timestamp_utc": "2026-03-12 09:45:50 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1945897132",
+      "title": "Insert Interval",
+      "slug": "insert-interval",
+      "status_display": "Compile Error",
+      "listed_lang": "java",
+      "timestamp": 1773309336,
+      "timestamp_utc": "2026-03-12 09:55:36 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1945898998",
+      "title": "Insert Interval",
+      "slug": "insert-interval",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1773309468,
+      "timestamp_utc": "2026-03-12 09:57:48 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1946067049",
+      "title": "Interval List Intersections",
+      "slug": "interval-list-intersections",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1773323717,
+      "timestamp_utc": "2026-03-12 13:55:17 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1946069222",
+      "title": "Interval List Intersections",
+      "slug": "interval-list-intersections",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1773323867,
+      "timestamp_utc": "2026-03-12 13:57:47 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1946192371",
+      "title": "Non-overlapping Intervals",
+      "slug": "non-overlapping-intervals",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1773331533,
+      "timestamp_utc": "2026-03-12 16:05:33 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1946192528",
+      "title": "Non-overlapping Intervals",
+      "slug": "non-overlapping-intervals",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1773331542,
+      "timestamp_utc": "2026-03-12 16:05:42 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1946203502",
+      "title": "Minimum Number of Arrows to Burst Balloons",
+      "slug": "minimum-number-of-arrows-to-burst-balloons",
+      "status_display": "Wrong Answer",
+      "listed_lang": "java",
+      "timestamp": 1773332160,
+      "timestamp_utc": "2026-03-12 16:16:00 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1946208075",
+      "title": "Minimum Number of Arrows to Burst Balloons",
+      "slug": "minimum-number-of-arrows-to-burst-balloons",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1773332414,
+      "timestamp_utc": "2026-03-12 16:20:14 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1948902364",
+      "title": "Evaluate Reverse Polish Notation",
+      "slug": "evaluate-reverse-polish-notation",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1773563926,
+      "timestamp_utc": "2026-03-15 08:38:46 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1948948868",
+      "title": "Implement Stack using Queues",
+      "slug": "implement-stack-using-queues",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1773567919,
+      "timestamp_utc": "2026-03-15 09:45:19 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1948949312",
+      "title": "Implement Queue using Stacks",
+      "slug": "implement-queue-using-stacks",
+      "status_display": "Compile Error",
+      "listed_lang": "java",
+      "timestamp": 1773567959,
+      "timestamp_utc": "2026-03-15 09:45:59 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1948949702",
+      "title": "Implement Queue using Stacks",
+      "slug": "implement-queue-using-stacks",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1773567991,
+      "timestamp_utc": "2026-03-15 09:46:31 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1949158045",
+      "title": "Valid Sudoku",
+      "slug": "valid-sudoku",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1773584258,
+      "timestamp_utc": "2026-03-15 14:17:38 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1949297345",
+      "title": "Trapping Rain Water",
+      "slug": "trapping-rain-water",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1773593545,
+      "timestamp_utc": "2026-03-15 16:52:25 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1949561378",
+      "title": "Get Biggest Three Rhombus Sums in a Grid",
+      "slug": "get-biggest-three-rhombus-sums-in-a-grid",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1773619390,
+      "timestamp_utc": "2026-03-16 00:03:10 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1950259071",
+      "title": "Minimum Window Substring",
+      "slug": "minimum-window-substring",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1773678735,
+      "timestamp_utc": "2026-03-16 16:32:15 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1950394117",
+      "title": "Find K Closest Elements",
+      "slug": "find-k-closest-elements",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1773685325,
+      "timestamp_utc": "2026-03-16 18:22:05 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1950504370",
+      "title": "Capacity To Ship Packages Within D Days",
+      "slug": "capacity-to-ship-packages-within-d-days",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1773694718,
+      "timestamp_utc": "2026-03-16 20:58:38 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1950509271",
+      "title": "Maximum Gap",
+      "slug": "maximum-gap",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1773695363,
+      "timestamp_utc": "2026-03-16 21:09:23 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1950516679",
+      "title": "Find Peak Element",
+      "slug": "find-peak-element",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1773696431,
+      "timestamp_utc": "2026-03-16 21:27:11 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1950519005",
+      "title": "Guess Number Higher or Lower",
+      "slug": "guess-number-higher-or-lower",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1773696753,
+      "timestamp_utc": "2026-03-16 21:32:33 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1950878365",
+      "title": "Largest Submatrix With Rearrangements",
+      "slug": "largest-submatrix-with-rearrangements",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1773734399,
+      "timestamp_utc": "2026-03-17 07:59:59 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1950883156",
+      "title": "Arranging Coins",
+      "slug": "arranging-coins",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1773734842,
+      "timestamp_utc": "2026-03-17 08:07:22 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1950885070",
+      "title": "Divide an Array Into Subarrays With Minimum Cost II",
+      "slug": "divide-an-array-into-subarrays-with-minimum-cost-ii",
+      "status_display": "Compile Error",
+      "listed_lang": "java",
+      "timestamp": 1773735020,
+      "timestamp_utc": "2026-03-17 08:10:20 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1950885216",
+      "title": "Divide an Array Into Subarrays With Minimum Cost II",
+      "slug": "divide-an-array-into-subarrays-with-minimum-cost-ii",
+      "status_display": "Accepted",
+      "listed_lang": "cpp",
+      "timestamp": 1773735033,
+      "timestamp_utc": "2026-03-17 08:10:33 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1950886075",
+      "title": "Minimum Window Substring",
+      "slug": "minimum-window-substring",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1773735109,
+      "timestamp_utc": "2026-03-17 08:11:49 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1950910424",
+      "title": "Minimum Number of Days to Make m Bouquets",
+      "slug": "minimum-number-of-days-to-make-m-bouquets",
+      "status_display": "Wrong Answer",
+      "listed_lang": "java",
+      "timestamp": 1773737180,
+      "timestamp_utc": "2026-03-17 08:46:20 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1950911274",
+      "title": "Minimum Number of Days to Make m Bouquets",
+      "slug": "minimum-number-of-days-to-make-m-bouquets",
+      "status_display": "Wrong Answer",
+      "listed_lang": "java",
+      "timestamp": 1773737242,
+      "timestamp_utc": "2026-03-17 08:47:22 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1950913422",
+      "title": "Minimum Number of Days to Make m Bouquets",
+      "slug": "minimum-number-of-days-to-make-m-bouquets",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1773737395,
+      "timestamp_utc": "2026-03-17 08:49:55 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1951080701",
+      "title": "Convert Binary Number in a Linked List to Integer",
+      "slug": "convert-binary-number-in-a-linked-list-to-integer",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1773751078,
+      "timestamp_utc": "2026-03-17 12:37:58 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1951083595",
+      "title": "Swap Nodes in Pairs",
+      "slug": "swap-nodes-in-pairs",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1773751339,
+      "timestamp_utc": "2026-03-17 12:42:19 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1951090785",
+      "title": "String Compression",
+      "slug": "string-compression",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1773751939,
+      "timestamp_utc": "2026-03-17 12:52:19 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1951334106",
+      "title": "Subsets",
+      "slug": "subsets",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1773767066,
+      "timestamp_utc": "2026-03-17 17:04:26 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1951334799",
+      "title": "Subsets",
+      "slug": "subsets",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1773767100,
+      "timestamp_utc": "2026-03-17 17:05:00 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1951368741",
+      "title": "Subsets II",
+      "slug": "subsets-ii",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1773768793,
+      "timestamp_utc": "2026-03-17 17:33:13 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1951684817",
+      "title": "Count Submatrices with Top-Left Element and Sum Less Than k",
+      "slug": "count-submatrices-with-top-left-element-and-sum-less-than-k",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1773804582,
+      "timestamp_utc": "2026-03-18 03:29:42 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1951777839",
+      "title": "Permutations",
+      "slug": "permutations",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1773811880,
+      "timestamp_utc": "2026-03-18 05:31:20 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1951865719",
+      "title": "Serialize and Deserialize Binary Tree",
+      "slug": "serialize-and-deserialize-binary-tree",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1773818055,
+      "timestamp_utc": "2026-03-18 07:14:15 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1951943379",
+      "title": "Subsets",
+      "slug": "subsets",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1773824968,
+      "timestamp_utc": "2026-03-18 09:09:28 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1951943520",
+      "title": "Subsets",
+      "slug": "subsets",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1773824978,
+      "timestamp_utc": "2026-03-18 09:09:38 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1951944611",
+      "title": "Subsets II",
+      "slug": "subsets-ii",
+      "status_display": "Wrong Answer",
+      "listed_lang": "java",
+      "timestamp": 1773825060,
+      "timestamp_utc": "2026-03-18 09:11:00 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1951945614",
+      "title": "Subsets II",
+      "slug": "subsets-ii",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1773825132,
+      "timestamp_utc": "2026-03-18 09:12:12 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1951949489",
+      "title": "Permutations",
+      "slug": "permutations",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1773825413,
+      "timestamp_utc": "2026-03-18 09:16:53 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1951952175",
+      "title": "Permutations II",
+      "slug": "permutations-ii",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1773825612,
+      "timestamp_utc": "2026-03-18 09:20:12 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1951999872",
+      "title": "Combination Sum",
+      "slug": "combination-sum",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1773829368,
+      "timestamp_utc": "2026-03-18 10:22:48 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1951999991",
+      "title": "Combination Sum",
+      "slug": "combination-sum",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1773829379,
+      "timestamp_utc": "2026-03-18 10:22:59 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1952174837",
+      "title": "Combination Sum II",
+      "slug": "combination-sum-ii",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1773844409,
+      "timestamp_utc": "2026-03-18 14:33:29 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1952488499",
+      "title": "Generate Parentheses",
+      "slug": "generate-parentheses",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1773866291,
+      "timestamp_utc": "2026-03-18 20:38:11 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1952489954",
+      "title": "Generate Parentheses",
+      "slug": "generate-parentheses",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1773866483,
+      "timestamp_utc": "2026-03-18 20:41:23 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1952503717",
+      "title": "Combination Sum III",
+      "slug": "combination-sum-iii",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1773868408,
+      "timestamp_utc": "2026-03-18 21:13:28 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1952642091",
+      "title": "Count Submatrices With Equal Frequency of X and Y",
+      "slug": "count-submatrices-with-equal-frequency-of-x-and-y",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1773891685,
+      "timestamp_utc": "2026-03-19 03:41:25 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1952675261",
+      "title": "Letter Combinations of a Phone Number",
+      "slug": "letter-combinations-of-a-phone-number",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1773895003,
+      "timestamp_utc": "2026-03-19 04:36:43 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1965430138",
+      "title": "Number of Islands",
+      "slug": "number-of-islands",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1775013855,
+      "timestamp_utc": "2026-04-01 03:24:15 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1965435018",
+      "title": "Rotting Oranges",
+      "slug": "rotting-oranges",
+      "status_display": "Wrong Answer",
+      "listed_lang": "java",
+      "timestamp": 1775014413,
+      "timestamp_utc": "2026-04-01 03:33:33 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1965437064",
+      "title": "Rotting Oranges",
+      "slug": "rotting-oranges",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1775014634,
+      "timestamp_utc": "2026-04-01 03:37:14 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1965442735",
+      "title": "Max Area of Island",
+      "slug": "max-area-of-island",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1775015217,
+      "timestamp_utc": "2026-04-01 03:46:57 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1965446408",
+      "title": "Max Area of Island",
+      "slug": "max-area-of-island",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1775015581,
+      "timestamp_utc": "2026-04-01 03:53:01 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1965451739",
+      "title": "Number of Enclaves",
+      "slug": "number-of-enclaves",
+      "status_display": "Wrong Answer",
+      "listed_lang": "java",
+      "timestamp": 1775016102,
+      "timestamp_utc": "2026-04-01 04:01:42 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1965457334",
+      "title": "Number of Enclaves",
+      "slug": "number-of-enclaves",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1775016596,
+      "timestamp_utc": "2026-04-01 04:09:56 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1965467057",
+      "title": "Surrounded Regions",
+      "slug": "surrounded-regions",
+      "status_display": "Runtime Error",
+      "listed_lang": "java",
+      "timestamp": 1775017409,
+      "timestamp_utc": "2026-04-01 04:23:29 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1965467521",
+      "title": "Surrounded Regions",
+      "slug": "surrounded-regions",
+      "status_display": "Runtime Error",
+      "listed_lang": "java",
+      "timestamp": 1775017447,
+      "timestamp_utc": "2026-04-01 04:24:07 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1965468494",
+      "title": "Surrounded Regions",
+      "slug": "surrounded-regions",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1775017524,
+      "timestamp_utc": "2026-04-01 04:25:24 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1965639883",
+      "title": "01 Matrix",
+      "slug": "01-matrix",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1775031049,
+      "timestamp_utc": "2026-04-01 08:10:49 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1965763558",
+      "title": "Pacific Atlantic Water Flow",
+      "slug": "pacific-atlantic-water-flow",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1775041581,
+      "timestamp_utc": "2026-04-01 11:06:21 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1965847067",
+      "title": "01 Matrix",
+      "slug": "01-matrix",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1775049140,
+      "timestamp_utc": "2026-04-01 13:12:20 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1965857069",
+      "title": "Pacific Atlantic Water Flow",
+      "slug": "pacific-atlantic-water-flow",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1775049856,
+      "timestamp_utc": "2026-04-01 13:24:16 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1965860860",
+      "title": "Pacific Atlantic Water Flow",
+      "slug": "pacific-atlantic-water-flow",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1775050112,
+      "timestamp_utc": "2026-04-01 13:28:32 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1965861294",
+      "title": "Pacific Atlantic Water Flow",
+      "slug": "pacific-atlantic-water-flow",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1775050138,
+      "timestamp_utc": "2026-04-01 13:28:58 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1965865736",
+      "title": "Pacific Atlantic Water Flow",
+      "slug": "pacific-atlantic-water-flow",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1775050431,
+      "timestamp_utc": "2026-04-01 13:33:51 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1965868850",
+      "title": "Rotting Oranges",
+      "slug": "rotting-oranges",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1775050638,
+      "timestamp_utc": "2026-04-01 13:37:18 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1965869252",
+      "title": "Number of Islands",
+      "slug": "number-of-islands",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1775050663,
+      "timestamp_utc": "2026-04-01 13:37:43 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1965869569",
+      "title": "Max Area of Island",
+      "slug": "max-area-of-island",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1775050684,
+      "timestamp_utc": "2026-04-01 13:38:04 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1966340112",
+      "title": "Maximum Amount of Money Robot Can Earn",
+      "slug": "maximum-amount-of-money-robot-can-earn",
+      "status_display": "Accepted",
+      "listed_lang": "cpp",
+      "timestamp": 1775091769,
+      "timestamp_utc": "2026-04-02 01:02:49 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1967243204",
+      "title": "Course Schedule",
+      "slug": "course-schedule",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1775171509,
+      "timestamp_utc": "2026-04-02 23:11:49 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1967243249",
+      "title": "Course Schedule",
+      "slug": "course-schedule",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1775171520,
+      "timestamp_utc": "2026-04-02 23:12:00 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1967244446",
+      "title": "Course Schedule II",
+      "slug": "course-schedule-ii",
+      "status_display": "Wrong Answer",
+      "listed_lang": "java",
+      "timestamp": 1775171797,
+      "timestamp_utc": "2026-04-02 23:16:37 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1967244825",
+      "title": "Course Schedule II",
+      "slug": "course-schedule-ii",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1775171875,
+      "timestamp_utc": "2026-04-02 23:17:55 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1967305939",
+      "title": "Maximum Walls Destroyed by Robots",
+      "slug": "maximum-walls-destroyed-by-robots",
+      "status_display": "Accepted",
+      "listed_lang": "cpp",
+      "timestamp": 1775184746,
+      "timestamp_utc": "2026-04-03 02:52:26 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1967323189",
+      "title": "Is Graph Bipartite?",
+      "slug": "is-graph-bipartite",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1775187149,
+      "timestamp_utc": "2026-04-03 03:32:29 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1967328715",
+      "title": "Possible Bipartition",
+      "slug": "possible-bipartition",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1775187848,
+      "timestamp_utc": "2026-04-03 03:44:08 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1967897788",
+      "title": "Network Delay Time",
+      "slug": "network-delay-time",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1775234641,
+      "timestamp_utc": "2026-04-03 16:44:01 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1967899739",
+      "title": "Network Delay Time",
+      "slug": "network-delay-time",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1775234760,
+      "timestamp_utc": "2026-04-03 16:46:00 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1968090353",
+      "title": "Network Delay Time",
+      "slug": "network-delay-time",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1775248871,
+      "timestamp_utc": "2026-04-03 20:41:11 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1968125292",
+      "title": "Path With Minimum Effort",
+      "slug": "path-with-minimum-effort",
+      "status_display": "Wrong Answer",
+      "listed_lang": "java",
+      "timestamp": 1775254715,
+      "timestamp_utc": "2026-04-03 22:18:35 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1968125415",
+      "title": "Path With Minimum Effort",
+      "slug": "path-with-minimum-effort",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1775254744,
+      "timestamp_utc": "2026-04-03 22:19:04 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1968125680",
+      "title": "Path With Minimum Effort",
+      "slug": "path-with-minimum-effort",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1775254793,
+      "timestamp_utc": "2026-04-03 22:19:53 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1968169326",
+      "title": "Decode the Slanted Ciphertext",
+      "slug": "decode-the-slanted-ciphertext",
+      "status_display": "Accepted",
+      "listed_lang": "cpp",
+      "timestamp": 1775265462,
+      "timestamp_utc": "2026-04-04 01:17:42 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1968172708",
+      "title": "Network Delay Time",
+      "slug": "network-delay-time",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1775266278,
+      "timestamp_utc": "2026-04-04 01:31:18 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1968260943",
+      "title": "Path With Minimum Effort",
+      "slug": "path-with-minimum-effort",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1775278934,
+      "timestamp_utc": "2026-04-04 05:02:14 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1968584798",
+      "title": "Path With Minimum Effort",
+      "slug": "path-with-minimum-effort",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1775305822,
+      "timestamp_utc": "2026-04-04 12:30:22 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1968585048",
+      "title": "Path With Minimum Effort",
+      "slug": "path-with-minimum-effort",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1775305846,
+      "timestamp_utc": "2026-04-04 12:30:46 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1968585084",
+      "title": "Path With Minimum Effort",
+      "slug": "path-with-minimum-effort",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1775305849,
+      "timestamp_utc": "2026-04-04 12:30:49 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1968592299",
+      "title": "Path With Minimum Effort",
+      "slug": "path-with-minimum-effort",
+      "status_display": "Accepted",
+      "listed_lang": "java",
+      "timestamp": 1775306517,
+      "timestamp_utc": "2026-04-04 12:41:57 UTC",
+      "reason": "No detail returned"
+    },
+    {
+      "submission_id": "1968593809",
+      "title": "Decode the Slanted Ciphertext",
+      "slug": "decode-the-slanted-ciphertext",
+      "status_display": "Accepted",
+      "listed_lang": "cpp",
+      "timestamp": 1775306655,
+      "timestamp_utc": "2026-04-04 12:44:15 UTC",
+      "reason": "No detail returned"
+    }
+  ]
+}
