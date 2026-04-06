@@ -1,32 +1,33 @@
 class Solution {
-    public int[][] floodFill(int[][] image, int sr, int sc, int color) {
-        int tar = image[sr][sc];
+    public int[][] floodFill(int[][] grid, int sr, int sc, int color) {
+        int m = grid.length;
+        int n = grid[0].length;
 
-        if(tar==color){
-            return image;
+        int base = grid[sr][sc];
+        if(base == color) return grid;
+
+        Queue<int[]> q = new ArrayDeque<>();
+        q.offer(new int[]{sr,sc});
+        grid[sr][sc] = color;
+
+        int[][] dir = {{-1,0},{1,0},{0,-1},{0,1}};
+
+        while(!q.isEmpty()) {
+            int[] curr = q.poll();
+            int r = curr[0];
+            int c = curr[1];
+
+            for(int[] d : dir) {
+                int nr = r + d[0];
+                int nc = c + d[1];
+
+                if(nr >= 0 && nc >= 0 && nr < m && nc < n && grid[nr][nc] == base) {
+                    q.offer(new int[]{nr,nc});
+                    grid[nr][nc] = color;
+                }
+            }
         }
 
-        dfs(sr,sc,image,tar,color);
-
-        return image;
-    }
-
-    public void dfs(int i,int j, int image[][], int tar, int color){
-        if(i<0 || i>=image.length || j<0 || j>=image[0].length){
-            return;
-        }
-        if(image[i][j]!=tar){
-            return;
-        }
-        image[i][j]=color;
-
-        // top
-        dfs(i-1,j,image,tar,color);
-        // bottom
-        dfs(i+1,j,image,tar,color);
-        // left 
-        dfs(i,j-1,image,tar,color);
-        // right
-        dfs(i,j+1,image,tar,color);
+        return grid;
     }
 }
