@@ -364,6 +364,7 @@ Each folder contains:
 ## Array
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0733-flood-fill](https://github.com/Deepanshu954/LeetCode/tree/main/0733-flood-fill/) | Easy |
 | [0874-walking-robot-simulation](https://github.com/Deepanshu954/LeetCode/tree/main/0874-walking-robot-simulation/) | Medium |
 ## Hash Table
 | Problem Name | Difficulty |
@@ -373,4 +374,16 @@ Each folder contains:
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0874-walking-robot-simulation](https://github.com/Deepanshu954/LeetCode/tree/main/0874-walking-robot-simulation/) | Medium |
+## Depth-First Search
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0733-flood-fill](https://github.com/Deepanshu954/LeetCode/tree/main/0733-flood-fill/) | Easy |
+## Breadth-First Search
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0733-flood-fill](https://github.com/Deepanshu954/LeetCode/tree/main/0733-flood-fill/) | Easy |
+## Matrix
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0733-flood-fill](https://github.com/Deepanshu954/LeetCode/tree/main/0733-flood-fill/) | Easy |
 <!---LeetCode Topics End-->
