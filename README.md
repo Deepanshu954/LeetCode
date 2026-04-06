@@ -378,12 +378,22 @@ Each folder contains:
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0733-flood-fill](https://github.com/Deepanshu954/LeetCode/tree/main/0733-flood-fill/) | Easy |
+| [0802-find-eventual-safe-states](https://github.com/Deepanshu954/LeetCode/tree/main/0802-find-eventual-safe-states/) | Medium |
 ## Breadth-First Search
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0733-flood-fill](https://github.com/Deepanshu954/LeetCode/tree/main/0733-flood-fill/) | Easy |
+| [0802-find-eventual-safe-states](https://github.com/Deepanshu954/LeetCode/tree/main/0802-find-eventual-safe-states/) | Medium |
 ## Matrix
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0733-flood-fill](https://github.com/Deepanshu954/LeetCode/tree/main/0733-flood-fill/) | Easy |
+## Graph Theory
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0802-find-eventual-safe-states](https://github.com/Deepanshu954/LeetCode/tree/main/0802-find-eventual-safe-states/) | Medium |
+## Topological Sort
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0802-find-eventual-safe-states](https://github.com/Deepanshu954/LeetCode/tree/main/0802-find-eventual-safe-states/) | Medium |
 <!---LeetCode Topics End-->
