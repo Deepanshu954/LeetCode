@@ -1,52 +1,53 @@
-# [733. Flood Fill](https://leetcode.com/problems/flood-fill/)
+<h2><a href="https://leetcode.com/problems/flood-fill">733. Flood Fill</a></h2><h3>Easy</h3><hr><p>You are given an image represented by an <code>m x n</code> grid of integers <code>image</code>, where <code>image[i][j]</code> represents the pixel value of the image. You are also given three integers <code>sr</code>, <code>sc</code>, and <code>color</code>. Your task is to perform a <strong>flood fill</strong> on the image starting from the pixel <code>image[sr][sc]</code>.</p>
 
-**Difficulty:** 🟢 Easy  
-**Topics:** Array, Depth-First Search, Breadth-First Search, Matrix
+<p>To perform a <strong>flood fill</strong>:</p>
 
----
+<ol>
+	<li>Begin with the starting pixel and change its color to <code>color</code>.</li>
+	<li>Perform the same process for each pixel that is <strong>directly adjacent</strong> (pixels that share a side with the original pixel, either horizontally or vertically) and shares the <strong>same color</strong> as the starting pixel.</li>
+	<li>Keep <strong>repeating</strong> this process by checking neighboring pixels of the <em>updated</em> pixels&nbsp;and modifying their color if it matches the original color of the starting pixel.</li>
+	<li>The process <strong>stops</strong> when there are <strong>no more</strong> adjacent pixels of the original color to update.</li>
+</ol>
 
-## Problem
+<p>Return the <strong>modified</strong> image after performing the flood fill.</p>
 
-You are given an image represented by an m x n grid of integers image, where image[i][j] represents the pixel value of the image. You are also given three integers sr, sc, and color. Your task is to perform a flood fill on the image starting from the pixel image[sr][sc].
+<p>&nbsp;</p>
+<p><strong class="example">Example 1:</strong></p>
 
-To perform a flood fill:
+<div class="example-block">
+<p><strong>Input:</strong> <span class="example-io">image = [[1,1,1],[1,1,0],[1,0,1]], sr = 1, sc = 1, color = 2</span></p>
 
-	Begin with the starting pixel and change its color to color.
-	Perform the same process for each pixel that is directly adjacent (pixels that share a side with the original pixel, either horizontally or vertically) and shares the same color as the starting pixel.
-	Keep repeating this process by checking neighboring pixels of the updated pixels and modifying their color if it matches the original color of the starting pixel.
-	The process stops when there are no more adjacent pixels of the original color to update.
+<p><strong>Output:</strong> <span class="example-io">[[2,2,2],[2,2,0],[2,0,1]]</span></p>
 
-Return the modified image after performing the flood fill.
+<p><strong>Explanation:</strong></p>
 
- 
-Example 1:
+<p><img alt="" src="https://assets.leetcode.com/uploads/2021/06/01/flood1-grid.jpg" style="width: 613px; height: 253px;" /></p>
 
-Input: image = [[1,1,1],[1,1,0],[1,0,1]], sr = 1, sc = 1, color = 2
+<p>From the center of the image with position <code>(sr, sc) = (1, 1)</code> (i.e., the red pixel), all pixels connected by a path of the same color as the starting pixel (i.e., the blue pixels) are colored with the new color.</p>
 
-Output: [[2,2,2],[2,2,0],[2,0,1]]
+<p>Note the bottom corner is <strong>not</strong> colored 2, because it is not horizontally or vertically connected to the starting pixel.</p>
+</div>
 
-Explanation:
+<p><strong class="example">Example 2:</strong></p>
 
-From the center of the image with position (sr, sc) = (1, 1) (i.e., the red pixel), all pixels connected by a path of the same color as the starting pixel (i.e., the blue pixels) are colored with the new color.
+<div class="example-block">
+<p><strong>Input:</strong> <span class="example-io">image = [[0,0,0],[0,0,0]], sr = 0, sc = 0, color = 0</span></p>
 
-Note the bottom corner is not colored 2, because it is not horizontally or vertically connected to the starting pixel.
+<p><strong>Output:</strong> <span class="example-io">[[0,0,0],[0,0,0]]</span></p>
 
-Example 2:
+<p><strong>Explanation:</strong></p>
 
-Input: image = [[0,0,0],[0,0,0]], sr = 0, sc = 0, color = 0
+<p>The starting pixel is already colored with 0, which is the same as the target color. Therefore, no changes are made to the image.</p>
+</div>
 
-Output: [[0,0,0],[0,0,0]]
+<p>&nbsp;</p>
+<p><strong>Constraints:</strong></p>
 
-Explanation:
-
-The starting pixel is already colored with 0, which is the same as the target color. Therefore, no changes are made to the image.
-
- 
-Constraints:
-
-	m == image.length
-	n == image[i].length
-	1 <= m, n <= 50
-	0 <= image[i][j], color < 216
-	0 <= sr < m
-	0 <= sc < n
+<ul>
+	<li><code>m == image.length</code></li>
+	<li><code>n == image[i].length</code></li>
+	<li><code>1 &lt;= m, n &lt;= 50</code></li>
+	<li><code>0 &lt;= image[i][j], color &lt; 2<sup>16</sup></code></li>
+	<li><code>0 &lt;= sr &lt; m</code></li>
+	<li><code>0 &lt;= sc &lt; n</code></li>
+</ul>
