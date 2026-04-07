@@ -6,9 +6,11 @@ class Solution {
 
         for(int[] f : flights) adj[f[0]].add(new int[]{f[1], f[2]});
 
-        int[] dist = new int[n];
-        Arrays.fill(dist, Integer.MAX_VALUE);
-        dist[src] = 0;
+        int[][] dist = new int[n][k+2];
+        for(int i = 0; i < n; i++) {
+            Arrays.fill(dist[i], Integer.MAX_VALUE);
+        }
+        dist[src][0] = 0;
 
         PriorityQueue<int[]> pq = new PriorityQueue<>(
             (a,b) -> a[2] - b[2]
@@ -28,14 +30,20 @@ class Solution {
                 int v = e[0];
                 int w = e[1];
 
-                if(dist[u] + w < dist[v]) {
-                    dist[v] = dist[u] + w;
-                    pq.offer(new int[]{s+1, v, dist[v]});
+                if(d + w < dist[v][s+1]) {
+                    dist[v][s+1] = d + w;
+                    pq.offer(new int[]{s+1, v, d + w});
                 }
             }
         }
 
-        return dist[dst] == Integer.MAX_VALUE ? -1 : dist[dst]; 
+        int ans = Integer.MAX_VALUE;
+
+        for(int i = 0; i <= k + 1; i++) {
+            ans = Math.min(ans, dist[dst][i]);
+        }
+
+        return ans == Integer.MAX_VALUE ? -1 : ans;
 
     }
 }
