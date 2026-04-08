@@ -11,7 +11,7 @@ class Solution {
                 int v = e[1];
                 int w = e[2];
 
-                if(dist[u] = Integer.MAX_VALUE) continue;
+                if(dist[u] == Integer.MAX_VALUE) continue;
 
                 if(dist[u] + w < dist[v]) {
                     dist[v] = dist[u] + w;
