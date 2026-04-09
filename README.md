@@ -367,6 +367,7 @@ Each folder contains:
 | [0733-flood-fill](https://github.com/Deepanshu954/LeetCode/tree/main/0733-flood-fill/) | Easy |
 | [0874-walking-robot-simulation](https://github.com/Deepanshu954/LeetCode/tree/main/0874-walking-robot-simulation/) | Medium |
 | [3653-xor-after-range-multiplication-queries-i](https://github.com/Deepanshu954/LeetCode/tree/main/3653-xor-after-range-multiplication-queries-i/) | Medium |
+| [3655-xor-after-range-multiplication-queries-ii](https://github.com/Deepanshu954/LeetCode/tree/main/3655-xor-after-range-multiplication-queries-ii/) | Hard |
 ## Hash Table
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -427,4 +428,5 @@ Each folder contains:
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [3653-xor-after-range-multiplication-queries-i](https://github.com/Deepanshu954/LeetCode/tree/main/3653-xor-after-range-multiplication-queries-i/) | Medium |
+| [3655-xor-after-range-multiplication-queries-ii](https://github.com/Deepanshu954/LeetCode/tree/main/3655-xor-after-range-multiplication-queries-ii/) | Hard |
 <!---LeetCode Topics End-->
