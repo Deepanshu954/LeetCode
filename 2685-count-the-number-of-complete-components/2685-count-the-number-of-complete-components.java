@@ -65,7 +65,7 @@ class Solution {
             int node = nodeCount[i];
             int edge = edgeCount[i];
 
-            int expected = node * (node - 1) / 2;
+            int expected = (node * (node - 1)) / 2;
 
             if(edge == expected) ans++;
         }
