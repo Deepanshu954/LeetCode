@@ -1,0 +1,72 @@
+class Solution {
+
+    class DSU {
+        int[] parent, size;
+        int components;
+
+        DSU(int n) {
+            parent = new int[n];
+            size = new int[n];
+            components = n;
+
+            for(int i = 0; i < n; i++) {
+                parent[i] = i;
+                size[i] = 1;
+            }
+        }
+
+        int find(int x) {
+            if(parent[x] == x) return x;
+            return parent[x] = find(parent[x]);
+        }
+
+        void union(int u, int v) {
+            int pu = find(u);
+            int pv = find(v);
+
+            if(pu == pv) return;
+
+            if(size[pu] < size[pv]) {
+                parent[pu] = pv;
+                size[pv] += size[pu];
+            } else {
+                parent[pv] = pu;
+                size[pu] += size[pv];
+            }
+
+            components--;
+        }
+
+        boolean isConnected(int u, int v) {
+            return find(u) == find(v);
+        }
+
+        int getComponents() {
+            return components;
+        }
+    }
+
+    public boolean equationsPossible(String[] strs) {
+        DSU dsu = new DSU(26);
+
+        for(String str : strs) {
+            if(str.charAt(1) == '=') {
+                int u = str.charAt(0) - 'a';
+                int v = str.charAt(3) - 'a';
+
+                dsu.union(u,v);
+            }
+        }
+
+        for(String str : strs) {
+            if(str.charAt(1) == '!') {
+                int u = str.charAt(0) - 'a';
+                int v = str.charAt(3) - 'a';
+
+                if(dsu.isConnected(u,v)) return false;
+            }
+        }
+
+        return true;
+    }
+}
