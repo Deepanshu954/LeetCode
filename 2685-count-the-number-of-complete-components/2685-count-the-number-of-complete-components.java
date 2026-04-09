@@ -1,5 +1,5 @@
 class Solution {
-    class DSU {
+    public class DSU {
         int[] parent, size;
 
         DSU(int n) {
@@ -13,11 +13,6 @@ class Solution {
         }
 
         int find(int x) {
-            // if(parent[x] != x) {
-            //     parent[x] = find(parent[x]);
-            // }
-            // return parent[x];
-
             if(parent[x] == x) return x;
             return parent[x] = find(parent[x]);
         }
@@ -37,40 +32,42 @@ class Solution {
             }
         }
     }
-
     public int countCompleteComponents(int n, int[][] edges) {
         DSU dsu = new DSU(n);
 
-        // Step 1: Build components
+        // crerate conn
         for(int[] e : edges) {
             dsu.union(e[0], e[1]);
         }
 
-        // Step 2: Count nodes in each component
+        // node counts
         int[] nodeCount = new int[n];
+
         for(int i = 0; i < n; i++) {
-            int parent = dsu.find(i);
-            nodeCount[parent]++;
+            int p = dsu.find(i);
+            nodeCount[p]++;
         }
 
-        // Step 3: Count edges in each component
+        // edge Count
         int[] edgeCount = new int[n];
-        for(int[] e : edges) {
-            int parent = dsu.find(e[0]);
-            edgeCount[parent]++;
+
+        for(int[] e :edges) {
+            int p = dsu.find(e[0]);
+            edgeCount[p]++;
         }
 
-        // Step 4: Check complete components
+        // ans
         int ans = 0;
+
         for(int i = 0; i < n; i++) {
             if(nodeCount[i] == 0) continue;
 
-            int nodes = nodeCount[i];
-            int edgesNeeded = nodes * (nodes - 1) / 2;
+            int node = nodeCount[i];
+            int edge = edgeCount[i];
 
-            if(edgeCount[i] == edgesNeeded) {
-                ans++;
-            }
+            int expected = node * (node - 1) / 2;
+
+            if(edge == expected) ans++;
         }
 
         return ans;
