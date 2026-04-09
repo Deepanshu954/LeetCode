@@ -1,104 +1,89 @@
-typedef long long ll;
-
+/**
+ * Time Complexity: O(q + b * n)
+ * Space Complexity: O(b * (n + b))
+ * where `q` is the length of the vector `queries`
+ *       `b` is static_cast<int>(sqrt(q))
+ *       `n` is the length of the vector `nums`
+ */
 class Solution {
-public:
-    static constexpr long long MOD = (int)(1e9 + 7);
+ private:
+  static constexpr int mod = 1000000007;
 
-    // fast modular exponentiation: a^e mod m
-    long long mod_pow(long long a, long long e, long long m = MOD) {
-        a %= m;
-        if (a < 0) a += m;
-        long long r = 1 % m;
-        while (e > 0) {
-            if (e & 1) r = (r * a) % m;
-            a = (a * a) % m;
-            e >>= 1;
+ public:
+  int xorAfterQueries(vector<int> &nums, const vector<vector<int>> &queries) {
+    using range_t = array<int, 2>;
+    constexpr int l_i = 0;
+    constexpr int r_i = 1;
+    constexpr int k_i = 2;
+    constexpr int v_i = 3;
+    const int n = static_cast<int>(nums.size());
+    const int b = static_cast<int>(sqrt(queries.size()));
+    vector<vector<int>> diff(b);
+    bool need_calculate[b][b];
+    memset(need_calculate, 0, sizeof(need_calculate));
+
+    for (const vector<int> &query : queries) {
+      const int l = query[l_i];
+      const int r = query[r_i];
+      const int k = query[k_i];
+      const int v = query[v_i];
+      if (k < b) {
+        need_calculate[k][l % b] = true;
+        if (diff[k].empty()) {
+          diff[k] = vector<int>(n, 1);
         }
-        return r;
+        diff[k][l] = multiply(diff[k][l], v);
+        const int right = r - (r - l) % k + k;
+        if (right < n) {
+          diff[k][right] = multiply(diff[k][right], inv(v));
+        }
+      } else {
+        // use the brute-force
+        for (int i = l; i < r + 1; i += k) {
+          nums[i] = multiply(nums[i], v);
+        }
+      }
     }
 
-    // modular inverse: a^{-1} mod m (m must be prime and a != 0 mod m)
-    long long mod_inv(long long a, long long m = MOD) {
-        a %= m;
-        if (a < 0) a += m;
-        return mod_pow(a, m - 2, m);
-    }
-
-    bool same(vector<int>& q, int k, int lm)
-    {
-        return q[2] == k && ((q[0] % k) == lm); 
-    }
-
-    int xorAfterQueries(vector<int>& nums1, vector<vector<int>>& qs) {
-        sort(qs.begin(), qs.end(), [](const vector<int>& a, const vector<int>& b){
-            int ka = a[2];
-            int kb = b[2];
-            if (ka != kb) return ka < kb;
-            int la = a[0] % ka;
-            int lb = b[0] % kb;
-            return la < lb;
-        });
-
-        int m = qs.size();
-        int i = 0;
-        int n = nums1.size();
-        vector<ll> nums(n);
-        for (int i = 0; i < n; i++) nums[i] = nums1[i];
-        vector<ll> dp(n, 1);
-        int nq = sqrt(n);
-
-        while (i < m)
-        {
-            auto& cur = qs[i];
-            int k = cur[2];
-            if (k > nq)
-            {
-                for (int j = cur[0]; j <= cur[1]; j += k)
-                {
-                    nums[j] = nums[j] * (ll)(cur[3]) % MOD;
-                }
-                i++;
-                continue;
-            }
-            int lm = cur[0] % k;
-            int j = i + 1;
-           
-            while (j < m && same(qs[j], k, lm))
-            {
-                j++;
-            }
-            for (int x = i; x < j; x++)
-            {
-                auto& q = qs[x];
-                int l = q[0];
-                int r = q[1];
-                int v = q[3];
-                dp[l] = dp[l] * v % MOD;
-                int e = l + ((r - l)/k + 1) * k;
-                if (e < n)
-                {
-                    dp[e] = dp[e] * mod_inv(v) % MOD;
-                }
-            }
-            ll pre = 1;
-            for (int x = lm; x < n; x += k)
-            {
-                dp[x] = dp[x] * pre % MOD;
-                pre = dp[x];
-
-                nums[x] = nums[x] * dp[x] % MOD;
-                dp[x] = 1;
-            }
-            i = j;
-        }
-
-        ll cur = nums[0];
-        for (int i = 1; i < n; i++)
-        {
-            cur = cur ^ nums[i];
-        }
-        return cur;
-
+    for (int k = 1; k < b; ++k) {
+      if (diff[k].empty()) {
+        continue;
+      }
         
+      for (int start = 0; start < k; ++start) {
+        if (!need_calculate[start]) {
+          continue;
+        }
+
+        int coefficient = 1;
+        for (int i = start; i < n; i += k) {
+          coefficient = multiply(coefficient, diff[k][i]);
+          nums[i] = multiply(nums[i], coefficient);
+        }
+      }
     }
+
+    return reduce(nums.begin(), nums.end(), 0, bit_xor());
+  }
+
+ private:
+  int multiply(const int a, const int b) {
+    return static_cast<int>(static_cast<long long>(a) * b % mod);
+  }
+
+  int power(const int n, const int p) {
+    int ret = 1;
+    int base = n;
+    for (int pow = p; pow > 0; pow >>= 1) {
+      if ((pow & 1) == 1) {
+        ret = multiply(ret, base);
+      }
+      base = multiply(base, base);
+    }
+    return ret;
+  }
+
+  int inv(const int n) {
+    return power(n, mod - 2);
+  }
 };
