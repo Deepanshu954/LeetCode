@@ -67,18 +67,7 @@ class Solution {
             sum += size;
         }
 
-
         return res;
     }
 
 }
-
-
-
-
-
-
-
-
-
-
