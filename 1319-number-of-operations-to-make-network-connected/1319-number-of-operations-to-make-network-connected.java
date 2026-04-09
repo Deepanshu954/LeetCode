@@ -58,36 +58,6 @@ class Solution {
             dsu.union(u,v);
         }
 
-        // // No Of Nodes
-        // int[] countNodes = new int[n];
-
-        // for(int i = 0; i < n; i++) {
-        //     int p = find(i);
-        //     countNodes[p]++;
-        // }
-
-        // // No Of Nodes
-
-        // int[] countEdges = new int[n];
-
-        // for(int[] e : edges) {
-        //     int p = find[e[0]];
-        //     countEdges[p]++;
-        // }
-
         return dsu.getComponents() - 1;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
