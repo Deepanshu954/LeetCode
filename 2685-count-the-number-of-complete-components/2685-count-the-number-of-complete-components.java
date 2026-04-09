@@ -13,10 +13,13 @@ class Solution {
         }
 
         int find(int x) {
-            if(parent[x] != x) {
-                parent[x] = find(parent[x]);
-            }
-            return parent[x];
+            // if(parent[x] != x) {
+            //     parent[x] = find(parent[x]);
+            // }
+            // return parent[x];
+
+            if(parent[x] == x) return x;
+            return parent[x] = find(parent[x]);
         }
 
         void union(int u, int v) {
