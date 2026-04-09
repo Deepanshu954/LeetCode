@@ -385,6 +385,7 @@ Each folder contains:
 | [0743-network-delay-time](https://github.com/Deepanshu954/LeetCode/tree/main/0743-network-delay-time/) | Medium |
 | [0787-cheapest-flights-within-k-stops](https://github.com/Deepanshu954/LeetCode/tree/main/0787-cheapest-flights-within-k-stops/) | Medium |
 | [0802-find-eventual-safe-states](https://github.com/Deepanshu954/LeetCode/tree/main/0802-find-eventual-safe-states/) | Medium |
+| [2685-count-the-number-of-complete-components](https://github.com/Deepanshu954/LeetCode/tree/main/2685-count-the-number-of-complete-components/) | Medium |
 ## Breadth-First Search
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -392,6 +393,7 @@ Each folder contains:
 | [0743-network-delay-time](https://github.com/Deepanshu954/LeetCode/tree/main/0743-network-delay-time/) | Medium |
 | [0787-cheapest-flights-within-k-stops](https://github.com/Deepanshu954/LeetCode/tree/main/0787-cheapest-flights-within-k-stops/) | Medium |
 | [0802-find-eventual-safe-states](https://github.com/Deepanshu954/LeetCode/tree/main/0802-find-eventual-safe-states/) | Medium |
+| [2685-count-the-number-of-complete-components](https://github.com/Deepanshu954/LeetCode/tree/main/2685-count-the-number-of-complete-components/) | Medium |
 ## Matrix
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -402,6 +404,7 @@ Each folder contains:
 | [0743-network-delay-time](https://github.com/Deepanshu954/LeetCode/tree/main/0743-network-delay-time/) | Medium |
 | [0787-cheapest-flights-within-k-stops](https://github.com/Deepanshu954/LeetCode/tree/main/0787-cheapest-flights-within-k-stops/) | Medium |
 | [0802-find-eventual-safe-states](https://github.com/Deepanshu954/LeetCode/tree/main/0802-find-eventual-safe-states/) | Medium |
+| [2685-count-the-number-of-complete-components](https://github.com/Deepanshu954/LeetCode/tree/main/2685-count-the-number-of-complete-components/) | Medium |
 ## Topological Sort
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -429,4 +432,8 @@ Each folder contains:
 | ------- | ------- |
 | [3653-xor-after-range-multiplication-queries-i](https://github.com/Deepanshu954/LeetCode/tree/main/3653-xor-after-range-multiplication-queries-i/) | Medium |
 | [3655-xor-after-range-multiplication-queries-ii](https://github.com/Deepanshu954/LeetCode/tree/main/3655-xor-after-range-multiplication-queries-ii/) | Hard |
+## Union-Find
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [2685-count-the-number-of-complete-components](https://github.com/Deepanshu954/LeetCode/tree/main/2685-count-the-number-of-complete-components/) | Medium |
 <!---LeetCode Topics End-->
