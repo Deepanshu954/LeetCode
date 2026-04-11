@@ -44,7 +44,7 @@ class Solution {
                     ways[v] = ways[u];
                     pq.offer(new int[]{dist[v], v});
                 } else if(dist[u] + w == dist[v]) {
-                    ways[v] = ways[v] + ways[u];
+                    ways[v] = (ways[v] + ways[u]) % 1000000007;
                 }
             }
         }
