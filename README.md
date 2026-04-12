@@ -364,6 +364,7 @@ Each folder contains:
 ## Array
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0200-number-of-islands](https://github.com/Deepanshu954/LeetCode/tree/main/0200-number-of-islands/) | Medium |
 | [0733-flood-fill](https://github.com/Deepanshu954/LeetCode/tree/main/0733-flood-fill/) | Easy |
 | [0874-walking-robot-simulation](https://github.com/Deepanshu954/LeetCode/tree/main/0874-walking-robot-simulation/) | Medium |
 | [0990-satisfiability-of-equality-equations](https://github.com/Deepanshu954/LeetCode/tree/main/0990-satisfiability-of-equality-equations/) | Medium |
@@ -387,6 +388,7 @@ Each folder contains:
 ## Depth-First Search
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0200-number-of-islands](https://github.com/Deepanshu954/LeetCode/tree/main/0200-number-of-islands/) | Medium |
 | [0733-flood-fill](https://github.com/Deepanshu954/LeetCode/tree/main/0733-flood-fill/) | Easy |
 | [0743-network-delay-time](https://github.com/Deepanshu954/LeetCode/tree/main/0743-network-delay-time/) | Medium |
 | [0787-cheapest-flights-within-k-stops](https://github.com/Deepanshu954/LeetCode/tree/main/0787-cheapest-flights-within-k-stops/) | Medium |
@@ -399,6 +401,7 @@ Each folder contains:
 ## Breadth-First Search
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0200-number-of-islands](https://github.com/Deepanshu954/LeetCode/tree/main/0200-number-of-islands/) | Medium |
 | [0733-flood-fill](https://github.com/Deepanshu954/LeetCode/tree/main/0733-flood-fill/) | Easy |
 | [0743-network-delay-time](https://github.com/Deepanshu954/LeetCode/tree/main/0743-network-delay-time/) | Medium |
 | [0787-cheapest-flights-within-k-stops](https://github.com/Deepanshu954/LeetCode/tree/main/0787-cheapest-flights-within-k-stops/) | Medium |
@@ -411,6 +414,7 @@ Each folder contains:
 ## Matrix
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0200-number-of-islands](https://github.com/Deepanshu954/LeetCode/tree/main/0200-number-of-islands/) | Medium |
 | [0733-flood-fill](https://github.com/Deepanshu954/LeetCode/tree/main/0733-flood-fill/) | Easy |
 | [1034-coloring-a-border](https://github.com/Deepanshu954/LeetCode/tree/main/1034-coloring-a-border/) | Medium |
 ## Graph Theory
@@ -459,6 +463,7 @@ Each folder contains:
 ## Union-Find
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0200-number-of-islands](https://github.com/Deepanshu954/LeetCode/tree/main/0200-number-of-islands/) | Medium |
 | [0990-satisfiability-of-equality-equations](https://github.com/Deepanshu954/LeetCode/tree/main/0990-satisfiability-of-equality-equations/) | Medium |
 | [1319-number-of-operations-to-make-network-connected](https://github.com/Deepanshu954/LeetCode/tree/main/1319-number-of-operations-to-make-network-connected/) | Medium |
 | [1971-find-if-path-exists-in-graph](https://github.com/Deepanshu954/LeetCode/tree/main/1971-find-if-path-exists-in-graph/) | Easy |
