@@ -1,36 +1,39 @@
 class Solution {
-    public void solve(char[][] board) {
-        int m = board.length;
-        int n = board[0].length;
+    private int m,n;
+
+    public void solve(char[][] grid) {
+        m = grid.length;
+        n = grid[0].length;
 
         for(int i = 0; i < m; i++) {
-            if(board[i][0] == 'O') dfs(board, i, 0);
-            if(board[i][n-1] == 'O') dfs(board, i, n-1);
+            if(grid[i][0] == 'O') dfs(grid, i, 0);
+            if(grid[i][n-1] == 'O') dfs(grid, i, n-1);
         }
 
         for(int j = 0; j < n; j++) {
-            if(board[0][j] == 'O') dfs(board, 0, j);
-            if(board[m-1][j] == 'O') dfs(board, m-1, j);
+            if(grid[0][j] == 'O') dfs(grid, 0, j);
+            if(grid[m-1][j] == 'O') dfs(grid, m-1, j);
         }
 
-        for(int i = 0; i < m; i++) {
-            for(int j = 0; j < n; j++) {
-                if(board[i][j] == 'O') board[i][j] = 'X';
-                if(board[i][j] == 'T') board[i][j] = 'O';
+
+        for (int i = 0; i < m; i++) {
+            for (int j = 0; j < n; j++) {
+                if (grid[i][j] == 'T') grid[i][j] = 'O';
+                else if(grid[i][j] == 'O') grid[i][j] = 'X';
             }
         }
+        return;
     }
 
-    private void dfs(char[][] board, int r, int c) {
-        int m = board.length;
-        int n = board[0].length;
+    private void dfs(char[][] grid, int r, int c) {
+        if (r < 0 || c < 0 || r >= m || c >= n || grid[r][c] == 'X')
+            return;
 
-        if(r < 0 || c < 0 || r >= m || c >= n || board[r][c] != 'O') return;
-        board[r][c] = 'T';
+        grid[r][c] = 'T';
 
-        dfs(board, r-1, c);
-        dfs(board, r+1, c);
-        dfs(board, r, c-1);
-        dfs(board, r, c+1);
+        dfs(grid, r - 1, c);
+        dfs(grid, r + 1, c);
+        dfs(grid, r, c - 1);
+        dfs(grid, r, c + 1);
     }
 }
