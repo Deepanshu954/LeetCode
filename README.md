@@ -438,6 +438,7 @@ Each folder contains:
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0787-cheapest-flights-within-k-stops](https://github.com/Deepanshu954/LeetCode/tree/main/0787-cheapest-flights-within-k-stops/) | Medium |
+| [1320-minimum-distance-to-type-a-word-using-two-fingers](https://github.com/Deepanshu954/LeetCode/tree/main/1320-minimum-distance-to-type-a-word-using-two-fingers/) | Hard |
 | [1976-number-of-ways-to-arrive-at-destination](https://github.com/Deepanshu954/LeetCode/tree/main/1976-number-of-ways-to-arrive-at-destination/) | Medium |
 ## Heap (Priority Queue)
 | Problem Name | Difficulty |
@@ -467,4 +468,5 @@ Each folder contains:
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0990-satisfiability-of-equality-equations](https://github.com/Deepanshu954/LeetCode/tree/main/0990-satisfiability-of-equality-equations/) | Medium |
+| [1320-minimum-distance-to-type-a-word-using-two-fingers](https://github.com/Deepanshu954/LeetCode/tree/main/1320-minimum-distance-to-type-a-word-using-two-fingers/) | Hard |
 <!---LeetCode Topics End-->
