@@ -1,14 +1,17 @@
 class Solution {
+    private int m,n;
     public int maxAreaOfIsland(int[][] grid) {
-        int m = grid.length;
-        int n = grid[0].length;
+        m = grid.length;
+        n = grid[0].length;
 
         int maxArea = 0;
+        boolean[][] vis = new boolean[m][n];
 
-        for(int i = 0; i < m; i++) {
-            for(int j = 0; j < n; j++) {
-                if(grid[i][j] == 1) {
-                    maxArea = Math.max(maxArea, dfs(grid,i,j));
+        for (int i = 0; i < m; i++) {
+            for (int j = 0; j < n; j++) {
+                if (grid[i][j] == 1 && !vis[i][j]) {
+                    int area = dfs(grid, i, j, vis);
+                    maxArea = Math.max(area, maxArea);
                 }
             }
         }
@@ -16,61 +19,16 @@ class Solution {
         return maxArea;
     }
 
-    private int dfs(int[][] grid, int r, int c) {
-        int m = grid.length;
-        int n = grid[0].length;
+    private int dfs(int[][] grid, int r, int c, boolean[][] vis) {
+        if (r < 0 || c < 0 || r >= m || c >= n || grid[r][c] == 0 || vis[r][c])
+            return 0;
 
-        if(r < 0 || c < 0 || r >= m || c >= n || grid[r][c] == 0) return 0;
+        vis[r][c] = true;
         grid[r][c] = 0;
 
-        return 1 +
-        dfs(grid, r-1, c) +
-        dfs(grid, r+1, c) +
-        dfs(grid, r, c-1) +
-        dfs(grid, r, c+1);
+        return 1 + dfs(grid, r - 1, c, vis)
+        + dfs(grid, r + 1, c, vis)
+        + dfs(grid, r, c - 1, vis)
+        + dfs(grid, r, c + 1, vis);
     }
 }
-
-
-
-/*
-
-class Solution {
-    private int area = 0;
-    private int maxArea = 0;
-
-    public int maxAreaOfIsland(int[][] grid) {
-        int m = grid.length;
-        int n = grid[0].length;
-
-
-        for(int i = 0; i < m; i++) {
-            for(int j = 0; j < n; j++) {
-                if(grid[i][j] == 1) {
-                    area = 0;
-                    dfs(grid,i,j);
-                }
-                maxArea = Math.max(maxArea, area);
-            }
-        }
-
-        return maxArea;
-    }
-
-    private void dfs(int[][] grid, int r, int c) {
-        int m = grid.length;
-        int n = grid[0].length;
-
-        if(r < 0 || c < 0 || r >= m || c >= n || grid[r][c] == 0) return;
-        grid[r][c] = 0;
-
-        area++;
-
-        dfs(grid, r-1, c);
-        dfs(grid, r+1, c);
-        dfs(grid, r, c-1);
-        dfs(grid, r, c+1);
-    }
-}
-
-*/
