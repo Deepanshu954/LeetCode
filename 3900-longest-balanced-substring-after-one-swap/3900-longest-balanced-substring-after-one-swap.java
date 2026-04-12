@@ -1,52 +1,91 @@
 class Solution {
     public int longestBalanced(String s) {
-        // String str = "111001111110011";
-        // if(s.equals(str)) return 6;
         int n = s.length();
 
         int t0 = 0;
         int t1 = 0;
 
         for (char c : s.toCharArray()) {
-            if (c == '0')
-                t0++;
-            else
-                t1++;
+            if (c == '0') t0++;
+            else t1++;
         }
 
-        int ans = 0;
-
-        HashMap<Integer, Integer> map = new HashMap<>();
-        map.put(0, -1);
+        int[] first = new int[2*n + 1];
+        int[] second = new int[2*n + 1];
+        Arrays.fill(first, -2);
+        Arrays.fill(second, -2);
 
         int sum = 0;
+        int offset = n;
+        first[offset] = -1;
 
+        int ans = 0;
 
         for (int i = 0; i < n; i++) {
             sum += (s.charAt(i) == '1') ? 1 : -1;
 
-            if (map.containsKey(sum)) {
-                int len = i - map.get(sum);
-                ans = Math.max(ans,len);
+            if(first[sum + offset] != -2) {
+                ans = Math.max(ans, i - first[sum + offset]);
             }
 
-            if (map.containsKey(sum - 2)) {
-                int len = i - map.get(sum - 2);
-
-                int need1 = 1;
-                if(len <= 2 * Math.min(t0, t1)) ans = Math.max(ans, len);
+            int target1 = sum - 2 + offset;
+            if(target1 >= 0 && target1 <= 2 * n) {
+                int j1 = first[target1];
+                if(j1 != -2) {
+                    int len = i -j1;
+                    if(t0 >= len/2) ans = Math.max(ans, len);
+                    else {
+                        int j2 = second[target1];
+                        if(j2 != -2) {
+                            int len2 = i - j2;
+                            if(t0 >= len2/2) ans = Math.max(ans, len2);
+                        }
+                    }
+                }
             }
 
-            if (map.containsKey(sum + 2)) {
-                int len = i - map.get(sum + 2);
 
-                int need0 = 1;
-                if(len <= 2 * Math.min(t0, t1)) ans = Math.max(ans, len);
+            int target2 = sum + 2 + offset;
+            if(target2 >= 0 && target2 <= 2 * n) {
+                int j1 = first[target2];
+                
+                if(j1 != -2) {
+                    int len = i -j1;
+                    if(t1 >= len/2) ans = Math.max(ans, len);
+                    else {
+                        int j2 = second[target2];
+                        if(j2 != -2) {
+                            int len2 = i - j2;
+                            if(t1 >= len2/2) ans = Math.max(ans, len2);
+                        }
+                    }
+                }
             }
 
-            map.putIfAbsent(sum, i);
+            if(first[sum + offset] == -2) first[sum + offset] = i;
+            else if(second[sum + offset] == -2) second[sum + offset] = i;
+            
         }
 
         return ans;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
