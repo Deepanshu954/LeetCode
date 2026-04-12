@@ -1,7 +1,7 @@
 class Solution {
     public int longestBalanced(String s) {
-        String str = "111001111110011";
-        if(s.equals(str)) return 6;
+        // String str = "111001111110011";
+        // if(s.equals(str)) return 6;
         int n = s.length();
 
         int t0 = 0;
@@ -14,32 +14,39 @@ class Solution {
                 t1++;
         }
 
-        int maxP = 2 * Math.min(t0, t1);
+        int ans = 0;
 
         HashMap<Integer, Integer> map = new HashMap<>();
         map.put(0, -1);
 
         int sum = 0;
-        int maxLen = 0;
+
 
         for (int i = 0; i < n; i++) {
             sum += (s.charAt(i) == '1') ? 1 : -1;
 
             if (map.containsKey(sum)) {
-                maxLen = Math.max(maxLen, i - map.get(sum));
+                int len = i - map.get(sum);
+                ans = Math.max(ans,len);
             }
 
             if (map.containsKey(sum - 2)) {
-                maxLen = Math.max(maxLen, i - map.get(sum-2));
+                int len = i - map.get(sum - 2);
+
+                int need1 = 1;
+                if(len <= 2 * Math.min(t0, t1)) ans = Math.max(ans, len);
             }
 
             if (map.containsKey(sum + 2)) {
-                maxLen = Math.max(maxLen, i - map.get(sum+2));
+                int len = i - map.get(sum + 2);
+
+                int need0 = 1;
+                if(len <= 2 * Math.min(t0, t1)) ans = Math.max(ans, len);
             }
 
             map.putIfAbsent(sum, i);
         }
 
-        return Math.min(maxLen, maxP);
+        return ans;
     }
 }
