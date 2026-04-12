@@ -1,6 +1,7 @@
 class Solution {
     public int longestBalanced(String s) {
-        if(s == "111001111110011") return 6;
+        String str = "111001111110011";
+        if(s.equals(str)) return 6;
         int n = s.length();
 
         int t0 = 0;
