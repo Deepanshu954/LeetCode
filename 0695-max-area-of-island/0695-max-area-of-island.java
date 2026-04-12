@@ -1,13 +1,17 @@
 class Solution {
+    private int m,n;
     public int maxAreaOfIsland(int[][] grid) {
-        if(grid == null || grid.length == 0) return 0;
-        int maxArea = 0;
+        m = grid.length;
+        n = grid[0].length;
 
-        for(int i = 0; i < grid.length; i++) {
-            for(int j = 0; j < grid[0].length; j++) {
-                if(grid[i][j] == 1) {
-                    int area = bfs(grid, i, j);
-                    maxArea = Math.max(maxArea, area);
+        int maxArea = 0;
+        boolean[][] vis = new boolean[m][n];
+
+        for (int i = 0; i < m; i++) {
+            for (int j = 0; j < n; j++) {
+                if (grid[i][j] == 1 && !vis[i][j]) {
+                    int area = dfs(grid, i, j, vis);
+                    maxArea = Math.max(area, maxArea);
                 }
             }
         }
@@ -15,17 +19,16 @@ class Solution {
         return maxArea;
     }
 
-    private int bfs(int[][] grid, int i, int j) {
-        if(i < 0 || i >= grid.length || j < 0 || j >= grid[0].length || grid[i][j] == 0) return 0;
+    private int dfs(int[][] grid, int r, int c, boolean[][] vis) {
+        if (r < 0 || c < 0 || r >= m || c >= n || grid[r][c] == 0 || vis[r][c])
+            return 0;
 
-        grid[i][j] = 0;
+        vis[r][c] = true;
+        grid[r][c] = 0;
 
-        int area = 1;
-        area += bfs(grid, i + 1, j);
-        area += bfs(grid, i - 1, j);
-        area += bfs(grid, i, j + 1);
-        area += bfs(grid, i, j - 1);
-
-        return area;
+        return 1 + dfs(grid, r - 1, c, vis)
+        + dfs(grid, r + 1, c, vis)
+        + dfs(grid, r, c - 1, vis)
+        + dfs(grid, r, c + 1, vis);
     }
 }
