@@ -415,6 +415,7 @@ Each folder contains:
 | [1466-reorder-routes-to-make-all-paths-lead-to-the-city-zero](https://github.com/Deepanshu954/LeetCode/tree/main/1466-reorder-routes-to-make-all-paths-lead-to-the-city-zero/) | Medium |
 | [1971-find-if-path-exists-in-graph](https://github.com/Deepanshu954/LeetCode/tree/main/1971-find-if-path-exists-in-graph/) | Easy |
 | [2316-count-unreachable-pairs-of-nodes-in-an-undirected-graph](https://github.com/Deepanshu954/LeetCode/tree/main/2316-count-unreachable-pairs-of-nodes-in-an-undirected-graph/) | Medium |
+| [2492-minimum-score-of-a-path-between-two-cities](https://github.com/Deepanshu954/LeetCode/tree/main/2492-minimum-score-of-a-path-between-two-cities/) | Medium |
 | [2685-count-the-number-of-complete-components](https://github.com/Deepanshu954/LeetCode/tree/main/2685-count-the-number-of-complete-components/) | Medium |
 ## Breadth-First Search
 | Problem Name | Difficulty |
@@ -437,6 +438,7 @@ Each folder contains:
 | [1466-reorder-routes-to-make-all-paths-lead-to-the-city-zero](https://github.com/Deepanshu954/LeetCode/tree/main/1466-reorder-routes-to-make-all-paths-lead-to-the-city-zero/) | Medium |
 | [1971-find-if-path-exists-in-graph](https://github.com/Deepanshu954/LeetCode/tree/main/1971-find-if-path-exists-in-graph/) | Easy |
 | [2316-count-unreachable-pairs-of-nodes-in-an-undirected-graph](https://github.com/Deepanshu954/LeetCode/tree/main/2316-count-unreachable-pairs-of-nodes-in-an-undirected-graph/) | Medium |
+| [2492-minimum-score-of-a-path-between-two-cities](https://github.com/Deepanshu954/LeetCode/tree/main/2492-minimum-score-of-a-path-between-two-cities/) | Medium |
 | [2685-count-the-number-of-complete-components](https://github.com/Deepanshu954/LeetCode/tree/main/2685-count-the-number-of-complete-components/) | Medium |
 ## Matrix
 | Problem Name | Difficulty |
@@ -462,6 +464,7 @@ Each folder contains:
 | [1971-find-if-path-exists-in-graph](https://github.com/Deepanshu954/LeetCode/tree/main/1971-find-if-path-exists-in-graph/) | Easy |
 | [1976-number-of-ways-to-arrive-at-destination](https://github.com/Deepanshu954/LeetCode/tree/main/1976-number-of-ways-to-arrive-at-destination/) | Medium |
 | [2316-count-unreachable-pairs-of-nodes-in-an-undirected-graph](https://github.com/Deepanshu954/LeetCode/tree/main/2316-count-unreachable-pairs-of-nodes-in-an-undirected-graph/) | Medium |
+| [2492-minimum-score-of-a-path-between-two-cities](https://github.com/Deepanshu954/LeetCode/tree/main/2492-minimum-score-of-a-path-between-two-cities/) | Medium |
 | [2685-count-the-number-of-complete-components](https://github.com/Deepanshu954/LeetCode/tree/main/2685-count-the-number-of-complete-components/) | Medium |
 ## Topological Sort
 | Problem Name | Difficulty |
@@ -506,6 +509,7 @@ Each folder contains:
 | [1319-number-of-operations-to-make-network-connected](https://github.com/Deepanshu954/LeetCode/tree/main/1319-number-of-operations-to-make-network-connected/) | Medium |
 | [1971-find-if-path-exists-in-graph](https://github.com/Deepanshu954/LeetCode/tree/main/1971-find-if-path-exists-in-graph/) | Easy |
 | [2316-count-unreachable-pairs-of-nodes-in-an-undirected-graph](https://github.com/Deepanshu954/LeetCode/tree/main/2316-count-unreachable-pairs-of-nodes-in-an-undirected-graph/) | Medium |
+| [2492-minimum-score-of-a-path-between-two-cities](https://github.com/Deepanshu954/LeetCode/tree/main/2492-minimum-score-of-a-path-between-two-cities/) | Medium |
 | [2685-count-the-number-of-complete-components](https://github.com/Deepanshu954/LeetCode/tree/main/2685-count-the-number-of-complete-components/) | Medium |
 ## String
 | Problem Name | Difficulty |
