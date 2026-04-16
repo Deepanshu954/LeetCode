@@ -1,19 +1,21 @@
 class Solution {
     public int minMutation(String start, String end, String[] bank) {
         HashSet<String> set = new HashSet<>(Arrays.asList(bank));
-        if(!set.contains(end)) return -1;
+        if(!set.contains(end)) return - 1;
 
         Queue<String> q = new ArrayDeque<>();
-        Set<String> vis = new HashSet<>();
+        HashSet<String> vis = new HashSet<>();
         q.offer(start);
         vis.add(start);
 
-        char[] choice = {'A','C','G','T'};
-        int count = 0;
+        char[] choice = {'A', 'C', 'G', 'T'};
+
+
+        int mut = 0;
 
         while(!q.isEmpty()) {
             int size = q.size();
-            count++;
+            mut++;
 
             for(int i = 0; i < size; i++) {
                 String curr = q.poll();
@@ -23,11 +25,12 @@ class Solution {
                     char og = gene[j];
 
                     for(char ch : choice) {
-                        if(ch == og) continue;
+                        if(og == ch) continue;
                         gene[j] = ch;
+
                         String next = new String(gene);
 
-                        if(next.equals(end)) return count;
+                        if(next.equals(end)) return mut;
                         if(set.contains(next) && !vis.contains(next)) {
                             vis.add(next);
                             q.offer(next);
@@ -39,11 +42,10 @@ class Solution {
             }
         }
 
-
         return -1;
+        
     }
 }
-
 /*
 
 Approach
