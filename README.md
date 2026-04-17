@@ -381,6 +381,7 @@ Each folder contains:
 | [3655-xor-after-range-multiplication-queries-ii](https://github.com/Deepanshu954/LeetCode/tree/main/3655-xor-after-range-multiplication-queries-ii/) | Hard |
 | [3740-minimum-distance-between-three-equal-elements-i](https://github.com/Deepanshu954/LeetCode/tree/main/3740-minimum-distance-between-three-equal-elements-i/) | Easy |
 | [3741-minimum-distance-between-three-equal-elements-ii](https://github.com/Deepanshu954/LeetCode/tree/main/3741-minimum-distance-between-three-equal-elements-ii/) | Medium |
+| [3761-minimum-absolute-distance-between-mirror-pairs](https://github.com/Deepanshu954/LeetCode/tree/main/3761-minimum-absolute-distance-between-mirror-pairs/) | Medium |
 ## Hash Table
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -389,6 +390,7 @@ Each folder contains:
 | [3488-closest-equal-element-queries](https://github.com/Deepanshu954/LeetCode/tree/main/3488-closest-equal-element-queries/) | Medium |
 | [3740-minimum-distance-between-three-equal-elements-i](https://github.com/Deepanshu954/LeetCode/tree/main/3740-minimum-distance-between-three-equal-elements-i/) | Easy |
 | [3741-minimum-distance-between-three-equal-elements-ii](https://github.com/Deepanshu954/LeetCode/tree/main/3741-minimum-distance-between-three-equal-elements-ii/) | Medium |
+| [3761-minimum-absolute-distance-between-mirror-pairs](https://github.com/Deepanshu954/LeetCode/tree/main/3761-minimum-absolute-distance-between-mirror-pairs/) | Medium |
 ## Simulation
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -534,4 +536,8 @@ Each folder contains:
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [1376-time-needed-to-inform-all-employees](https://github.com/Deepanshu954/LeetCode/tree/main/1376-time-needed-to-inform-all-employees/) | Medium |
+## Math
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [3761-minimum-absolute-distance-between-mirror-pairs](https://github.com/Deepanshu954/LeetCode/tree/main/3761-minimum-absolute-distance-between-mirror-pairs/) | Medium |
 <!---LeetCode Topics End-->
