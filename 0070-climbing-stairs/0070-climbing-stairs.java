@@ -1,16 +1,18 @@
 class Solution {
+
+    private int[] arr;
     public int climbStairs(int n) {
-        int a = 0;
-        int b = 1;
-        int c = 1;
+        arr = new int[n+1];
+        Arrays.fill(arr, -5);
 
-        for(int i = 1; i <= n; i++) {
-            c = a + b;
-            a = b;
-            b = c;
-        }
+        return helper(n);
+    }
 
-        return b;
+    private int helper(int n) {
+        if(n < 2) return 1;
+        if(arr[n] != -5) return arr[n];
+        arr[n] helper(n-1) + helper(n-2);
+        return arr[n];
     }
 }
 
@@ -47,7 +49,8 @@ class Solution {
     private int helper(int n) {
         if(n < 2) return 1;
         if(arr[n] != -5) return arr[n];
-        return helper(n-1) + helper(n-2);
+        arr[n] helper(n-1) + helper(n-2);
+        return arr[n];
     }
 }
 
@@ -71,5 +74,20 @@ class Solution {
 
 Btw i notice one more thing here that i need memeory of two varibales for navigate this situation so why even need to use an array...
 
+class Solution {
+    public int climbStairs(int n) {
+        int a = 0;
+        int b = 1;
+        int c = 1;
+
+        for(int i = 1; i <= n; i++) {
+            c = a + b;
+            a = b;
+            b = c;
+        }
+
+        return b;
+    }
+}
 
 */
