@@ -1,14 +1,16 @@
 class Solution {
     public int climbStairs(int n) {
-        int[] arr = new int[n+2];
-        arr[0] = 0;
-        arr[1] = 1;
+        int a = 0;
+        int b = 1;
+        int c = 1;
 
-        for(int i = 2; i <= n + 1; i++) {
-            arr[i] = arr[i-1] + arr[i-2];
+        for(int i = 1; i <= n; i++) {
+            c = a + b;
+            a = b;
+            b = c;
         }
 
-        return arr[n+1];
+        return b;
     }
 }
 
@@ -48,5 +50,26 @@ class Solution {
         return helper(n-1) + helper(n-2);
     }
 }
+
+Now my plan is to use interative methord
+
+Code:
+class Solution {
+    public int climbStairs(int n) {
+        int[] arr = new int[n+2];
+        arr[0] = 0;
+        arr[1] = 1;
+
+        for(int i = 2; i <= n + 1; i++) {
+            arr[i] = arr[i-1] + arr[i-2];
+        }
+
+        return arr[n+1];
+    }
+}
+
+
+Btw i notice one more thing here that i need memeory of two varibales for navigate this situation so why even need to use an array...
+
 
 */
