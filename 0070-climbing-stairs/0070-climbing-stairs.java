@@ -1,14 +1,13 @@
 class Solution {
     public int climbStairs(int n) {
-        if (n == 0 || n == 1) {
-            return 1;
-        }
-        int prev = 1, curr = 1;
-        for (int i = 2; i <= n; i++) {
-            int temp = curr;
-            curr = prev + curr;
-            prev = temp;
-        }
-        return curr;
+        if(n < 2) return 1;
+        return climbStairs(n-1) + climbStairs(n-2);
     }
 }
+
+/*
+Allowed steps are +1 or +2 
+so i can use bottom up approach where i come down from up
+so here i can create a formula like c(n-1) + c(n-2) this will give me answer 
+
+*/
