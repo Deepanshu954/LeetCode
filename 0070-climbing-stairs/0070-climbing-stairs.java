@@ -1,17 +1,14 @@
 class Solution {
-
-    private int[] arr;
     public int climbStairs(int n) {
-        arr = new int[n+1];
-        Arrays.fill(arr, -5);
+        int[] arr = new int[n+2];
+        arr[0] = 0;
+        arr[1] = 1;
 
-        return helper(n);
-    }
+        for(int i = 2; i <= n + 1; i++) {
+            arr[i] = arr[i-1] + arr[i-2];
+        }
 
-    private int helper(int n) {
-        if(n < 2) return 1;
-        if(arr[n] != -5) return arr[n];
-        return helper(n-1) + helper(n-2);
+        return arr[n+1];
     }
 }
 
@@ -33,5 +30,23 @@ class Solution {
 
 
 Here i notice that i am calculating for same thing again and again so for that i can simply use a array for stroing things
+
+Code: 
+class Solution {
+
+    private int[] arr;
+    public int climbStairs(int n) {
+        arr = new int[n+1];
+        Arrays.fill(arr, -5);
+
+        return helper(n);
+    }
+
+    private int helper(int n) {
+        if(n < 2) return 1;
+        if(arr[n] != -5) return arr[n];
+        return helper(n-1) + helper(n-2);
+    }
+}
 
 */
