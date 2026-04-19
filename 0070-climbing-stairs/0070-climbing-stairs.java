@@ -11,7 +11,7 @@ class Solution {
     private int helper(int n) {
         if(n < 2) return 1;
         if(arr[n] != -5) return arr[n];
-        arr[n] helper(n-1) + helper(n-2);
+        arr[n] = helper(n-1) + helper(n-2);
         return arr[n];
     }
 }
