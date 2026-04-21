@@ -389,6 +389,7 @@ Each folder contains:
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0433-minimum-genetic-mutation](https://github.com/Deepanshu954/LeetCode/tree/main/0433-minimum-genetic-mutation/) | Medium |
+| [0451-sort-characters-by-frequency](https://github.com/Deepanshu954/LeetCode/tree/main/0451-sort-characters-by-frequency/) | Medium |
 | [0874-walking-robot-simulation](https://github.com/Deepanshu954/LeetCode/tree/main/0874-walking-robot-simulation/) | Medium |
 | [3488-closest-equal-element-queries](https://github.com/Deepanshu954/LeetCode/tree/main/3488-closest-equal-element-queries/) | Medium |
 | [3740-minimum-distance-between-three-equal-elements-i](https://github.com/Deepanshu954/LeetCode/tree/main/3740-minimum-distance-between-three-equal-elements-i/) | Easy |
@@ -492,6 +493,7 @@ Each folder contains:
 ## Heap (Priority Queue)
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0451-sort-characters-by-frequency](https://github.com/Deepanshu954/LeetCode/tree/main/0451-sort-characters-by-frequency/) | Medium |
 | [0743-network-delay-time](https://github.com/Deepanshu954/LeetCode/tree/main/0743-network-delay-time/) | Medium |
 | [0787-cheapest-flights-within-k-stops](https://github.com/Deepanshu954/LeetCode/tree/main/0787-cheapest-flights-within-k-stops/) | Medium |
 ## Shortest Path
@@ -523,6 +525,7 @@ Each folder contains:
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0433-minimum-genetic-mutation](https://github.com/Deepanshu954/LeetCode/tree/main/0433-minimum-genetic-mutation/) | Medium |
+| [0451-sort-characters-by-frequency](https://github.com/Deepanshu954/LeetCode/tree/main/0451-sort-characters-by-frequency/) | Medium |
 | [0990-satisfiability-of-equality-equations](https://github.com/Deepanshu954/LeetCode/tree/main/0990-satisfiability-of-equality-equations/) | Medium |
 | [1320-minimum-distance-to-type-a-word-using-two-fingers](https://github.com/Deepanshu954/LeetCode/tree/main/1320-minimum-distance-to-type-a-word-using-two-fingers/) | Hard |
 | [2515-shortest-distance-to-target-string-in-a-circular-array](https://github.com/Deepanshu954/LeetCode/tree/main/2515-shortest-distance-to-target-string-in-a-circular-array/) | Easy |
@@ -533,6 +536,7 @@ Each folder contains:
 ## Sorting
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0451-sort-characters-by-frequency](https://github.com/Deepanshu954/LeetCode/tree/main/0451-sort-characters-by-frequency/) | Medium |
 | [2463-minimum-total-distance-traveled](https://github.com/Deepanshu954/LeetCode/tree/main/2463-minimum-total-distance-traveled/) | Hard |
 ## Binary Search
 | Problem Name | Difficulty |
@@ -560,4 +564,12 @@ Each folder contains:
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [2078-two-furthest-houses-with-different-colors](https://github.com/Deepanshu954/LeetCode/tree/main/2078-two-furthest-houses-with-different-colors/) | Easy |
+## Bucket Sort
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0451-sort-characters-by-frequency](https://github.com/Deepanshu954/LeetCode/tree/main/0451-sort-characters-by-frequency/) | Medium |
+## Counting
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0451-sort-characters-by-frequency](https://github.com/Deepanshu954/LeetCode/tree/main/0451-sort-characters-by-frequency/) | Medium |
 <!---LeetCode Topics End-->
