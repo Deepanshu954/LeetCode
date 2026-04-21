@@ -373,6 +373,7 @@ Each folder contains:
 | [0990-satisfiability-of-equality-equations](https://github.com/Deepanshu954/LeetCode/tree/main/0990-satisfiability-of-equality-equations/) | Medium |
 | [1034-coloring-a-border](https://github.com/Deepanshu954/LeetCode/tree/main/1034-coloring-a-border/) | Medium |
 | [1254-number-of-closed-islands](https://github.com/Deepanshu954/LeetCode/tree/main/1254-number-of-closed-islands/) | Medium |
+| [1722-minimize-hamming-distance-after-swap-operations](https://github.com/Deepanshu954/LeetCode/tree/main/1722-minimize-hamming-distance-after-swap-operations/) | Medium |
 | [1848-minimum-distance-to-the-target-element](https://github.com/Deepanshu954/LeetCode/tree/main/1848-minimum-distance-to-the-target-element/) | Easy |
 | [1855-maximum-distance-between-a-pair-of-values](https://github.com/Deepanshu954/LeetCode/tree/main/1855-maximum-distance-between-a-pair-of-values/) | Medium |
 | [2078-two-furthest-houses-with-different-colors](https://github.com/Deepanshu954/LeetCode/tree/main/2078-two-furthest-houses-with-different-colors/) | Easy |
@@ -417,6 +418,7 @@ Each folder contains:
 | [1319-number-of-operations-to-make-network-connected](https://github.com/Deepanshu954/LeetCode/tree/main/1319-number-of-operations-to-make-network-connected/) | Medium |
 | [1376-time-needed-to-inform-all-employees](https://github.com/Deepanshu954/LeetCode/tree/main/1376-time-needed-to-inform-all-employees/) | Medium |
 | [1466-reorder-routes-to-make-all-paths-lead-to-the-city-zero](https://github.com/Deepanshu954/LeetCode/tree/main/1466-reorder-routes-to-make-all-paths-lead-to-the-city-zero/) | Medium |
+| [1722-minimize-hamming-distance-after-swap-operations](https://github.com/Deepanshu954/LeetCode/tree/main/1722-minimize-hamming-distance-after-swap-operations/) | Medium |
 | [1971-find-if-path-exists-in-graph](https://github.com/Deepanshu954/LeetCode/tree/main/1971-find-if-path-exists-in-graph/) | Easy |
 | [2316-count-unreachable-pairs-of-nodes-in-an-undirected-graph](https://github.com/Deepanshu954/LeetCode/tree/main/2316-count-unreachable-pairs-of-nodes-in-an-undirected-graph/) | Medium |
 | [2492-minimum-score-of-a-path-between-two-cities](https://github.com/Deepanshu954/LeetCode/tree/main/2492-minimum-score-of-a-path-between-two-cities/) | Medium |
@@ -512,6 +514,7 @@ Each folder contains:
 | [0990-satisfiability-of-equality-equations](https://github.com/Deepanshu954/LeetCode/tree/main/0990-satisfiability-of-equality-equations/) | Medium |
 | [1254-number-of-closed-islands](https://github.com/Deepanshu954/LeetCode/tree/main/1254-number-of-closed-islands/) | Medium |
 | [1319-number-of-operations-to-make-network-connected](https://github.com/Deepanshu954/LeetCode/tree/main/1319-number-of-operations-to-make-network-connected/) | Medium |
+| [1722-minimize-hamming-distance-after-swap-operations](https://github.com/Deepanshu954/LeetCode/tree/main/1722-minimize-hamming-distance-after-swap-operations/) | Medium |
 | [1971-find-if-path-exists-in-graph](https://github.com/Deepanshu954/LeetCode/tree/main/1971-find-if-path-exists-in-graph/) | Easy |
 | [2316-count-unreachable-pairs-of-nodes-in-an-undirected-graph](https://github.com/Deepanshu954/LeetCode/tree/main/2316-count-unreachable-pairs-of-nodes-in-an-undirected-graph/) | Medium |
 | [2492-minimum-score-of-a-path-between-two-cities](https://github.com/Deepanshu954/LeetCode/tree/main/2492-minimum-score-of-a-path-between-two-cities/) | Medium |
