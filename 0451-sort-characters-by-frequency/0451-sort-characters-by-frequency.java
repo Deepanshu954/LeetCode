@@ -1,26 +1,42 @@
+import java.util.PriorityQueue;
+
 class Solution {
     public String frequencySort(String s) {
-        int[] freq = new int[128];
+        // 1. Create a 2D matrix: 128 rows (for ASCII), 2 columns 
+        // Column 0: The character (as int), Column 1: The frequency count
+        int[][] nums = new int[128][2];
 
-        // 1. Count frequency
-        for (char c : s.toCharArray()) freq[c]++;
-
-        // 2. Store characters that appear
-        List<Character> list = new ArrayList<>();
+        // Initialize the character identity in the matrix
         for (int i = 0; i < 128; i++) {
-            list.add((char) i);
-            // if (freq[i] > 0) {
-            //     list.add((char) i);
-            // }
+            nums[i][0] = i; 
         }
 
-        // 3. Sort by frequency (desc)
-        list.sort((a, b) -> freq[b] - freq[a]);
+        // 2. Fill frequencies
+        for (int i = 0; i < s.length(); i++) {
+            int ch = s.charAt(i);
+            nums[ch][1]++;
+        }
 
-        // 4. Build result
+        // 3. Max-Heap (PriorityQueue) to sort by frequency
+        // We compare index 1 (frequency) of the 1D arrays (rows)
+        PriorityQueue<int[]> pq = new PriorityQueue<>(
+            (a, b) -> b[1] - a[1]
+        );
+
+        for (int i = 0; i < 128; i++) {
+            if (nums[i][1] > 0) {
+                pq.add(nums[i]);
+            }
+        }
+
+        // 4. Build the resulting string
         StringBuilder sb = new StringBuilder();
-        for (char c : list) {
-            for (int i = 0; i < freq[c]; i++) {
+        while (!pq.isEmpty()) {
+            int[] current = pq.poll();
+            char c = (char) current[0]; // Type cast int back to char
+            int freq = current[1];
+            
+            for (int i = 0; i < freq; i++) {
                 sb.append(c);
             }
         }
