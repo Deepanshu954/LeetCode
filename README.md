@@ -365,6 +365,7 @@ Each folder contains:
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0130-surrounded-regions](https://github.com/Deepanshu954/LeetCode/tree/main/0130-surrounded-regions/) | Medium |
+| [0198-house-robber](https://github.com/Deepanshu954/LeetCode/tree/main/0198-house-robber/) | Medium |
 | [0200-number-of-islands](https://github.com/Deepanshu954/LeetCode/tree/main/0200-number-of-islands/) | Medium |
 | [0416-partition-equal-subset-sum](https://github.com/Deepanshu954/LeetCode/tree/main/0416-partition-equal-subset-sum/) | Medium |
 | [0417-pacific-atlantic-water-flow](https://github.com/Deepanshu954/LeetCode/tree/main/0417-pacific-atlantic-water-flow/) | Medium |
@@ -489,6 +490,7 @@ Each folder contains:
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0070-climbing-stairs](https://github.com/Deepanshu954/LeetCode/tree/main/0070-climbing-stairs/) | Easy |
+| [0198-house-robber](https://github.com/Deepanshu954/LeetCode/tree/main/0198-house-robber/) | Medium |
 | [0416-partition-equal-subset-sum](https://github.com/Deepanshu954/LeetCode/tree/main/0416-partition-equal-subset-sum/) | Medium |
 | [0746-min-cost-climbing-stairs](https://github.com/Deepanshu954/LeetCode/tree/main/0746-min-cost-climbing-stairs/) | Easy |
 | [0787-cheapest-flights-within-k-stops](https://github.com/Deepanshu954/LeetCode/tree/main/0787-cheapest-flights-within-k-stops/) | Medium |
