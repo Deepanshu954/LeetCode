@@ -370,6 +370,7 @@ Each folder contains:
 | [0417-pacific-atlantic-water-flow](https://github.com/Deepanshu954/LeetCode/tree/main/0417-pacific-atlantic-water-flow/) | Medium |
 | [0695-max-area-of-island](https://github.com/Deepanshu954/LeetCode/tree/main/0695-max-area-of-island/) | Medium |
 | [0733-flood-fill](https://github.com/Deepanshu954/LeetCode/tree/main/0733-flood-fill/) | Easy |
+| [0746-min-cost-climbing-stairs](https://github.com/Deepanshu954/LeetCode/tree/main/0746-min-cost-climbing-stairs/) | Easy |
 | [0874-walking-robot-simulation](https://github.com/Deepanshu954/LeetCode/tree/main/0874-walking-robot-simulation/) | Medium |
 | [0990-satisfiability-of-equality-equations](https://github.com/Deepanshu954/LeetCode/tree/main/0990-satisfiability-of-equality-equations/) | Medium |
 | [1034-coloring-a-border](https://github.com/Deepanshu954/LeetCode/tree/main/1034-coloring-a-border/) | Medium |
@@ -489,6 +490,7 @@ Each folder contains:
 | ------- | ------- |
 | [0070-climbing-stairs](https://github.com/Deepanshu954/LeetCode/tree/main/0070-climbing-stairs/) | Easy |
 | [0416-partition-equal-subset-sum](https://github.com/Deepanshu954/LeetCode/tree/main/0416-partition-equal-subset-sum/) | Medium |
+| [0746-min-cost-climbing-stairs](https://github.com/Deepanshu954/LeetCode/tree/main/0746-min-cost-climbing-stairs/) | Easy |
 | [0787-cheapest-flights-within-k-stops](https://github.com/Deepanshu954/LeetCode/tree/main/0787-cheapest-flights-within-k-stops/) | Medium |
 | [1320-minimum-distance-to-type-a-word-using-two-fingers](https://github.com/Deepanshu954/LeetCode/tree/main/1320-minimum-distance-to-type-a-word-using-two-fingers/) | Hard |
 | [1976-number-of-ways-to-arrive-at-destination](https://github.com/Deepanshu954/LeetCode/tree/main/1976-number-of-ways-to-arrive-at-destination/) | Medium |
