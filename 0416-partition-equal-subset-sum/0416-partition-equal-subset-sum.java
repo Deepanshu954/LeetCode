@@ -1,15 +1,24 @@
 class Solution {
     public boolean canPartition(int[] nums) {
-        Arrays.sort(nums);
-        
-        for(int i = 1; i < nums.length; i++) {
-            nums[i] += nums[i-1];
-        }
-        int target = nums[nums.length - 1];
+        int n = nums.length;
+        int sum = 0;
+        for(int num : nums) sum += num;
 
-        for(int num : nums) {
-            if(2 * num == target) return true;
+        if(sum % 2 == 1) return false;
+
+        int target = sum/2;
+
+        int[] dp = new int[target+1];
+
+        for(int i = 0; i < n; i++) {
+            for(int w = target; w >= nums[i]; w--) {
+                dp[w] = Math.max(
+                    dp[w],
+                    nums[i] + dp[w - nums[i]]
+                );
+            }
         }
-        return false;
+
+        return dp[target] == target;
     }
 }
