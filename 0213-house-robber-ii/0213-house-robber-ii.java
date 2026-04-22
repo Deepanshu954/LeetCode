@@ -7,8 +7,8 @@ class Solution {
         if(n == 1) return nums[0];
 
         dp = new int[n];
-        Arrays.fill(dp, -1);
 
+        Arrays.fill(dp, -1);
         s = 0;
         int res1 = rec(n-2, nums);
 
@@ -20,7 +20,7 @@ class Solution {
     }
 
     private int rec(int i, int[] nums) {
-        if(i == s+1) return nums[s+1];
+        if(i == s) return nums[s];
         if(i < s) return 0;
 
         if(dp[i] != -1) return dp[i];
