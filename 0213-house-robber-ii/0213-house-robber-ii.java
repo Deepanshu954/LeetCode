@@ -20,10 +20,11 @@ class Solution {
     }
 
     private int rec(int i, int[] nums) {
-        if(i == s) return nums[s];
         if(i == s+1) return nums[s+1];
+        if(i < s) return 0;
 
         if(dp[i] != -1) return dp[i];
+        
         dp[i] = Math.max(nums[i] + rec(i-2, nums), rec(i-1, nums));
         return dp[i];
     }
