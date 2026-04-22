@@ -20,6 +20,7 @@ class Solution {
         int cnt = 0;
         for(int i = 0; i < str.length(); i++) {
             if(str.charAt(i) != dict.charAt(i)) cnt++;
+            if(cnt > 2) return false;
         }
 
         return cnt <= 2;
