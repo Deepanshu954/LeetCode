@@ -6,7 +6,10 @@ class Solution {
 
         for(String q : queries) {
             for(String d : dict) {
-                if(isValid(q,d)) list.add(q);
+                if(isValid(q,d)) {
+                    list.add(q);
+                    break;
+                }
             }
         }
         
