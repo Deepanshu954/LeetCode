@@ -381,6 +381,7 @@ Each folder contains:
 | [1848-minimum-distance-to-the-target-element](https://github.com/Deepanshu954/LeetCode/tree/main/1848-minimum-distance-to-the-target-element/) | Easy |
 | [1855-maximum-distance-between-a-pair-of-values](https://github.com/Deepanshu954/LeetCode/tree/main/1855-maximum-distance-between-a-pair-of-values/) | Medium |
 | [2078-two-furthest-houses-with-different-colors](https://github.com/Deepanshu954/LeetCode/tree/main/2078-two-furthest-houses-with-different-colors/) | Easy |
+| [2452-words-within-two-edits-of-dictionary](https://github.com/Deepanshu954/LeetCode/tree/main/2452-words-within-two-edits-of-dictionary/) | Medium |
 | [2463-minimum-total-distance-traveled](https://github.com/Deepanshu954/LeetCode/tree/main/2463-minimum-total-distance-traveled/) | Hard |
 | [2515-shortest-distance-to-target-string-in-a-circular-array](https://github.com/Deepanshu954/LeetCode/tree/main/2515-shortest-distance-to-target-string-in-a-circular-array/) | Easy |
 | [3488-closest-equal-element-queries](https://github.com/Deepanshu954/LeetCode/tree/main/3488-closest-equal-element-queries/) | Medium |
@@ -536,6 +537,7 @@ Each folder contains:
 | [0451-sort-characters-by-frequency](https://github.com/Deepanshu954/LeetCode/tree/main/0451-sort-characters-by-frequency/) | Medium |
 | [0990-satisfiability-of-equality-equations](https://github.com/Deepanshu954/LeetCode/tree/main/0990-satisfiability-of-equality-equations/) | Medium |
 | [1320-minimum-distance-to-type-a-word-using-two-fingers](https://github.com/Deepanshu954/LeetCode/tree/main/1320-minimum-distance-to-type-a-word-using-two-fingers/) | Hard |
+| [2452-words-within-two-edits-of-dictionary](https://github.com/Deepanshu954/LeetCode/tree/main/2452-words-within-two-edits-of-dictionary/) | Medium |
 | [2515-shortest-distance-to-target-string-in-a-circular-array](https://github.com/Deepanshu954/LeetCode/tree/main/2515-shortest-distance-to-target-string-in-a-circular-array/) | Easy |
 ## Backtracking
 | Problem Name | Difficulty |
@@ -580,4 +582,8 @@ Each folder contains:
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0451-sort-characters-by-frequency](https://github.com/Deepanshu954/LeetCode/tree/main/0451-sort-characters-by-frequency/) | Medium |
+## Trie
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [2452-words-within-two-edits-of-dictionary](https://github.com/Deepanshu954/LeetCode/tree/main/2452-words-within-two-edits-of-dictionary/) | Medium |
 <!---LeetCode Topics End-->
