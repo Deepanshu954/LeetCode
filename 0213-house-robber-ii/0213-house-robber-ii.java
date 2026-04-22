@@ -1,32 +1,26 @@
 class Solution {
     public int rob(int[] nums) {
         int n = nums.length;
-        if(n == 1) return nums[0];
-        if(n == 2) return Math.max(nums[0], nums[1]);
-        if(n == 3) {
-            return Math.max(nums[2], Math.max(nums[0], nums[1]));
+
+        if (n == 1) return nums[0];
+
+        return Math.max(
+            robLinear(nums, 0, n - 2), // exclude last
+            robLinear(nums, 1, n - 1)  // exclude first
+        );
+    }
+
+    private int robLinear(int[] nums, int start, int end) {
+        int prev2 = 0; // dp[i-2]
+        int prev1 = 0; // dp[i-1]
+
+        for (int i = start; i <= end; i++) {
+            int curr = Math.max(nums[i] + prev2, prev1);
+            prev2 = prev1;
+            prev1 = curr;
         }
 
-        int[] dp = new int[n];
-        int[] res = new int[2];
-
-        for(int i = 0; i < 2; i++) {
-            int a = nums[0+i];
-            int b = Math.max(nums[0+i], nums[1+i]);
-
-            for(int j = 2+i; j < n-i; j++) {
-                int c = Math.max(nums[j] + a, b);
-                a = b;
-                b = c;
-            }
-
-            res[i] = b;
-        }
-
-
-
-
-        return Math.max(res[0], res[1]);
+        return prev1;
     }
 }
 
