@@ -494,6 +494,7 @@ Each folder contains:
 ## Dynamic Programming
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0062-unique-paths](https://github.com/Deepanshu954/LeetCode/tree/main/0062-unique-paths/) | Medium |
 | [0070-climbing-stairs](https://github.com/Deepanshu954/LeetCode/tree/main/0070-climbing-stairs/) | Easy |
 | [0198-house-robber](https://github.com/Deepanshu954/LeetCode/tree/main/0198-house-robber/) | Medium |
 | [0213-house-robber-ii](https://github.com/Deepanshu954/LeetCode/tree/main/0213-house-robber-ii/) | Medium |
@@ -566,6 +567,7 @@ Each folder contains:
 ## Math
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0062-unique-paths](https://github.com/Deepanshu954/LeetCode/tree/main/0062-unique-paths/) | Medium |
 | [0070-climbing-stairs](https://github.com/Deepanshu954/LeetCode/tree/main/0070-climbing-stairs/) | Easy |
 | [3761-minimum-absolute-distance-between-mirror-pairs](https://github.com/Deepanshu954/LeetCode/tree/main/3761-minimum-absolute-distance-between-mirror-pairs/) | Medium |
 ## Two Pointers
@@ -608,4 +610,8 @@ Each folder contains:
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [1461-check-if-a-string-contains-all-binary-codes-of-size-k](https://github.com/Deepanshu954/LeetCode/tree/main/1461-check-if-a-string-contains-all-binary-codes-of-size-k/) | Medium |
+## Combinatorics
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0062-unique-paths](https://github.com/Deepanshu954/LeetCode/tree/main/0062-unique-paths/) | Medium |
 <!---LeetCode Topics End-->
