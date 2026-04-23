@@ -365,6 +365,7 @@ Each folder contains:
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0063-unique-paths-ii](https://github.com/Deepanshu954/LeetCode/tree/main/0063-unique-paths-ii/) | Medium |
+| [0064-minimum-path-sum](https://github.com/Deepanshu954/LeetCode/tree/main/0064-minimum-path-sum/) | Medium |
 | [0130-surrounded-regions](https://github.com/Deepanshu954/LeetCode/tree/main/0130-surrounded-regions/) | Medium |
 | [0198-house-robber](https://github.com/Deepanshu954/LeetCode/tree/main/0198-house-robber/) | Medium |
 | [0200-number-of-islands](https://github.com/Deepanshu954/LeetCode/tree/main/0200-number-of-islands/) | Medium |
@@ -461,6 +462,7 @@ Each folder contains:
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0063-unique-paths-ii](https://github.com/Deepanshu954/LeetCode/tree/main/0063-unique-paths-ii/) | Medium |
+| [0064-minimum-path-sum](https://github.com/Deepanshu954/LeetCode/tree/main/0064-minimum-path-sum/) | Medium |
 | [0130-surrounded-regions](https://github.com/Deepanshu954/LeetCode/tree/main/0130-surrounded-regions/) | Medium |
 | [0200-number-of-islands](https://github.com/Deepanshu954/LeetCode/tree/main/0200-number-of-islands/) | Medium |
 | [0417-pacific-atlantic-water-flow](https://github.com/Deepanshu954/LeetCode/tree/main/0417-pacific-atlantic-water-flow/) | Medium |
@@ -498,6 +500,7 @@ Each folder contains:
 | ------- | ------- |
 | [0062-unique-paths](https://github.com/Deepanshu954/LeetCode/tree/main/0062-unique-paths/) | Medium |
 | [0063-unique-paths-ii](https://github.com/Deepanshu954/LeetCode/tree/main/0063-unique-paths-ii/) | Medium |
+| [0064-minimum-path-sum](https://github.com/Deepanshu954/LeetCode/tree/main/0064-minimum-path-sum/) | Medium |
 | [0070-climbing-stairs](https://github.com/Deepanshu954/LeetCode/tree/main/0070-climbing-stairs/) | Easy |
 | [0198-house-robber](https://github.com/Deepanshu954/LeetCode/tree/main/0198-house-robber/) | Medium |
 | [0213-house-robber-ii](https://github.com/Deepanshu954/LeetCode/tree/main/0213-house-robber-ii/) | Medium |
