@@ -398,6 +398,7 @@ Each folder contains:
 ## Hash Table
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0030-substring-with-concatenation-of-all-words](https://github.com/Deepanshu954/LeetCode/tree/main/0030-substring-with-concatenation-of-all-words/) | Hard |
 | [0433-minimum-genetic-mutation](https://github.com/Deepanshu954/LeetCode/tree/main/0433-minimum-genetic-mutation/) | Medium |
 | [0451-sort-characters-by-frequency](https://github.com/Deepanshu954/LeetCode/tree/main/0451-sort-characters-by-frequency/) | Medium |
 | [0874-walking-robot-simulation](https://github.com/Deepanshu954/LeetCode/tree/main/0874-walking-robot-simulation/) | Medium |
@@ -546,6 +547,7 @@ Each folder contains:
 ## String
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0030-substring-with-concatenation-of-all-words](https://github.com/Deepanshu954/LeetCode/tree/main/0030-substring-with-concatenation-of-all-words/) | Hard |
 | [0433-minimum-genetic-mutation](https://github.com/Deepanshu954/LeetCode/tree/main/0433-minimum-genetic-mutation/) | Medium |
 | [0451-sort-characters-by-frequency](https://github.com/Deepanshu954/LeetCode/tree/main/0451-sort-characters-by-frequency/) | Medium |
 | [0990-satisfiability-of-equality-equations](https://github.com/Deepanshu954/LeetCode/tree/main/0990-satisfiability-of-equality-equations/) | Medium |
@@ -624,4 +626,8 @@ Each folder contains:
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0062-unique-paths](https://github.com/Deepanshu954/LeetCode/tree/main/0062-unique-paths/) | Medium |
+## Sliding Window
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0030-substring-with-concatenation-of-all-words](https://github.com/Deepanshu954/LeetCode/tree/main/0030-substring-with-concatenation-of-all-words/) | Hard |
 <!---LeetCode Topics End-->
