@@ -370,6 +370,7 @@ Each folder contains:
 | [0198-house-robber](https://github.com/Deepanshu954/LeetCode/tree/main/0198-house-robber/) | Medium |
 | [0200-number-of-islands](https://github.com/Deepanshu954/LeetCode/tree/main/0200-number-of-islands/) | Medium |
 | [0213-house-robber-ii](https://github.com/Deepanshu954/LeetCode/tree/main/0213-house-robber-ii/) | Medium |
+| [0238-product-of-array-except-self](https://github.com/Deepanshu954/LeetCode/tree/main/0238-product-of-array-except-self/) | Medium |
 | [0416-partition-equal-subset-sum](https://github.com/Deepanshu954/LeetCode/tree/main/0416-partition-equal-subset-sum/) | Medium |
 | [0417-pacific-atlantic-water-flow](https://github.com/Deepanshu954/LeetCode/tree/main/0417-pacific-atlantic-water-flow/) | Medium |
 | [0695-max-area-of-island](https://github.com/Deepanshu954/LeetCode/tree/main/0695-max-area-of-island/) | Medium |
@@ -605,6 +606,7 @@ Each folder contains:
 ## Prefix Sum
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0238-product-of-array-except-self](https://github.com/Deepanshu954/LeetCode/tree/main/0238-product-of-array-except-self/) | Medium |
 | [2615-sum-of-distances](https://github.com/Deepanshu954/LeetCode/tree/main/2615-sum-of-distances/) | Medium |
 ## Bit Manipulation
 | Problem Name | Difficulty |
