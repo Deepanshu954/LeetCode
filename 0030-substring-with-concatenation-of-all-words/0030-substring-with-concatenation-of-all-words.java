@@ -1,31 +1,43 @@
 class Solution {
     public List<Integer> findSubstring(String s, String[] words) {
-        ArrayList<Integer> list = new ArrayList<>();
-        HashMap<String, Boolean> map = new HashMap<>();
-        for(String word : words) map.put(word, false);
+        List<Integer> res = new ArrayList<>();
+        if (words.length == 0) return res;
 
-        int size = words[0].length();
-        int len = words.length;
-        String sub = "";
+        int wordLen = words[0].length();
+        int totalLen = wordLen * words.length;
 
-        int index = 0;
-        for(int i = 0; i < s.length(); i += size){
-            sub = s.subString(i,i + size);
+        Map<String, Integer> freq = new HashMap<>();
+        for (String w : words)
+            freq.put(w, freq.getOrDefault(w, 0) + 1);
 
-            if(map.get(sub) == false){
-                map.put(sub, true);
-                index++;
-                if(index == len){
-                    index = 0;
-                    map.replaceAll((k,v) -> false);
-                    list.add(i - (words.length * size) + 1);
+        for (int i = 0; i < wordLen; i++) {
+            Map<String, Integer> seen = new HashMap<>();
+            int left = i, count = 0;
+
+            for (int right = i; right + wordLen <= s.length(); right += wordLen) {
+                String word = s.substring(right, right + wordLen);
+
+                if (!freq.containsKey(word)) {
+                    seen.clear();
+                    count = 0;
+                    left = right + wordLen;
+                    continue;
                 }
-            } else {
-                index = 0;
-                map.replaceAll((k,v) -> false);
-                i = i - (words.length * size) + 1;
+
+                seen.put(word, seen.getOrDefault(word, 0) + 1);
+                count++;
+
+                while (seen.get(word) > freq.get(word)) {
+                    String remove = s.substring(left, left + wordLen);
+                    seen.put(remove, seen.get(remove) - 1);
+                    count--;
+                    left += wordLen;
+                }
+
+                if (count == words.length)
+                    res.add(left);
             }
-            return list;
         }
+        return res;
     }
 }
