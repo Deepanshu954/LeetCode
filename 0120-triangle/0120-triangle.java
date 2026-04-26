@@ -1,31 +1,28 @@
 class Solution {
     public int minimumTotal(List<List<Integer>> tri) {
         int n = tri.size();
-        int[][] dp = new int[n][n];
+        int[] dp = new int[n];
 
         // Base Case
-        dp[0][0] = tri.get(0).get(0);
+        dp[0] = tri.get(0).get(0);
 
         // recursive part
         for(int i = 1; i < n; i++) {
-            for(int j = 0; j <= i; j++) {
+            for(int j = i; j >= 0; j--) {
                 int val = tri.get(i).get(j);
 
                 if(j == 0) {
-                    dp[i][j] = val + dp[i-1][j];
+                    dp[j] = val + dp[j];
                 } else if(j == i) {
-                    dp[i][j] = val + dp[i-1][j-1];
+                    dp[j] = val + dp[j-1];
                 } else {
-                    dp[i][j] = val + Math.min(dp[i-1][j], dp[i-1][j-1]);
+                    dp[j] = val + Math.min(dp[j], dp[j-1]);
                 }
             }
         }
 
         int res = Integer.MAX_VALUE;
-
-        for(int i = 0; i < n; i++) {
-            res = Math.min(res, dp[n-1][i]);
-        }
+        for(int x : dp) res = Math.min(res, x);
 
         return res;
     }
@@ -58,6 +55,45 @@ class Solution {
 
         dp[r][c] = tri.get(r).get(c) + Math.min(rec(r-1, c, tri), rec(r-1, c-1, tri));
         return dp[r][c];
+    }
+}
+
+*/
+
+/*
+
+// Tabular
+
+class Solution {
+    public int minimumTotal(List<List<Integer>> tri) {
+        int n = tri.size();
+        int[][] dp = new int[n][n];
+
+        // Base Case
+        dp[0][0] = tri.get(0).get(0);
+
+        // recursive part
+        for(int i = 1; i < n; i++) {
+            for(int j = 0; j <= i; j++) {
+                int val = tri.get(i).get(j);
+
+                if(j == 0) {
+                    dp[i][j] = val + dp[i-1][j];
+                } else if(j == i) {
+                    dp[i][j] = val + dp[i-1][j-1];
+                } else {
+                    dp[i][j] = val + Math.min(dp[i-1][j], dp[i-1][j-1]);
+                }
+            }
+        }
+
+        int res = Integer.MAX_VALUE;
+
+        for(int i = 0; i < n; i++) {
+            res = Math.min(res, dp[n-1][i]);
+        }
+
+        return res;
     }
 }
 
