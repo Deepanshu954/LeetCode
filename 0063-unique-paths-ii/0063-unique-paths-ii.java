@@ -3,7 +3,7 @@ class Solution {
     public int uniquePathsWithObstacles(int[][] grid) {
         m = grid.length;
         n = grid[0].length;
-        if(m == 1 && n == 1) return 0;
+        if(grid[0][0] == 1) return 0;
 
 
         return rec(m-1, n-1,grid);
