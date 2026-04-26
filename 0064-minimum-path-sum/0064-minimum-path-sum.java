@@ -7,8 +7,9 @@ class Solution {
 
         // Base Case
         dp[0][0] = grid[0][0];
+
         for(int i = 1; i < m; i++) {
-            dp[i][0] = grid[i-1][0] + grid[i][0];
+            dp[i][0] = dp[i-1][0] + grid[i][0];
         }
 
         for(int j = 1; j < n; j++) {
