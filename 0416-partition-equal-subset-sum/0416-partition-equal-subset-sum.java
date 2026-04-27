@@ -12,12 +12,11 @@ class Solution {
         boolean[] dp = new boolean[k+1];
 
         // Base Case
-        for(int i = 0; i < n; i++) dp[0] = true;
-        if(nums[0] <= k) dp[nums[0]] = true;
+        dp[0] = true;
 
         // Rest
         for(int i = 1; i < n; i++) {
-            for(int j = 1; j <= k; j++) {
+            for(int j = k; j >= 0; j--) {
                 boolean notTake = dp[j];
 
                 boolean take = false;
