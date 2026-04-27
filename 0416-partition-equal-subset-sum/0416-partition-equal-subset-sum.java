@@ -1,24 +1,21 @@
 class Solution {
     public boolean canPartition(int[] nums) {
-        int n = nums.length;
         int sum = 0;
-        for(int num : nums) sum += num;
-
+        for(int x : nums) sum += x;
         if(sum % 2 == 1) return false;
 
-        int target = sum/2;
+        int t = sum / 2;
 
-        int[] dp = new int[target+1];
+        return rec(nums.length - 1, t, nums);
+    }
 
-        for(int i = 0; i < n; i++) {
-            for(int w = target; w >= nums[i]; w--) {
-                dp[w] = Math.max(
-                    dp[w],
-                    nums[i] + dp[w - nums[i]]
-                );
-            }
-        }
+    private boolean rec(int i, int target, int[] nums) {
+        if(target == 0) return true;
+        if(target < 0 || i == 0) return false;
 
-        return dp[target] == target;
+        boolean take = rec(i-1, target - nums[i], nums);
+        boolean nottake = rec(i-1, target, nums);
+
+        return take || nottake;
     }
 }
