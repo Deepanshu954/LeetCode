@@ -1,4 +1,4 @@
-// Tabular
+// Space Optimization
 
 class Solution {
     public boolean canPartition(int[] nums) {
@@ -9,27 +9,27 @@ class Solution {
         if(sum % 2 == 1) return false;
 
         int k = sum/2;
-        boolean[][] dp = new boolean[n][k+1];
+        boolean[] dp = new boolean[k+1];
 
         // Base Case
-        for(int i = 0; i < n; i++) dp[i][0] = true;
-        if(nums[0] <= k) dp[0][nums[0]] = true;
+        for(int i = 0; i < n; i++) dp[0] = true;
+        if(nums[0] <= k) dp[nums[0]] = true;
 
         // Rest
         for(int i = 1; i < n; i++) {
             for(int j = 1; j <= k; j++) {
-                boolean notTake = dp[i-1][j];
+                boolean notTake = dp[j];
 
                 boolean take = false;
                 if(nums[i] <= j)
-                    take = dp[i-1][j - nums[i]];
+                    take = dp[j - nums[i]];
 
-                dp[i][j] = notTake || take;
+                dp[j] = notTake || take;
             }
         }
 
 
-        return dp[n-1][k];
+        return dp[k];
     }
 }
 
@@ -100,6 +100,45 @@ class Solution {
         
         dp[i][k] = (notTake || take) ? 1 : 0;
         return dp[i][k] == 1;
+    }
+}
+
+*/
+
+/*
+
+// Tabular
+
+class Solution {
+    public boolean canPartition(int[] nums) {
+        int n = nums.length;
+
+        int sum = 0;
+        for(int x : nums) sum += x;
+        if(sum % 2 == 1) return false;
+
+        int k = sum/2;
+        boolean[][] dp = new boolean[n][k+1];
+
+        // Base Case
+        for(int i = 0; i < n; i++) dp[i][0] = true;
+        if(nums[0] <= k) dp[0][nums[0]] = true;
+
+        // Rest
+        for(int i = 1; i < n; i++) {
+            for(int j = 1; j <= k; j++) {
+                boolean notTake = dp[i-1][j];
+
+                boolean take = false;
+                if(nums[i] <= j)
+                    take = dp[i-1][j - nums[i]];
+
+                dp[i][j] = notTake || take;
+            }
+        }
+
+
+        return dp[n-1][k];
     }
 }
 
