@@ -1,58 +1,55 @@
+import java.util.*;
+
 class Solution {
-    private int m, n;
-
-    int[][] dir = {
-        {0, -1}, // left
-        {0, 1},  // right
-        {-1, 0}, // up
-        {1, 0}   // down
-    };
-
-    int[][] type = {
-        {},
-        {0, 1}, // 1 → left, right
-        {2, 3}, // 2 → up, down
-        {1, 3}, // 3 → right, down
-        {0, 3}, // 4 → left, down
-        {0, 2}, // 5 → left, up
-        {1, 2}  // 6 → right, up
+    // Street connections for each type (1-6)
+    // dirs[i] = { {dr1, dc1}, {dr2, dc2} }
+    private int[][][] dirs = {
+        {{0, -1}, {0, 1}},  // Type 1: left, right
+        {{-1, 0}, {1, 0}},  // Type 2: upper, lower
+        {{0, -1}, {1, 0}},  // Type 3: left, lower
+        {{0, 1}, {1, 0}},   // Type 4: right, lower
+        {{0, -1}, {-1, 0}}, // Type 5: left, upper
+        {{0, 1}, {-1, 0}}   // Type 6: right, upper
     };
 
     public boolean hasValidPath(int[][] grid) {
-        m = grid.length;
-        n = grid[0].length;
+        int m = grid.length;
+        int n = grid[0].length;
+        boolean[][] visited = new boolean[m][n];
+        Queue<int[]> queue = new LinkedList<>();
 
-        boolean[][] vis = new boolean[m][n];
-        return dfs(grid, 0, 0, vis);
-    }
+        queue.offer(new int[]{0, 0});
+        visited[0][0] = true;
 
-    private boolean dfs(int[][] grid, int r, int c, boolean[][] vis) {
-        if (r == m - 1 && c == n - 1) return true;
+        while (!queue.isEmpty()) {
+            int[] curr = queue.poll();
+            int r = curr[0], c = curr[1];
+            if (r == m - 1 && c == n - 1) return true;
 
-        vis[r][c] = true;
+            int streetType = grid[r][c] - 1; // 0-indexed for dirs array
+            for (int[] dir : dirs[streetType]) {
+                int nr = r + dir[0];
+                int nc = c + dir[1];
 
-        for (int d : type[grid[r][c]]) {
-            int nr = r + dir[d][0];
-            int nc = c + dir[d][1];
-
-            if (nr < 0 || nc < 0 || nr >= m || nc >= n || vis[nr][nc]) continue;
-
-            int rev = d ^ 1;
-
-            // check if neighbor allows reverse direction
-            boolean canConnect = false;
-            for (int nd : type[grid[nr][nc]]) {
-                if (nd == rev) {
-                    canConnect = true;
-                    break;
+                // Check boundaries and if already visited
+                if (nr >= 0 && nr < m && nc >= 0 && nc < n && !visited[nr][nc]) {
+                    // Check if the neighbor can connect back to current cell
+                    if (canConnectBack(grid[nr][nc], nr, nc, r, c)) {
+                        visited[nr][nc] = true;
+                        queue.offer(new int[]{nr, nc});
+                    }
                 }
             }
+        }
+        return false;
+    }
 
-            if (canConnect && dfs(grid, nr, nc, vis)) {
+    private boolean canConnectBack(int neighborType, int nr, int nc, int targetR, int targetC) {
+        for (int[] dir : dirs[neighborType - 1]) {
+            if (nr + dir[0] == targetR && nc + dir[1] == targetC) {
                 return true;
             }
         }
-
         return false;
     }
 }
