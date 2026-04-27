@@ -1,24 +1,67 @@
+// memorization
+
 class Solution {
+    private int[][] dp;
     public boolean canPartition(int[] nums) {
         int n = nums.length;
-        int sum = 0;
-        for(int num : nums) sum += num;
 
+        int sum = 0;
+        for(int x : nums) sum += x;
         if(sum % 2 == 1) return false;
 
-        int target = sum/2;
+        int k = sum/2;
+        dp = new int[n][k+1];
+        for(int[] d : dp) Arrays.fill(d, -1);
 
-        int[] dp = new int[target+1];
+        return rec(n - 1, k, nums);
+    }
 
-        for(int i = 0; i < n; i++) {
-            for(int w = target; w >= nums[i]; w--) {
-                dp[w] = Math.max(
-                    dp[w],
-                    nums[i] + dp[w - nums[i]]
-                );
-            }
-        }
+    private boolean rec(int i, int k, int[] nums) {
+        if(k == 0) return true;
+        if(i == 0) return nums[0] == k;
 
-        return dp[target] == target;
+        if(dp[i][k] != -1) return dp[i][k] == 1;
+
+        // don't take
+        boolean notTake = rec(i -1, k, nums);
+
+        // take
+        boolean take = false;
+        if(nums[i] <= k) 
+            take = rec(i-1, k - nums[i], nums);
+        
+        dp[i][k] = (notTake || take) ? 1 : 0;
+        return dp[i][k] == 1;
     }
 }
+
+/*
+
+// Recursion
+
+class Solution {
+    public boolean canPartition(int[] nums) {
+        int sum = 0;
+        for(int x : nums) sum += x;
+
+        if(sum % 2 == 1) return false;
+        return rec(nums.length - 1, sum/2, nums);
+    }
+
+    private boolean rec(int i, int k, int[] nums) {
+        if(k == 0) return true;
+        if(i == 0) return nums[0] == k;
+
+        // don't take
+        boolean notTake = rec(i -1, k, nums);
+
+        // take
+        boolean take = false;
+        if(nums[i] <= k) 
+            take = rec(i-1, k - nums[i], nums);
+        
+        return notTake || take;
+    }
+}
+
+*/
