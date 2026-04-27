@@ -13,18 +13,18 @@ class Solution {
 
         // Base Case
         for(int i = 0; i < n; i++) dp[i][0] = true;
-        dp[0][0] = true;
+        if(nums[0] <= k) dp[0][nums[0]] = true;
 
         // Rest
         for(int i = 1; i < n; i++) {
             for(int j = 1; j <= k; j++) {
-                boolean notTake = dp[i-1][k];
+                boolean notTake = dp[i-1][j];
 
                 boolean take = false;
                 if(nums[i] <= j)
-                    take = dp[i-1][k - nums[i]];
+                    take = dp[i-1][j - nums[i]];
 
-                dp[i][k] = notTake || take;
+                dp[i][j] = notTake || take;
             }
         }
 
