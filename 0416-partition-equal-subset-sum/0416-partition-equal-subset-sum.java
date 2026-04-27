@@ -16,17 +16,10 @@ class Solution {
 
         // Rest
         for(int i = 1; i < n; i++) {
-            for(int j = k; j >= 0; j--) {
-                boolean notTake = dp[j];
-
-                boolean take = false;
-                if(nums[i] <= j)
-                    take = dp[j - nums[i]];
-
-                dp[j] = notTake || take;
+            for(int j = k; j >= nums[i]; j--) {
+                dp[j] = dp[j] || dp[j - nums[i]];
             }
         }
-
 
         return dp[k];
     }
