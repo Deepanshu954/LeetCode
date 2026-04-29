@@ -1,55 +1,84 @@
 class Solution {
-    public long maximumScore(int[][] matrix) {
-        int size = matrix.length;
-        long[][] columnPrefixSum = new long[size + 1][size];
-        
-        for (int row = 0; row < size; row++) {
-            for (int col = 0; col < size; col++) {
-                columnPrefixSum[row + 1][col] = columnPrefixSum[row][col] + matrix[row][col];
+    public long maximumScore(int[][] grid) {
+        MaxScoreInGrid finder=new MaxScoreInGrid();
+        return finder.getMaximumScore(grid);
+    }
+}
+
+class ColumnSumFinder{
+    long gridPrefix[][];
+    public ColumnSumFinder(int grid[][]) {
+        gridPrefix=new long[grid.length][grid[0].length];
+        for (int i = 0; i < grid[0].length; i++) {
+            gridPrefix[0][i]=grid[0][i];
+            for (int j = 1; j < grid.length; j++) {
+                gridPrefix[j][i]=gridPrefix[j-1][i]+grid[j][i];
             }
         }
-        
-  
-        long[][][] dpTable = new long[size][size + 1][size + 1];
-        for (long[][] table2D : dpTable)
-            for (long[] table1D : table2D)
-                Arrays.fill(table1D, -1);
-        
-        for (int colored = 0; colored <= size; colored++)
-            dpTable[0][colored][0] = 0;
-        
-        for (int currentColumn = 0; currentColumn < size - 1; currentColumn++) {
-            for (int colored = 0; colored <= size; colored++) {
-                for (int taken = 0; taken <= size; taken++) {
-                    if (dpTable[currentColumn][colored][taken] == -1)
-                        continue;
-                    
-                    for (int newColumn = 0; newColumn <= size; newColumn++) {
-                        if (newColumn > colored) {
-                            long currentValue = dpTable[currentColumn][colored][taken];
-                            if (colored + taken < newColumn) {
-                                currentValue += columnPrefixSum[newColumn][currentColumn] - columnPrefixSum[colored + taken][currentColumn];
-                            }
-                            dpTable[currentColumn + 1][newColumn][0] = Math.max(dpTable[currentColumn + 1][newColumn][0], currentValue);
-                        } else if (newColumn < colored) {
-                            long currentValue = dpTable[currentColumn][colored][taken]
-                                + columnPrefixSum[colored][currentColumn + 1] - columnPrefixSum[newColumn][currentColumn + 1];
-                            
-                            dpTable[currentColumn + 1][newColumn][colored - newColumn] = Math.max(dpTable[currentColumn + 1][newColumn][colored - newColumn], currentValue);
-                        } else {
-                            long currentValue = dpTable[currentColumn][colored][taken];
-                            dpTable[currentColumn + 1][newColumn][0] = Math.max(currentValue, dpTable[currentColumn + 1][newColumn][0]);
-                        }
-                    }
-                }
-            }
+    }
+    
+    public String toString(){
+        return Arrays.deepToString(gridPrefix);
+    }
+    long getColumnSum(int columNumber,int startRow,int endRow){
+        if(columNumber<0 || columNumber>=gridPrefix[0].length){
+            return 0;
         }
+        if(startRow>=endRow){
+            return 0;
+        }
+        long blackBoxes = ((startRow==-1)?0:gridPrefix[startRow][columNumber]);
+        long whitePlusBlack = gridPrefix[endRow][columNumber];
+        return whitePlusBlack-blackBoxes;
+    }
+}
+class MaxScoreInGrid{
+    int grid[][];
+    ColumnSumFinder sumFinder;
+    Long dp[][][];
+    long getMaximumScore(int grid[][]){
+        this.grid=grid;
+        dp=new Long[grid[0].length][grid.length+1][2];
+        sumFinder=new ColumnSumFinder(grid);
+        long ans = getFromColumn(0, -1, 0);
+        return ans;
+    }
+    long getFromColumn(int currentColumnNumber,int previousColumnFilled,int previousPreviousIsBigger){
+        long ans=0;
         
-        long maxResult = 0;
-        for (int i = 0; i <= size; i++)
-            for (int j = 0; j <= size; j++)
-                maxResult = Math.max(maxResult, dpTable[size - 1][i][j]);
-        
-        return maxResult;
+        if(currentColumnNumber>=grid[0].length){
+            return 0;
+        }
+
+        if(dp[currentColumnNumber][previousColumnFilled+1][previousPreviousIsBigger]!=null){
+            return dp[currentColumnNumber][previousColumnFilled+1][previousPreviousIsBigger];
+        }
+
+        for (int currentColumnFill = -1; currentColumnFill < grid.length; currentColumnFill++) {
+            long currentAnswer=0;
+            
+            // Fill current column till i
+            currentAnswer=Math.max(currentAnswer,getFromColumn(currentColumnNumber+1, currentColumnFill, 0));
+            
+            //fill current column till i and
+            //consider currentColumnNumber-1 will be bigger then
+            //currentColumnNumber+1, so take column
+            //currentColumnNumber's count now
+            currentAnswer=Math.max(currentAnswer,
+            getFromColumn(currentColumnNumber+1, currentColumnFill, 1)
+            +sumFinder.getColumnSum(
+            currentColumnNumber,
+            currentColumnFill,
+            previousColumnFilled));
+
+            // only if previousPrevious was smaller then current
+            // take sum of previous
+            if(previousPreviousIsBigger==0){
+                currentAnswer+=sumFinder.getColumnSum(currentColumnNumber-1,previousColumnFilled, currentColumnFill);
+            }
+
+            ans=Math.max(ans,currentAnswer);
+        }
+        return dp[currentColumnNumber][previousColumnFilled+1][previousPreviousIsBigger]=ans;
     }
 }
