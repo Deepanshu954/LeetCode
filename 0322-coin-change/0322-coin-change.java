@@ -1,6 +1,12 @@
 class Solution {
+    private int[][] dp;
     public int coinChange(int[] coins, int amount) {
-        int ans = rec(coins.length - 1, amount, coins);
+        int n = coins.length;
+
+        dp = new int[n][amount+1];
+        for(int[] d : dp) Arrays.fill(d, -1);
+
+        int ans = rec(n - 1, amount, coins);
         return ans >= (int)1e9 ? -1 : ans;
     }
 
@@ -10,6 +16,8 @@ class Solution {
             return (int)1e9;
         }
 
+        if(dp[i][k] != -1) return dp[i][k];
+
         int notTake = rec(i - 1, k, coins);
 
         int take = (int)1e9;
@@ -17,6 +25,6 @@ class Solution {
             take = 1 + rec(i, k - coins[i], coins);
         }
 
-        return Math.min(take, notTake);
+        return dp[i][k] = Math.min(take, notTake);
     }
 }
