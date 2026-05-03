@@ -1,22 +1,16 @@
 class Solution {
     public boolean rotateString(String s, String goal) {
         if(s.length() != goal.length()) return false;
-        return (s + s).contains(goal);
-        
+
+        int n = s.length();
+        int m = goal.length();
+
+        goal = goal + goal;
+
+        for(int i = 0; i < goal.length(); i++) {
+            if(goal.startsWith(s, i)) return true;
+        }
+
+        return false;
     }
 }
-
-
-// class Solution {
-//     public boolean rotateString(String s, String goal) {
-
-//         StringBuilder sb = new StringBuilder();
-
-//         for(int i = 0; i < s.length(); i++) {
-//             String str = s.substring(i, s.length()) + s.substring(0,i);
-
-//             if(str.equals(goal)) return true;
-//         }
-//         return false;
-//     }
-// }
