@@ -376,6 +376,7 @@ Each folder contains:
 | [0416-partition-equal-subset-sum](https://github.com/Deepanshu954/LeetCode/tree/main/0416-partition-equal-subset-sum/) | Medium |
 | [0417-pacific-atlantic-water-flow](https://github.com/Deepanshu954/LeetCode/tree/main/0417-pacific-atlantic-water-flow/) | Medium |
 | [0494-target-sum](https://github.com/Deepanshu954/LeetCode/tree/main/0494-target-sum/) | Medium |
+| [0518-coin-change-ii](https://github.com/Deepanshu954/LeetCode/tree/main/0518-coin-change-ii/) | Medium |
 | [0695-max-area-of-island](https://github.com/Deepanshu954/LeetCode/tree/main/0695-max-area-of-island/) | Medium |
 | [0733-flood-fill](https://github.com/Deepanshu954/LeetCode/tree/main/0733-flood-fill/) | Easy |
 | [0746-min-cost-climbing-stairs](https://github.com/Deepanshu954/LeetCode/tree/main/0746-min-cost-climbing-stairs/) | Easy |
@@ -522,6 +523,7 @@ Each folder contains:
 | [0322-coin-change](https://github.com/Deepanshu954/LeetCode/tree/main/0322-coin-change/) | Medium |
 | [0416-partition-equal-subset-sum](https://github.com/Deepanshu954/LeetCode/tree/main/0416-partition-equal-subset-sum/) | Medium |
 | [0494-target-sum](https://github.com/Deepanshu954/LeetCode/tree/main/0494-target-sum/) | Medium |
+| [0518-coin-change-ii](https://github.com/Deepanshu954/LeetCode/tree/main/0518-coin-change-ii/) | Medium |
 | [0746-min-cost-climbing-stairs](https://github.com/Deepanshu954/LeetCode/tree/main/0746-min-cost-climbing-stairs/) | Easy |
 | [0787-cheapest-flights-within-k-stops](https://github.com/Deepanshu954/LeetCode/tree/main/0787-cheapest-flights-within-k-stops/) | Medium |
 | [0788-rotated-digits](https://github.com/Deepanshu954/LeetCode/tree/main/0788-rotated-digits/) | Medium |
