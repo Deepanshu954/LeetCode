@@ -1,31 +1,32 @@
+// space optimization
+
 class Solution {
-    private int[][] dp;
     public int change(int k, int[] nums) {
         int n = nums.length;
-        dp = new int[n][k+1];
+        int[] dp = new int[k+1];
 
         // Base Case
         for(int j = 0; j <= k; j++) {
             if(j % nums[0] == 0) {
-                dp[0][j] = 1;
+                dp[j] = 1;
             } 
         }
 
         // Rest
         for(int i = 1; i < n; i++) {
             for(int j = 0; j <= k; j++) {
-                int notTake = dp[i-1][j];
+                int notTake = dp[j];
 
                 int take = 0;
                 if(nums[i] <= j) {
-                    take = dp[i][j - nums[i]];
+                    take = dp[j - nums[i]];
                 }
 
-                dp[i][j] = take + notTake;
+                dp[j] = take + notTake;
             }
         }
 
-        return dp[n-1][k];
+        return dp[k];
     }
 }
 
@@ -94,3 +95,40 @@ class Solution {
 
 */
 
+/*
+
+// Tabular
+
+class Solution {
+    private int[][] dp;
+    public int change(int k, int[] nums) {
+        int n = nums.length;
+        dp = new int[n][k+1];
+
+        // Base Case
+        for(int j = 0; j <= k; j++) {
+            if(j % nums[0] == 0) {
+                dp[0][j] = 1;
+            } 
+        }
+
+        // Rest
+        for(int i = 1; i < n; i++) {
+            for(int j = 0; j <= k; j++) {
+                int notTake = dp[i-1][j];
+
+                int take = 0;
+                if(nums[i] <= j) {
+                    take = dp[i][j - nums[i]];
+                }
+
+                dp[i][j] = take + notTake;
+            }
+        }
+
+        return dp[n-1][k];
+    }
+}
+
+
+*/
