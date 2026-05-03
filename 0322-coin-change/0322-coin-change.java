@@ -1,36 +1,22 @@
 class Solution {
-    private int res;
-    private int[][] dp;
     public int coinChange(int[] coins, int amount) {
-        int n = coins.length;
-
-        Arrays.sort(coins);
-        res = (int)1e9;
-
-        dp = new int[n][amount+1];
-        for(int[] d : dp) Arrays.fill(d, -1);
-
-        rec(n-1,  amount, 0 ,coins);
-        return (res == (int)1e9) ? -1 : res;
+        int ans = rec(coins.length - 1, amount, coins);
+        return ans >= (int)1e9 ? -1 : ans;
     }
 
-    private void rec(int i, int k, int s,int[] nums) {
-        if(i < 0 || k < 0) return;
-        if(k == 0) {
-            res = Math.min(res, s);
-            dp[i][k] = res;
-            return;
+    private int rec(int i, int k, int[] coins) {
+        if(i == 0) {
+            if(k % coins[0] == 0) return k / coins[0];
+            return (int)1e9;
         }
 
-        if(dp[i][k] != -1) {
-            res = Math.min(res, s);
-            return;
+        int notTake = rec(i - 1, k, coins);
+
+        int take = (int)1e9;
+        if(coins[i] <= k) {
+            take = 1 + rec(i, k - coins[i], coins);
         }
 
-        if(nums[i] <= k) {
-            rec(i, k-nums[i], s+1,nums);
-        }
-
-        rec(i-1, k, s, nums);
+        return Math.min(take, notTake);
     }
 }
