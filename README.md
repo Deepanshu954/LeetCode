@@ -527,6 +527,7 @@ Each folder contains:
 | [0746-min-cost-climbing-stairs](https://github.com/Deepanshu954/LeetCode/tree/main/0746-min-cost-climbing-stairs/) | Easy |
 | [0787-cheapest-flights-within-k-stops](https://github.com/Deepanshu954/LeetCode/tree/main/0787-cheapest-flights-within-k-stops/) | Medium |
 | [0788-rotated-digits](https://github.com/Deepanshu954/LeetCode/tree/main/0788-rotated-digits/) | Medium |
+| [1143-longest-common-subsequence](https://github.com/Deepanshu954/LeetCode/tree/main/1143-longest-common-subsequence/) | Medium |
 | [1320-minimum-distance-to-type-a-word-using-two-fingers](https://github.com/Deepanshu954/LeetCode/tree/main/1320-minimum-distance-to-type-a-word-using-two-fingers/) | Hard |
 | [1976-number-of-ways-to-arrive-at-destination](https://github.com/Deepanshu954/LeetCode/tree/main/1976-number-of-ways-to-arrive-at-destination/) | Medium |
 | [2463-minimum-total-distance-traveled](https://github.com/Deepanshu954/LeetCode/tree/main/2463-minimum-total-distance-traveled/) | Hard |
@@ -572,6 +573,7 @@ Each folder contains:
 | [0451-sort-characters-by-frequency](https://github.com/Deepanshu954/LeetCode/tree/main/0451-sort-characters-by-frequency/) | Medium |
 | [0796-rotate-string](https://github.com/Deepanshu954/LeetCode/tree/main/0796-rotate-string/) | Easy |
 | [0990-satisfiability-of-equality-equations](https://github.com/Deepanshu954/LeetCode/tree/main/0990-satisfiability-of-equality-equations/) | Medium |
+| [1143-longest-common-subsequence](https://github.com/Deepanshu954/LeetCode/tree/main/1143-longest-common-subsequence/) | Medium |
 | [1320-minimum-distance-to-type-a-word-using-two-fingers](https://github.com/Deepanshu954/LeetCode/tree/main/1320-minimum-distance-to-type-a-word-using-two-fingers/) | Hard |
 | [1461-check-if-a-string-contains-all-binary-codes-of-size-k](https://github.com/Deepanshu954/LeetCode/tree/main/1461-check-if-a-string-contains-all-binary-codes-of-size-k/) | Medium |
 | [2452-words-within-two-edits-of-dictionary](https://github.com/Deepanshu954/LeetCode/tree/main/2452-words-within-two-edits-of-dictionary/) | Medium |
