@@ -17,7 +17,7 @@ class Solution {
                     curr[j] = 1 + dp[j-1];
 
                 else
-                    curr[j] = Math.max( dp[j], dp[j-1] );
+                    curr[j] = Math.max( dp[j], curr[j-1] );
             }
             dp = curr;
         }
