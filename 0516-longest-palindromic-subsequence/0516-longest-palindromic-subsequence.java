@@ -1,11 +1,11 @@
 class Solution {
     public int longestPalindromeSubseq(String s) {
-        if(s.length() == 1) return 1;
         return rec(0, s.length() - 1, s);
     }
 
     private int rec(int i, int j, String s) {
         if(i > j) return 0;
+        if(i == j) return 1;
 
         if(s.charAt(i) == s.charAt(j)) {
             return 2 + rec(i+1, j-1, s);
