@@ -398,6 +398,7 @@ Each folder contains:
 | [3488-closest-equal-element-queries](https://github.com/Deepanshu954/LeetCode/tree/main/3488-closest-equal-element-queries/) | Medium |
 | [3653-xor-after-range-multiplication-queries-i](https://github.com/Deepanshu954/LeetCode/tree/main/3653-xor-after-range-multiplication-queries-i/) | Medium |
 | [3655-xor-after-range-multiplication-queries-ii](https://github.com/Deepanshu954/LeetCode/tree/main/3655-xor-after-range-multiplication-queries-ii/) | Hard |
+| [3660-jump-game-ix](https://github.com/Deepanshu954/LeetCode/tree/main/3660-jump-game-ix/) | Medium |
 | [3740-minimum-distance-between-three-equal-elements-i](https://github.com/Deepanshu954/LeetCode/tree/main/3740-minimum-distance-between-three-equal-elements-i/) | Easy |
 | [3741-minimum-distance-between-three-equal-elements-ii](https://github.com/Deepanshu954/LeetCode/tree/main/3741-minimum-distance-between-three-equal-elements-ii/) | Medium |
 | [3742-maximum-path-score-in-a-grid](https://github.com/Deepanshu954/LeetCode/tree/main/3742-maximum-path-score-in-a-grid/) | Medium |
@@ -531,6 +532,7 @@ Each folder contains:
 | [1320-minimum-distance-to-type-a-word-using-two-fingers](https://github.com/Deepanshu954/LeetCode/tree/main/1320-minimum-distance-to-type-a-word-using-two-fingers/) | Hard |
 | [1976-number-of-ways-to-arrive-at-destination](https://github.com/Deepanshu954/LeetCode/tree/main/1976-number-of-ways-to-arrive-at-destination/) | Medium |
 | [2463-minimum-total-distance-traveled](https://github.com/Deepanshu954/LeetCode/tree/main/2463-minimum-total-distance-traveled/) | Hard |
+| [3660-jump-game-ix](https://github.com/Deepanshu954/LeetCode/tree/main/3660-jump-game-ix/) | Medium |
 | [3742-maximum-path-score-in-a-grid](https://github.com/Deepanshu954/LeetCode/tree/main/3742-maximum-path-score-in-a-grid/) | Medium |
 ## Heap (Priority Queue)
 | Problem Name | Difficulty |
