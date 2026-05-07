@@ -1,5 +1,6 @@
 class Solution {
     public int longestPalindromeSubseq(String s) {
+        if(s.length() == 1) return 1;
         return rec(0, s.length() - 1, s);
     }
 
