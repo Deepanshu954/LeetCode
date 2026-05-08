@@ -575,6 +575,7 @@ Each folder contains:
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0030-substring-with-concatenation-of-all-words](https://github.com/Deepanshu954/LeetCode/tree/main/0030-substring-with-concatenation-of-all-words/) | Hard |
+| [0071-simplify-path](https://github.com/Deepanshu954/LeetCode/tree/main/0071-simplify-path/) | Medium |
 | [0433-minimum-genetic-mutation](https://github.com/Deepanshu954/LeetCode/tree/main/0433-minimum-genetic-mutation/) | Medium |
 | [0451-sort-characters-by-frequency](https://github.com/Deepanshu954/LeetCode/tree/main/0451-sort-characters-by-frequency/) | Medium |
 | [0516-longest-palindromic-subsequence](https://github.com/Deepanshu954/LeetCode/tree/main/0516-longest-palindromic-subsequence/) | Medium |
@@ -673,4 +674,8 @@ Each folder contains:
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [3629-minimum-jumps-to-reach-end-via-prime-teleportation](https://github.com/Deepanshu954/LeetCode/tree/main/3629-minimum-jumps-to-reach-end-via-prime-teleportation/) | Medium |
+## Stack
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0071-simplify-path](https://github.com/Deepanshu954/LeetCode/tree/main/0071-simplify-path/) | Medium |
 <!---LeetCode Topics End-->
