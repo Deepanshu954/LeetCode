@@ -1,8 +1,6 @@
 class Solution {
     public int minDistance(String s1, String s2) {
-        int com = lcs(s1, s2);
-
-        return s1.length() + s2.length() - (2 * com);
+        return s1.length() + s2.length() - (2 * lcs(s1, s2));
     }
 
     private int lcs(String s1, String s2) {
