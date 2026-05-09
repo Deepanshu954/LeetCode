@@ -1,4 +1,4 @@
-// Tabular
+// Space Optimization
 
 class Solution {
     public int longestCommonSubsequence(String s1, String s2) {
