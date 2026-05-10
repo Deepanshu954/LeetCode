@@ -13,7 +13,7 @@ class Solution {
             for(int j = i+1; j < n; j++) {
 
                 if(s.charAt(i) == s.charAt(j)) {
-                    if(j-1 == 1 || dp[i+1][j-1]) {
+                    if(j-i == 1 || dp[i+1][j-1]) {
                         dp[i][j] = true;
 
                         if(j - i + 1 > maxLen) {
