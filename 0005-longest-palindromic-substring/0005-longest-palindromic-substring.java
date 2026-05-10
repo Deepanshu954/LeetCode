@@ -1,50 +1,34 @@
-// // Brute Force
-// class Solution {
-//     public String longestPalindrome(String s) {
-//         if(s.length() < 2) return s;
-//         String ans = "";
-
-//         for(int i = 0; i < s.length(); i++){
-//             for(int j = i; j < s.length(); j++){
-//                 String sub = s.substring(i,j+1);
-//                 if(isPalindrome(sub) && ans.length() < sub.length()) ans = sub;
-//             }
-//         }
-//         return ans;
-//     }
-
-//     public static boolean isPalindrome(String s){
-//         int left = 0, right = s.length() - 1;
-
-//         while(left < right) if(s.charAt(left++) != s.charAt(right--)) return false;
-//         return true;
-//     }
-// }
-
-
-// Optimal Methord
 class Solution {
     public String longestPalindrome(String s) {
         int n = s.length();
-        if(n == 0) return "";
-        int start = 0;
-        int maxLen = 1;
 
-        for(int center = 0; center < 2*n -1; center++){
-            int left = center/2;
-            int right = left + center % 2;
+        int[][] dp = new int[n][n];
 
-            while(left >= 0 && right < n && s.charAt(left) == s.charAt(right)){
-                int len = right - left + 1;
+        for(int i = 0; i < n; i++) dp[i][i] = 1;
 
-                if(len > maxLen){
-                    maxLen = len;
-                    start = left;
-                }
-                left--;
-                right++;
+        for(int i = n-1; i >= 0; i--) {
+            for(int j = i+1; j < n; j++) {
+
+                if(s.charAt(i) == s.charAt(j)) dp[i][j] = 2 + dp[i+1][j-1];
+                else dp[i][j] = 0;
             }
         }
-        return s.substring(start, start + maxLen);
+
+        int max = 0;
+        int idx = 0;
+        for(int i = 0; i < n; i++) {
+            for(int j = 0; j < n; j++) {
+                if(max < dp[i][j]) {
+                    max = dp[i][j];
+                    idx = j;
+                }
+            }
+        }
+
+        String res = "" + max + "  -  " + idx;
+
+        String ans = s.substring(idx - max + 1,idx+1);
+
+        return ans;
     }
 }
