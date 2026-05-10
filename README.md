@@ -538,6 +538,7 @@ Each folder contains:
 | [0746-min-cost-climbing-stairs](https://github.com/Deepanshu954/LeetCode/tree/main/0746-min-cost-climbing-stairs/) | Easy |
 | [0787-cheapest-flights-within-k-stops](https://github.com/Deepanshu954/LeetCode/tree/main/0787-cheapest-flights-within-k-stops/) | Medium |
 | [0788-rotated-digits](https://github.com/Deepanshu954/LeetCode/tree/main/0788-rotated-digits/) | Medium |
+| [1092-shortest-common-supersequence](https://github.com/Deepanshu954/LeetCode/tree/main/1092-shortest-common-supersequence/) | Hard |
 | [1143-longest-common-subsequence](https://github.com/Deepanshu954/LeetCode/tree/main/1143-longest-common-subsequence/) | Medium |
 | [1312-minimum-insertion-steps-to-make-a-string-palindrome](https://github.com/Deepanshu954/LeetCode/tree/main/1312-minimum-insertion-steps-to-make-a-string-palindrome/) | Hard |
 | [1320-minimum-distance-to-type-a-word-using-two-fingers](https://github.com/Deepanshu954/LeetCode/tree/main/1320-minimum-distance-to-type-a-word-using-two-fingers/) | Hard |
@@ -591,6 +592,7 @@ Each folder contains:
 | [0583-delete-operation-for-two-strings](https://github.com/Deepanshu954/LeetCode/tree/main/0583-delete-operation-for-two-strings/) | Medium |
 | [0796-rotate-string](https://github.com/Deepanshu954/LeetCode/tree/main/0796-rotate-string/) | Easy |
 | [0990-satisfiability-of-equality-equations](https://github.com/Deepanshu954/LeetCode/tree/main/0990-satisfiability-of-equality-equations/) | Medium |
+| [1092-shortest-common-supersequence](https://github.com/Deepanshu954/LeetCode/tree/main/1092-shortest-common-supersequence/) | Hard |
 | [1143-longest-common-subsequence](https://github.com/Deepanshu954/LeetCode/tree/main/1143-longest-common-subsequence/) | Medium |
 | [1312-minimum-insertion-steps-to-make-a-string-palindrome](https://github.com/Deepanshu954/LeetCode/tree/main/1312-minimum-insertion-steps-to-make-a-string-palindrome/) | Hard |
 | [1320-minimum-distance-to-type-a-word-using-two-fingers](https://github.com/Deepanshu954/LeetCode/tree/main/1320-minimum-distance-to-type-a-word-using-two-fingers/) | Hard |
