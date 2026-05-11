@@ -522,6 +522,7 @@ Each folder contains:
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0005-longest-palindromic-substring](https://github.com/Deepanshu954/LeetCode/tree/main/0005-longest-palindromic-substring/) | Medium |
+| [0044-wildcard-matching](https://github.com/Deepanshu954/LeetCode/tree/main/0044-wildcard-matching/) | Hard |
 | [0062-unique-paths](https://github.com/Deepanshu954/LeetCode/tree/main/0062-unique-paths/) | Medium |
 | [0063-unique-paths-ii](https://github.com/Deepanshu954/LeetCode/tree/main/0063-unique-paths-ii/) | Medium |
 | [0064-minimum-path-sum](https://github.com/Deepanshu954/LeetCode/tree/main/0064-minimum-path-sum/) | Medium |
@@ -587,6 +588,7 @@ Each folder contains:
 | ------- | ------- |
 | [0005-longest-palindromic-substring](https://github.com/Deepanshu954/LeetCode/tree/main/0005-longest-palindromic-substring/) | Medium |
 | [0030-substring-with-concatenation-of-all-words](https://github.com/Deepanshu954/LeetCode/tree/main/0030-substring-with-concatenation-of-all-words/) | Hard |
+| [0044-wildcard-matching](https://github.com/Deepanshu954/LeetCode/tree/main/0044-wildcard-matching/) | Hard |
 | [0071-simplify-path](https://github.com/Deepanshu954/LeetCode/tree/main/0071-simplify-path/) | Medium |
 | [0072-edit-distance](https://github.com/Deepanshu954/LeetCode/tree/main/0072-edit-distance/) | Medium |
 | [0115-distinct-subsequences](https://github.com/Deepanshu954/LeetCode/tree/main/0115-distinct-subsequences/) | Hard |
@@ -645,6 +647,7 @@ Each folder contains:
 ## Greedy
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0044-wildcard-matching](https://github.com/Deepanshu954/LeetCode/tree/main/0044-wildcard-matching/) | Hard |
 | [2078-two-furthest-houses-with-different-colors](https://github.com/Deepanshu954/LeetCode/tree/main/2078-two-furthest-houses-with-different-colors/) | Easy |
 ## Bucket Sort
 | Problem Name | Difficulty |
@@ -696,4 +699,8 @@ Each folder contains:
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0071-simplify-path](https://github.com/Deepanshu954/LeetCode/tree/main/0071-simplify-path/) | Medium |
+## Recursion
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0044-wildcard-matching](https://github.com/Deepanshu954/LeetCode/tree/main/0044-wildcard-matching/) | Hard |
 <!---LeetCode Topics End-->
