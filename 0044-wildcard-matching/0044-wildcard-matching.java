@@ -7,15 +7,22 @@ class Solution {
     }
 
     private boolean rec(int i, int j, String s1, String s2) {
-        if(i < 0) return true;
+        if(i < 0 && j < 0) return true;
         if(j < 0) return false;
+
+        if(i < 0) {
+            for(int k = 0; k <= j; k++) {
+                if(s2.charAt(k) != '*') return false;
+            }
+            return true;
+        }
 
         char ch1 = s1.charAt(i);
         char ch2 = s2.charAt(j);
 
         if(ch1 == ch2 || ch2 == '?') return rec(i-1, j-1, s1, s2);
 
-        if(ch2 == '*') return rec(i-1, j-1, s1, s2) || rec(i-1, j, s1, s2);
+        if(ch2 == '*') return rec(i-1, j, s1, s2) || rec(i, j-1, s1, s2);
 
         return false;
     }
