@@ -1,42 +1,43 @@
-# [49. Group Anagrams](https://leetcode.com/problems/group-anagrams/)
+<h2><a href="https://leetcode.com/problems/group-anagrams">49. Group Anagrams</a></h2><h3>Medium</h3><hr><p>Given an array of strings <code>strs</code>, group the <span data-keyword="anagram">anagrams</span> together. You can return the answer in <strong>any order</strong>.</p>
 
-**Difficulty:** 🟡 Medium  
-**Topics:** Array, Hash Table, String, Sorting
+<p>&nbsp;</p>
+<p><strong class="example">Example 1:</strong></p>
 
----
+<div class="example-block">
+<p><strong>Input:</strong> <span class="example-io">strs = [&quot;eat&quot;,&quot;tea&quot;,&quot;tan&quot;,&quot;ate&quot;,&quot;nat&quot;,&quot;bat&quot;]</span></p>
 
-## Problem
+<p><strong>Output:</strong> <span class="example-io">[[&quot;bat&quot;],[&quot;nat&quot;,&quot;tan&quot;],[&quot;ate&quot;,&quot;eat&quot;,&quot;tea&quot;]]</span></p>
 
-Given an array of strings strs, group the anagrams together. You can return the answer in any order.
+<p><strong>Explanation:</strong></p>
 
- 
-Example 1:
+<ul>
+	<li>There is no string in strs that can be rearranged to form <code>&quot;bat&quot;</code>.</li>
+	<li>The strings <code>&quot;nat&quot;</code> and <code>&quot;tan&quot;</code> are anagrams as they can be rearranged to form each other.</li>
+	<li>The strings <code>&quot;ate&quot;</code>, <code>&quot;eat&quot;</code>, and <code>&quot;tea&quot;</code> are anagrams as they can be rearranged to form each other.</li>
+</ul>
+</div>
 
-Input: strs = ["eat","tea","tan","ate","nat","bat"]
+<p><strong class="example">Example 2:</strong></p>
 
-Output: [["bat"],["nat","tan"],["ate","eat","tea"]]
+<div class="example-block">
+<p><strong>Input:</strong> <span class="example-io">strs = [&quot;&quot;]</span></p>
 
-Explanation:
+<p><strong>Output:</strong> <span class="example-io">[[&quot;&quot;]]</span></p>
+</div>
 
-	There is no string in strs that can be rearranged to form "bat".
-	The strings "nat" and "tan" are anagrams as they can be rearranged to form each other.
-	The strings "ate", "eat", and "tea" are anagrams as they can be rearranged to form each other.
+<p><strong class="example">Example 3:</strong></p>
 
-Example 2:
+<div class="example-block">
+<p><strong>Input:</strong> <span class="example-io">strs = [&quot;a&quot;]</span></p>
 
-Input: strs = [""]
+<p><strong>Output:</strong> <span class="example-io">[[&quot;a&quot;]]</span></p>
+</div>
 
-Output: [[""]]
+<p>&nbsp;</p>
+<p><strong>Constraints:</strong></p>
 
-Example 3:
-
-Input: strs = ["a"]
-
-Output: [["a"]]
-
- 
-Constraints:
-
-	1 <= strs.length <= 104
-	0 <= strs[i].length <= 100
-	strs[i] consists of lowercase English letters.
+<ul>
+	<li><code>1 &lt;= strs.length &lt;= 10<sup>4</sup></code></li>
+	<li><code>0 &lt;= strs[i].length &lt;= 100</code></li>
+	<li><code>strs[i]</code> consists of lowercase English letters.</li>
+</ul>
