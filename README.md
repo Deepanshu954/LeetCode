@@ -364,6 +364,7 @@ Each folder contains:
 ## Array
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0049-group-anagrams](https://github.com/Deepanshu954/LeetCode/tree/main/0049-group-anagrams/) | Medium |
 | [0063-unique-paths-ii](https://github.com/Deepanshu954/LeetCode/tree/main/0063-unique-paths-ii/) | Medium |
 | [0064-minimum-path-sum](https://github.com/Deepanshu954/LeetCode/tree/main/0064-minimum-path-sum/) | Medium |
 | [0120-triangle](https://github.com/Deepanshu954/LeetCode/tree/main/0120-triangle/) | Medium |
@@ -411,6 +412,7 @@ Each folder contains:
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0030-substring-with-concatenation-of-all-words](https://github.com/Deepanshu954/LeetCode/tree/main/0030-substring-with-concatenation-of-all-words/) | Hard |
+| [0049-group-anagrams](https://github.com/Deepanshu954/LeetCode/tree/main/0049-group-anagrams/) | Medium |
 | [0433-minimum-genetic-mutation](https://github.com/Deepanshu954/LeetCode/tree/main/0433-minimum-genetic-mutation/) | Medium |
 | [0451-sort-characters-by-frequency](https://github.com/Deepanshu954/LeetCode/tree/main/0451-sort-characters-by-frequency/) | Medium |
 | [0874-walking-robot-simulation](https://github.com/Deepanshu954/LeetCode/tree/main/0874-walking-robot-simulation/) | Medium |
@@ -590,6 +592,7 @@ Each folder contains:
 | [0005-longest-palindromic-substring](https://github.com/Deepanshu954/LeetCode/tree/main/0005-longest-palindromic-substring/) | Medium |
 | [0030-substring-with-concatenation-of-all-words](https://github.com/Deepanshu954/LeetCode/tree/main/0030-substring-with-concatenation-of-all-words/) | Hard |
 | [0044-wildcard-matching](https://github.com/Deepanshu954/LeetCode/tree/main/0044-wildcard-matching/) | Hard |
+| [0049-group-anagrams](https://github.com/Deepanshu954/LeetCode/tree/main/0049-group-anagrams/) | Medium |
 | [0071-simplify-path](https://github.com/Deepanshu954/LeetCode/tree/main/0071-simplify-path/) | Medium |
 | [0072-edit-distance](https://github.com/Deepanshu954/LeetCode/tree/main/0072-edit-distance/) | Medium |
 | [0115-distinct-subsequences](https://github.com/Deepanshu954/LeetCode/tree/main/0115-distinct-subsequences/) | Hard |
@@ -615,6 +618,7 @@ Each folder contains:
 ## Sorting
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0049-group-anagrams](https://github.com/Deepanshu954/LeetCode/tree/main/0049-group-anagrams/) | Medium |
 | [0451-sort-characters-by-frequency](https://github.com/Deepanshu954/LeetCode/tree/main/0451-sort-characters-by-frequency/) | Medium |
 | [1665-minimum-initial-energy-to-finish-tasks](https://github.com/Deepanshu954/LeetCode/tree/main/1665-minimum-initial-energy-to-finish-tasks/) | Hard |
 | [2033-minimum-operations-to-make-a-uni-value-grid](https://github.com/Deepanshu954/LeetCode/tree/main/2033-minimum-operations-to-make-a-uni-value-grid/) | Medium |
