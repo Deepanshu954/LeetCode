@@ -1,6 +1,44 @@
+// Tabular
+
+class Solution {
+    public boolean isInterleave(String s1, String s2, String s3) {
+        int m = s1.length();
+        int n = s2.length();
+        int o = s3.length();
+
+        if(m + n != o) return false;
+
+        boolean[][] dp = new boolean[m+1][n+1];
+        dp[0][0] = true;
+
+        for(int i = 1; i <= m; i++) 
+            dp[i][0] = dp[i-1][0] && (s1.charAt(i-1) == s3.charAt(i-1));
+
+
+        for(int j = 1; j <= n; j++)
+            dp[0][j] = dp[0][j-1] && (s2.charAt(j-1) == s3.charAt(j-1));
+
+
+        for(int i = 1; i <= m; i++) {
+            for(int j = 1; j <= n; j++) {
+                int k = i + j;
+
+                if(s1.charAt(i-1) == s3.charAt(k-1)) {
+                    dp[i][j] |= dp[i-1][j];
+                } 
+                if(s2.charAt(j-1) == s3.charAt(k-1)) {
+                    dp[i][j] |= dp[i][j-1];
+                }
+            }
+        }
+
+        return dp[m][n];
+    }
+}
+
 /*
 
-// Recursion
+// Recursion -1
 
 class Solution {
     public boolean isInterleave(String s1, String s2, String s3) {
@@ -34,6 +72,47 @@ class Solution {
 
 
 */
+
+/*
+
+// Recursion -2
+class Solution {
+    public boolean isInterleave(String s1, String s2, String s3) {
+        int m = s1.length();
+        int n = s2.length();
+        int o = s3.length();
+
+        if(m + n != o) return false;
+
+        return rec(m-1, n-1, o-1, s1, s2, s3);
+    }
+
+    private boolean rec(int i, int j, int k, String s1, String s2, String s3) {
+        if(i < 0 && j < 0) return true;
+
+        char ch1 = (i >= 0) ? s1.charAt(i) : 'X';
+        char ch2 = (j >= 0) ? s2.charAt(j) : 'X';
+        char ch3 = s3.charAt(k);
+
+        boolean res = false;
+
+        if(ch1 == ch3) {
+            res |= rec(i-1, j, k-1, s1, s2, s3);
+        } 
+        if(ch2 == ch3) {
+            res |= rec(i, j-1, k-1, s1, s2, s3);
+        }
+
+        return res;
+    }
+}
+
+*/
+
+/*
+
+// Memorization
+
 
 class Solution {
     private Boolean[][] dp;
@@ -72,3 +151,7 @@ class Solution {
         return res;
     }
 }
+
+
+
+*/
