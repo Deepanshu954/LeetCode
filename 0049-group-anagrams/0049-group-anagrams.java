@@ -1,33 +1,50 @@
 class Solution {
     public List<List<String>> groupAnagrams(String[] strs) {
-
-        // Map<String, List<String>> map = new HashMap<>();
-
-        // for(String s : strs)
-        // {
-        //     int[] freq = new int[26];
-        //     for(char ch : s.toCharArray()) freq[ch - 'a']++;
-
-        //     String key = Arrays.toString(freq);
-
-        //     map.computeIfAbsent(key, k -> new ArrayList<>()).add(s);
-
-        // }
-
-        // return new ArrayList<>(map.values());
-
         Map<String, List<String>> map = new HashMap<>();
 
-        for(String s : strs){
-            int[] freq = new int[26];
-            for(char ch : s.toCharArray()) freq[ch - 'a']++;
+        for(String str : strs) {
+            String s = sortS(str);
 
-            String key = Arrays.toString(freq);
+            if(!map.containsKey(s)) {
+                map.put(s, new ArrayList<>());
+            }
 
-            map.computeIfAbsent(key, k -> new ArrayList<>()).add(s);
+            map.get(s).add(str);
         }
 
-        return new ArrayList<>(map.values());
-        
+        List<List<String>> res = new ArrayList<>();
+
+        for(String key : map.keySet()) {
+            res.add(map.get(key));
+        }
+
+        return res;
+
     }
+
+    private String sortS(String str) {
+        char[] arr = str.toCharArray();
+        Arrays.sort(arr);
+
+        String sorted = new String(arr);
+        return sorted;
+    }
+
+    public boolean isAnagram(String s, String t) {
+        if(s.length() != t.length()) return false;
+        int[] freq = new int[26];
+
+        for(int i = 0; i < s.length(); i++){
+            freq[s.charAt(i) - 'a']++;
+            freq[t.charAt(i) - 'a']--;
+        }
+
+        for(int f : freq){
+            if(f != 0) return false;
+        }
+
+        return true;
+    }
+
+
 }
