@@ -386,6 +386,7 @@ Each folder contains:
 | [1046-last-stone-weight](https://github.com/Deepanshu954/LeetCode/tree/main/1046-last-stone-weight/) | Easy |
 | [1254-number-of-closed-islands](https://github.com/Deepanshu954/LeetCode/tree/main/1254-number-of-closed-islands/) | Medium |
 | [1391-check-if-there-is-a-valid-path-in-a-grid](https://github.com/Deepanshu954/LeetCode/tree/main/1391-check-if-there-is-a-valid-path-in-a-grid/) | Medium |
+| [1665-minimum-initial-energy-to-finish-tasks](https://github.com/Deepanshu954/LeetCode/tree/main/1665-minimum-initial-energy-to-finish-tasks/) | Hard |
 | [1722-minimize-hamming-distance-after-swap-operations](https://github.com/Deepanshu954/LeetCode/tree/main/1722-minimize-hamming-distance-after-swap-operations/) | Medium |
 | [1848-minimum-distance-to-the-target-element](https://github.com/Deepanshu954/LeetCode/tree/main/1848-minimum-distance-to-the-target-element/) | Easy |
 | [1855-maximum-distance-between-a-pair-of-values](https://github.com/Deepanshu954/LeetCode/tree/main/1855-maximum-distance-between-a-pair-of-values/) | Medium |
@@ -615,6 +616,7 @@ Each folder contains:
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0451-sort-characters-by-frequency](https://github.com/Deepanshu954/LeetCode/tree/main/0451-sort-characters-by-frequency/) | Medium |
+| [1665-minimum-initial-energy-to-finish-tasks](https://github.com/Deepanshu954/LeetCode/tree/main/1665-minimum-initial-energy-to-finish-tasks/) | Hard |
 | [2033-minimum-operations-to-make-a-uni-value-grid](https://github.com/Deepanshu954/LeetCode/tree/main/2033-minimum-operations-to-make-a-uni-value-grid/) | Medium |
 | [2463-minimum-total-distance-traveled](https://github.com/Deepanshu954/LeetCode/tree/main/2463-minimum-total-distance-traveled/) | Hard |
 ## Binary Search
@@ -648,6 +650,7 @@ Each folder contains:
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0044-wildcard-matching](https://github.com/Deepanshu954/LeetCode/tree/main/0044-wildcard-matching/) | Hard |
+| [1665-minimum-initial-energy-to-finish-tasks](https://github.com/Deepanshu954/LeetCode/tree/main/1665-minimum-initial-energy-to-finish-tasks/) | Hard |
 | [2078-two-furthest-houses-with-different-colors](https://github.com/Deepanshu954/LeetCode/tree/main/2078-two-furthest-houses-with-different-colors/) | Easy |
 ## Bucket Sort
 | Problem Name | Difficulty |
