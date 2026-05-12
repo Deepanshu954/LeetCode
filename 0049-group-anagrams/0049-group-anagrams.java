@@ -14,9 +14,10 @@ class Solution {
 
         List<List<String>> res = new ArrayList<>();
 
-        for(String key : map.keySet()) {
-            res.add(map.get(key));
-        }
+        // for(String key : map.keySet()) {
+        //     res.add(map.get(key));
+        // }
+        res.addAll(map.values());
 
         return res;
 
