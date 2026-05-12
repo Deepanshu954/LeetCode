@@ -10,7 +10,7 @@ class Solution {
     }
 
     private boolean rec(int i, int j, int k, String s1, String s2, String s3) {
-        if(i < 0 || j < 0) return true;
+        if(i < 0 && j < 0) return true;
 
         char ch1 = (i >= 0) ? s1.charAt(i) : 'X';
         char ch2 = (j >= 0) ? s2.charAt(j) : 'X';
