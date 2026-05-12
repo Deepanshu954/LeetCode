@@ -16,7 +16,7 @@ class Solution {
         char ch2 = (j >= 0) ? s2.charAt(j) : 'X';
         char ch3 = s3.charAt(k);
 
-        if(ch1 == ch2) {
+        if(ch1 == ch2 && ch1 == ch3) {
             return rec(i-1, j, k-1, s1, s2, s3) || rec(i, j-1, k-1, s1, s2, s3);
         } else if(ch1 == ch3) {
             return rec(i-1, j, k-1, s1, s2, s3);
