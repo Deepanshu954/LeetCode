@@ -12,7 +12,7 @@ class Solution {
 
         if(i < 0) {
             for(int k = 0; k <= j; k++) {
-                if(p.charAt(j) != '*') return false;
+                if(p.charAt(k) != '*') return false;
             } return true;
         }
 
