@@ -3,7 +3,7 @@ class Solution {
         Map<String, List<String>> map = new HashMap<>();
 
         for(String str : strs) {
-            String s = sortS(str);
+            String s = sort2(str);
 
             if(!map.containsKey(s)) {
                 map.put(s, new ArrayList<>());
@@ -22,11 +22,29 @@ class Solution {
 
     }
 
-    private String sortS(String str) {
+    private String sort1(String str) {
         char[] arr = str.toCharArray();
         Arrays.sort(arr);
 
         String sorted = new String(arr);
         return sorted;
+    }
+
+    private String sort2(String str) {
+        int[] freq = new int[26];
+
+        for(int i = 0; i < str.length(); i++) {
+            char ch = str.charAt(i);
+
+            freq[ch - 'a']++;
+        }
+
+        StringBuilder sb = new StringBuilder();
+
+        for(int i = 0; i < 26; i++) {
+            while(freq[i]--> 0) sb.append((char)(i + 'a'));
+        }
+
+        return sb.toString();
     }
 }
