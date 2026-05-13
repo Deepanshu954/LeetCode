@@ -13,7 +13,7 @@ class Solution {
             if (j > 0)
                 dp[0][j][1] = -prices[0];
             else
-                dp[0][j][1] = Integer.MIN_VALUE / 2; // impossible
+                dp[0][j][1] = (int)-1e5;
         }
 
         // Rest
