@@ -1,42 +1,41 @@
-# [122. Best Time to Buy and Sell Stock II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/)
+<h2><a href="https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii">122. Best Time to Buy and Sell Stock II</a></h2><h3>Medium</h3><hr><p>You are given an integer array <code>prices</code> where <code>prices[i]</code> is the price of a given stock on the <code>i<sup>th</sup></code> day.</p>
 
-**Difficulty:** 🟡 Medium  
-**Topics:** Array, Dynamic Programming, Greedy
+<p>On each day, you may decide to buy and/or sell the stock. You can only hold <strong>at most one</strong> share of the stock at any time. However, you can sell and buy the stock multiple times on the <strong>same day</strong>, ensuring you never hold more than one share of the stock.</p>
 
----
+<p>Find and return <em>the <strong>maximum</strong> profit you can achieve</em>.</p>
 
-## Problem
+<p>&nbsp;</p>
+<p><strong class="example">Example 1:</strong></p>
 
-You are given an integer array prices where prices[i] is the price of a given stock on the ith day.
-
-On each day, you may decide to buy and/or sell the stock. You can only hold at most one share of the stock at any time. However, you can sell and buy the stock multiple times on the same day, ensuring you never hold more than one share of the stock.
-
-Find and return the maximum profit you can achieve.
-
- 
-Example 1:
-
-Input: prices = [7,1,5,3,6,4]
-Output: 7
-Explanation: Buy on day 2 (price = 1) and sell on day 3 (price = 5), profit = 5-1 = 4.
+<pre>
+<strong>Input:</strong> prices = [7,1,5,3,6,4]
+<strong>Output:</strong> 7
+<strong>Explanation:</strong> Buy on day 2 (price = 1) and sell on day 3 (price = 5), profit = 5-1 = 4.
 Then buy on day 4 (price = 3) and sell on day 5 (price = 6), profit = 6-3 = 3.
 Total profit is 4 + 3 = 7.
+</pre>
 
-Example 2:
+<p><strong class="example">Example 2:</strong></p>
 
-Input: prices = [1,2,3,4,5]
-Output: 4
-Explanation: Buy on day 1 (price = 1) and sell on day 5 (price = 5), profit = 5-1 = 4.
+<pre>
+<strong>Input:</strong> prices = [1,2,3,4,5]
+<strong>Output:</strong> 4
+<strong>Explanation:</strong> Buy on day 1 (price = 1) and sell on day 5 (price = 5), profit = 5-1 = 4.
 Total profit is 4.
+</pre>
 
-Example 3:
+<p><strong class="example">Example 3:</strong></p>
 
-Input: prices = [7,6,4,3,1]
-Output: 0
-Explanation: There is no way to make a positive profit, so we never buy the stock to achieve the maximum profit of 0.
+<pre>
+<strong>Input:</strong> prices = [7,6,4,3,1]
+<strong>Output:</strong> 0
+<strong>Explanation:</strong> There is no way to make a positive profit, so we never buy the stock to achieve the maximum profit of 0.
+</pre>
 
- 
-Constraints:
+<p>&nbsp;</p>
+<p><strong>Constraints:</strong></p>
 
-	1 <= prices.length <= 3 * 104
-	0 <= prices[i] <= 104
+<ul>
+	<li><code>1 &lt;= prices.length &lt;= 3 * 10<sup>4</sup></code></li>
+	<li><code>0 &lt;= prices[i] &lt;= 10<sup>4</sup></code></li>
+</ul>
