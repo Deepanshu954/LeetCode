@@ -3,8 +3,8 @@ class Solution {
     public int maxProfit(int k, int[] prices) {
         int n = prices.length;
 
-        dp = new Integer[n+1][3][2];
-        return rec(n-1, 2, 0, prices);
+        dp = new Integer[n+1][k+1][2];
+        return rec(n-1, k, 0, prices);
     }
 
     private int rec(int i, int j, int k, int[] prices) {
