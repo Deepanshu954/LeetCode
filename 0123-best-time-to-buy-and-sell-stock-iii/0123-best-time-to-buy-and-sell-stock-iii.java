@@ -12,7 +12,7 @@ class Solution {
             return (k == 0) ? 0 : -prices[0];
         }
         if(j == 0) {
-            return 0;
+            return (k == 0) ? 0 : (int)-1e9;
         }
 
         if(dp[i][j][k] != null) return dp[i][j][k];
