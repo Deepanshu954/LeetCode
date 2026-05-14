@@ -616,6 +616,7 @@ Each folder contains:
 | [0451-sort-characters-by-frequency](https://github.com/Deepanshu954/LeetCode/tree/main/0451-sort-characters-by-frequency/) | Medium |
 | [0516-longest-palindromic-subsequence](https://github.com/Deepanshu954/LeetCode/tree/main/0516-longest-palindromic-subsequence/) | Medium |
 | [0583-delete-operation-for-two-strings](https://github.com/Deepanshu954/LeetCode/tree/main/0583-delete-operation-for-two-strings/) | Medium |
+| [0709-to-lower-case](https://github.com/Deepanshu954/LeetCode/tree/main/0709-to-lower-case/) | Easy |
 | [0796-rotate-string](https://github.com/Deepanshu954/LeetCode/tree/main/0796-rotate-string/) | Easy |
 | [0990-satisfiability-of-equality-equations](https://github.com/Deepanshu954/LeetCode/tree/main/0990-satisfiability-of-equality-equations/) | Medium |
 | [1092-shortest-common-supersequence](https://github.com/Deepanshu954/LeetCode/tree/main/1092-shortest-common-supersequence/) | Hard |
