@@ -1,18 +1,16 @@
 class Solution {
-
-    private int[] arr;
     public int climbStairs(int n) {
-        arr = new int[n+1];
-        Arrays.fill(arr, -5);
+        int a = 0;
+        int b = 1;
+        int c = 1;
 
-        return helper(n);
-    }
+        for(int i = 1; i <= n; i++) {
+            c = a + b;
+            a = b;
+            b = c;
+        }
 
-    private int helper(int n) {
-        if(n < 2) return 1;
-        if(arr[n] != -5) return arr[n];
-        arr[n] = helper(n-1) + helper(n-2);
-        return arr[n];
+        return b;
     }
 }
 
