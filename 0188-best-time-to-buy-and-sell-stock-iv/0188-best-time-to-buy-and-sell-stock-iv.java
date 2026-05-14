@@ -4,7 +4,7 @@ class Solution {
         int[][][] dp = new int[n + 1][k+1][2];
 
         // Base Case
-        for(int j = 0; j < 3; j++) {
+        for(int j = 0; j <= k; j++) {
             dp[0][j][0] = 0;
 
             dp[0][j][1] = (j > 0) ? -prices[0] : (int)-1e5;
@@ -12,7 +12,7 @@ class Solution {
 
         // Rest
         for(int i = 1; i < n; i++) {
-            for(int j = 0; j < 3; j++) {
+            for(int j = 0; j <= k; j++) {
                 
                 // Not Holding
                 dp[i][j][0] = Math.max( 
