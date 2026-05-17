@@ -393,6 +393,7 @@ Each folder contains:
 | [1034-coloring-a-border](https://github.com/Deepanshu954/LeetCode/tree/main/1034-coloring-a-border/) | Medium |
 | [1046-last-stone-weight](https://github.com/Deepanshu954/LeetCode/tree/main/1046-last-stone-weight/) | Easy |
 | [1254-number-of-closed-islands](https://github.com/Deepanshu954/LeetCode/tree/main/1254-number-of-closed-islands/) | Medium |
+| [1306-jump-game-iii](https://github.com/Deepanshu954/LeetCode/tree/main/1306-jump-game-iii/) | Medium |
 | [1391-check-if-there-is-a-valid-path-in-a-grid](https://github.com/Deepanshu954/LeetCode/tree/main/1391-check-if-there-is-a-valid-path-in-a-grid/) | Medium |
 | [1665-minimum-initial-energy-to-finish-tasks](https://github.com/Deepanshu954/LeetCode/tree/main/1665-minimum-initial-energy-to-finish-tasks/) | Hard |
 | [1674-minimum-moves-to-make-array-complementary](https://github.com/Deepanshu954/LeetCode/tree/main/1674-minimum-moves-to-make-array-complementary/) | Medium |
@@ -456,6 +457,7 @@ Each folder contains:
 | [0841-keys-and-rooms](https://github.com/Deepanshu954/LeetCode/tree/main/0841-keys-and-rooms/) | Medium |
 | [1034-coloring-a-border](https://github.com/Deepanshu954/LeetCode/tree/main/1034-coloring-a-border/) | Medium |
 | [1254-number-of-closed-islands](https://github.com/Deepanshu954/LeetCode/tree/main/1254-number-of-closed-islands/) | Medium |
+| [1306-jump-game-iii](https://github.com/Deepanshu954/LeetCode/tree/main/1306-jump-game-iii/) | Medium |
 | [1319-number-of-operations-to-make-network-connected](https://github.com/Deepanshu954/LeetCode/tree/main/1319-number-of-operations-to-make-network-connected/) | Medium |
 | [1376-time-needed-to-inform-all-employees](https://github.com/Deepanshu954/LeetCode/tree/main/1376-time-needed-to-inform-all-employees/) | Medium |
 | [1391-check-if-there-is-a-valid-path-in-a-grid](https://github.com/Deepanshu954/LeetCode/tree/main/1391-check-if-there-is-a-valid-path-in-a-grid/) | Medium |
@@ -482,6 +484,7 @@ Each folder contains:
 | [0841-keys-and-rooms](https://github.com/Deepanshu954/LeetCode/tree/main/0841-keys-and-rooms/) | Medium |
 | [1034-coloring-a-border](https://github.com/Deepanshu954/LeetCode/tree/main/1034-coloring-a-border/) | Medium |
 | [1254-number-of-closed-islands](https://github.com/Deepanshu954/LeetCode/tree/main/1254-number-of-closed-islands/) | Medium |
+| [1306-jump-game-iii](https://github.com/Deepanshu954/LeetCode/tree/main/1306-jump-game-iii/) | Medium |
 | [1319-number-of-operations-to-make-network-connected](https://github.com/Deepanshu954/LeetCode/tree/main/1319-number-of-operations-to-make-network-connected/) | Medium |
 | [1376-time-needed-to-inform-all-employees](https://github.com/Deepanshu954/LeetCode/tree/main/1376-time-needed-to-inform-all-employees/) | Medium |
 | [1391-check-if-there-is-a-valid-path-in-a-grid](https://github.com/Deepanshu954/LeetCode/tree/main/1391-check-if-there-is-a-valid-path-in-a-grid/) | Medium |
