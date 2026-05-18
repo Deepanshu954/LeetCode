@@ -394,6 +394,7 @@ Each folder contains:
 | [1046-last-stone-weight](https://github.com/Deepanshu954/LeetCode/tree/main/1046-last-stone-weight/) | Easy |
 | [1254-number-of-closed-islands](https://github.com/Deepanshu954/LeetCode/tree/main/1254-number-of-closed-islands/) | Medium |
 | [1306-jump-game-iii](https://github.com/Deepanshu954/LeetCode/tree/main/1306-jump-game-iii/) | Medium |
+| [1345-jump-game-iv](https://github.com/Deepanshu954/LeetCode/tree/main/1345-jump-game-iv/) | Hard |
 | [1391-check-if-there-is-a-valid-path-in-a-grid](https://github.com/Deepanshu954/LeetCode/tree/main/1391-check-if-there-is-a-valid-path-in-a-grid/) | Medium |
 | [1665-minimum-initial-energy-to-finish-tasks](https://github.com/Deepanshu954/LeetCode/tree/main/1665-minimum-initial-energy-to-finish-tasks/) | Hard |
 | [1674-minimum-moves-to-make-array-complementary](https://github.com/Deepanshu954/LeetCode/tree/main/1674-minimum-moves-to-make-array-complementary/) | Medium |
@@ -426,6 +427,7 @@ Each folder contains:
 | [0433-minimum-genetic-mutation](https://github.com/Deepanshu954/LeetCode/tree/main/0433-minimum-genetic-mutation/) | Medium |
 | [0451-sort-characters-by-frequency](https://github.com/Deepanshu954/LeetCode/tree/main/0451-sort-characters-by-frequency/) | Medium |
 | [0874-walking-robot-simulation](https://github.com/Deepanshu954/LeetCode/tree/main/0874-walking-robot-simulation/) | Medium |
+| [1345-jump-game-iv](https://github.com/Deepanshu954/LeetCode/tree/main/1345-jump-game-iv/) | Hard |
 | [1461-check-if-a-string-contains-all-binary-codes-of-size-k](https://github.com/Deepanshu954/LeetCode/tree/main/1461-check-if-a-string-contains-all-binary-codes-of-size-k/) | Medium |
 | [1674-minimum-moves-to-make-array-complementary](https://github.com/Deepanshu954/LeetCode/tree/main/1674-minimum-moves-to-make-array-complementary/) | Medium |
 | [2615-sum-of-distances](https://github.com/Deepanshu954/LeetCode/tree/main/2615-sum-of-distances/) | Medium |
@@ -486,6 +488,7 @@ Each folder contains:
 | [1254-number-of-closed-islands](https://github.com/Deepanshu954/LeetCode/tree/main/1254-number-of-closed-islands/) | Medium |
 | [1306-jump-game-iii](https://github.com/Deepanshu954/LeetCode/tree/main/1306-jump-game-iii/) | Medium |
 | [1319-number-of-operations-to-make-network-connected](https://github.com/Deepanshu954/LeetCode/tree/main/1319-number-of-operations-to-make-network-connected/) | Medium |
+| [1345-jump-game-iv](https://github.com/Deepanshu954/LeetCode/tree/main/1345-jump-game-iv/) | Hard |
 | [1376-time-needed-to-inform-all-employees](https://github.com/Deepanshu954/LeetCode/tree/main/1376-time-needed-to-inform-all-employees/) | Medium |
 | [1391-check-if-there-is-a-valid-path-in-a-grid](https://github.com/Deepanshu954/LeetCode/tree/main/1391-check-if-there-is-a-valid-path-in-a-grid/) | Medium |
 | [1466-reorder-routes-to-make-all-paths-lead-to-the-city-zero](https://github.com/Deepanshu954/LeetCode/tree/main/1466-reorder-routes-to-make-all-paths-lead-to-the-city-zero/) | Medium |
