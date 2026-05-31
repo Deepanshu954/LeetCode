@@ -4,13 +4,10 @@ class Solution {
         long tar = k;
 
         for(int num : nums) {
-            if(num <= tar) {
-                tar += num;
-            } else {
-                return false;
-            }
+            if(num <= tar) tar += num;
+            else return false;
         }
-
+        
         return true;
     }
 }
