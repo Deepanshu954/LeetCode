@@ -1,20 +1,21 @@
 class Solution {
     public List<List<Integer>> generate(int n) {
-        List<List<Integer>> tri = new ArrayList<>();
+        List<List<Integer>> res = new ArrayList<>();
 
-        for(int i = 0; i < n; i++){
+        for(int i = 0; i < n; i++) {
 
-            List<Integer> row = new ArrayList();
-            row.add(1);
+            List<Integer> list = new ArrayList<>();
+            list.add(1);
 
-            for(int j = 1; j < i; j++){
-                int val = tri.get(i - 1).get(j - 1) + tri.get(i-1).get(j);
-                row.add(val);
+            for(int j = 1; j < i; j++) {
+                int val = res.get(i-1).get(j-1) + res.get(i-1).get(j);
+                list.add(val);
             }
-            
-            if(i > 0) row.add(1);
-            tri.add(row);
+
+            if(i > 0) list.add(1);
+            res.add(list);
         }
-        return tri;
+
+        return res;
     }
 }
