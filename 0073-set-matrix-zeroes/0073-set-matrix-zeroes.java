@@ -1,30 +1,33 @@
 class Solution {
-    public void setZeroes(int[][] matrix) {
-        int m = matrix.length;
-        int n = matrix[0].length;
+    public void setZeroes(int[][] mat) {
+        int m = mat.length;
+        int n = mat[0].length;
 
-        Set<Integer> rowSet = new HashSet<>();
-        Set<Integer> colSet = new HashSet<>();
+        HashSet<Integer> set_i = new HashSet<>();
+        HashSet<Integer> set_j = new HashSet<>();
 
-        for(int i = 0; i < m; i++){
-            for(int j = 0; j < n; j++){
-                if(matrix[i][j] == 0){
-                    rowSet.add(i);
-                    colSet.add(j);
+        for(int i = 0; i < m; i++) {
+            for(int j = 0; j < n; j++) {
+                if(mat[i][j] == 0) {
+                    set_i.add(i);
+                    set_j.add(j);
                 }
             }
         }
 
-        for(int rowIndex : rowSet){
-            for(int j = 0; j < n; j++){
-                matrix[rowIndex][j] = 0;
+        // row
+        for(int s : set_i) {
+            for(int j = 0; j < n; j++) {
+                mat[s][j] = 0;
             }
         }
 
-        for(int colIndex : colSet){
-            for(int i = 0; i < m; i++){
-                matrix[i][colIndex] = 0;
+        // col
+        for(int i = 0; i < m; i++) {
+            for(int s : set_j) {
+                mat[i][s] = 0;
             }
         }
+
     }
 }
