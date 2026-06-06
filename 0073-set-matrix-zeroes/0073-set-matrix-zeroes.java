@@ -3,28 +3,31 @@ class Solution {
         int m = mat.length;
         int n = mat[0].length;
 
-        Set<Integer> sr = new HashSet<>();
-        Set<Integer> sc = new HashSet<>();
+        boolean col0 = false;
 
+        // Mark Row And Col
         for(int i = 0; i < m; i++) {
-            for(int j = 0; j < n; j++) {
+            if(mat[i][0] == 0) col0 = true;
+
+            for(int j = 1; j < n; j++) {
                 if(mat[i][j] == 0) {
-                    sr.add(i);
-                    sc.add(j);
+                    mat[i][0] = 0;
+                    mat[0][j] = 0;
                 }
             }
         }
 
-        for(int s : sr) {
-            for(int j = 0; j < n; j++) {
-                mat[s][j] = 0;
+        // Apply marker
+        for(int i = m-1; i >= 0; i--) {
+            for(int j = n-1; j >= 1; j--) {
+                if(mat[i][0] == 0 || mat[0][j] == 0) {
+                    mat[i][j] = 0;
+                }
             }
+
+            if(col0) mat[i][0] = 0;
         }
 
-        for(int i = 0; i < m; i++) {
-            for(int s : sc) {
-                mat[i][s] = 0;
-            }
-        }
+
     }
 }
