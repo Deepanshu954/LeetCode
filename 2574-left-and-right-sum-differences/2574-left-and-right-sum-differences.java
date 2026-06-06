@@ -4,9 +4,7 @@ class Solution {
         if(n == 1) return new int[]{0};
 
         int[] leftSum = new int[n];
-        int[] rightSum = new int[n];
         leftSum[0] = 0;
-        rightSum[n-1] = 0;
 
         for(int i = 1; i < n; i++) {
             leftSum[i] = leftSum[i-1] + nums[i-1];
@@ -18,10 +16,6 @@ class Solution {
             rightSum[i] = rightSum[i+1] + nums[i+1];
             leftSum[i] = Math.abs(leftSum[i] - sum);
         }
-
-        // for(int i = 0; i < n; i++) {
-        //     nums[i] = Math.abs(leftSum[i] - rightSum[i]);
-        // }
 
         return leftSum;
     }
