@@ -13,7 +13,6 @@ class Solution {
         int sum = 0;
         for(int i = n-2; i >= 0; i--) {
             sum += nums[i+1];
-            rightSum[i] = rightSum[i+1] + nums[i+1];
             leftSum[i] = Math.abs(leftSum[i] - sum);
         }
 
