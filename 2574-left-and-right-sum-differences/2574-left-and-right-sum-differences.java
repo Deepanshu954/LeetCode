@@ -12,14 +12,17 @@ class Solution {
             leftSum[i] = leftSum[i-1] + nums[i-1];
         }
 
+        int sum = 0;
         for(int i = n-2; i >= 0; i--) {
+            sum += nums[i+1];
             rightSum[i] = rightSum[i+1] + nums[i+1];
+            leftSum[i] = Math.abs(leftSum[i] - sum);
         }
 
-        for(int i = 0; i < n; i++) {
-            nums[i] = Math.abs(leftSum[i] - rightSum[i]);
-        }
+        // for(int i = 0; i < n; i++) {
+        //     nums[i] = Math.abs(leftSum[i] - rightSum[i]);
+        // }
 
-        return nums;
+        return leftSum;
     }
 }
