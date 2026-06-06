@@ -1,33 +1,22 @@
+
 class Solution {
-
     public TreeNode buildTree(int[] preorder, int[] inorder) {
-        if (preorder.length == 0) return null;
+        if(preorder.length == 0) return null;
 
-        int rootVal = preorder[0];
+        int r = preorder[0];
         int index = 0;
 
-        // Find root in inorder
-        for (int i = 0; i < inorder.length; i++) {
-            if (rootVal == inorder[i]) {
-                index = i;
-                break;
-            }
+        for(int i = 0; i < inorder.length; i++) {
+            if(r == inorder[i]) index = i;
         }
 
-        TreeNode root = new TreeNode(rootVal);
+        TreeNode node = new TreeNode(r);
 
-        // Build left subtree
-        root.left = buildTree(
-                Arrays.copyOfRange(preorder, 1, index + 1),
-                Arrays.copyOfRange(inorder, 0, index)
-        );
+        node.left = buildTree(Arrays.copyOfRange(preorder, 1, index + 1), Arrays.copyOfRange(inorder, 0, index));
 
-        // Build right subtree
-        root.right = buildTree(
-                Arrays.copyOfRange(preorder, index + 1, preorder.length),
-                Arrays.copyOfRange(inorder, index + 1, inorder.length)
-        );
+        node.right = buildTree(Arrays.copyOfRange(preorder, index + 1, preorder.length), Arrays.copyOfRange(inorder, index + 1, inorder.length));
 
-        return root;
+        return node;
+
     }
 }
