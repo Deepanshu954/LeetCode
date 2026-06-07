@@ -2,44 +2,49 @@ class Solution {
     public void nextPermutation(int[] nums) {
         int n = nums.length - 1;
 
-        int index1 = -1;
-        int index2 = -1;
-
+        int idx = -1;
         for(int i = n; i > 0; i--) {
-            if(nums[i] > nums[i-1]) {
-                index1 = i - 1;
+            if(nums[i-1] < nums[i]) {
+                idx = i-1;
                 break;
             }
         }
 
-        if(index1 != -1) {
+        if(idx == -1) {
+            reverse(0, n, nums);
+            return;
+        }
 
-            for(int i = n; i > index1; i--) {
-                if(nums[i] > nums[index1]) {
-                    index2 = i;
-                    break;
-                }
+        for(int i = n; i > idx; i--) {
+            if(nums[i] > nums[idx]) {
+
+                int temp = nums[i];
+                nums[i] = nums[idx];
+                nums[idx] = temp;
+
+                reverse(idx+1 , n, nums);
+                break;
             }
-
-
-            int temp = nums[index1];
-            nums[index1] = nums[index2];
-            nums[index2] = temp;
-
         }
+    }
 
-        int left = index1 + 1;
-        int right = n;
+    private void reverse(int idx, int n, int[] nums) {
 
-        while(left < right) {
-            int t = nums[left];
-            nums[left] = nums[right];
-            nums[right] = t;
+        while(idx < n) {
+            int temp = nums[idx];
+            nums[idx] = nums[n];
+            nums[n] = temp;
 
-            left++;
-            right--;
+            idx++;
+            n--;
         }
-        
-        return;
     }
 }
+
+/*
+
+    1   2   3
+    1   3   2
+
+
+*/
