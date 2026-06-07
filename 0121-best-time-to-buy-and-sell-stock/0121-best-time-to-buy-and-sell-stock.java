@@ -3,7 +3,7 @@ class Solution {
         int pro = 0;
         int max = 0;
         int min = prices[0];
-    
+
         for(int num : prices) {
             if(min > num) {
                 min = num;
