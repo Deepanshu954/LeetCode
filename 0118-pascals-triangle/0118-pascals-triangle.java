@@ -3,7 +3,6 @@ class Solution {
         List<List<Integer>> res = new ArrayList<>();
 
         for(int i = 0; i < n; i++) {
-
             List<Integer> list = new ArrayList<>();
             list.add(1);
 
@@ -12,7 +11,8 @@ class Solution {
                 list.add(val);
             }
 
-            if(i > 0) list.add(1);
+            if(i != 0) list.add(1);
+
             res.add(list);
         }
 
