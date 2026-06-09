@@ -6,7 +6,7 @@ class Solution {
 
         PriorityQueue<Integer> pq = new PriorityQueue<>((a,b) -> b - a);
 
-        for(int i = 0; i < n - 1; i++) {
+        for(int i = 0; i < n; i++) {
             int min = (int)1e9;
             int max = -1;
             for(int j = i; j < n; j++) {
@@ -22,7 +22,7 @@ class Solution {
 
         int res = 0;
         while(k--> 0 && !pq.isEmpty()) {
-            res += pq.poll();
+            res += pq.peek();
         }
 
         return res;
