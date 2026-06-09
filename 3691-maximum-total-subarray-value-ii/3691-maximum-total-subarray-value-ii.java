@@ -21,7 +21,7 @@ class Solution {
 
         long res = 0;
         while(k--> 0 && !pq.isEmpty()) {
-            res += pq.peek();
+            res += pq.poll();
         }
 
         return res;
