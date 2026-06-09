@@ -12,15 +12,14 @@ class Solution {
             for(int j = i; j < n; j++) {
                 min = Math.min(min, nums[j]);
                 max = Math.max(max, nums[j]);
-
-                int diff = max - min;
-                pq.add(diff);
             }
 
+            int diff = max - min;
+            pq.add(diff);
             
         }
 
-        int res = 0;
+        long res = 0;
         while(k--> 0 && !pq.isEmpty()) {
             res += pq.peek();
         }
