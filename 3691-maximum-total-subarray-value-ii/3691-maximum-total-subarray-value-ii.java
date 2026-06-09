@@ -12,10 +12,12 @@ class Solution {
             for(int j = i; j < n; j++) {
                 min = Math.min(min, nums[j]);
                 max = Math.max(max, nums[j]);
+                
+                int diff = max - min;
+                pq.add(diff);
             }
 
-            int diff = max - min;
-            pq.add(diff);
+            
             
         }
 
