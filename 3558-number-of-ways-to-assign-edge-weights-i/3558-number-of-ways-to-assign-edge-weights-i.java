@@ -1,56 +1,44 @@
-import java.util.*;
-
 class Solution {
     static final int MOD = 1_000_000_007;
-
+    List<Integer>[] tree;
+    
     public int assignEdgeWeights(int[][] edges) {
-        // Build graph
-        Map<Integer, List<Integer>> adj = new HashMap<>();
+        int n = edges.length + 1;
+        tree = new List[n + 1];
+        for (int i = 1; i <= n; i++) tree[i] = new ArrayList<>();
+        
         for (int[] e : edges) {
-            adj.computeIfAbsent(e[0], k -> new ArrayList<>()).add(e[1]);
-            adj.computeIfAbsent(e[1], k -> new ArrayList<>()).add(e[0]);
+            int u = e[0], v = e[1];
+            tree[u].add(v);
+            tree[v].add(u);
         }
-
-        // BFS to find max depth from node 1
-        Queue<Integer> q = new LinkedList<>();
-        Set<Integer> visited = new HashSet<>();
-
-        q.add(1);
-        visited.add(1);
-
-        int depth = 0;
-
-        while (!q.isEmpty()) {
-            int size = q.size();
-
-            for (int i = 0; i < size; i++) {
-                int node = q.poll();
-
-                for (int nei : adj.getOrDefault(node, new ArrayList<>())) {
-                    if (!visited.contains(nei)) {
-                        visited.add(nei);
-                        q.add(nei);
-                    }
-                }
-            }
-            depth++;
-        }
-
-        int d = depth - 1; // edges count
-
-        return modPow(2, d - 1);
+        
+        int[] depth = new int[n + 1];
+        dfs(1, -1, depth);
+        
+        int maxDepth = 0;
+        for (int d : depth) maxDepth = Math.max(maxDepth, d);
+        
+        if (maxDepth == 0) return 0;
+        return powMod(2, maxDepth - 1);
     }
-
-    private int modPow(long base, int exp) {
-        long res = 1;
-        base %= MOD;
-
-        while (exp > 0) {
-            if ((exp & 1) == 1) res = (res * base) % MOD;
-            base = (base * base) % MOD;
-            exp >>= 1;
+    
+    private void dfs(int u, int parent, int[] depth) {
+        for (int v : tree[u]) {
+            if (v != parent) {
+                depth[v] = depth[u] + 1;
+                dfs(v, u, depth);
+            }
         }
-
+    }
+    
+    private int powMod(long a, long b) {
+        long res = 1;
+        while (b > 0) {
+            if ((b & 1) == 1) res = (res * a) % MOD;
+            a = (a * a) % MOD;
+            b >>= 1;
+        }
         return (int) res;
     }
 }
