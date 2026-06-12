@@ -1,31 +1,36 @@
 class Solution {
-    List<List<Integer>> ans = new ArrayList<>();
-    TreeMap<Integer, TreeMap<Integer, PriorityQueue<Integer>>> map = new TreeMap<>();
+    private List<List<Integer>> res;
+    private TreeMap<Integer, TreeMap<Integer, PriorityQueue<Integer>>> map;
 
     public List<List<Integer>> verticalTraversal(TreeNode root) {
-        rowcolumn(0, 0, root);
-        for (TreeMap<Integer, PriorityQueue<Integer>> row : map.values()) {
-            List<Integer> colist = new ArrayList<>();
-            for (PriorityQueue<Integer> pq : row.values()) {
-                while (!pq.isEmpty()) {
-                    colist.add(pq.poll());
+        res = new ArrayList<>();
+        map = new TreeMap<>();
+
+        helper(root, 0, 0);
+
+        for(TreeMap<Integer, PriorityQueue<Integer>> row : map.values()) {
+            List<Integer> list = new ArrayList<>();
+
+            for(PriorityQueue<Integer> pq : row.values()) {
+                while(!pq.isEmpty()) {
+                    list.add(pq.poll());
                 }
             }
-            ans.add(colist);
+
+            res.add(list);
         }
-        return ans;
+        
+        return res;
     }
 
-    void rowcolumn(int row, int col, TreeNode root) {
-        if (root == null) {
-            return;
-        }
+    private void helper(TreeNode root, int row, int col) {
+        if(root == null) return;
+
         map.putIfAbsent(col, new TreeMap<>());
         map.get(col).putIfAbsent(row, new PriorityQueue<>());
         map.get(col).get(row).offer(root.val);
-        rowcolumn(row + 1, col - 1, root.left);
-        rowcolumn(row + 1, col + 1, root.right);
 
+        helper(root.left,  row+1, col-1);
+        helper(root.right, row+1, col+1);
     }
-
 }
