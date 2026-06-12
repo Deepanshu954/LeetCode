@@ -15,45 +15,17 @@
  */
 class Solution {
     public List<Integer> inorderTraversal(TreeNode root) {
-        List<Integer> list = new ArrayList<>();
-        if(root == null) return list;
+        List<Integer> res = new ArrayList<>();
 
-        Deque<TreeNode> dq = new LinkedList<>();
-
-        TreeNode node = root;
-
-        while(true) {
-            if(node != null) { 
-                dq.addFirst(node);
-                node = node.left;
-            } else {
-                if(dq.isEmpty()) break;
-
-                node = dq.removeFirst();
-                list.add(node.val);
-                node = node.right;
-            }
-        }
-
-        return list;
-    }
-}
-
-/*
-class Solution {
-    public List<Integer> inorderTraversal(TreeNode root) {
-        List<Integer> list = new ArrayList<>();
-
-        inorder(list, root);
-        return list;
+        helper(root, res);
+        return res;
     }
 
-    private void inorder(List<Integer> list, TreeNode root) {
+    private void helper(TreeNode root, List<Integer> res) {
         if(root == null) return;
 
-        inorder(list, root.left);
-        list.add(root.val);
-        inorder(list, root.right);
+        helper(root.left, res);
+        res.add(root.val);
+        helper(root.right, res);
     }
 }
-*/
