@@ -21,15 +21,15 @@ class Solution {
 
             for(int i = 0; i < size; i++) {
                 TreeNode curr = dq.removeFirst();
-                list.add(curr.val);
+
+                if(flag) {
+                    list.addLast(curr.val);
+                } else {
+                    list.addFirst(curr.val);
+                }
 
                 if(curr.left != null) dq.addLast(curr.left);
                 if(curr.right != null) dq.addLast(curr.right);
-            }
-
-
-            if(!flag) {
-                Collections.reverse(list);
             }
 
             res.add(list);
