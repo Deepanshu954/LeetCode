@@ -1,43 +1,31 @@
-/**
- * Definition for a binary tree node.
- * public class TreeNode {
- *     int val;
- *     TreeNode left;
- *     TreeNode right;
- *     TreeNode() {}
- *     TreeNode(int val) { this.val = val; }
- *     TreeNode(int val, TreeNode left, TreeNode right) {
- *         this.val = val;
- *         this.left = left;
- *         this.right = right;
- *     }
- * }
- */
 class Solution {
+    List<List<Integer>> res;
     public List<List<Integer>> levelOrder(TreeNode root) {
-        List<List<Integer>> result = new ArrayList<>();
-        if(root == null) return result;
+        res = new ArrayList<>();
+        if(root == null) return res;
 
-        Deque<TreeNode> dq = new LinkedList<>();
+        helper(root);
+        return res;
+    }
 
-        dq.addFirst(root);
+    private void helper(TreeNode root) {
+        Deque<TreeNode> dq = new ArrayDeque<>();
+        dq.addLast(root);
 
         while(!dq.isEmpty()) {
+            List<Integer> list = new ArrayList<>();
             int size = dq.size();
 
-            List<Integer> list = new ArrayList<>();
 
             for(int i = 0; i < size; i++) {
-                TreeNode node = dq.removeLast();
-                list.add(node.val);
+                TreeNode curr = dq.removeFirst();
+                list.add(curr.val);
 
-                if(node.left != null) dq.addFirst(node.left);
-                if(node.right != null) dq.addFirst(node.right);
+                if(curr.left != null) dq.addLast(curr.left);
+                if(curr.right != null) dq.addLast(curr.right);
             }
 
-            result.add(list);
+            res.add(list);
         }
-
-        return result;
     }
 }
