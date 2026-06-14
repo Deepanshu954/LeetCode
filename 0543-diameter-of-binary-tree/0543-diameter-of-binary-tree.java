@@ -1,8 +1,7 @@
 class Solution {
-    private int d;
+    private int d = 0;
+    
     public int diameterOfBinaryTree(TreeNode root) {
-        d = 0;
-
         helper(root);
         return d;
     }
@@ -14,7 +13,6 @@ class Solution {
         int right = helper(root.right);
 
         d = Math.max(d, left + right);
-
         return 1 + Math.max(left, right);
     }
 }
