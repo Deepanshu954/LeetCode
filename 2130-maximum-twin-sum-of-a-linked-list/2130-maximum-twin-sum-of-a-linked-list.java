@@ -1,5 +1,7 @@
 class Solution {
     public int pairSum(ListNode head) {
+        // find mid of ll
+
         ListNode slow = head;
         ListNode fast = head;
 
@@ -8,6 +10,7 @@ class Solution {
             fast = fast.next.next;
         }
 
+        // reverse right half of ll
         ListNode curr = slow;
         ListNode prev = null;
 
@@ -18,8 +21,7 @@ class Solution {
             curr = next;
         }
 
-
-
+        // add left and right part one by one choose max
         ListNode left = head;
         ListNode mid = prev;
 
