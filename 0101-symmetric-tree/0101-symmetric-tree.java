@@ -18,12 +18,11 @@ class Solution {
         return helper(root.left, root.right);
     }
 
-    private boolean helper(TreeNode node1, TreeNode node2) {
-        if(node1 == null && node2 == null) return true;
-        if(node1 == null || node2 == null) return false;
-        if(node1.val != node2.val) return false;
-            
-            
-        return helper(node1.left, node2.right) && helper(node1.right, node2.left);
+    private boolean helper(TreeNode p, TreeNode q) {
+        if(p == null && q == null) return true;
+        if(p == null || q == null) return false;
+        if(p.val != q.val) return false;
+
+        return helper(p.left, q.right) && helper(p.right, q.left);
     }
 }
