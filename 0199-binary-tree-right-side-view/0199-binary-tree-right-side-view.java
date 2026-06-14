@@ -1,6 +1,9 @@
 class Solution {
     public List<Integer> rightSideView(TreeNode root) {
+        return helper(root);
+    }
 
+    private List<Integer> helper(TreeNode root) {
         List<Integer> list = new ArrayList<>();
         if (root == null)
             return list;
