@@ -45,6 +45,7 @@ class Solution {
             }
 
             level++;
+            if(level > k) return list;
 
         }
 
