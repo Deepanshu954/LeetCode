@@ -1,31 +1,23 @@
 class Solution {
-
+    int depth;
     public TreeNode lcaDeepestLeaves(TreeNode root) {
-        return dfs(root).node;
+        depth = depth(root);
+        return search(root, 0);
     }
 
-    private Pair dfs(TreeNode root) {
-        if (root == null) return new Pair(null, 0);
+    private TreeNode search(TreeNode root, int curr) {
+        if(root == null) return null;
+        if(curr == depth - 1) return root;
 
-        Pair left = dfs(root.left);
-        Pair right = dfs(root.right);
+        TreeNode left = search(root.left, curr+1);
+        TreeNode right = search(root.right, curr+1);
 
-        if (left.depth == right.depth) {
-            return new Pair(root, left.depth + 1);
-        } else if (left.depth > right.depth) {
-            return new Pair(left.node, left.depth + 1);
-        } else {
-            return new Pair(right.node, right.depth + 1);
-        }
+        if(left != null && right != null) return root;
+        return left != null ? left : right;
     }
 
-    class Pair {
-        TreeNode node;
-        int depth;
-
-        Pair(TreeNode node, int depth) {
-            this.node = node;
-            this.depth = depth;
-        }
+    private int depth(TreeNode node) {
+        if(node == null) return 0;
+        return 1 + Math.max(depth(node.left), depth(node.right));
     }
 }
