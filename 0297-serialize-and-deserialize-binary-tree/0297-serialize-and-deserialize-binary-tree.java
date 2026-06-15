@@ -1,13 +1,5 @@
-/**
- * Definition for a binary tree node.
- * public class TreeNode {
- *     int val;
- *     TreeNode left;
- *     TreeNode right;
- *     TreeNode(int x) { val = x; }
- * }
- */
 public class Codec {
+
     // Encodes a tree to a single string.
     public String serialize(TreeNode root) {
         StringBuilder sb = new StringBuilder();
@@ -16,7 +8,7 @@ public class Codec {
     }
 
     private void helper(TreeNode root, StringBuilder sb) {
-        if (root == null) {
+        if(root == null) {
             sb.append("# ");
             return;
         }
@@ -26,20 +18,20 @@ public class Codec {
         helper(root.right, sb);
     }
 
-    private int index = 0;
+    private int idx;
 
     // Decodes your encoded data to tree.
     public TreeNode deserialize(String data) {
         String[] nodes = data.trim().split(" ");
-        index = 0;
+        idx = 0;
         return build(nodes);
     }
 
     private TreeNode build(String[] nodes) {
-        if (index == nodes.length) return null;
+        if(idx == nodes.length) return null;
 
-        String val = nodes[index++];
-        if (val.equals("#")) return null;
+        String val = nodes[idx++];
+        if(val.equals("#")) return null;
 
         TreeNode node = new TreeNode(Integer.parseInt(val));
         node.left = build(nodes);
