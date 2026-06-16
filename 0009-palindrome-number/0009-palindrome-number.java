@@ -1,6 +1,6 @@
 class Solution {
     public boolean isPalindrome(int x) {
-        int num = x;
+        int num = Math.abs(x);
         int rev = 0;
         
         while(num != 0) {
