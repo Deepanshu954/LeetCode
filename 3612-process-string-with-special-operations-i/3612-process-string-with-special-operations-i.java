@@ -4,7 +4,7 @@ class Solution {
 
         for(char ch : s.toCharArray()) {
             if(ch == '*') {
-                sb.deleteCharAt(sb.length() - 1);
+                if(sb.length() > 0) sb.deleteCharAt(sb.length() - 1);
             } else if(ch == '#') {
                 sb.append(sb.toString());
             } else if(ch == '%') {
