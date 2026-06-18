@@ -5,8 +5,7 @@ class Solution {
         double h = ((hour * 30) + min * 0.5) % 360;
 
         double res = Math.abs(m - h);
-
-        if(res > 360) return 360 - res;
+        res = Math.min(res, 360 - res);
         
         return res;
     }
