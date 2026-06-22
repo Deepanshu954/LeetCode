@@ -18,6 +18,7 @@ class Solution {
         }
 
         arr[2] = arr[2]/2;
+        arr[3] = arr[3]/2;
 
         int min = (int)1e5;
         for(int a : arr) {
