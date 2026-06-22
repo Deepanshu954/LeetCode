@@ -3,7 +3,7 @@ class Solution {
         // b 
         // a
         // l = 2
-        // o
+        // o = 2
         // n
         int[] arr = new int[5];
 
