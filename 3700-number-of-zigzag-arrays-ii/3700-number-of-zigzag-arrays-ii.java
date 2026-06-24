@@ -1,81 +1,75 @@
 class Solution {
     public int zigZagArrays(int n, int l, int r) {
-        int rangeSize = r - l + 1;
-        int matrixDimension = 2 * rangeSize;
-        
-        MatrixTransitionEngine engine = new MatrixTransitionEngine(matrixDimension);
-        int[][] transitionMatrix = engine.buildTransitionMatrix(rangeSize);
-        int[][] exponentiatedMatrix = engine.power(transitionMatrix, n - 1);
-        
-        return engine.calculateTotalCombinations(exponentiatedMatrix);
-    }
-}
-
-class MatrixTransitionEngine {
-    private int dimension;
-    private int moduloBoundary = 1000000007;
-
-    public MatrixTransitionEngine(int dimension) {
-        this.dimension = dimension;
-    }
-
-    public int[][] buildTransitionMatrix(int rangeSize) {
-        int[][] matrix = new int[dimension][dimension];
-        for (int currentVal = 0; currentVal < rangeSize; currentVal++) {
-            for (int previousVal = 0; previousVal < rangeSize; previousVal++) {
-                if (previousVal < currentVal) {
-                    matrix[currentVal][previousVal + rangeSize] = 1;
-                }
-                if (previousVal > currentVal) {
-                    matrix[currentVal + rangeSize][previousVal] = 1;
-                }
+        int len = r - l + 1;
+        long[][] m1 = new long[len][len];
+        long[][] m2 = new long[len][len];
+        for (int i = 0; i < len; i++) {
+            for (int j = i + 1; j < len; j++) {
+                m1[i][j] = 1;
+            }
+            for (int j = 0; j < i; j++) {
+                m2[i][j] = 1;
             }
         }
-        return matrix;
+        long[][] m = pro(m1, m2);
+        long[] arr = new long[len];
+        Arrays.fill(arr, 1);
+        n--;
+        int count = n / 2;
+        while (count > 0) {
+            if (count % 2 == 1)
+                arr = pro(arr, m);
+            m = pro(m);
+            count /= 2;
+        }
+        if (n % 2 == 1)
+            arr = pro(arr, m1);
+        long res = 0;
+        for (long num : arr) {
+            res += num;
+        }
+        return (int) (res * 2 % mod);
     }
 
-    public int[][] multiply(int[][] matrixA, int[][] matrixB) {
-        int[][] resultMatrix = new int[dimension][dimension];
-        for (int row = 0; row < dimension; row++) {
-            for (int common = 0; common < dimension; common++) {
-                if (matrixA[row][common] == 0) {
+    int mod = 1_000_000_007;
+
+    public long[][] pro(long[][] a) {
+        long[][] res = new long[a.length][a[0].length];
+        for (int i = 0; i < res.length; i++) {
+            for (int k = 0; k < res.length; k++) {
+                if (a[i][k] == 0)
                     continue;
-                }
-                for (int col = 0; col < dimension; col++) {
-                    long product = (1L * matrixA[row][common] * matrixB[common][col]) % moduloBoundary;
-                    resultMatrix[row][col] = (int) ((resultMatrix[row][col] + product) % moduloBoundary);
+                for (int j = 0; j < res.length; j++) {
+                    res[i][j] = (res[i][j] + a[i][k] * a[k][j]) % mod;
                 }
             }
         }
-        return resultMatrix;
+        return res;
     }
 
-    public int[][] power(int[][] baseMatrix, int exponent) {
-        int[][] resultMatrix = new int[dimension][dimension];
-        for (int index = 0; index < dimension; index++) {
-            resultMatrix[index][index] = 1;
-        }
-        
-        int[][] currentBase = baseMatrix;
-        int currentExponent = exponent;
-        
-        while (currentExponent > 0) {
-            if (currentExponent % 2 == 1) {
-                resultMatrix = multiply(resultMatrix, currentBase);
+    public long[][] pro(long[][] a, long[][] b) {
+        long[][] res = new long[a.length][a[0].length];
+        for (int i = 0; i < res.length; i++) {
+            for (int k = 0; k < res.length; k++) {
+                if (a[i][k] == 0)
+                    continue;
+                for (int j = 0; j < res.length; j++) {
+                    res[i][j] = (res[i][j] + a[i][k] * b[k][j]) % mod;
+                }
             }
-            currentBase = multiply(currentBase, currentBase);
-            currentExponent /= 2;
         }
-        return resultMatrix;
+        return res;
     }
 
-    public int calculateTotalCombinations(int[][] matrix) {
-        long totalCombinations = 0;
-        for (int row = 0; row < dimension; row++) {
-            for (int col = 0; col < dimension; col++) {
-                totalCombinations = (totalCombinations + matrix[row][col]) % moduloBoundary;
+    public long[] pro(long[] a, long[][] b) {
+        long[] res = new long[a.length];
+        for (int j = 0; j < res.length; j++) {
+            if (a[j] == 0)
+                continue;
+            for (int i = 0; i < res.length; i++) {
+                res[i] = (res[i] + a[j] * b[j][i]) % mod;
             }
         }
-        return (int) totalCombinations;
+        return res;
     }
 }
