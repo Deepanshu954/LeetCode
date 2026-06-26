@@ -1,7 +1,7 @@
 class Solution {
     public long countMajoritySubarrays(int[] nums, int target) {
         int n = nums.length;
-        int res = 0;
+        long res = 0;
         int currentPrefixSum = 0;
         
         // Offset by n + 1 to handle negative prefix sums (array indices must be > 0)
