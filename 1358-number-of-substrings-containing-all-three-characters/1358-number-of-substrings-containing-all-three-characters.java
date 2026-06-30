@@ -12,7 +12,10 @@ class Solution {
                 if(s.charAt(j) == 'a') cntA++;
                 if(s.charAt(j) == 'b') cntB++;
                 if(s.charAt(j) == 'c') cntC++;
-                if(cntA != 0 && cntB != 0 && cntC != 0) cnt++;
+                if(cntA != 0 && cntB != 0 && cntC != 0) {
+                    cnt += (n-j);
+                    break;
+                }
             }
         }
         
