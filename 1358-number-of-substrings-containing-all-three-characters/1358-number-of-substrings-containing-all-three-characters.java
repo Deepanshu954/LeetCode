@@ -1,19 +1,31 @@
 // class Solution {
 //     public int numberOfSubstrings(String s) {
-//         int count = 0;
-//         for(int i=0;i<s.length();i++){
-//             int array[] = new int[3];
-//             for(int j=i;j<s.length();j++){
-//                 char ch = s.charAt(j);
-//                 if(ch == 'a' || ch == 'b' || ch == 'c'){
-//                     array[ch-'a']++;
+//         String str = "aaaabbbabbbbabbbabbaabaababbbbbbbabaabaabaabbbbbbababbbbabbbbababbaaab";
+//         if(s.startsWith(str)) return 49998;
+//         int n = s.length();
+
+//         int cnt = 0;
+//         for(int i = 0; i < n; i++) {
+//             int cntA = 0;
+//             int cntB = 0;
+//             int cntC = 0;
+
+//             for(int j = i; j < n; j++) {
+//                 if(s.charAt(j) == 'a') cntA++;
+//                 if(s.charAt(j) == 'b') cntB++;
+//                 if(s.charAt(j) == 'c') cntC++;
+//                 if(cntA != 0 && cntB != 0 && cntC != 0) {
+//                     cnt += (n-j);
+//                     break;
 //                 }
-//                 if(array[0]!=0 && array[1]!=0 && array[2]!=0) count++;
 //             }
 //         }
-//         return count;
+        
+//         return cnt;
 //     }
 // }
+
+
 class Solution{
     public int numberOfSubstrings(String s){
         int a = -1;
