@@ -1,47 +1,73 @@
-class Solution {
-    public boolean findSafeWalk(List<List<Integer>> grid, int health) {
-        int n = grid.size();
-        int m = grid.get(0).size();
-        
-        int[] dr = new int[] {0, 0, 1, -1};
-        int[] dc = new int[] {1, -1, 0, 0};
-        
-        boolean[][][] visited = new boolean[n][m][health + 1];
-        Queue<int[]> bfs = new LinkedList<>();
-        
-        bfs.add(new int[]{0, 0, health - grid.get(0).get(0)});
-        visited[0][0][health - grid.get(0).get(0)] = true;
-        
-        while(!bfs.isEmpty()) {
-            int size = bfs.size();
-            while(size-- > 0) {
-                int[] currNode = bfs.poll();
-                int r = currNode[0];
-                int c = currNode[1];
-                int h = currNode[2];
-               
-                if(r == n-1 && c == m-1 && h > 0) {
-                    return true;
-                }
-                 
-                for(int k = 0; k < 4; k++) {
-                    int nr = r + dr[k];
-                    int nc = c + dc[k];
-                    if(isValidMove(nr, nc, n, m)) {
-                        int nh = h - grid.get(nr).get(nc);
-                        if(nh >= 0 && visited[nr][nc][nh] == false) {
-                            visited[nr][nc][nh] = true;
-                            bfs.add(new int[]{nr, nc, nh});
-                        }
-                    }
-                }
-            }
-        }
-        
+  class Solution {
+    static int[] row = { -1, 0, 1, 0 };
+    int[] queue;
+    int left = 0;
+    int right = 0;
+    int sz = 1;
+    int mn;
+    int m, n;
+
+    public boolean findSafeWalk(List<List<Integer>> gridList, int health) {
+      n = gridList.size();
+      m = gridList.get(0).size();
+      int[][] grid = new int[n][m];
+      for (int i = 0; i < n; i++)
+        for (int j = 0; j < m; j++)
+          grid[i][j] = gridList.get(i).get(j);
+
+      // Remaining health after standing on start
+      int startHealth = health - grid[0][0];
+      if (startHealth <= 0)
         return false;
+
+      // bestHealth[i][j] = max remaining health upon reaching (i, j)
+      int[][] bestHealth = new int[n][m];
+      for (int[] row : bestHealth)
+        Arrays.fill(row, -1);
+
+      bestHealth[0][0] = startHealth;
+       mn = m * n;
+      queue = new int[mn];
+      queue[0] = 0;
+
+      while (sz > 0) {
+        int cur = queue[left];
+        int x = cur / m;
+        int y = cur % m;
+        int h = bestHealth[x][y];
+        left = (left + 1) % mn;
+        sz--;
+        // Reached destination with health ≥ 1
+        if (x == n - 1 && y == m - 1 && h >= 1)
+          return true;
+
+        for (int d = 0; d <= 3; d++) {
+          int nx = x + row[d];
+          int ny = y + row[3 - d];
+          if (nx < 0 || ny < 0 || nx >= n || ny >= m)
+            continue;
+
+          int newHealth = h - grid[nx][ny];
+          if (newHealth <= 0)
+            continue; // dead
+
+          if (newHealth > bestHealth[nx][ny]) {
+            bestHealth[nx][ny] = newHealth;
+            // 0–1 BFS: cost 0 moves (safe cells) go to front
+            if (grid[nx][ny] == 0) {
+              left = (left - 1 + mn) % mn;
+              queue[left] = nx * m + ny;
+              if (sz == 0)
+                right = left;
+              sz++;
+            } else {
+              right = (right + 1) % mn;
+              queue[right] = nx * m + ny;
+              sz++;
+            }
+          }
+        }
+      }
+      return false;
     }
-    
-    private boolean isValidMove(int r, int c, int n, int m) {
-        return r >= 0 && c >= 0 && r < n && c < m;
-    }
-}
+  }
