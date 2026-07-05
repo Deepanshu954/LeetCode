@@ -1,7 +1,5 @@
 // memorization
 
-import java.util.List;
-
 class Solution {
     private int mod = 1000000007;
     
@@ -12,8 +10,8 @@ class Solution {
 
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < m; j++) {
-                memo[i][j][0] = -1;
-                memo[i][j][1] = -1;
+                memo[i][j][0] = -2;
+                memo[i][j][1] = -2;
             }
         }
 
@@ -30,7 +28,7 @@ class Solution {
             return new int[]{0, 1};
         }
 
-        if (memo[row][col][0] != -1) {
+        if (memo[row][col][0] != -2) {
             return memo[row][col];
         }
 
