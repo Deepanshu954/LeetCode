@@ -1,19 +1,47 @@
 class Solution {
 public:
+    int count = 0;
+
+    bool isSafe(vector<string>& board, int row, int col, int n) {
+        // Check upper column
+        for (int i = 0; i < row; i++) {
+            if (board[i][col] == 'Q')
+                return false;
+        }
+
+        // Check upper-left diagonal
+        for (int i = row - 1, j = col - 1; i >= 0 && j >= 0; i--, j--) {
+            if (board[i][j] == 'Q')
+                return false;
+        }
+
+        // Check upper-right diagonal
+        for (int i = row - 1, j = col + 1; i >= 0 && j < n; i--, j++) {
+            if (board[i][j] == 'Q')
+                return false;
+        }
+
+        return true;
+    }
+
+    void solve(vector<string>& board, int row, int n) {
+        if (row == n) {
+            count++;
+            return;
+        }
+
+        for (int col = 0; col < n; col++) {
+            if (isSafe(board, row, col, n)) {
+                board[row][col] = 'Q';
+                solve(board, row + 1, n);
+                board[row][col] = '.';
+            }
+        }
+    }
+
     int totalNQueens(int n) {
-	vector<bool> col(n), diag(2*n-1), anti_diag(2*n-1);
-	return solve(col, diag, anti_diag, 0);
-}
-   
-int solve(vector<bool>& col, vector<bool>& diag, vector<bool>& anti_diag, int row) {
-	int n = size(col), count = 0;
-    if(row == n) return 1;
-	for(int column = 0; column < n; column++)           
-		if(!col[column] && !diag[row + column] && !anti_diag[row - column + n - 1]){ 
-			col[column] = diag[row + column] = anti_diag[row - column + n - 1] = true;
-			count += solve(col, diag, anti_diag, row + 1); 
-			col[column] = diag[row + column] = anti_diag[row - column + n - 1] = false; 
-		}                                
-	return count;
-}
+        vector<string> board(n, string(n, '.'));
+        solve(board, 0, n);
+        return count;
+    }
 };
