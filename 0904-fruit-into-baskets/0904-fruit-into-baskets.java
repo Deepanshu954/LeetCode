@@ -1,40 +1,42 @@
-class Solution {
-    public int totalFruit(int[] nums) {
-        int n = nums.length;
-        if(n <= 2) return n;
-
-        int basket1 = nums[0];
-        int cnt1 = 1;
-
-        int basket2 = -1;
+public class Solution {
+    public int totalFruit(int[] fruits) {
+        int n = fruits.length;
+        
+        int t1 = fruits[0]; // Fruit 1
+        int t2 = -1; // Fruit 2
+        
+        int cnt1 = 0;
         int cnt2 = 0;
-
-        int max = 0;
-
+        
+        int maxLen = 0;
+        
         int left = 0;
-        for(int right = 1; right < n; right++) {
-            if(nums[right] == basket1) cnt1++;
-            else if(nums[right] == basket2) cnt2++;
-            else {
-                while( (cnt1 > 0) && (cnt2 > 0) ) {
-                    if(nums[left] == basket1) cnt1--;
+        for(int right = 0; right < n; right++) {
+            if(fruits[right] == t1) cnt1++;
+            else if(fruits[right] == t2) cnt2++;
+            else if(t2 == -1) {
+                t2 = fruits[right];
+                cnt2 = 1;
+            } else {
+                while(cnt1 > 0 && cnt2 > 0) {
+                    if(fruits[left] == t1) cnt1--;
                     else cnt2--;
-
+                    
                     left++;
                 }
-
+                
                 if(cnt1 == 0) {
-                    basket1 = nums[right];
                     cnt1 = 1;
+                    t1 = fruits[right];
                 } else {
-                    basket2 = nums[right];
                     cnt2 = 1;
+                    t2 = fruits[right];
                 }
             }
-
-            max = Math.max(max, right - left + 1);
+            
+            maxLen = Math.max(maxLen, right - left + 1);
         }
         
-        return max;
+        return maxLen;  
     }
 }
