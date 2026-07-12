@@ -12,7 +12,7 @@ class Solution {
         prev = inv[0];
 
         for(int i = 1; i < n; i++) {
-            if(inv[i][1] > prev[1]) {
+            if(inv[i][1] > prev[1] && inv[i][0] > prev[0]) {
                 rem++;
                 prev = inv[i];
             }
