@@ -10,10 +10,10 @@ class Solution {
             int high = Math.min(A[i][1], B[j][1]);
 
             if(low <= high) res.add(new int[]{low, high});
+
             if(A[i][1] < B[j][1]) i++;
             else j++;
         }
-
 
         return res.toArray(new int[0][]);
     }
