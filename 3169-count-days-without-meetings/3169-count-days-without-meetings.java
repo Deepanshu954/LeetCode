@@ -2,16 +2,24 @@ import java.util.*;
 
 class Solution {
     public int countDays(int days, int[][] meetings) {
-        Arrays.sort(meetings, Comparator.comparingInt(a -> a[0]));
+        Arrays.sort(meetings, (a, b) -> Integer.compare(a[0], b[0]));
+
+        int free = 0;
         int prevEnd = 0;
 
         for (int[] meeting : meetings) {
-            int start = Math.max(meeting[0], prevEnd + 1);
-            int length = meeting[1] - start + 1;
-            days -= Math.max(length, 0);
-            prevEnd = Math.max(prevEnd, meeting[1]);
+            int start = meeting[0];
+            int end = meeting[1];
+
+            if (start > prevEnd + 1) {
+                free += start - prevEnd - 1;
+            }
+
+            prevEnd = Math.max(prevEnd, end);
         }
 
-        return days;
+        free += days - prevEnd;
+
+        return free;
     }
 }
