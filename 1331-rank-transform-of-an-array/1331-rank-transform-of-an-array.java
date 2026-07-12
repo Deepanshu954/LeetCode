@@ -1,6 +1,8 @@
 class Solution {
     public int[] arrayRankTransform(int[] arr) {
         int n = arr.length;
+        if(n == 0) return arr;
+        if(n == 1) return new int[]{1};
 
         int[] nums = arr.clone();
         Arrays.sort(nums);
