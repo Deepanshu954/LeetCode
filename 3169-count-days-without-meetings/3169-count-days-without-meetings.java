@@ -6,9 +6,7 @@ class Solution {
         int prev = 0;
 
         for (int[] meet : meetings) {
-            if (meet[0] > prev + 1) {
-                free += meet[0] - prev - 1;
-            }
+            if (meet[0] > prev + 1) free += meet[0] - prev - 1;
 
             prev = Math.max(prev, meet[1]);
         }
