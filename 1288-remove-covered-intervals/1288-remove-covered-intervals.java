@@ -8,12 +8,13 @@ class Solution {
         });
 
         int rem = 1;
-        int prev = inv[0][1];
+        int[] prev = new int[2];
+        prev = inv[0];
 
         for(int i = 1; i < n; i++) {
-            if(inv[i][1] > prev) {
+            if(inv[i][1] > prev[1]) {
                 rem++;
-                prev = inv[i][1];
+                prev = inv[i];
             }
         }
 
