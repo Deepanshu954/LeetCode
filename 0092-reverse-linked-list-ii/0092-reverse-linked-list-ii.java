@@ -8,28 +8,26 @@
  *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
  * }
  */
-
 class Solution {
     public ListNode reverseBetween(ListNode head, int left, int right) {
+        // 1.Check for base Case
+        if(head == null || head.next == null) return head;
 
-        if(head == null || left == right) return head;
-
+        // 2. Initilie dummy node
+        // Conncect dummy to head
         ListNode dummy = new ListNode(0);
         dummy.next = head;
 
+        // 3. Find left 
         ListNode prev = dummy;
-
-        // move prev before left
-        for(int i = 1; i < left; i++){
+        for(int i = 0; i < left-1; i++) {
             prev = prev.next;
         }
 
+        // 4. Reverse the portion
         ListNode curr = prev.next;
-
-        // reverse section
-        for(int i = 0; i < right - left; i++){
+        for(int i = 0; i < right - left; i++) {
             ListNode temp = curr.next;
-
             curr.next = temp.next;
             temp.next = prev.next;
             prev.next = temp;
