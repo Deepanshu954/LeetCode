@@ -485,3 +485,15 @@ This repository contains my solutions to LeetCode problems. The history is fully
 | 3898 | [Find The Degree Of Each Vertex](./3898-find-the-degree-of-each-vertex/README.md) | [Java](./3898-find-the-degree-of-each-vertex/3898-find-the-degree-of-each-vertex.java) |
 | 3899 | [Angles Of A Triangle](./3899-angles-of-a-triangle/README.md) | [Java](./3899-angles-of-a-triangle/3899-angles-of-a-triangle.java) |
 | 3900 | [Longest Balanced Substring After One Swap](./3900-longest-balanced-substring-after-one-swap/README.md) | [Java](./3900-longest-balanced-substring-after-one-swap/3900-longest-balanced-substring-after-one-swap.java) |
+
+<!---LeetCode Topics Start-->
+# LeetCode Topics
+## Binary Search
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0278-first-bad-version](https://github.com/Deepanshu954/LeetCode/tree/main/0278-first-bad-version/) | Easy |
+## Interactive
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0278-first-bad-version](https://github.com/Deepanshu954/LeetCode/tree/main/0278-first-bad-version/) | Easy |
+<!---LeetCode Topics End-->
