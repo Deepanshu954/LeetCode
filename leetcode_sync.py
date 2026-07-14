@@ -157,6 +157,39 @@ def main():
         print(f"  committed {folder_name} [{s['statusDisplay']}] @ {dt}")
         time.sleep(0.4)
 
+    # Generate root README.md
+    print("Generating root README.md...")
+    folders = [f for f in os.listdir(REPO_DIR) if os.path.isdir(os.path.join(REPO_DIR, f)) and f[0].isdigit()]
+    folders.sort(key=lambda x: int(x.split('-')[0]))
+
+    readme_content = "# LeetCode 🚀\n\nThis repository contains my solutions to LeetCode problems. The history is fully synced with my LeetCode submissions, automatically backdated to accurately reflect my learning journey!\n\n## 📝 Solutions\n\n| # | Title | Solution |\n|---| ----- | -------- |\n"
+
+    for folder in folders:
+        parts = folder.split('-', 1)
+        if len(parts) != 2: continue
+        frontend_id = int(parts[0])
+        slug = parts[1]
+        title = " ".join([word.capitalize() for word in slug.split('-')])
+        
+        solution_file = None
+        for f in os.listdir(os.path.join(REPO_DIR, folder)):
+            if f != "README.md":
+                solution_file = f
+                break
+                
+        if solution_file:
+            lang = solution_file.split('.')[-1].upper()
+            if lang == "PY": lang = "Python"
+            if lang == "CPP": lang = "C++"
+            if lang == "JAVA": lang = "Java"
+            readme_content += f"| {frontend_id:04d} | [{title}](./{folder}/README.md) | [{lang}](./{folder}/{solution_file}) |\n"
+
+    with open(os.path.join(REPO_DIR, "README.md"), "w") as f:
+        f.write(readme_content)
+        
+    git(["add", "README.md"], cwd=REPO_DIR)
+    git(["commit", "-m", "docs: update root README.md with solutions index"], cwd=REPO_DIR)
+
     print("Done. Push with: git push origin main --force")
 
 if __name__ == "__main__":
