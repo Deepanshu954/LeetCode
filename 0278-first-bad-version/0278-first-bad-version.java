@@ -8,14 +8,13 @@ public class Solution extends VersionControl {
         int ans = 0;
         
         while (left <= right) {
-            // Corrected mid calculation
             int mid = left + (right - left) / 2; 
             
             if (isBadVersion(mid)) {
-                ans = mid;       // Record potential first bad version
-                right = mid - 1; // Search the left half for an earlier bad version
+                ans = mid;
+                right = mid - 1;
             } else {
-                left = mid + 1;  // Search the right half
+                left = mid + 1;
             }
         }
         
