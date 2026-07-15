@@ -501,4 +501,12 @@ This repository contains my solutions to LeetCode problems. The history is fully
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [1539-kth-missing-positive-number](https://github.com/Deepanshu954/LeetCode/tree/main/1539-kth-missing-positive-number/) | Easy |
+## Math
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [3658-gcd-of-odd-and-even-sums](https://github.com/Deepanshu954/LeetCode/tree/main/3658-gcd-of-odd-and-even-sums/) | Easy |
+## Number Theory
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [3658-gcd-of-odd-and-even-sums](https://github.com/Deepanshu954/LeetCode/tree/main/3658-gcd-of-odd-and-even-sums/) | Easy |
 <!---LeetCode Topics End-->
