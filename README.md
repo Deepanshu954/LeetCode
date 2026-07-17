@@ -511,6 +511,7 @@ This repository contains my solutions to LeetCode problems. The history is fully
 ## Math
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0780-reaching-points](https://github.com/Deepanshu954/LeetCode/tree/main/0780-reaching-points/) | Hard |
 | [3312-sorted-gcd-pair-queries](https://github.com/Deepanshu954/LeetCode/tree/main/3312-sorted-gcd-pair-queries/) | Hard |
 | [3658-gcd-of-odd-and-even-sums](https://github.com/Deepanshu954/LeetCode/tree/main/3658-gcd-of-odd-and-even-sums/) | Easy |
 | [3867-sum-of-gcd-of-formed-pairs](https://github.com/Deepanshu954/LeetCode/tree/main/3867-sum-of-gcd-of-formed-pairs/) | Medium |
