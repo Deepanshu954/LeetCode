@@ -496,6 +496,7 @@ This repository contains my solutions to LeetCode problems. The history is fully
 | [0852-peak-index-in-a-mountain-array](https://github.com/Deepanshu954/LeetCode/tree/main/0852-peak-index-in-a-mountain-array/) | Medium |
 | [1337-the-k-weakest-rows-in-a-matrix](https://github.com/Deepanshu954/LeetCode/tree/main/1337-the-k-weakest-rows-in-a-matrix/) | Easy |
 | [1539-kth-missing-positive-number](https://github.com/Deepanshu954/LeetCode/tree/main/1539-kth-missing-positive-number/) | Easy |
+| [2040-kth-smallest-product-of-two-sorted-arrays](https://github.com/Deepanshu954/LeetCode/tree/main/2040-kth-smallest-product-of-two-sorted-arrays/) | Hard |
 | [2824-count-pairs-whose-sum-is-less-than-target](https://github.com/Deepanshu954/LeetCode/tree/main/2824-count-pairs-whose-sum-is-less-than-target/) | Easy |
 | [3312-sorted-gcd-pair-queries](https://github.com/Deepanshu954/LeetCode/tree/main/3312-sorted-gcd-pair-queries/) | Hard |
 ## Interactive
@@ -509,6 +510,7 @@ This repository contains my solutions to LeetCode problems. The history is fully
 | [0852-peak-index-in-a-mountain-array](https://github.com/Deepanshu954/LeetCode/tree/main/0852-peak-index-in-a-mountain-array/) | Medium |
 | [1337-the-k-weakest-rows-in-a-matrix](https://github.com/Deepanshu954/LeetCode/tree/main/1337-the-k-weakest-rows-in-a-matrix/) | Easy |
 | [1539-kth-missing-positive-number](https://github.com/Deepanshu954/LeetCode/tree/main/1539-kth-missing-positive-number/) | Easy |
+| [2040-kth-smallest-product-of-two-sorted-arrays](https://github.com/Deepanshu954/LeetCode/tree/main/2040-kth-smallest-product-of-two-sorted-arrays/) | Hard |
 | [2824-count-pairs-whose-sum-is-less-than-target](https://github.com/Deepanshu954/LeetCode/tree/main/2824-count-pairs-whose-sum-is-less-than-target/) | Easy |
 | [3312-sorted-gcd-pair-queries](https://github.com/Deepanshu954/LeetCode/tree/main/3312-sorted-gcd-pair-queries/) | Hard |
 | [3867-sum-of-gcd-of-formed-pairs](https://github.com/Deepanshu954/LeetCode/tree/main/3867-sum-of-gcd-of-formed-pairs/) | Medium |
