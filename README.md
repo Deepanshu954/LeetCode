@@ -495,6 +495,7 @@ This repository contains my solutions to LeetCode problems. The history is fully
 | [0278-first-bad-version](https://github.com/Deepanshu954/LeetCode/tree/main/0278-first-bad-version/) | Easy |
 | [0852-peak-index-in-a-mountain-array](https://github.com/Deepanshu954/LeetCode/tree/main/0852-peak-index-in-a-mountain-array/) | Medium |
 | [1539-kth-missing-positive-number](https://github.com/Deepanshu954/LeetCode/tree/main/1539-kth-missing-positive-number/) | Easy |
+| [3312-sorted-gcd-pair-queries](https://github.com/Deepanshu954/LeetCode/tree/main/3312-sorted-gcd-pair-queries/) | Hard |
 ## Interactive
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -505,15 +506,18 @@ This repository contains my solutions to LeetCode problems. The history is fully
 | [0081-search-in-rotated-sorted-array-ii](https://github.com/Deepanshu954/LeetCode/tree/main/0081-search-in-rotated-sorted-array-ii/) | Medium |
 | [0852-peak-index-in-a-mountain-array](https://github.com/Deepanshu954/LeetCode/tree/main/0852-peak-index-in-a-mountain-array/) | Medium |
 | [1539-kth-missing-positive-number](https://github.com/Deepanshu954/LeetCode/tree/main/1539-kth-missing-positive-number/) | Easy |
+| [3312-sorted-gcd-pair-queries](https://github.com/Deepanshu954/LeetCode/tree/main/3312-sorted-gcd-pair-queries/) | Hard |
 | [3867-sum-of-gcd-of-formed-pairs](https://github.com/Deepanshu954/LeetCode/tree/main/3867-sum-of-gcd-of-formed-pairs/) | Medium |
 ## Math
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [3312-sorted-gcd-pair-queries](https://github.com/Deepanshu954/LeetCode/tree/main/3312-sorted-gcd-pair-queries/) | Hard |
 | [3658-gcd-of-odd-and-even-sums](https://github.com/Deepanshu954/LeetCode/tree/main/3658-gcd-of-odd-and-even-sums/) | Easy |
 | [3867-sum-of-gcd-of-formed-pairs](https://github.com/Deepanshu954/LeetCode/tree/main/3867-sum-of-gcd-of-formed-pairs/) | Medium |
 ## Number Theory
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [3312-sorted-gcd-pair-queries](https://github.com/Deepanshu954/LeetCode/tree/main/3312-sorted-gcd-pair-queries/) | Hard |
 | [3658-gcd-of-odd-and-even-sums](https://github.com/Deepanshu954/LeetCode/tree/main/3658-gcd-of-odd-and-even-sums/) | Easy |
 | [3867-sum-of-gcd-of-formed-pairs](https://github.com/Deepanshu954/LeetCode/tree/main/3867-sum-of-gcd-of-formed-pairs/) | Medium |
 ## Two Pointers
@@ -528,4 +532,20 @@ This repository contains my solutions to LeetCode problems. The history is fully
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [3867-sum-of-gcd-of-formed-pairs](https://github.com/Deepanshu954/LeetCode/tree/main/3867-sum-of-gcd-of-formed-pairs/) | Medium |
+## Hash Table
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [3312-sorted-gcd-pair-queries](https://github.com/Deepanshu954/LeetCode/tree/main/3312-sorted-gcd-pair-queries/) | Hard |
+## Combinatorics
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [3312-sorted-gcd-pair-queries](https://github.com/Deepanshu954/LeetCode/tree/main/3312-sorted-gcd-pair-queries/) | Hard |
+## Counting
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [3312-sorted-gcd-pair-queries](https://github.com/Deepanshu954/LeetCode/tree/main/3312-sorted-gcd-pair-queries/) | Hard |
+## Prefix Sum
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [3312-sorted-gcd-pair-queries](https://github.com/Deepanshu954/LeetCode/tree/main/3312-sorted-gcd-pair-queries/) | Hard |
 <!---LeetCode Topics End-->
