@@ -1,39 +1,40 @@
 class Solution {
     public int shipWithinDays(int[] nums, int days) {
-        int left = 0;
-        int right = 0;
+        int min = 0;
+        int sum = 0;
 
-        for (int num : nums) {
-            left = Math.max(left, num);
-            right += num;
+        for(int num : nums) {
+            if(num > min) min = num;
+            sum += num;
         }
 
-        while (left < right) {
-            int mid = left + (right - left) / 2;
+        int left = min;
+        int right = sum;
 
-            if (isValid(nums, mid, days)) {
+        while(left < right) {
+            int mid = left + (right - left)/2;
+
+            if(isValid(nums, mid, days)) {
                 right = mid;
-            } else {
-                left = mid + 1;
-            }
+            } else left = mid + 1;
         }
 
         return left;
     }
 
-    private boolean isValid(int[] nums, int capacity, int days) {
-        int usedDays = 1;
+    private boolean isValid(int[] nums, int val, int days) {
         int sum = 0;
+        int cnt = 1;
 
-        for (int num : nums) {
-            if (sum + num > capacity) {
-                usedDays++;
+        for(int num : nums) {
+            sum += num;
+
+            if(sum > val) {
+                cnt++;
                 sum = num;
-            } else {
-                sum += num;
             }
         }
 
-        return usedDays <= days;
+        return cnt <= days;
     }
 }
