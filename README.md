@@ -500,6 +500,7 @@ This repository contains my solutions to LeetCode problems. The history is fully
 | [1539-kth-missing-positive-number](https://github.com/Deepanshu954/LeetCode/tree/main/1539-kth-missing-positive-number/) | Easy |
 | [1802-maximum-value-at-a-given-index-in-a-bounded-array](https://github.com/Deepanshu954/LeetCode/tree/main/1802-maximum-value-at-a-given-index-in-a-bounded-array/) | Medium |
 | [2040-kth-smallest-product-of-two-sorted-arrays](https://github.com/Deepanshu954/LeetCode/tree/main/2040-kth-smallest-product-of-two-sorted-arrays/) | Hard |
+| [2141-maximum-running-time-of-n-computers](https://github.com/Deepanshu954/LeetCode/tree/main/2141-maximum-running-time-of-n-computers/) | Hard |
 | [2824-count-pairs-whose-sum-is-less-than-target](https://github.com/Deepanshu954/LeetCode/tree/main/2824-count-pairs-whose-sum-is-less-than-target/) | Easy |
 | [3312-sorted-gcd-pair-queries](https://github.com/Deepanshu954/LeetCode/tree/main/3312-sorted-gcd-pair-queries/) | Hard |
 ## Interactive
@@ -517,6 +518,7 @@ This repository contains my solutions to LeetCode problems. The history is fully
 | [1539-kth-missing-positive-number](https://github.com/Deepanshu954/LeetCode/tree/main/1539-kth-missing-positive-number/) | Easy |
 | [1979-find-greatest-common-divisor-of-array](https://github.com/Deepanshu954/LeetCode/tree/main/1979-find-greatest-common-divisor-of-array/) | Easy |
 | [2040-kth-smallest-product-of-two-sorted-arrays](https://github.com/Deepanshu954/LeetCode/tree/main/2040-kth-smallest-product-of-two-sorted-arrays/) | Hard |
+| [2141-maximum-running-time-of-n-computers](https://github.com/Deepanshu954/LeetCode/tree/main/2141-maximum-running-time-of-n-computers/) | Hard |
 | [2824-count-pairs-whose-sum-is-less-than-target](https://github.com/Deepanshu954/LeetCode/tree/main/2824-count-pairs-whose-sum-is-less-than-target/) | Easy |
 | [3312-sorted-gcd-pair-queries](https://github.com/Deepanshu954/LeetCode/tree/main/3312-sorted-gcd-pair-queries/) | Hard |
 | [3867-sum-of-gcd-of-formed-pairs](https://github.com/Deepanshu954/LeetCode/tree/main/3867-sum-of-gcd-of-formed-pairs/) | Medium |
@@ -545,6 +547,7 @@ This repository contains my solutions to LeetCode problems. The history is fully
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [1337-the-k-weakest-rows-in-a-matrix](https://github.com/Deepanshu954/LeetCode/tree/main/1337-the-k-weakest-rows-in-a-matrix/) | Easy |
+| [2141-maximum-running-time-of-n-computers](https://github.com/Deepanshu954/LeetCode/tree/main/2141-maximum-running-time-of-n-computers/) | Hard |
 | [2824-count-pairs-whose-sum-is-less-than-target](https://github.com/Deepanshu954/LeetCode/tree/main/2824-count-pairs-whose-sum-is-less-than-target/) | Easy |
 | [3867-sum-of-gcd-of-formed-pairs](https://github.com/Deepanshu954/LeetCode/tree/main/3867-sum-of-gcd-of-formed-pairs/) | Medium |
 ## Simulation
@@ -581,6 +584,7 @@ This repository contains my solutions to LeetCode problems. The history is fully
 | ------- | ------- |
 | [0410-split-array-largest-sum](https://github.com/Deepanshu954/LeetCode/tree/main/0410-split-array-largest-sum/) | Hard |
 | [1802-maximum-value-at-a-given-index-in-a-bounded-array](https://github.com/Deepanshu954/LeetCode/tree/main/1802-maximum-value-at-a-given-index-in-a-bounded-array/) | Medium |
+| [2141-maximum-running-time-of-n-computers](https://github.com/Deepanshu954/LeetCode/tree/main/2141-maximum-running-time-of-n-computers/) | Hard |
 ## Dynamic Programming
 | Problem Name | Difficulty |
 | ------- | ------- |
