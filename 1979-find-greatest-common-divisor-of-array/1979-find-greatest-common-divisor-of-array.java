@@ -1,7 +1,7 @@
 class Solution {
     public int findGCD(int[] nums) {
-        int min = Integer.MAX_VALUE;
-        int max = Integer.MIN_VALUE;
+        int min = 1000;
+        int max = 1;
 
         for (int num : nums) {
             min = Math.min(min, num);
