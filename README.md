@@ -569,6 +569,7 @@ This repository contains my solutions to LeetCode problems. The history is fully
 ## Hash Table
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [1876-substrings-of-size-three-with-distinct-characters](https://github.com/Deepanshu954/LeetCode/tree/main/1876-substrings-of-size-three-with-distinct-characters/) | Easy |
 | [3312-sorted-gcd-pair-queries](https://github.com/Deepanshu954/LeetCode/tree/main/3312-sorted-gcd-pair-queries/) | Hard |
 ## Combinatorics
 | Problem Name | Difficulty |
@@ -577,6 +578,7 @@ This repository contains my solutions to LeetCode problems. The history is fully
 ## Counting
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [1876-substrings-of-size-three-with-distinct-characters](https://github.com/Deepanshu954/LeetCode/tree/main/1876-substrings-of-size-three-with-distinct-characters/) | Easy |
 | [3312-sorted-gcd-pair-queries](https://github.com/Deepanshu954/LeetCode/tree/main/3312-sorted-gcd-pair-queries/) | Hard |
 ## Prefix Sum
 | Problem Name | Difficulty |
@@ -608,8 +610,13 @@ This repository contains my solutions to LeetCode problems. The history is fully
 | ------- | ------- |
 | [0844-backspace-string-compare](https://github.com/Deepanshu954/LeetCode/tree/main/0844-backspace-string-compare/) | Easy |
 | [0925-long-pressed-name](https://github.com/Deepanshu954/LeetCode/tree/main/0925-long-pressed-name/) | Easy |
+| [1876-substrings-of-size-three-with-distinct-characters](https://github.com/Deepanshu954/LeetCode/tree/main/1876-substrings-of-size-three-with-distinct-characters/) | Easy |
 ## Stack
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0844-backspace-string-compare](https://github.com/Deepanshu954/LeetCode/tree/main/0844-backspace-string-compare/) | Easy |
+## Sliding Window
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [1876-substrings-of-size-three-with-distinct-characters](https://github.com/Deepanshu954/LeetCode/tree/main/1876-substrings-of-size-three-with-distinct-characters/) | Easy |
 <!---LeetCode Topics End-->
