@@ -1,42 +1,40 @@
-# 2035. Partition Array Into Two Arrays to Minimize Sum Difference
+<h2><a href="https://leetcode.com/problems/partition-array-into-two-arrays-to-minimize-sum-difference/">2035. Partition Array Into Two Arrays to Minimize Sum Difference</a></h2><h3>Hard</h3><hr><p>You are given an integer array <code>nums</code> of <code>2 * n</code> integers. You need to partition <code>nums</code> into <strong>two</strong> arrays of length <code>n</code> to <strong>minimize the absolute difference</strong> of the <strong>sums</strong> of the arrays. To partition <code>nums</code>, put each element of <code>nums</code> into <strong>one</strong> of the two arrays.</p>
 
-You are given an integer array `nums` of `2 * n` integers. You need to partition `nums` into **two** arrays of length `n` to **minimize the absolute difference** of the **sums** of the arrays. To partition `nums`, put each element of `nums` into **one** of the two arrays.
+<p>Return <em>the <strong>minimum</strong> possible absolute difference</em>.</p>
 
-Return *the **minimum** possible absolute difference*.
-
-**Example 1:**
-
-![example-1](https://assets.leetcode.com/uploads/2021/10/02/ex1.png)
-
-```
-Input: nums = [3,9,7,3]
-Output: 2
-Explanation: One optimal partition is: [3,9] and [7,3].
+<p>&nbsp;</p>
+<p><strong class="example">Example 1:</strong></p>
+<img alt="example-1" src="https://assets.leetcode.com/uploads/2021/10/02/ex1.png" style="width: 240px; height: 106px;" />
+<pre>
+<strong>Input:</strong> nums = [3,9,7,3]
+<strong>Output:</strong> 2
+<strong>Explanation:</strong> One optimal partition is: [3,9] and [7,3].
 The absolute difference between the sums of the arrays is abs((3 + 9) - (7 + 3)) = 2.
-```
+</pre>
 
-**Example 2:**
+<p><strong class="example">Example 2:</strong></p>
 
-```
-Input: nums = [-36,36]
-Output: 72
-Explanation: One optimal partition is: [-36] and [36].
+<pre>
+<strong>Input:</strong> nums = [-36,36]
+<strong>Output:</strong> 72
+<strong>Explanation:</strong> One optimal partition is: [-36] and [36].
 The absolute difference between the sums of the arrays is abs((-36) - (36)) = 72.
-```
+</pre>
 
-**Example 3:**
-
-![example-3](https://assets.leetcode.com/uploads/2021/10/02/ex3.png)
-
-```
-Input: nums = [2,-1,0,4,-2,-9]
-Output: 0
-Explanation: One optimal partition is: [2,4,-9] and [-1,0,-2].
+<p><strong class="example">Example 3:</strong></p>
+<img alt="example-3" src="https://assets.leetcode.com/uploads/2021/10/02/ex3.png" style="width: 316px; height: 106px;" />
+<pre>
+<strong>Input:</strong> nums = [2,-1,0,4,-2,-9]
+<strong>Output:</strong> 0
+<strong>Explanation:</strong> One optimal partition is: [2,4,-9] and [-1,0,-2].
 The absolute difference between the sums of the arrays is abs((2 + 4 + -9) - (-1 + 0 + -2)) = 0.
-```
+</pre>
 
-**Constraints:**
+<p>&nbsp;</p>
+<p><strong>Constraints:</strong></p>
 
-* `1 <= n <= 15`
-* `nums.length == 2 * n`
-* `-107 <= nums[i] <= 107`
+<ul>
+	<li><code>1 &lt;= n &lt;= 15</code></li>
+	<li><code>nums.length == 2 * n</code></li>
+	<li><code>-10<sup>7</sup> &lt;= nums[i] &lt;= 10<sup>7</sup></code></li>
+</ul>
