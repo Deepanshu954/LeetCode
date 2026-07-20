@@ -610,6 +610,7 @@ This repository contains my solutions to LeetCode problems. The history is fully
 | ------- | ------- |
 | [0844-backspace-string-compare](https://github.com/Deepanshu954/LeetCode/tree/main/0844-backspace-string-compare/) | Easy |
 | [0925-long-pressed-name](https://github.com/Deepanshu954/LeetCode/tree/main/0925-long-pressed-name/) | Easy |
+| [1456-maximum-number-of-vowels-in-a-substring-of-given-length](https://github.com/Deepanshu954/LeetCode/tree/main/1456-maximum-number-of-vowels-in-a-substring-of-given-length/) | Medium |
 | [1876-substrings-of-size-three-with-distinct-characters](https://github.com/Deepanshu954/LeetCode/tree/main/1876-substrings-of-size-three-with-distinct-characters/) | Easy |
 ## Stack
 | Problem Name | Difficulty |
@@ -618,5 +619,6 @@ This repository contains my solutions to LeetCode problems. The history is fully
 ## Sliding Window
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [1456-maximum-number-of-vowels-in-a-substring-of-given-length](https://github.com/Deepanshu954/LeetCode/tree/main/1456-maximum-number-of-vowels-in-a-substring-of-given-length/) | Medium |
 | [1876-substrings-of-size-three-with-distinct-characters](https://github.com/Deepanshu954/LeetCode/tree/main/1876-substrings-of-size-three-with-distinct-characters/) | Easy |
 <!---LeetCode Topics End-->
