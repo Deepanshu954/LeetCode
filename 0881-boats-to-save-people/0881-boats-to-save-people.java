@@ -8,16 +8,13 @@ class Solution {
         
         while(left <= right){
             int sum = nums[left] + nums[right];
-            if(sum <= limit){
-                cnt++;
-                left++;
-                right--;
-            }
-            else{
-                cnt++;
-                right--;
-            }
+
+            if(sum <= limit) left++;
+
+            cnt++;
+            right--;
         }
+        
         return cnt;
     }
 }
