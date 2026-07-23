@@ -15,7 +15,6 @@ class Solution {
         for(int i = 0; i < 26; i++) {
             if(freq[i] == 0) continue;
 
-            // cnt++;
             freq[i]--;
             cnt += ( dfs(freq) + 1 );
             freq[i]++;
