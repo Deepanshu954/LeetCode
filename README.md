@@ -619,6 +619,7 @@ This repository contains my solutions to LeetCode problems. The history is fully
 ## String
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0784-letter-case-permutation](https://github.com/Deepanshu954/LeetCode/tree/main/0784-letter-case-permutation/) | Medium |
 | [0844-backspace-string-compare](https://github.com/Deepanshu954/LeetCode/tree/main/0844-backspace-string-compare/) | Easy |
 | [0925-long-pressed-name](https://github.com/Deepanshu954/LeetCode/tree/main/0925-long-pressed-name/) | Easy |
 | [1079-letter-tile-possibilities](https://github.com/Deepanshu954/LeetCode/tree/main/1079-letter-tile-possibilities/) | Medium |
@@ -638,6 +639,7 @@ This repository contains my solutions to LeetCode problems. The history is fully
 ## Bit Manipulation
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0784-letter-case-permutation](https://github.com/Deepanshu954/LeetCode/tree/main/0784-letter-case-permutation/) | Medium |
 | [2035-partition-array-into-two-arrays-to-minimize-sum-difference](https://github.com/Deepanshu954/LeetCode/tree/main/2035-partition-array-into-two-arrays-to-minimize-sum-difference/) | Hard |
 | [3513-number-of-unique-xor-triplets-i](https://github.com/Deepanshu954/LeetCode/tree/main/3513-number-of-unique-xor-triplets-i/) | Medium |
 ## Ordered Set
@@ -659,5 +661,6 @@ This repository contains my solutions to LeetCode problems. The history is fully
 ## Backtracking
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0784-letter-case-permutation](https://github.com/Deepanshu954/LeetCode/tree/main/0784-letter-case-permutation/) | Medium |
 | [1079-letter-tile-possibilities](https://github.com/Deepanshu954/LeetCode/tree/main/1079-letter-tile-possibilities/) | Medium |
 <!---LeetCode Topics End-->
