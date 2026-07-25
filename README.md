@@ -546,6 +546,7 @@ This repository contains my solutions to LeetCode problems. The history is fully
 | [3312-sorted-gcd-pair-queries](https://github.com/Deepanshu954/LeetCode/tree/main/3312-sorted-gcd-pair-queries/) | Hard |
 | [3513-number-of-unique-xor-triplets-i](https://github.com/Deepanshu954/LeetCode/tree/main/3513-number-of-unique-xor-triplets-i/) | Medium |
 | [3514-number-of-unique-xor-triplets-ii](https://github.com/Deepanshu954/LeetCode/tree/main/3514-number-of-unique-xor-triplets-ii/) | Medium |
+| [3536-maximum-product-of-two-digits](https://github.com/Deepanshu954/LeetCode/tree/main/3536-maximum-product-of-two-digits/) | Easy |
 | [3658-gcd-of-odd-and-even-sums](https://github.com/Deepanshu954/LeetCode/tree/main/3658-gcd-of-odd-and-even-sums/) | Easy |
 | [3867-sum-of-gcd-of-formed-pairs](https://github.com/Deepanshu954/LeetCode/tree/main/3867-sum-of-gcd-of-formed-pairs/) | Medium |
 ## Number Theory
@@ -576,6 +577,7 @@ This repository contains my solutions to LeetCode problems. The history is fully
 | [2035-partition-array-into-two-arrays-to-minimize-sum-difference](https://github.com/Deepanshu954/LeetCode/tree/main/2035-partition-array-into-two-arrays-to-minimize-sum-difference/) | Hard |
 | [2141-maximum-running-time-of-n-computers](https://github.com/Deepanshu954/LeetCode/tree/main/2141-maximum-running-time-of-n-computers/) | Hard |
 | [2824-count-pairs-whose-sum-is-less-than-target](https://github.com/Deepanshu954/LeetCode/tree/main/2824-count-pairs-whose-sum-is-less-than-target/) | Easy |
+| [3536-maximum-product-of-two-digits](https://github.com/Deepanshu954/LeetCode/tree/main/3536-maximum-product-of-two-digits/) | Easy |
 | [3867-sum-of-gcd-of-formed-pairs](https://github.com/Deepanshu954/LeetCode/tree/main/3867-sum-of-gcd-of-formed-pairs/) | Medium |
 ## Simulation
 | Problem Name | Difficulty |
