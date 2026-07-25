@@ -542,6 +542,7 @@ This repository contains my solutions to LeetCode problems. The history is fully
 ## Math
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0258-add-digits](https://github.com/Deepanshu954/LeetCode/tree/main/0258-add-digits/) | Easy |
 | [0556-next-greater-element-iii](https://github.com/Deepanshu954/LeetCode/tree/main/0556-next-greater-element-iii/) | Medium |
 | [0780-reaching-points](https://github.com/Deepanshu954/LeetCode/tree/main/0780-reaching-points/) | Hard |
 | [1802-maximum-value-at-a-given-index-in-a-bounded-array](https://github.com/Deepanshu954/LeetCode/tree/main/1802-maximum-value-at-a-given-index-in-a-bounded-array/) | Medium |
@@ -555,6 +556,7 @@ This repository contains my solutions to LeetCode problems. The history is fully
 ## Number Theory
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0258-add-digits](https://github.com/Deepanshu954/LeetCode/tree/main/0258-add-digits/) | Easy |
 | [1979-find-greatest-common-divisor-of-array](https://github.com/Deepanshu954/LeetCode/tree/main/1979-find-greatest-common-divisor-of-array/) | Easy |
 | [3312-sorted-gcd-pair-queries](https://github.com/Deepanshu954/LeetCode/tree/main/3312-sorted-gcd-pair-queries/) | Hard |
 | [3658-gcd-of-odd-and-even-sums](https://github.com/Deepanshu954/LeetCode/tree/main/3658-gcd-of-odd-and-even-sums/) | Easy |
@@ -587,6 +589,7 @@ This repository contains my solutions to LeetCode problems. The history is fully
 ## Simulation
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0258-add-digits](https://github.com/Deepanshu954/LeetCode/tree/main/0258-add-digits/) | Easy |
 | [0844-backspace-string-compare](https://github.com/Deepanshu954/LeetCode/tree/main/0844-backspace-string-compare/) | Easy |
 | [1260-shift-2d-grid](https://github.com/Deepanshu954/LeetCode/tree/main/1260-shift-2d-grid/) | Easy |
 | [3867-sum-of-gcd-of-formed-pairs](https://github.com/Deepanshu954/LeetCode/tree/main/3867-sum-of-gcd-of-formed-pairs/) | Medium |
