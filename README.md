@@ -516,6 +516,7 @@ This repository contains my solutions to LeetCode problems. The history is fully
 | ------- | ------- |
 | [0081-search-in-rotated-sorted-array-ii](https://github.com/Deepanshu954/LeetCode/tree/main/0081-search-in-rotated-sorted-array-ii/) | Medium |
 | [0154-find-minimum-in-rotated-sorted-array-ii](https://github.com/Deepanshu954/LeetCode/tree/main/0154-find-minimum-in-rotated-sorted-array-ii/) | Hard |
+| [0239-sliding-window-maximum](https://github.com/Deepanshu954/LeetCode/tree/main/0239-sliding-window-maximum/) | Hard |
 | [0321-create-maximum-number](https://github.com/Deepanshu954/LeetCode/tree/main/0321-create-maximum-number/) | Hard |
 | [0410-split-array-largest-sum](https://github.com/Deepanshu954/LeetCode/tree/main/0410-split-array-largest-sum/) | Hard |
 | [0628-maximum-product-of-three-numbers](https://github.com/Deepanshu954/LeetCode/tree/main/0628-maximum-product-of-three-numbers/) | Easy |
@@ -624,6 +625,7 @@ This repository contains my solutions to LeetCode problems. The history is fully
 ## Heap (Priority Queue)
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0239-sliding-window-maximum](https://github.com/Deepanshu954/LeetCode/tree/main/0239-sliding-window-maximum/) | Hard |
 | [1337-the-k-weakest-rows-in-a-matrix](https://github.com/Deepanshu954/LeetCode/tree/main/1337-the-k-weakest-rows-in-a-matrix/) | Easy |
 | [1464-maximum-product-of-two-elements-in-an-array](https://github.com/Deepanshu954/LeetCode/tree/main/1464-maximum-product-of-two-elements-in-an-array/) | Easy |
 ## Matrix
@@ -665,6 +667,7 @@ This repository contains my solutions to LeetCode problems. The history is fully
 ## Sliding Window
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0239-sliding-window-maximum](https://github.com/Deepanshu954/LeetCode/tree/main/0239-sliding-window-maximum/) | Hard |
 | [0713-subarray-product-less-than-k](https://github.com/Deepanshu954/LeetCode/tree/main/0713-subarray-product-less-than-k/) | Medium |
 | [1456-maximum-number-of-vowels-in-a-substring-of-given-length](https://github.com/Deepanshu954/LeetCode/tree/main/1456-maximum-number-of-vowels-in-a-substring-of-given-length/) | Medium |
 | [1876-substrings-of-size-three-with-distinct-characters](https://github.com/Deepanshu954/LeetCode/tree/main/1876-substrings-of-size-three-with-distinct-characters/) | Easy |
@@ -701,10 +704,12 @@ This repository contains my solutions to LeetCode problems. The history is fully
 ## Queue
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0239-sliding-window-maximum](https://github.com/Deepanshu954/LeetCode/tree/main/0239-sliding-window-maximum/) | Hard |
 | [2444-count-subarrays-with-fixed-bounds](https://github.com/Deepanshu954/LeetCode/tree/main/2444-count-subarrays-with-fixed-bounds/) | Hard |
 ## Monotonic Queue
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0239-sliding-window-maximum](https://github.com/Deepanshu954/LeetCode/tree/main/0239-sliding-window-maximum/) | Hard |
 | [2444-count-subarrays-with-fixed-bounds](https://github.com/Deepanshu954/LeetCode/tree/main/2444-count-subarrays-with-fixed-bounds/) | Hard |
 ## Monotonic Stack
 | Problem Name | Difficulty |
