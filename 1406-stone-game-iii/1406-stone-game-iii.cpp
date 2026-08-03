@@ -1,19 +1,39 @@
+#include <vector>
+#include <string>
+#include <algorithm>
+#include <climits>
+
 class Solution {
 public:
-    string stoneGameIII(vector<int>& stoneValue) {
+    std::string stoneGameIII(std::vector<int>& stoneValue) {
         int n = stoneValue.size();
-        vector<int>dp(3,0);
-        for(int i=n-1;i>=0;i--){
-            int t1 = stoneValue[i]-dp[(i+1)%3];
-            int t2 = INT_MIN;
-            if(i+1<n) t2 = stoneValue[i]+stoneValue[i+1]-dp[(i+2)%3];
-            int t3 = INT_MIN;
-            if(i+2<n) t3 = stoneValue[i]+stoneValue[i+1]+stoneValue[i+2]-dp[(i+3)%3];
-            dp[i%3] =  max({t1,t2,t3});
+        
+        
+        int dp1 = 0, dp2 = 0, dp3 = 0; 
+
+        
+        for (int i = n - 1; i >= 0; --i) {
+            int current_take_sum = 0;
+            int max_diff = INT_MIN;
+
+           
+            for (int k = 1; k <= 3 && i + k <= n; ++k) {
+                current_take_sum += stoneValue[i + k - 1];
+
+                int opponent_diff = (k == 1) ? dp1 : (k == 2) ? dp2 : dp3;
+                
+                max_diff = std::max(max_diff, current_take_sum - opponent_diff);
+            }
+
+            
+            dp3 = dp2;
+            dp2 = dp1;
+            dp1 = max_diff;
         }
-        int ans = dp[0];
-        if(ans>0) return "Alice";
-        else if(ans<0) return "Bob";
-        else return "Tie";
+
+        
+        if (dp1 > 0) return "Alice";
+        if (dp1 < 0) return "Bob";
+        return "Tie";
     }
 };
