@@ -1,32 +1,19 @@
 class Solution {
 public:
-    static constexpr int MIN = -50000001;
-    static inline string s[] = {"Bob", "Tie", "Alice"};
-
-    string stoneGameIII(vector<int>& A) {
-        int n = A.size();
-        vector<int> dp(n, MIN);
-
-        auto maxDiff = [&](this auto&& maxDiff, int i) -> int {
-            if (i == n) return 0;
-
-            int& res = dp[i];
-            if (res != MIN) return res;
-
-            int a = MIN, b = MIN, c = MIN;
-
-            if (i < n)
-                a = A[i] - maxDiff(i + 1);
-            if (i + 1 < n)
-                b = A[i] + A[i + 1] - maxDiff(i + 2);
-            if (i + 2 < n)
-                c = A[i] + A[i + 1] + A[i + 2] - maxDiff(i + 3);
-
-            res = max(a, max(b, c));
-            return res;
-        };
-
-        int d = maxDiff(0);
-        return s[(d > 0) - (d < 0) + 1];
+    string stoneGameIII(vector<int>& stoneValue) {
+        int n = stoneValue.size();
+        vector<int>dp(3,0);
+        for(int i=n-1;i>=0;i--){
+            int t1 = stoneValue[i]-dp[(i+1)%3];
+            int t2 = INT_MIN;
+            if(i+1<n) t2 = stoneValue[i]+stoneValue[i+1]-dp[(i+2)%3];
+            int t3 = INT_MIN;
+            if(i+2<n) t3 = stoneValue[i]+stoneValue[i+1]+stoneValue[i+2]-dp[(i+3)%3];
+            dp[i%3] =  max({t1,t2,t3});
+        }
+        int ans = dp[0];
+        if(ans>0) return "Alice";
+        else if(ans<0) return "Bob";
+        else return "Tie";
     }
 };
