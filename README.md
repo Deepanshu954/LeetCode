@@ -766,4 +766,16 @@ This repository contains my solutions to LeetCode problems. The history is fully
 | [0486-predict-the-winner](https://github.com/Deepanshu954/LeetCode/tree/main/0486-predict-the-winner/) | Medium |
 | [0877-stone-game](https://github.com/Deepanshu954/LeetCode/tree/main/0877-stone-game/) | Medium |
 | [1406-stone-game-iii](https://github.com/Deepanshu954/LeetCode/tree/main/1406-stone-game-iii/) | Hard |
+## Depth-First Search
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [3310-remove-methods-from-project](https://github.com/Deepanshu954/LeetCode/tree/main/3310-remove-methods-from-project/) | Medium |
+## Breadth-First Search
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [3310-remove-methods-from-project](https://github.com/Deepanshu954/LeetCode/tree/main/3310-remove-methods-from-project/) | Medium |
+## Graph Theory
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [3310-remove-methods-from-project](https://github.com/Deepanshu954/LeetCode/tree/main/3310-remove-methods-from-project/) | Medium |
 <!---LeetCode Topics End-->
