@@ -1,151 +1,141 @@
+using u64=unsigned long long;
+int prime[]={2, 3, 5, 7};
+
 class Solution {
 public:
-    vector<int> allowedPrimes = {2, 3, 5, 7};
+    array<int, 4> exp={0};
 
-    // optimization
-    int contrib[10][4] = {
-        {0,0,0,0},{0,0,0,0},{1,0,0,0},{0,1,0,0},{2,0,0,0},
-        {0,0,1,0},{1,1,0,0},{0,0,0,1},{3,0,0,0},{0,2,0,0}
-    };
+    bool primeFactor(u64 x) {
+        if (x==0) return 0;
 
-    int maxE2, maxE3, maxE5, maxE7;
-    vector<vector<vector<vector<int>>>> dp; // dp[e2][e3][e5][e7] = min digits
+        // Count powers of 2
+        exp[0]=countr_zero(x);
+        x>>=exp[0];
 
-    void buildDP(int E2, int E3, int E5, int E7) {
-        maxE2 = E2; maxE3 = E3; maxE5 = E5; maxE7 = E7;
-        dp.assign(E2 + 1, vector<vector<vector<int>>>(
-                  E3 + 1, vector<vector<int>>(
-                  E5 + 1, vector<int>(E7 + 1, INT_MAX))));
+        // Count powers of 3, 5, and 7
+        for (int i=1; i< 4; i++) {
+            int p=prime[i];
+            for (; x%p==0; x/=p) 
+                exp[i]++;
+        }
+        return x==1;
+    }
 
-        dp[0][0][0][0] = 0;
+    void modifyExp(char c, int dir) {
+        int x=c-'0';
+        switch (x) {
+            case 2: exp[0]+=dir; break;
+            case 4: exp[0]+=dir<<1; break;
+            case 8: exp[0]+=dir*3; break;
+            case 3: exp[1]+=dir; break;
+            case 5: exp[2]+=dir; break;
+            case 6: exp[0]+=dir; exp[1]+=dir; break;
+            case 7: exp[3]+=dir; break;
+            case 9: exp[1]+=dir<<1; break;
+        }
+    }
 
-        // iterate in increasing order of total exponent sum so we prepare teh dependencies first
-        for (int s = 1; s <= E2 + E3 + E5 + E7; s++) {
-            for (int e2 = 0; e2 <= E2; e2++)
-            for (int e3 = 0; e3 <= E3; e3++)
-            for (int e5 = 0; e5 <= E5; e5++)
-            for (int e7 = 0; e7 <= E7; e7++) {
-                if (e2 + e3 + e5 + e7 != s) continue;
-                int best = INT_MAX;
-                for (int d = 2; d <= 9; d++) {
-                    // can I add this digit
-                    // What it is going to contribute?
-                    // means if it's 8 -> it contributes 3 2's.
-                    // if 6 -> 1-2 & 1-3.
-                    // and so on.
-                    int ne2 = max(0, e2 - contrib[d][0]);
-                    int ne3 = max(0, e3 - contrib[d][1]);
-                    int ne5 = max(0, e5 - contrib[d][2]);
-                    int ne7 = max(0, e7 - contrib[d][3]);
-                    if (dp[ne2][ne3][ne5][ne7] != INT_MAX)
-                        best = min(best, 1 + dp[ne2][ne3][ne5][ne7]);
-                }
-                // update the memo here.
-                dp[e2][e3][e5][e7] = best;
+    string buildSuffix(int len, bool &valid) {
+        
+        int digit[10]={0};
+
+        int e0=max(0, exp[0]);
+        int e1=max(0, exp[1]);
+        int e2=max(0, exp[2]);
+        int e3=max(0, exp[3]);
+
+        digit[8]=e0/3;
+        int r0=e0%3;
+
+        digit[9]=e1>>1;
+        int r1=e1&1;
+
+        digit[5]=e2;
+        digit[7]=e3;
+
+        if (r0==1 && r1==1) 
+            digit[6]=1;
+        else if (r0==2 && r1==1) {
+            digit[2]=1;
+            digit[6]=1;
+        } 
+        else {
+            if (r0==1) digit[2]=1;
+            else if (r0==2) digit[4]=1;
+            if (r1==1) digit[3]=1;
+        }
+
+        int total_digits = 0;
+        for (int i=2; i<=9; i++) total_digits+=digit[i];
+
+        if (total_digits>len) {
+            valid=0;
+            return "";
+        }
+
+        digit[1]=len-total_digits;
+        valid=1;
+
+        string ans;
+        for (int i=1; i<=9; i++) {
+            ans.append(digit[i], '0'+i);
+        }
+        return ans;
+    }
+
+    string smallestNumber(string& num, long long t) {
+        if (!primeFactor(t)) return "-1";
+
+        int n=num.size();
+        auto origExp=exp;
+
+        // 1. Check if num itself works
+        bool zeroFound=0;
+        int firstZero=-1;
+        for (int i=0; i<n; i++) {
+            if (num[i]=='0') {
+                zeroFound=1;
+                firstZero=i;
+                break;
             }
+            modifyExp(num[i], -1);
         }
-    }
 
-    int minDigits(int e2, int e3, int e5, int e7) {
-        return dp[min(e2, maxE2)][min(e3, maxE3)][min(e5, maxE5)][min(e7, maxE7)];
-    }
+        bool valid=0;
+        if (!zeroFound) {
+            buildSuffix(0, valid);
+            if (valid) return num;
+        }
 
-    void applyDigit(vector<int>& freq, int d) {
-        // remove the contribution
-        freq[2] = max(0, freq[2] - contrib[d][0]);
-        freq[3] = max(0, freq[3] - contrib[d][1]);
-        freq[5] = max(0, freq[5] - contrib[d][2]);
-        freq[7] = max(0, freq[7] - contrib[d][3]);
-    }
+        //Try prefix matching from right to left
+        int limit=zeroFound ? firstZero : n-1;
 
-    bool isReqMet(vector<int>& freq) {
-        for (int p : allowedPrimes) if (freq[p] > 0) return false;
-        return true;
-    }
+        exp=origExp;
+        for (int i=0; i <limit; i++) 
+            modifyExp(num[i], -1);
+        
 
-    // Smallest suffix of exactly length L satisfying freq. Caller must ensure feasibility.
-    string greedyFill(vector<int> freq, int L) {
-        string res;
-        res.reserve(L);
-        for (int pos = 0; pos < L; pos++) {
-            int slotsAfter = L - pos - 1;
-            for (int d = 1; d <= 9; d++) {
-                // Save old values
-                vector<int> nf = freq;
-                applyDigit(nf, d);
-                if (minDigits(nf[2], nf[3], nf[5], nf[7]) <= slotsAfter) {
-                    freq = nf;
-                    res.push_back('0' + d);
-                    break;
+        for (int i=limit; i>= 0; i--) {
+            int startDigit=(i<n && num[i]!='0')?(num[i]-'0'+1):1;
+            for (int d=startDigit; d<=9; d++) {
+                modifyExp('0'+d, -1);
+                string suffix=buildSuffix(n-1-i, valid);
+                if (valid) {
+                    return num.substr(0, i)+(char)('0'+ d)+suffix;
                 }
-                // Backtrack (not needed here since nf is a local copy)
+                modifyExp('0'+d, +1);
             }
-        }
-        return res;
-    }
-
-    string smallestNumber(string num, long long t) {
-        // number greate than num, and product of digits divisible by t.
-        // one thing is 2, 3, 5, 7 should be prime factors of t because
-        // if 11 or >= 11 comes then we can not get two digits whose
-        // product is a prime number.
-
-        vector<int> freqFull(10, 0);
-        for (int p : allowedPrimes) {
-            while (t % p == 0) { freqFull[p]++; t /= p; }
-        }
-        if (t > 1) return "-1"; // not possible.
-
-        buildDP(freqFull[2], freqFull[3], freqFull[5], freqFull[7]);
-
-        // Now we need a number which is greater than num,
-        // and whose divisors are 2, 3, 5, 7 using occurences
-        // of 2, 3, 5, 7 that we have.
-
-        int len = num.size();
-        bool hasZero = false;
-        for (char c : num) if (c == '0') { hasZero = true; break; }
-
-        // Case 1: num itself already works
-        if (!hasZero) {
-            vector<int> freq = freqFull;
-            for (char c : num) applyDigit(freq, c - '0');
-            if (isReqMet(freq)) return num;
+            if (i>0) 
+                modifyExp(num[i-1], +1);
         }
 
-        // Precompute prefix freq (freq remaining BEFORE placing digit at position i)
-        vector<vector<int>> prefixFreq(len + 1);
-        prefixFreq[0] = freqFull;
-        for (int i = 0; i < len; i++) {
-            prefixFreq[i + 1] = prefixFreq[i];
-            if (num[i] != '0') applyDigit(prefixFreq[i + 1], num[i] - '0');
+        // Expand length if necessary
+        exp=origExp;
+        int targetLen=n+1;
+        while (1) {
+            string suffix=buildSuffix(targetLen, valid);
+            if (valid) return suffix;
+            targetLen++;
         }
-
-        int limit = hasZero ? (int)num.find('0') : len - 1;
-
-        // build for length n
-        // First we try to form for exact length length = n.
-        // If not possible, just keep adding 1 to it until we get our answer.
-        string answer;
-        for (int pos = limit; pos >= 0 && answer.empty(); pos--) {
-            vector<int>& freqBefore = prefixFreq[pos];
-            int origDigit = num[pos] - '0';
-            for (int d = origDigit + 1; d <= 9; d++) {
-                vector<int> nf = freqBefore;
-                applyDigit(nf, d);
-                int slotsAfter = len - pos - 1;
-                if (minDigits(nf[2], nf[3], nf[5], nf[7]) <= slotsAfter) {
-                    answer = num.substr(0, pos) + char('0' + d) + greedyFill(nf, slotsAfter);
-                    break;
-                }
-            }
-        }
-
-        if (!answer.empty()) return answer;
-
-        // keep adding one's here as same length we didn't get any anser. 
-        int totalNeeded = minDigits(freqFull[2], freqFull[3], freqFull[5], freqFull[7]);
-        int L = max(len + 1, totalNeeded);
-        return greedyFill(freqFull, L);
     }
 };
