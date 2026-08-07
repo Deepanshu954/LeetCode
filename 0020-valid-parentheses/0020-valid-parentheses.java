@@ -1,14 +1,20 @@
 class Solution {
     public boolean isValid(String s) {
-        char[] arr = s.toCharArray();
-        int i=0;
-        for(char a: arr){
-            if((a&3)==1){
-                if(i==0 || (char)(a-arr[--i])>2) return false;
-            }else{
-                arr[i++]=a;
+        if(s.length() % 2 == 1) return false;
+
+        Deque<Character> dq = new ArrayDeque<>();
+
+        for(char ch : s.toCharArray()) {
+            if(ch == '(' || ch == '{' || ch == '[') dq.addFirst(ch);
+            else {
+                if(dq.isEmpty()) return false;
+                char c = dq.removeFirst();
+
+                if((c == '(' && ch == ')') || (c == '{' && ch == '}') || (c == '[' && ch == ']')) continue;
+                else return false;
             }
         }
-        return i==0;
+
+        return dq.isEmpty();
     }
 }
