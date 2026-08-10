@@ -558,6 +558,7 @@ This repository contains my solutions to LeetCode problems. The history is fully
 | [0780-reaching-points](https://github.com/Deepanshu954/LeetCode/tree/main/0780-reaching-points/) | Hard |
 | [0877-stone-game](https://github.com/Deepanshu954/LeetCode/tree/main/0877-stone-game/) | Medium |
 | [1406-stone-game-iii](https://github.com/Deepanshu954/LeetCode/tree/main/1406-stone-game-iii/) | Hard |
+| [1510-stone-game-iv](https://github.com/Deepanshu954/LeetCode/tree/main/1510-stone-game-iv/) | Hard |
 | [1802-maximum-value-at-a-given-index-in-a-bounded-array](https://github.com/Deepanshu954/LeetCode/tree/main/1802-maximum-value-at-a-given-index-in-a-bounded-array/) | Medium |
 | [1979-find-greatest-common-divisor-of-array](https://github.com/Deepanshu954/LeetCode/tree/main/1979-find-greatest-common-divisor-of-array/) | Easy |
 | [3014-minimum-number-of-pushes-to-type-word-i](https://github.com/Deepanshu954/LeetCode/tree/main/3014-minimum-number-of-pushes-to-type-word-i/) | Easy |
@@ -677,6 +678,7 @@ This repository contains my solutions to LeetCode problems. The history is fully
 | [0486-predict-the-winner](https://github.com/Deepanshu954/LeetCode/tree/main/0486-predict-the-winner/) | Medium |
 | [0877-stone-game](https://github.com/Deepanshu954/LeetCode/tree/main/0877-stone-game/) | Medium |
 | [1406-stone-game-iii](https://github.com/Deepanshu954/LeetCode/tree/main/1406-stone-game-iii/) | Hard |
+| [1510-stone-game-iv](https://github.com/Deepanshu954/LeetCode/tree/main/1510-stone-game-iv/) | Hard |
 | [2035-partition-array-into-two-arrays-to-minimize-sum-difference](https://github.com/Deepanshu954/LeetCode/tree/main/2035-partition-array-into-two-arrays-to-minimize-sum-difference/) | Hard |
 | [3302-find-the-lexicographically-smallest-valid-sequence](https://github.com/Deepanshu954/LeetCode/tree/main/3302-find-the-lexicographically-smallest-valid-sequence/) | Medium |
 ## String
@@ -780,6 +782,7 @@ This repository contains my solutions to LeetCode problems. The history is fully
 | [0486-predict-the-winner](https://github.com/Deepanshu954/LeetCode/tree/main/0486-predict-the-winner/) | Medium |
 | [0877-stone-game](https://github.com/Deepanshu954/LeetCode/tree/main/0877-stone-game/) | Medium |
 | [1406-stone-game-iii](https://github.com/Deepanshu954/LeetCode/tree/main/1406-stone-game-iii/) | Hard |
+| [1510-stone-game-iv](https://github.com/Deepanshu954/LeetCode/tree/main/1510-stone-game-iv/) | Hard |
 ## Depth-First Search
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -812,4 +815,20 @@ This repository contains my solutions to LeetCode problems. The history is fully
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0096-unique-binary-search-trees](https://github.com/Deepanshu954/LeetCode/tree/main/0096-unique-binary-search-trees/) | Medium |
+## Minimax
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [1510-stone-game-iv](https://github.com/Deepanshu954/LeetCode/tree/main/1510-stone-game-iv/) | Hard |
+## Nim Game
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [1510-stone-game-iv](https://github.com/Deepanshu954/LeetCode/tree/main/1510-stone-game-iv/) | Hard |
+## Sprague–Grundy Theorem
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [1510-stone-game-iv](https://github.com/Deepanshu954/LeetCode/tree/main/1510-stone-game-iv/) | Hard |
+## Zero-Sum Game
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [1510-stone-game-iv](https://github.com/Deepanshu954/LeetCode/tree/main/1510-stone-game-iv/) | Hard |
 <!---LeetCode Topics End-->
