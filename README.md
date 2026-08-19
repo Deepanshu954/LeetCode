@@ -515,6 +515,7 @@ This repository contains my solutions to LeetCode problems. The history is fully
 ## Array
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0001-two-sum](https://github.com/Deepanshu954/LeetCode/tree/main/0001-two-sum/) | Easy |
 | [0004-median-of-two-sorted-arrays](https://github.com/Deepanshu954/LeetCode/tree/main/0004-median-of-two-sorted-arrays/) | Hard |
 | [0081-search-in-rotated-sorted-array-ii](https://github.com/Deepanshu954/LeetCode/tree/main/0081-search-in-rotated-sorted-array-ii/) | Medium |
 | [0154-find-minimum-in-rotated-sorted-array-ii](https://github.com/Deepanshu954/LeetCode/tree/main/0154-find-minimum-in-rotated-sorted-array-ii/) | Hard |
@@ -631,6 +632,7 @@ This repository contains my solutions to LeetCode problems. The history is fully
 ## Hash Table
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0001-two-sum](https://github.com/Deepanshu954/LeetCode/tree/main/0001-two-sum/) | Easy |
 | [1079-letter-tile-possibilities](https://github.com/Deepanshu954/LeetCode/tree/main/1079-letter-tile-possibilities/) | Medium |
 | [1876-substrings-of-size-three-with-distinct-characters](https://github.com/Deepanshu954/LeetCode/tree/main/1876-substrings-of-size-three-with-distinct-characters/) | Easy |
 | [2996-smallest-missing-integer-greater-than-sequential-prefix-sum](https://github.com/Deepanshu954/LeetCode/tree/main/2996-smallest-missing-integer-greater-than-sequential-prefix-sum/) | Easy |
