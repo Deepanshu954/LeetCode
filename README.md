@@ -571,6 +571,7 @@ This repository contains my solutions to LeetCode problems. The history is fully
 | [1510-stone-game-iv](https://github.com/Deepanshu954/LeetCode/tree/main/1510-stone-game-iv/) | Hard |
 | [1563-stone-game-v](https://github.com/Deepanshu954/LeetCode/tree/main/1563-stone-game-v/) | Hard |
 | [1802-maximum-value-at-a-given-index-in-a-bounded-array](https://github.com/Deepanshu954/LeetCode/tree/main/1802-maximum-value-at-a-given-index-in-a-bounded-array/) | Medium |
+| [1927-sum-game](https://github.com/Deepanshu954/LeetCode/tree/main/1927-sum-game/) | Medium |
 | [1979-find-greatest-common-divisor-of-array](https://github.com/Deepanshu954/LeetCode/tree/main/1979-find-greatest-common-divisor-of-array/) | Easy |
 | [2029-stone-game-ix](https://github.com/Deepanshu954/LeetCode/tree/main/2029-stone-game-ix/) | Medium |
 | [3014-minimum-number-of-pushes-to-type-word-i](https://github.com/Deepanshu954/LeetCode/tree/main/3014-minimum-number-of-pushes-to-type-word-i/) | Easy |
@@ -686,6 +687,7 @@ This repository contains my solutions to LeetCode problems. The history is fully
 | [0410-split-array-largest-sum](https://github.com/Deepanshu954/LeetCode/tree/main/0410-split-array-largest-sum/) | Hard |
 | [0881-boats-to-save-people](https://github.com/Deepanshu954/LeetCode/tree/main/0881-boats-to-save-people/) | Medium |
 | [1802-maximum-value-at-a-given-index-in-a-bounded-array](https://github.com/Deepanshu954/LeetCode/tree/main/1802-maximum-value-at-a-given-index-in-a-bounded-array/) | Medium |
+| [1927-sum-game](https://github.com/Deepanshu954/LeetCode/tree/main/1927-sum-game/) | Medium |
 | [2029-stone-game-ix](https://github.com/Deepanshu954/LeetCode/tree/main/2029-stone-game-ix/) | Medium |
 | [2141-maximum-running-time-of-n-computers](https://github.com/Deepanshu954/LeetCode/tree/main/2141-maximum-running-time-of-n-computers/) | Hard |
 | [3014-minimum-number-of-pushes-to-type-word-i](https://github.com/Deepanshu954/LeetCode/tree/main/3014-minimum-number-of-pushes-to-type-word-i/) | Easy |
@@ -717,6 +719,7 @@ This repository contains my solutions to LeetCode problems. The history is fully
 | [1079-letter-tile-possibilities](https://github.com/Deepanshu954/LeetCode/tree/main/1079-letter-tile-possibilities/) | Medium |
 | [1456-maximum-number-of-vowels-in-a-substring-of-given-length](https://github.com/Deepanshu954/LeetCode/tree/main/1456-maximum-number-of-vowels-in-a-substring-of-given-length/) | Medium |
 | [1876-substrings-of-size-three-with-distinct-characters](https://github.com/Deepanshu954/LeetCode/tree/main/1876-substrings-of-size-three-with-distinct-characters/) | Easy |
+| [1927-sum-game](https://github.com/Deepanshu954/LeetCode/tree/main/1927-sum-game/) | Medium |
 | [3014-minimum-number-of-pushes-to-type-word-i](https://github.com/Deepanshu954/LeetCode/tree/main/3014-minimum-number-of-pushes-to-type-word-i/) | Easy |
 | [3016-minimum-number-of-pushes-to-type-word-ii](https://github.com/Deepanshu954/LeetCode/tree/main/3016-minimum-number-of-pushes-to-type-word-ii/) | Medium |
 | [3090-maximum-length-substring-with-two-occurrences](https://github.com/Deepanshu954/LeetCode/tree/main/3090-maximum-length-substring-with-two-occurrences/) | Easy |
@@ -811,6 +814,7 @@ This repository contains my solutions to LeetCode problems. The history is fully
 | [1406-stone-game-iii](https://github.com/Deepanshu954/LeetCode/tree/main/1406-stone-game-iii/) | Hard |
 | [1510-stone-game-iv](https://github.com/Deepanshu954/LeetCode/tree/main/1510-stone-game-iv/) | Hard |
 | [1563-stone-game-v](https://github.com/Deepanshu954/LeetCode/tree/main/1563-stone-game-v/) | Hard |
+| [1927-sum-game](https://github.com/Deepanshu954/LeetCode/tree/main/1927-sum-game/) | Medium |
 | [2029-stone-game-ix](https://github.com/Deepanshu954/LeetCode/tree/main/2029-stone-game-ix/) | Medium |
 ## Depth-First Search
 | Problem Name | Difficulty |
