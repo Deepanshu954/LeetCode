@@ -540,6 +540,7 @@ This repository contains my solutions to LeetCode problems. The history is fully
 | [1464-maximum-product-of-two-elements-in-an-array](https://github.com/Deepanshu954/LeetCode/tree/main/1464-maximum-product-of-two-elements-in-an-array/) | Easy |
 | [1539-kth-missing-positive-number](https://github.com/Deepanshu954/LeetCode/tree/main/1539-kth-missing-positive-number/) | Easy |
 | [1563-stone-game-v](https://github.com/Deepanshu954/LeetCode/tree/main/1563-stone-game-v/) | Hard |
+| [1872-stone-game-viii](https://github.com/Deepanshu954/LeetCode/tree/main/1872-stone-game-viii/) | Hard |
 | [1979-find-greatest-common-divisor-of-array](https://github.com/Deepanshu954/LeetCode/tree/main/1979-find-greatest-common-divisor-of-array/) | Easy |
 | [2029-stone-game-ix](https://github.com/Deepanshu954/LeetCode/tree/main/2029-stone-game-ix/) | Medium |
 | [2035-partition-array-into-two-arrays-to-minimize-sum-difference](https://github.com/Deepanshu954/LeetCode/tree/main/2035-partition-array-into-two-arrays-to-minimize-sum-difference/) | Hard |
@@ -571,6 +572,7 @@ This repository contains my solutions to LeetCode problems. The history is fully
 | [1510-stone-game-iv](https://github.com/Deepanshu954/LeetCode/tree/main/1510-stone-game-iv/) | Hard |
 | [1563-stone-game-v](https://github.com/Deepanshu954/LeetCode/tree/main/1563-stone-game-v/) | Hard |
 | [1802-maximum-value-at-a-given-index-in-a-bounded-array](https://github.com/Deepanshu954/LeetCode/tree/main/1802-maximum-value-at-a-given-index-in-a-bounded-array/) | Medium |
+| [1872-stone-game-viii](https://github.com/Deepanshu954/LeetCode/tree/main/1872-stone-game-viii/) | Hard |
 | [1927-sum-game](https://github.com/Deepanshu954/LeetCode/tree/main/1927-sum-game/) | Medium |
 | [1979-find-greatest-common-divisor-of-array](https://github.com/Deepanshu954/LeetCode/tree/main/1979-find-greatest-common-divisor-of-array/) | Easy |
 | [2029-stone-game-ix](https://github.com/Deepanshu954/LeetCode/tree/main/2029-stone-game-ix/) | Medium |
@@ -666,6 +668,7 @@ This repository contains my solutions to LeetCode problems. The history is fully
 | ------- | ------- |
 | [0410-split-array-largest-sum](https://github.com/Deepanshu954/LeetCode/tree/main/0410-split-array-largest-sum/) | Hard |
 | [0713-subarray-product-less-than-k](https://github.com/Deepanshu954/LeetCode/tree/main/0713-subarray-product-less-than-k/) | Medium |
+| [1872-stone-game-viii](https://github.com/Deepanshu954/LeetCode/tree/main/1872-stone-game-viii/) | Hard |
 | [3312-sorted-gcd-pair-queries](https://github.com/Deepanshu954/LeetCode/tree/main/3312-sorted-gcd-pair-queries/) | Hard |
 ## Heap (Priority Queue)
 | Problem Name | Difficulty |
@@ -704,6 +707,7 @@ This repository contains my solutions to LeetCode problems. The history is fully
 | [1406-stone-game-iii](https://github.com/Deepanshu954/LeetCode/tree/main/1406-stone-game-iii/) | Hard |
 | [1510-stone-game-iv](https://github.com/Deepanshu954/LeetCode/tree/main/1510-stone-game-iv/) | Hard |
 | [1563-stone-game-v](https://github.com/Deepanshu954/LeetCode/tree/main/1563-stone-game-v/) | Hard |
+| [1872-stone-game-viii](https://github.com/Deepanshu954/LeetCode/tree/main/1872-stone-game-viii/) | Hard |
 | [2035-partition-array-into-two-arrays-to-minimize-sum-difference](https://github.com/Deepanshu954/LeetCode/tree/main/2035-partition-array-into-two-arrays-to-minimize-sum-difference/) | Hard |
 | [3302-find-the-lexicographically-smallest-valid-sequence](https://github.com/Deepanshu954/LeetCode/tree/main/3302-find-the-lexicographically-smallest-valid-sequence/) | Medium |
 ## String
@@ -814,6 +818,7 @@ This repository contains my solutions to LeetCode problems. The history is fully
 | [1406-stone-game-iii](https://github.com/Deepanshu954/LeetCode/tree/main/1406-stone-game-iii/) | Hard |
 | [1510-stone-game-iv](https://github.com/Deepanshu954/LeetCode/tree/main/1510-stone-game-iv/) | Hard |
 | [1563-stone-game-v](https://github.com/Deepanshu954/LeetCode/tree/main/1563-stone-game-v/) | Hard |
+| [1872-stone-game-viii](https://github.com/Deepanshu954/LeetCode/tree/main/1872-stone-game-viii/) | Hard |
 | [1927-sum-game](https://github.com/Deepanshu954/LeetCode/tree/main/1927-sum-game/) | Medium |
 | [2029-stone-game-ix](https://github.com/Deepanshu954/LeetCode/tree/main/2029-stone-game-ix/) | Medium |
 ## Depth-First Search
@@ -852,6 +857,7 @@ This repository contains my solutions to LeetCode problems. The history is fully
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [1510-stone-game-iv](https://github.com/Deepanshu954/LeetCode/tree/main/1510-stone-game-iv/) | Hard |
+| [1872-stone-game-viii](https://github.com/Deepanshu954/LeetCode/tree/main/1872-stone-game-viii/) | Hard |
 | [2029-stone-game-ix](https://github.com/Deepanshu954/LeetCode/tree/main/2029-stone-game-ix/) | Medium |
 ## Nim Game
 | Problem Name | Difficulty |
@@ -866,6 +872,7 @@ This repository contains my solutions to LeetCode problems. The history is fully
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [1510-stone-game-iv](https://github.com/Deepanshu954/LeetCode/tree/main/1510-stone-game-iv/) | Hard |
+| [1872-stone-game-viii](https://github.com/Deepanshu954/LeetCode/tree/main/1872-stone-game-viii/) | Hard |
 | [2029-stone-game-ix](https://github.com/Deepanshu954/LeetCode/tree/main/2029-stone-game-ix/) | Medium |
 ## Divide and Conquer
 | Problem Name | Difficulty |
