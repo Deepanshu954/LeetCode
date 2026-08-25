@@ -1,31 +1,37 @@
-# 3718. Smallest Missing Multiple of K
+<h2><a href="https://leetcode.com/problems/smallest-missing-multiple-of-k">3718. Smallest Missing Multiple of K</a></h2><h3>Easy</h3><hr><p>Given an integer array <code>nums</code> and an integer <code>k</code>, return the <strong>smallest positive multiple</strong> of <code>k</code> that is <strong>missing</strong> from <code>nums</code>.</p>
 
-Given an integer array `nums` and an integer `k`, return the **smallest positive multiple** of `k` that is **missing** from `nums`.
+<p>A <strong>multiple</strong> of <code>k</code> is any positive integer divisible by <code>k</code>.</p>
 
-A **multiple** of `k` is any positive integer divisible by `k`.
+<p>&nbsp;</p>
+<p><strong class="example">Example 1:</strong></p>
 
-**Example 1:**
+<div class="example-block">
+<p><strong>Input:</strong> <span class="example-io">nums = [8,2,3,4,6], k = 2</span></p>
 
-**Input:** nums = [8,2,3,4,6], k = 2
+<p><strong>Output:</strong> <span class="example-io">10</span></p>
 
-**Output:** 10
+<p><strong>Explanation:</strong></p>
 
-**Explanation:**
+<p>The multiples of <code>k = 2</code> are 2, 4, 6, 8, 10, 12... and the smallest multiple missing from <code>nums</code> is 10.</p>
+</div>
 
-The multiples of `k = 2` are 2, 4, 6, 8, 10, 12... and the smallest multiple missing from `nums` is 10.
+<p><strong class="example">Example 2:</strong></p>
 
-**Example 2:**
+<div class="example-block">
+<p><strong>Input:</strong> <span class="example-io">nums = [1,4,7,10,15], k = 5</span></p>
 
-**Input:** nums = [1,4,7,10,15], k = 5
+<p><strong>Output:</strong> <span class="example-io">5</span></p>
 
-**Output:** 5
+<p><strong>Explanation:</strong></p>
 
-**Explanation:**
+<p>The multiples of <code>k = 5</code> are 5, 10, 15, 20... and the smallest multiple missing from <code>nums</code> is 5.</p>
+</div>
 
-The multiples of `k = 5` are 5, 10, 15, 20... and the smallest multiple missing from `nums` is 5.
+<p>&nbsp;</p>
+<p><strong>Constraints:</strong></p>
 
-**Constraints:**
-
-* `1 <= nums.length <= 100`
-* `1 <= nums[i] <= 100`
-* `1 <= k <= 100`
+<ul>
+	<li><code>1 &lt;= nums.length &lt;= 100</code></li>
+	<li><code>1 &lt;= nums[i] &lt;= 100</code></li>
+	<li><code>1 &lt;= k &lt;= 100</code></li>
+</ul>
