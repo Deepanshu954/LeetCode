@@ -883,4 +883,8 @@ This repository contains my solutions to LeetCode problems. The history is fully
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0004-median-of-two-sorted-arrays](https://github.com/Deepanshu954/LeetCode/tree/main/0004-median-of-two-sorted-arrays/) | Hard |
+## Timsort
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0881-boats-to-save-people](https://github.com/Deepanshu954/LeetCode/tree/main/0881-boats-to-save-people/) | Medium |
 <!---LeetCode Topics End-->
