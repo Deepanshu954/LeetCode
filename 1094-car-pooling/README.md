@@ -1,29 +1,31 @@
-# 1094. Car Pooling
+<h2><a href="https://leetcode.com/problems/car-pooling">1094. Car Pooling</a></h2><h3>Medium</h3><hr><p>There is a car with <code>capacity</code> empty seats. The vehicle only drives east (i.e., it cannot turn around and drive west).</p>
 
-There is a car with `capacity` empty seats. The vehicle only drives east (i.e., it cannot turn around and drive west).
+<p>You are given the integer <code>capacity</code> and an array <code>trips</code> where <code>trips[i] = [numPassengers<sub>i</sub>, from<sub>i</sub>, to<sub>i</sub>]</code> indicates that the <code>i<sup>th</sup></code> trip has <code>numPassengers<sub>i</sub></code> passengers and the locations to pick them up and drop them off are <code>from<sub>i</sub></code> and <code>to<sub>i</sub></code> respectively. The locations are given as the number of kilometers due east from the car&#39;s initial location.</p>
 
-You are given the integer `capacity` and an array `trips` where `trips[i] = [numPassengersi, fromi, toi]` indicates that the `ith` trip has `numPassengersi` passengers and the locations to pick them up and drop them off are `fromi` and `toi` respectively. The locations are given as the number of kilometers due east from the car's initial location.
+<p>Return <code>true</code><em> if it is possible to pick up and drop off all passengers for all the given trips, or </em><code>false</code><em> otherwise</em>.</p>
 
-Return `true` *if it is possible to pick up and drop off all passengers for all the given trips, or* `false` *otherwise*.
+<p>&nbsp;</p>
+<p><strong class="example">Example 1:</strong></p>
 
-**Example 1:**
+<pre>
+<strong>Input:</strong> trips = [[2,1,5],[3,3,7]], capacity = 4
+<strong>Output:</strong> false
+</pre>
 
-```
-Input: trips = [[2,1,5],[3,3,7]], capacity = 4
-Output: false
-```
+<p><strong class="example">Example 2:</strong></p>
 
-**Example 2:**
+<pre>
+<strong>Input:</strong> trips = [[2,1,5],[3,3,7]], capacity = 5
+<strong>Output:</strong> true
+</pre>
 
-```
-Input: trips = [[2,1,5],[3,3,7]], capacity = 5
-Output: true
-```
+<p>&nbsp;</p>
+<p><strong>Constraints:</strong></p>
 
-**Constraints:**
-
-* `1 <= trips.length <= 1000`
-* `trips[i].length == 3`
-* `1 <= numPassengersi <= 100`
-* `0 <= fromi < toi <= 1000`
-* `1 <= capacity <= 105`
+<ul>
+	<li><code>1 &lt;= trips.length &lt;= 1000</code></li>
+	<li><code>trips[i].length == 3</code></li>
+	<li><code>1 &lt;= numPassengers<sub>i</sub> &lt;= 100</code></li>
+	<li><code>0 &lt;= from<sub>i</sub> &lt; to<sub>i</sub> &lt;= 1000</code></li>
+	<li><code>1 &lt;= capacity &lt;= 10<sup>5</sup></code></li>
+</ul>
