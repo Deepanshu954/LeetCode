@@ -519,6 +519,7 @@ This repository contains my solutions to LeetCode problems. The history is fully
 | [0001-two-sum](https://github.com/Deepanshu954/LeetCode/tree/main/0001-two-sum/) | Easy |
 | [0004-median-of-two-sorted-arrays](https://github.com/Deepanshu954/LeetCode/tree/main/0004-median-of-two-sorted-arrays/) | Hard |
 | [0055-jump-game](https://github.com/Deepanshu954/LeetCode/tree/main/0055-jump-game/) | Medium |
+| [0056-merge-intervals](https://github.com/Deepanshu954/LeetCode/tree/main/0056-merge-intervals/) | Medium |
 | [0081-search-in-rotated-sorted-array-ii](https://github.com/Deepanshu954/LeetCode/tree/main/0081-search-in-rotated-sorted-array-ii/) | Medium |
 | [0154-find-minimum-in-rotated-sorted-array-ii](https://github.com/Deepanshu954/LeetCode/tree/main/0154-find-minimum-in-rotated-sorted-array-ii/) | Hard |
 | [0239-sliding-window-maximum](https://github.com/Deepanshu954/LeetCode/tree/main/0239-sliding-window-maximum/) | Hard |
@@ -618,6 +619,7 @@ This repository contains my solutions to LeetCode problems. The history is fully
 ## Sorting
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0056-merge-intervals](https://github.com/Deepanshu954/LeetCode/tree/main/0056-merge-intervals/) | Medium |
 | [0628-maximum-product-of-three-numbers](https://github.com/Deepanshu954/LeetCode/tree/main/0628-maximum-product-of-three-numbers/) | Easy |
 | [0881-boats-to-save-people](https://github.com/Deepanshu954/LeetCode/tree/main/0881-boats-to-save-people/) | Medium |
 | [0905-sort-array-by-parity](https://github.com/Deepanshu954/LeetCode/tree/main/0905-sort-array-by-parity/) | Easy |
@@ -907,4 +909,8 @@ This repository contains my solutions to LeetCode problems. The history is fully
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0881-boats-to-save-people](https://github.com/Deepanshu954/LeetCode/tree/main/0881-boats-to-save-people/) | Medium |
+## Quicksort
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0056-merge-intervals](https://github.com/Deepanshu954/LeetCode/tree/main/0056-merge-intervals/) | Medium |
 <!---LeetCode Topics End-->
