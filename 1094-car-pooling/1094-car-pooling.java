@@ -1,23 +1,17 @@
 class Solution {
-    public boolean carPooling(int[][] trips, int capacity) {
-
-        int[] diff = new int[1001];
-
+    public boolean carPooling(int[][] trips, int cap) {
+        List<int[]> events = new ArrayList<>();
         for(int[] trip : trips) {
-            int people = trip[0];
-            int from = trip[1];
-            int to = trip[2];
-
-            diff[from] += people;
-            diff[to] -= people;
+            events.add(new int[]{trip[1],   trip[0]});
+            events.add(new int[]{trip[2], - trip[0]});
         }
 
-        int passCount = 0;
+        events.sort((a,b) -> (a[0] == b[0]) ? a[1] - b[1] : a[0] - b[0] );
 
-        for(int pass : diff) {
-            passCount += pass;
-
-            if(passCount > capacity) return false;
+        int active = 0;
+        for(int[] event : events) {
+            active += event[1];
+            if(active > cap) return false;
         }
 
         return true;
