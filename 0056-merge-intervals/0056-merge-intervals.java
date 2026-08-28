@@ -1,23 +1,31 @@
 class Solution {
-    public int[][] merge(int[][] nums) {
-        if (nums.length == 0) return new int[0][];
+    public int[][] merge(int[][] intervals) {
+        List<int[]> events = new ArrayList<>();
+        for(int[] interval : intervals) {
+            events.add(new int[] {interval[0], 1});
+            events.add(new int[] {interval[1], -1});
+        }
 
-        // Sort by start time
-        Arrays.sort(nums, (a, b) -> a[0] - b[0]);
+        events.sort((a, b) ->
+            (a[0] == b[0]) ? b[1] - a[1] : a[0] - b[0]
+        );
 
-        int idx = 0;
-        for (int[] curr : nums) {
+        ArrayList<int[]> list = new ArrayList<>();
 
-            // Overlap check: last end >= current start
-            if (nums[idx][1] >= curr[0]) {
-                nums[idx][1] =
-                        Math.max(nums[idx][1], curr[1]);
-            } else {
-                idx++;
-                nums[idx] = curr;
+        int s = -1;
+        int active = 0;
+
+        for(int[] event : events) {
+            active += event[1];
+
+            if(active > 0 && s == -1) s = event[0];
+
+            if(active == 0) {
+                list.add(new int[]{s, event[0]});
+                s = -1;
             }
         }
 
-        return Arrays.copyOfRange(nums, 0, idx + 1);
+        return list.toArray(new int[list.size()][]);
     }
 }
