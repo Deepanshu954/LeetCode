@@ -497,6 +497,7 @@ This repository contains my solutions to LeetCode problems. The history is fully
 | [0278-first-bad-version](https://github.com/Deepanshu954/LeetCode/tree/main/0278-first-bad-version/) | Easy |
 | [0410-split-array-largest-sum](https://github.com/Deepanshu954/LeetCode/tree/main/0410-split-array-largest-sum/) | Hard |
 | [0713-subarray-product-less-than-k](https://github.com/Deepanshu954/LeetCode/tree/main/0713-subarray-product-less-than-k/) | Medium |
+| [0732-my-calendar-iii](https://github.com/Deepanshu954/LeetCode/tree/main/0732-my-calendar-iii/) | Hard |
 | [0852-peak-index-in-a-mountain-array](https://github.com/Deepanshu954/LeetCode/tree/main/0852-peak-index-in-a-mountain-array/) | Medium |
 | [1011-capacity-to-ship-packages-within-d-days](https://github.com/Deepanshu954/LeetCode/tree/main/1011-capacity-to-ship-packages-within-d-days/) | Medium |
 | [1337-the-k-weakest-rows-in-a-matrix](https://github.com/Deepanshu954/LeetCode/tree/main/1337-the-k-weakest-rows-in-a-matrix/) | Easy |
@@ -677,6 +678,7 @@ This repository contains my solutions to LeetCode problems. The history is fully
 | ------- | ------- |
 | [0410-split-array-largest-sum](https://github.com/Deepanshu954/LeetCode/tree/main/0410-split-array-largest-sum/) | Hard |
 | [0713-subarray-product-less-than-k](https://github.com/Deepanshu954/LeetCode/tree/main/0713-subarray-product-less-than-k/) | Medium |
+| [0732-my-calendar-iii](https://github.com/Deepanshu954/LeetCode/tree/main/0732-my-calendar-iii/) | Hard |
 | [1094-car-pooling](https://github.com/Deepanshu954/LeetCode/tree/main/1094-car-pooling/) | Medium |
 | [1872-stone-game-viii](https://github.com/Deepanshu954/LeetCode/tree/main/1872-stone-game-viii/) | Hard |
 | [3312-sorted-gcd-pair-queries](https://github.com/Deepanshu954/LeetCode/tree/main/3312-sorted-gcd-pair-queries/) | Hard |
@@ -779,6 +781,7 @@ This repository contains my solutions to LeetCode problems. The history is fully
 ## Ordered Set
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0732-my-calendar-iii](https://github.com/Deepanshu954/LeetCode/tree/main/0732-my-calendar-iii/) | Hard |
 | [1438-longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit](https://github.com/Deepanshu954/LeetCode/tree/main/1438-longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit/) | Medium |
 | [2035-partition-array-into-two-arrays-to-minimize-sum-difference](https://github.com/Deepanshu954/LeetCode/tree/main/2035-partition-array-into-two-arrays-to-minimize-sum-difference/) | Hard |
 ## Bitmask
@@ -795,6 +798,7 @@ This repository contains my solutions to LeetCode problems. The history is fully
 ## Segment Tree
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0732-my-calendar-iii](https://github.com/Deepanshu954/LeetCode/tree/main/0732-my-calendar-iii/) | Hard |
 | [3501-maximize-active-section-with-trade-ii](https://github.com/Deepanshu954/LeetCode/tree/main/3501-maximize-active-section-with-trade-ii/) | Hard |
 ## Backtracking
 | Problem Name | Difficulty |
@@ -861,6 +865,7 @@ This repository contains my solutions to LeetCode problems. The history is fully
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0155-min-stack](https://github.com/Deepanshu954/LeetCode/tree/main/0155-min-stack/) | Medium |
+| [0732-my-calendar-iii](https://github.com/Deepanshu954/LeetCode/tree/main/0732-my-calendar-iii/) | Hard |
 ## Tree
 | Problem Name | Difficulty |
 | ------- | ------- |
