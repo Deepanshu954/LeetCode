@@ -12,26 +12,31 @@ class Solution {
         }
 
 
-        // now we have location of min ele and max ele
+        // // now we have location of min ele and max ele
 
-        int i = Math.min(minIdx, maxIdx);
-        int j = Math.max(minIdx, maxIdx);
+        // int i = Math.min(minIdx, maxIdx);
+        // int j = Math.max(minIdx, maxIdx);
 
-        // cover all posibilites
-        int front = j + 1;
-        int back = n - i;
-        int both = (i+1) + (n - j);
+        // // cover all posibilites
+        // int front = j + 1;
+        // int back = n - i;
+        // int both = (i+1) + (n - j);
 
-        return Math.min(Math.min(front, back), both);
+        // return Math.min(Math.min(front, back), both);
 
-        // int res = 0;
 
-        // res = Math.min( 
-        //     Math.min( Math.max(minIdx, maxIdx), Math.max(n - minIdx, n - maxIdx) ),
-        //     Math.min( (minIdx + (n- maxIdx)), (maxIdx + (n-minIdx)) )
-        // );
+        int res = Math.min(
+            Math.min( 
+                Math.max(minIdx, maxIdx) + 1, 
+                Math.max(n - minIdx, n - maxIdx) 
+            ),
+            Math.min( 
+                ( (minIdx + 1) + (n - maxIdx) ) , 
+                ( (maxIdx + 1) + (n - minIdx) ) 
+            )
+        );
 
-        // return res+1;
+        return res;
     }
 }
 
