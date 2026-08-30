@@ -549,6 +549,7 @@ This repository contains my solutions to LeetCode problems. The history is fully
 | [2029-stone-game-ix](https://github.com/Deepanshu954/LeetCode/tree/main/2029-stone-game-ix/) | Medium |
 | [2035-partition-array-into-two-arrays-to-minimize-sum-difference](https://github.com/Deepanshu954/LeetCode/tree/main/2035-partition-array-into-two-arrays-to-minimize-sum-difference/) | Hard |
 | [2040-kth-smallest-product-of-two-sorted-arrays](https://github.com/Deepanshu954/LeetCode/tree/main/2040-kth-smallest-product-of-two-sorted-arrays/) | Hard |
+| [2091-removing-minimum-and-maximum-from-array](https://github.com/Deepanshu954/LeetCode/tree/main/2091-removing-minimum-and-maximum-from-array/) | Medium |
 | [2141-maximum-running-time-of-n-computers](https://github.com/Deepanshu954/LeetCode/tree/main/2141-maximum-running-time-of-n-computers/) | Hard |
 | [2444-count-subarrays-with-fixed-bounds](https://github.com/Deepanshu954/LeetCode/tree/main/2444-count-subarrays-with-fixed-bounds/) | Hard |
 | [2824-count-pairs-whose-sum-is-less-than-target](https://github.com/Deepanshu954/LeetCode/tree/main/2824-count-pairs-whose-sum-is-less-than-target/) | Easy |
@@ -710,6 +711,7 @@ This repository contains my solutions to LeetCode problems. The history is fully
 | [1802-maximum-value-at-a-given-index-in-a-bounded-array](https://github.com/Deepanshu954/LeetCode/tree/main/1802-maximum-value-at-a-given-index-in-a-bounded-array/) | Medium |
 | [1927-sum-game](https://github.com/Deepanshu954/LeetCode/tree/main/1927-sum-game/) | Medium |
 | [2029-stone-game-ix](https://github.com/Deepanshu954/LeetCode/tree/main/2029-stone-game-ix/) | Medium |
+| [2091-removing-minimum-and-maximum-from-array](https://github.com/Deepanshu954/LeetCode/tree/main/2091-removing-minimum-and-maximum-from-array/) | Medium |
 | [2141-maximum-running-time-of-n-computers](https://github.com/Deepanshu954/LeetCode/tree/main/2141-maximum-running-time-of-n-computers/) | Hard |
 | [3014-minimum-number-of-pushes-to-type-word-i](https://github.com/Deepanshu954/LeetCode/tree/main/3014-minimum-number-of-pushes-to-type-word-i/) | Easy |
 | [3016-minimum-number-of-pushes-to-type-word-ii](https://github.com/Deepanshu954/LeetCode/tree/main/3016-minimum-number-of-pushes-to-type-word-ii/) | Medium |
