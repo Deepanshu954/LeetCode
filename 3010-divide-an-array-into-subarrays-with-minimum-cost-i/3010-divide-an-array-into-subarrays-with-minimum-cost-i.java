@@ -2,8 +2,8 @@ class Solution {
     public int minimumCost(int[] nums) {
         int firstCost = nums[0];
         
-        int min1 = Integer.MAX_VALUE;
-        int min2 = Integer.MAX_VALUE;
+        int min1 = 50;
+        int min2 = 50;
         
         for (int i = 1; i < nums.length; i++) {
             if (nums[i] < min1) {
