@@ -1,31 +1,25 @@
 class Solution {
-    List<List<Integer>> res;
     public List<List<Integer>> levelOrder(TreeNode root) {
-        res = new ArrayList<>();
-        if(root == null) return res;
+        List<List<Integer>> res = new ArrayList<>();
+        if (root == null) return res;
 
-        helper(root);
-        return res;
-    }
-
-    private void helper(TreeNode root) {
         Deque<TreeNode> dq = new ArrayDeque<>();
-        dq.addLast(root);
+        dq.offerLast(root);
 
-        while(!dq.isEmpty()) {
-            List<Integer> list = new ArrayList<>();
+        while (!dq.isEmpty()) {
             int size = dq.size();
+            List<Integer> list = new ArrayList<>();
 
+            for (int i = 0; i < size; i++) {
+                TreeNode node = dq.pollFirst();
+                list.add(node.val);
 
-            for(int i = 0; i < size; i++) {
-                TreeNode curr = dq.removeFirst();
-                list.add(curr.val);
-
-                if(curr.left != null) dq.addLast(curr.left);
-                if(curr.right != null) dq.addLast(curr.right);
+                if (node.left != null) dq.offerLast(node.left);
+                if (node.right != null) dq.offerLast(node.right);
             }
-
             res.add(list);
         }
+
+        return res;
     }
 }
