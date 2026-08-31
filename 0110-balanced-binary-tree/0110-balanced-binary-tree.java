@@ -8,13 +8,13 @@ class Solution {
         if(root == null) return 0;
 
         int l = check(root.left);
-        if(l == -1) return -1;
+        if(l == -1) return - 1;
 
         int r = check(root.right);
         if(r == -1) return -1;
 
         if(Math.abs(l - r) > 1) return -1;
 
-        return 1 + Math.max(l, r);
+        return 1 + Math.max(l,r);
     }
 }
