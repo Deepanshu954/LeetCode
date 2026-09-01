@@ -816,6 +816,7 @@ This repository contains my solutions to LeetCode problems. The history is fully
 ## Backtracking
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0113-path-sum-ii](https://github.com/Deepanshu954/LeetCode/tree/main/0113-path-sum-ii/) | Medium |
 | [0784-letter-case-permutation](https://github.com/Deepanshu954/LeetCode/tree/main/0784-letter-case-permutation/) | Medium |
 | [1079-letter-tile-possibilities](https://github.com/Deepanshu954/LeetCode/tree/main/1079-letter-tile-possibilities/) | Medium |
 | [3348-smallest-divisible-digit-product-ii](https://github.com/Deepanshu954/LeetCode/tree/main/3348-smallest-divisible-digit-product-ii/) | Hard |
@@ -862,6 +863,7 @@ This repository contains my solutions to LeetCode problems. The history is fully
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0110-balanced-binary-tree](https://github.com/Deepanshu954/LeetCode/tree/main/0110-balanced-binary-tree/) | Easy |
+| [0113-path-sum-ii](https://github.com/Deepanshu954/LeetCode/tree/main/0113-path-sum-ii/) | Medium |
 | [3310-remove-methods-from-project](https://github.com/Deepanshu954/LeetCode/tree/main/3310-remove-methods-from-project/) | Medium |
 ## Breadth-First Search
 | Problem Name | Difficulty |
@@ -888,6 +890,7 @@ This repository contains my solutions to LeetCode problems. The history is fully
 | [0096-unique-binary-search-trees](https://github.com/Deepanshu954/LeetCode/tree/main/0096-unique-binary-search-trees/) | Medium |
 | [0102-binary-tree-level-order-traversal](https://github.com/Deepanshu954/LeetCode/tree/main/0102-binary-tree-level-order-traversal/) | Medium |
 | [0110-balanced-binary-tree](https://github.com/Deepanshu954/LeetCode/tree/main/0110-balanced-binary-tree/) | Easy |
+| [0113-path-sum-ii](https://github.com/Deepanshu954/LeetCode/tree/main/0113-path-sum-ii/) | Medium |
 ## Binary Search Tree
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -898,6 +901,7 @@ This repository contains my solutions to LeetCode problems. The history is fully
 | [0096-unique-binary-search-trees](https://github.com/Deepanshu954/LeetCode/tree/main/0096-unique-binary-search-trees/) | Medium |
 | [0102-binary-tree-level-order-traversal](https://github.com/Deepanshu954/LeetCode/tree/main/0102-binary-tree-level-order-traversal/) | Medium |
 | [0110-balanced-binary-tree](https://github.com/Deepanshu954/LeetCode/tree/main/0110-balanced-binary-tree/) | Easy |
+| [0113-path-sum-ii](https://github.com/Deepanshu954/LeetCode/tree/main/0113-path-sum-ii/) | Medium |
 ## Minimax
 | Problem Name | Difficulty |
 | ------- | ------- |
