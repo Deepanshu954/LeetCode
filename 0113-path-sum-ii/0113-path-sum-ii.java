@@ -7,17 +7,15 @@ class Solution {
         return res;
     }
 
-    private void helper(TreeNode root, int sum, List<Integer> curr) {
+    public void helper(TreeNode root, int sum, List<Integer> curr) {
         if(root == null) return;
 
         curr.add(root.val);
         if(root.left == null && root.right == null) {
-            if(root.val == sum) {
-                res.add(new ArrayList<>(curr));
-            }
+            if(root.val == sum) res.add(new ArrayList<>(curr));
         }
 
-        helper(root.left,  sum - root.val, curr);
+        helper(root.left, sum - root.val, curr);
         helper(root.right, sum - root.val, curr);
         curr.removeLast();
     }
