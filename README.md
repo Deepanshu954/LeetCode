@@ -597,6 +597,7 @@ This repository contains my solutions to LeetCode problems. The history is fully
 | [3658-gcd-of-odd-and-even-sums](https://github.com/Deepanshu954/LeetCode/tree/main/3658-gcd-of-odd-and-even-sums/) | Easy |
 | [3867-sum-of-gcd-of-formed-pairs](https://github.com/Deepanshu954/LeetCode/tree/main/3867-sum-of-gcd-of-formed-pairs/) | Medium |
 | [3870-count-commas-in-range](https://github.com/Deepanshu954/LeetCode/tree/main/3870-count-commas-in-range/) | Easy |
+| [3871-count-commas-in-range-ii](https://github.com/Deepanshu954/LeetCode/tree/main/3871-count-commas-in-range-ii/) | Medium |
 | [3875-construct-uniform-parity-array-i](https://github.com/Deepanshu954/LeetCode/tree/main/3875-construct-uniform-parity-array-i/) | Easy |
 ## Number Theory
 | Problem Name | Difficulty |
