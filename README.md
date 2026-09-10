@@ -872,6 +872,7 @@ This repository contains my solutions to LeetCode problems. The history is fully
 | ------- | ------- |
 | [0110-balanced-binary-tree](https://github.com/Deepanshu954/LeetCode/tree/main/0110-balanced-binary-tree/) | Easy |
 | [0113-path-sum-ii](https://github.com/Deepanshu954/LeetCode/tree/main/0113-path-sum-ii/) | Medium |
+| [2265-count-nodes-equal-to-average-of-subtree](https://github.com/Deepanshu954/LeetCode/tree/main/2265-count-nodes-equal-to-average-of-subtree/) | Medium |
 | [3310-remove-methods-from-project](https://github.com/Deepanshu954/LeetCode/tree/main/3310-remove-methods-from-project/) | Medium |
 ## Breadth-First Search
 | Problem Name | Difficulty |
@@ -899,6 +900,7 @@ This repository contains my solutions to LeetCode problems. The history is fully
 | [0102-binary-tree-level-order-traversal](https://github.com/Deepanshu954/LeetCode/tree/main/0102-binary-tree-level-order-traversal/) | Medium |
 | [0110-balanced-binary-tree](https://github.com/Deepanshu954/LeetCode/tree/main/0110-balanced-binary-tree/) | Easy |
 | [0113-path-sum-ii](https://github.com/Deepanshu954/LeetCode/tree/main/0113-path-sum-ii/) | Medium |
+| [2265-count-nodes-equal-to-average-of-subtree](https://github.com/Deepanshu954/LeetCode/tree/main/2265-count-nodes-equal-to-average-of-subtree/) | Medium |
 ## Binary Search Tree
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -910,6 +912,7 @@ This repository contains my solutions to LeetCode problems. The history is fully
 | [0102-binary-tree-level-order-traversal](https://github.com/Deepanshu954/LeetCode/tree/main/0102-binary-tree-level-order-traversal/) | Medium |
 | [0110-balanced-binary-tree](https://github.com/Deepanshu954/LeetCode/tree/main/0110-balanced-binary-tree/) | Easy |
 | [0113-path-sum-ii](https://github.com/Deepanshu954/LeetCode/tree/main/0113-path-sum-ii/) | Medium |
+| [2265-count-nodes-equal-to-average-of-subtree](https://github.com/Deepanshu954/LeetCode/tree/main/2265-count-nodes-equal-to-average-of-subtree/) | Medium |
 ## Minimax
 | Problem Name | Difficulty |
 | ------- | ------- |
