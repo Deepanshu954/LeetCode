@@ -530,6 +530,7 @@ This repository contains my solutions to LeetCode problems. The history is fully
 | [0628-maximum-product-of-three-numbers](https://github.com/Deepanshu954/LeetCode/tree/main/0628-maximum-product-of-three-numbers/) | Easy |
 | [0674-longest-continuous-increasing-subsequence](https://github.com/Deepanshu954/LeetCode/tree/main/0674-longest-continuous-increasing-subsequence/) | Easy |
 | [0713-subarray-product-less-than-k](https://github.com/Deepanshu954/LeetCode/tree/main/0713-subarray-product-less-than-k/) | Medium |
+| [0835-image-overlap](https://github.com/Deepanshu954/LeetCode/tree/main/0835-image-overlap/) | Medium |
 | [0852-peak-index-in-a-mountain-array](https://github.com/Deepanshu954/LeetCode/tree/main/0852-peak-index-in-a-mountain-array/) | Medium |
 | [0877-stone-game](https://github.com/Deepanshu954/LeetCode/tree/main/0877-stone-game/) | Medium |
 | [0881-boats-to-save-people](https://github.com/Deepanshu954/LeetCode/tree/main/0881-boats-to-save-people/) | Medium |
@@ -712,6 +713,7 @@ This repository contains my solutions to LeetCode problems. The history is fully
 ## Matrix
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0835-image-overlap](https://github.com/Deepanshu954/LeetCode/tree/main/0835-image-overlap/) | Medium |
 | [1260-shift-2d-grid](https://github.com/Deepanshu954/LeetCode/tree/main/1260-shift-2d-grid/) | Easy |
 | [1337-the-k-weakest-rows-in-a-matrix](https://github.com/Deepanshu954/LeetCode/tree/main/1337-the-k-weakest-rows-in-a-matrix/) | Easy |
 | [3568-minimum-moves-to-clean-the-classroom](https://github.com/Deepanshu954/LeetCode/tree/main/3568-minimum-moves-to-clean-the-classroom/) | Medium |
