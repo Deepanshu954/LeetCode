@@ -1,17 +1,22 @@
 class Solution {
-    private List<Integer> res;
     public List<Integer> preorderTraversal(TreeNode root) {
-        res = new ArrayList<>();
-
-        helper(root);
+        List<Integer> res = new ArrayList<>();
+        helper(root, res);
         return res;
     }
 
-    private void helper(TreeNode root) {
+    private void helper(TreeNode root, List<Integer> res) {
         if(root == null) return;
 
-        res.add(root.val);
-        helper(root.left);
-        helper(root.right);
+        Deque<TreeNode> s = new ArrayDeque<>();
+        s.push(root);
+
+        while(!s.isEmpty()) {
+            TreeNode node = s.pop();
+            res.add(node.val);
+
+            if(node.right != null) s.push(node.right);
+            if(node.left != null) s.push(node.left);
+        }
     }
 }
