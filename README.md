@@ -501,6 +501,7 @@ This repository contains my solutions to LeetCode problems. The history is fully
 | [0852-peak-index-in-a-mountain-array](https://github.com/Deepanshu954/LeetCode/tree/main/0852-peak-index-in-a-mountain-array/) | Medium |
 | [1011-capacity-to-ship-packages-within-d-days](https://github.com/Deepanshu954/LeetCode/tree/main/1011-capacity-to-ship-packages-within-d-days/) | Medium |
 | [1337-the-k-weakest-rows-in-a-matrix](https://github.com/Deepanshu954/LeetCode/tree/main/1337-the-k-weakest-rows-in-a-matrix/) | Easy |
+| [1477-find-two-non-overlapping-sub-arrays-each-with-target-sum](https://github.com/Deepanshu954/LeetCode/tree/main/1477-find-two-non-overlapping-sub-arrays-each-with-target-sum/) | Medium |
 | [1539-kth-missing-positive-number](https://github.com/Deepanshu954/LeetCode/tree/main/1539-kth-missing-positive-number/) | Easy |
 | [1802-maximum-value-at-a-given-index-in-a-bounded-array](https://github.com/Deepanshu954/LeetCode/tree/main/1802-maximum-value-at-a-given-index-in-a-bounded-array/) | Medium |
 | [2035-partition-array-into-two-arrays-to-minimize-sum-difference](https://github.com/Deepanshu954/LeetCode/tree/main/2035-partition-array-into-two-arrays-to-minimize-sum-difference/) | Hard |
@@ -545,6 +546,7 @@ This repository contains my solutions to LeetCode problems. The history is fully
 | [1406-stone-game-iii](https://github.com/Deepanshu954/LeetCode/tree/main/1406-stone-game-iii/) | Hard |
 | [1438-longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit](https://github.com/Deepanshu954/LeetCode/tree/main/1438-longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit/) | Medium |
 | [1464-maximum-product-of-two-elements-in-an-array](https://github.com/Deepanshu954/LeetCode/tree/main/1464-maximum-product-of-two-elements-in-an-array/) | Easy |
+| [1477-find-two-non-overlapping-sub-arrays-each-with-target-sum](https://github.com/Deepanshu954/LeetCode/tree/main/1477-find-two-non-overlapping-sub-arrays-each-with-target-sum/) | Medium |
 | [1539-kth-missing-positive-number](https://github.com/Deepanshu954/LeetCode/tree/main/1539-kth-missing-positive-number/) | Easy |
 | [1563-stone-game-v](https://github.com/Deepanshu954/LeetCode/tree/main/1563-stone-game-v/) | Hard |
 | [1872-stone-game-viii](https://github.com/Deepanshu954/LeetCode/tree/main/1872-stone-game-viii/) | Hard |
@@ -671,6 +673,7 @@ This repository contains my solutions to LeetCode problems. The history is fully
 | [0001-two-sum](https://github.com/Deepanshu954/LeetCode/tree/main/0001-two-sum/) | Easy |
 | [0037-sudoku-solver](https://github.com/Deepanshu954/LeetCode/tree/main/0037-sudoku-solver/) | Hard |
 | [1079-letter-tile-possibilities](https://github.com/Deepanshu954/LeetCode/tree/main/1079-letter-tile-possibilities/) | Medium |
+| [1477-find-two-non-overlapping-sub-arrays-each-with-target-sum](https://github.com/Deepanshu954/LeetCode/tree/main/1477-find-two-non-overlapping-sub-arrays-each-with-target-sum/) | Medium |
 | [1876-substrings-of-size-three-with-distinct-characters](https://github.com/Deepanshu954/LeetCode/tree/main/1876-substrings-of-size-three-with-distinct-characters/) | Easy |
 | [2996-smallest-missing-integer-greater-than-sequential-prefix-sum](https://github.com/Deepanshu954/LeetCode/tree/main/2996-smallest-missing-integer-greater-than-sequential-prefix-sum/) | Easy |
 | [3016-minimum-number-of-pushes-to-type-word-ii](https://github.com/Deepanshu954/LeetCode/tree/main/3016-minimum-number-of-pushes-to-type-word-ii/) | Medium |
@@ -756,6 +759,7 @@ This repository contains my solutions to LeetCode problems. The history is fully
 | [0877-stone-game](https://github.com/Deepanshu954/LeetCode/tree/main/0877-stone-game/) | Medium |
 | [0940-distinct-subsequences-ii](https://github.com/Deepanshu954/LeetCode/tree/main/0940-distinct-subsequences-ii/) | Hard |
 | [1406-stone-game-iii](https://github.com/Deepanshu954/LeetCode/tree/main/1406-stone-game-iii/) | Hard |
+| [1477-find-two-non-overlapping-sub-arrays-each-with-target-sum](https://github.com/Deepanshu954/LeetCode/tree/main/1477-find-two-non-overlapping-sub-arrays-each-with-target-sum/) | Medium |
 | [1510-stone-game-iv](https://github.com/Deepanshu954/LeetCode/tree/main/1510-stone-game-iv/) | Hard |
 | [1563-stone-game-v](https://github.com/Deepanshu954/LeetCode/tree/main/1563-stone-game-v/) | Hard |
 | [1621-number-of-sets-of-k-non-overlapping-line-segments](https://github.com/Deepanshu954/LeetCode/tree/main/1621-number-of-sets-of-k-non-overlapping-line-segments/) | Medium |
@@ -808,6 +812,7 @@ This repository contains my solutions to LeetCode problems. The history is fully
 | [0713-subarray-product-less-than-k](https://github.com/Deepanshu954/LeetCode/tree/main/0713-subarray-product-less-than-k/) | Medium |
 | [1438-longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit](https://github.com/Deepanshu954/LeetCode/tree/main/1438-longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit/) | Medium |
 | [1456-maximum-number-of-vowels-in-a-substring-of-given-length](https://github.com/Deepanshu954/LeetCode/tree/main/1456-maximum-number-of-vowels-in-a-substring-of-given-length/) | Medium |
+| [1477-find-two-non-overlapping-sub-arrays-each-with-target-sum](https://github.com/Deepanshu954/LeetCode/tree/main/1477-find-two-non-overlapping-sub-arrays-each-with-target-sum/) | Medium |
 | [1876-substrings-of-size-three-with-distinct-characters](https://github.com/Deepanshu954/LeetCode/tree/main/1876-substrings-of-size-three-with-distinct-characters/) | Easy |
 | [2444-count-subarrays-with-fixed-bounds](https://github.com/Deepanshu954/LeetCode/tree/main/2444-count-subarrays-with-fixed-bounds/) | Hard |
 | [2904-shortest-and-lexicographically-smallest-beautiful-string](https://github.com/Deepanshu954/LeetCode/tree/main/2904-shortest-and-lexicographically-smallest-beautiful-string/) | Medium |
