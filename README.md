@@ -645,6 +645,7 @@ This repository contains my solutions to LeetCode problems. The history is fully
 | [1094-car-pooling](https://github.com/Deepanshu954/LeetCode/tree/main/1094-car-pooling/) | Medium |
 | [1337-the-k-weakest-rows-in-a-matrix](https://github.com/Deepanshu954/LeetCode/tree/main/1337-the-k-weakest-rows-in-a-matrix/) | Easy |
 | [1464-maximum-product-of-two-elements-in-an-array](https://github.com/Deepanshu954/LeetCode/tree/main/1464-maximum-product-of-two-elements-in-an-array/) | Easy |
+| [1520-maximum-number-of-non-overlapping-substrings](https://github.com/Deepanshu954/LeetCode/tree/main/1520-maximum-number-of-non-overlapping-substrings/) | Hard |
 | [2035-partition-array-into-two-arrays-to-minimize-sum-difference](https://github.com/Deepanshu954/LeetCode/tree/main/2035-partition-array-into-two-arrays-to-minimize-sum-difference/) | Hard |
 | [2141-maximum-running-time-of-n-computers](https://github.com/Deepanshu954/LeetCode/tree/main/2141-maximum-running-time-of-n-computers/) | Hard |
 | [2231-largest-number-after-digit-swaps-by-parity](https://github.com/Deepanshu954/LeetCode/tree/main/2231-largest-number-after-digit-swaps-by-parity/) | Easy |
@@ -674,6 +675,7 @@ This repository contains my solutions to LeetCode problems. The history is fully
 | [0037-sudoku-solver](https://github.com/Deepanshu954/LeetCode/tree/main/0037-sudoku-solver/) | Hard |
 | [1079-letter-tile-possibilities](https://github.com/Deepanshu954/LeetCode/tree/main/1079-letter-tile-possibilities/) | Medium |
 | [1477-find-two-non-overlapping-sub-arrays-each-with-target-sum](https://github.com/Deepanshu954/LeetCode/tree/main/1477-find-two-non-overlapping-sub-arrays-each-with-target-sum/) | Medium |
+| [1520-maximum-number-of-non-overlapping-substrings](https://github.com/Deepanshu954/LeetCode/tree/main/1520-maximum-number-of-non-overlapping-substrings/) | Hard |
 | [1876-substrings-of-size-three-with-distinct-characters](https://github.com/Deepanshu954/LeetCode/tree/main/1876-substrings-of-size-three-with-distinct-characters/) | Easy |
 | [2996-smallest-missing-integer-greater-than-sequential-prefix-sum](https://github.com/Deepanshu954/LeetCode/tree/main/2996-smallest-missing-integer-greater-than-sequential-prefix-sum/) | Easy |
 | [3016-minimum-number-of-pushes-to-type-word-ii](https://github.com/Deepanshu954/LeetCode/tree/main/3016-minimum-number-of-pushes-to-type-word-ii/) | Medium |
@@ -737,6 +739,7 @@ This repository contains my solutions to LeetCode problems. The history is fully
 | [0321-create-maximum-number](https://github.com/Deepanshu954/LeetCode/tree/main/0321-create-maximum-number/) | Hard |
 | [0410-split-array-largest-sum](https://github.com/Deepanshu954/LeetCode/tree/main/0410-split-array-largest-sum/) | Hard |
 | [0881-boats-to-save-people](https://github.com/Deepanshu954/LeetCode/tree/main/0881-boats-to-save-people/) | Medium |
+| [1520-maximum-number-of-non-overlapping-substrings](https://github.com/Deepanshu954/LeetCode/tree/main/1520-maximum-number-of-non-overlapping-substrings/) | Hard |
 | [1802-maximum-value-at-a-given-index-in-a-bounded-array](https://github.com/Deepanshu954/LeetCode/tree/main/1802-maximum-value-at-a-given-index-in-a-bounded-array/) | Medium |
 | [1927-sum-game](https://github.com/Deepanshu954/LeetCode/tree/main/1927-sum-game/) | Medium |
 | [2029-stone-game-ix](https://github.com/Deepanshu954/LeetCode/tree/main/2029-stone-game-ix/) | Medium |
@@ -782,6 +785,7 @@ This repository contains my solutions to LeetCode problems. The history is fully
 | [0940-distinct-subsequences-ii](https://github.com/Deepanshu954/LeetCode/tree/main/0940-distinct-subsequences-ii/) | Hard |
 | [1079-letter-tile-possibilities](https://github.com/Deepanshu954/LeetCode/tree/main/1079-letter-tile-possibilities/) | Medium |
 | [1456-maximum-number-of-vowels-in-a-substring-of-given-length](https://github.com/Deepanshu954/LeetCode/tree/main/1456-maximum-number-of-vowels-in-a-substring-of-given-length/) | Medium |
+| [1520-maximum-number-of-non-overlapping-substrings](https://github.com/Deepanshu954/LeetCode/tree/main/1520-maximum-number-of-non-overlapping-substrings/) | Hard |
 | [1876-substrings-of-size-three-with-distinct-characters](https://github.com/Deepanshu954/LeetCode/tree/main/1876-substrings-of-size-three-with-distinct-characters/) | Easy |
 | [1927-sum-game](https://github.com/Deepanshu954/LeetCode/tree/main/1927-sum-game/) | Medium |
 | [2472-maximum-number-of-non-overlapping-palindrome-substrings](https://github.com/Deepanshu954/LeetCode/tree/main/2472-maximum-number-of-non-overlapping-palindrome-substrings/) | Hard |
