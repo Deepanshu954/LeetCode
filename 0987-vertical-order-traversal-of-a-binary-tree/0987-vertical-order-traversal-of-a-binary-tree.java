@@ -1,71 +1,63 @@
-/**
- * Definition for a binary tree node.
- * public class TreeNode {
- *     int val;
- *     TreeNode left;
- *     TreeNode right;
- *     TreeNode() {}
- *     TreeNode(int val) { this.val = val; }
- *     TreeNode(int val, TreeNode left, TreeNode right) {
- *         this.val = val;
- *         this.left = left;
- *         this.right = right;
- *     }
- * }
- */
 class Solution {
-    private static class NodeInfo {
+
+    class TreeInfo {
+        TreeNode node;
         int row;
         int col;
-        int val;
 
-        NodeInfo(int row, int col, int val) {
+        public TreeInfo(TreeNode node, int row, int col) {
+            this.node = node;
             this.row = row;
             this.col = col;
-            this.val = val;
         }
     }
 
     public List<List<Integer>> verticalTraversal(TreeNode root) {
-        List<NodeInfo> nodes = new ArrayList<>();
-        inorder(root, 0, 0, nodes);
-        Collections.sort(nodes, (a, b) -> {
-            if (a.col != b.col) {
-                return Integer.compare(a.col, b.col); 
-            }
-            if (a.row != b.row) {
-                return Integer.compare(a.row, b.row); 
-            }
-            return Integer.compare(a.val, b.val);     
-        });
+        List<List<Integer>> res = new ArrayList<>();
 
-        List<List<Integer>> result = new ArrayList<>();
-        if (nodes.isEmpty()) {
-            return result;
+        if (root == null) return res;
+
+        // col -> row -> values
+        TreeMap<Integer, TreeMap<Integer, PriorityQueue<Integer>>> map = new TreeMap<>();
+
+        Queue<TreeInfo> q = new LinkedList<>();
+        q.offer(new TreeInfo(root, 0, 0));
+
+        while (!q.isEmpty()) {
+            TreeInfo curr = q.poll();
+
+            TreeNode node = curr.node;
+            int row = curr.row;
+            int col = curr.col;
+
+            map
+                .computeIfAbsent(col, k -> new TreeMap<>())
+                .computeIfAbsent(row, k -> new PriorityQueue<>())
+                .offer(node.val);
+
+            // left
+            if (node.left != null) {
+                q.offer(new TreeInfo(node.left, row + 1, col - 1));
+            }
+
+            // right
+            if (node.right != null) {
+                q.offer(new TreeInfo(node.right, row + 1, col + 1));
+            }
         }
 
-        int currentCol = nodes.get(0).col;
-        List<Integer> currentColumnList = new ArrayList<>();
+        for (TreeMap<Integer, PriorityQueue<Integer>> rows : map.values()) {
+            List<Integer> column = new ArrayList<>();
 
-        for (NodeInfo node : nodes) {
-            if (node.col != currentCol) {
-                result.add(currentColumnList);
-                currentColumnList = new ArrayList<>();
-                currentCol = node.col;
+            for (PriorityQueue<Integer> pq : rows.values()) {
+                while (!pq.isEmpty()) {
+                    column.add(pq.poll());
+                }
             }
-            currentColumnList.add(node.val);
-        }
-        result.add(currentColumnList); 
 
-        return result;
-    } // Fixed: Removed the duplicate closing brace that was right below this line
-
-    private void inorder(TreeNode node, int row, int col, List<NodeInfo> nodes) {
-        if (node == null) {
-            return;
+            res.add(column);
         }
-        inorder(node.left, row + 1, col - 1, nodes);
-        nodes.add(new NodeInfo(row, col, node.val));
-        inorder(node.right, row + 1, col + 1, nodes);
+
+        return res;
     }
 }
