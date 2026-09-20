@@ -1,42 +1,53 @@
-# 94. Binary Tree Inorder Traversal
+<h2><a href="https://leetcode.com/problems/binary-tree-inorder-traversal">94. Binary Tree Inorder Traversal</a></h2><h3>Easy</h3><hr><p>Given the <code>root</code> of a binary tree, return <em>the inorder traversal of its nodes&#39; values</em>.</p>
 
-Given the `root` of a binary tree, return *the inorder traversal of its nodes' values*.
+<p>&nbsp;</p>
+<p><strong class="example">Example 1:</strong></p>
 
-**Example 1:**
+<div class="example-block">
+<p><strong>Input:</strong> <span class="example-io">root = [1,null,2,3]</span></p>
 
-**Input:** root = [1,null,2,3]
+<p><strong>Output:</strong> <span class="example-io">[1,3,2]</span></p>
 
-**Output:** [1,3,2]
+<p><strong>Explanation:</strong></p>
 
-**Explanation:**
+<p><img alt="" src="https://assets.leetcode.com/uploads/2024/08/29/screenshot-2024-08-29-202743.png" style="width: 200px; height: 264px;" /></p>
+</div>
 
-![](https://assets.leetcode.com/uploads/2024/08/29/screenshot-2024-08-29-202743.png)
+<p><strong class="example">Example 2:</strong></p>
 
-**Example 2:**
+<div class="example-block">
+<p><strong>Input:</strong> <span class="example-io">root = [1,2,3,4,5,null,8,null,null,6,7,9]</span></p>
 
-**Input:** root = [1,2,3,4,5,null,8,null,null,6,7,9]
+<p><strong>Output:</strong> <span class="example-io">[4,2,6,5,7,1,3,9,8]</span></p>
 
-**Output:** [4,2,6,5,7,1,3,9,8]
+<p><strong>Explanation:</strong></p>
 
-**Explanation:**
+<p><img alt="" src="https://assets.leetcode.com/uploads/2024/08/29/tree_2.png" style="width: 350px; height: 286px;" /></p>
+</div>
 
-![](https://assets.leetcode.com/uploads/2024/08/29/tree_2.png)
+<p><strong class="example">Example 3:</strong></p>
 
-**Example 3:**
+<div class="example-block">
+<p><strong>Input:</strong> <span class="example-io">root = []</span></p>
 
-**Input:** root = []
+<p><strong>Output:</strong> <span class="example-io">[]</span></p>
+</div>
 
-**Output:** []
+<p><strong class="example">Example 4:</strong></p>
 
-**Example 4:**
+<div class="example-block">
+<p><strong>Input:</strong> <span class="example-io">root = [1]</span></p>
 
-**Input:** root = [1]
+<p><strong>Output:</strong> <span class="example-io">[1]</span></p>
+</div>
 
-**Output:** [1]
+<p>&nbsp;</p>
+<p><strong>Constraints:</strong></p>
 
-**Constraints:**
+<ul>
+	<li>The number of nodes in the tree is in the range <code>[0, 100]</code>.</li>
+	<li><code>-100 &lt;= Node.val &lt;= 100</code></li>
+</ul>
 
-* The number of nodes in the tree is in the range `[0, 100]`.
-* `-100 <= Node.val <= 100`
-
-**Follow up:** Recursive solution is trivial, could you do it iteratively?
+<p>&nbsp;</p>
+<strong>Follow up:</strong> Recursive solution is trivial, could you do it iteratively?
