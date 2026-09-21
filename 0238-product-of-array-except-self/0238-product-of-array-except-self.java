@@ -1,57 +1,38 @@
 class Solution {
     public int[] productExceptSelf(int[] nums) {
         int n = nums.length;
+        int cnt = 0;
+        int idx = -1;
+        int prod = 1;
 
-        int[] suffix = new int[nums.length];int prod = 1;
+        // more then 1 zero
+        for(int i = 0; i < n; i++) {
+            if(nums[i] == 0) {
+                idx = i;
+                cnt++;
 
-        for(int i = n - 1; i >= 0; i--){
-            prod *= nums[i];
-            suffix[i] = prod;
+                if(cnt > 1) {
+                    Arrays.fill(nums, 0);
+                    return nums;
+                }
+            } else {
+                prod *= nums[i];
+            }
         }
 
-        int[] prefix = new int[nums.length];
-        prod = 1;
-        for(int i = 0; i < n; i++){
-            prod *= nums[i];
-            prefix[i] = prod;
+        // zero cnt = 1
+        if(cnt == 1) {
+            Arrays.fill(nums, 0);
+            nums[idx] = prod;
+            return nums;
         }
 
-        nums[0] = suffix[1];
-        nums[n-1] = prefix[n-2];
+        // no zeros
 
-        for(int i = 1; i < n - 1; i++){
-            nums[i] = prefix[i-1] * suffix[i+1]; 
+        for(int i = 0; i < n; i++) {
+            nums[i] = prod / (nums[i]);
         }
+
         return nums;
     }
 }
-
-/*
-class Solution {
-    public int[] productExceptSelf(int[] nums) {
-        int n = nums.length;
-
-        int[] suffix = new int[nums.length];int prod = 1;
-        
-        for(int i = n - 1; i >= 0; i--){
-            prod *= nums[i];
-            suffix[i] = prod;
-        }
-
-        int[] prefix = new int[nums.length];
-        prod = 1;
-        for(int i = 0; i < n; i++){
-            prod *= nums[i];
-            prefix[i] = prod;
-        }
-
-        nums[0] = suffix[1];
-        nums[n-1] = prefix[n-2];
-
-        for(int i = 1; i < n - 1; i++){
-            nums[i] = prefix[i-1] * suffix[i+1]; 
-        }
-        return nums;
-    }
-}
-*/
