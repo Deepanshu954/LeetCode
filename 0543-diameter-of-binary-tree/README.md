@@ -1,29 +1,29 @@
-# 543. Diameter of Binary Tree
+<h2><a href="https://leetcode.com/problems/diameter-of-binary-tree">543. Diameter of Binary Tree</a></h2><h3>Easy</h3><hr><p>Given the <code>root</code> of a binary tree, return <em>the length of the <strong>diameter</strong> of the tree</em>.</p>
 
-Given the `root` of a binary tree, return *the length of the **diameter** of the tree*.
+<p>The <strong>diameter</strong> of a binary tree is the <strong>length</strong> of the longest path between any two nodes in a tree. This path may or may not pass through the <code>root</code>.</p>
 
-The **diameter** of a binary tree is the **length** of the longest path between any two nodes in a tree. This path may or may not pass through the `root`.
+<p>The <strong>length</strong> of a path between two nodes is represented by the number of edges between them.</p>
 
-The **length** of a path between two nodes is represented by the number of edges between them.
+<p>&nbsp;</p>
+<p><strong class="example">Example 1:</strong></p>
+<img alt="" src="https://assets.leetcode.com/uploads/2021/03/06/diamtree.jpg" style="width: 292px; height: 302px;" />
+<pre>
+<strong>Input:</strong> root = [1,2,3,4,5]
+<strong>Output:</strong> 3
+<strong>Explanation:</strong> 3 is the length of the path [4,2,1,3] or [5,2,1,3].
+</pre>
 
-**Example 1:**
+<p><strong class="example">Example 2:</strong></p>
 
-![](https://assets.leetcode.com/uploads/2021/03/06/diamtree.jpg)
+<pre>
+<strong>Input:</strong> root = [1,2]
+<strong>Output:</strong> 1
+</pre>
 
-```
-Input: root = [1,2,3,4,5]
-Output: 3
-Explanation: 3 is the length of the path [4,2,1,3] or [5,2,1,3].
-```
+<p>&nbsp;</p>
+<p><strong>Constraints:</strong></p>
 
-**Example 2:**
-
-```
-Input: root = [1,2]
-Output: 1
-```
-
-**Constraints:**
-
-* The number of nodes in the tree is in the range `[1, 104]`.
-* `-100 <= Node.val <= 100`
+<ul>
+	<li>The number of nodes in the tree is in the range <code>[1, 10<sup>4</sup>]</code>.</li>
+	<li><code>-100 &lt;= Node.val &lt;= 100</code></li>
+</ul>
