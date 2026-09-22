@@ -927,6 +927,7 @@ This repository contains my solutions to LeetCode problems. The history is fully
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0102-binary-tree-level-order-traversal](https://github.com/Deepanshu954/LeetCode/tree/main/0102-binary-tree-level-order-traversal/) | Medium |
+| [0103-binary-tree-zigzag-level-order-traversal](https://github.com/Deepanshu954/LeetCode/tree/main/0103-binary-tree-zigzag-level-order-traversal/) | Medium |
 | [0104-maximum-depth-of-binary-tree](https://github.com/Deepanshu954/LeetCode/tree/main/0104-maximum-depth-of-binary-tree/) | Easy |
 | [0226-invert-binary-tree](https://github.com/Deepanshu954/LeetCode/tree/main/0226-invert-binary-tree/) | Easy |
 | [0987-vertical-order-traversal-of-a-binary-tree](https://github.com/Deepanshu954/LeetCode/tree/main/0987-vertical-order-traversal-of-a-binary-tree/) | Hard |
@@ -951,6 +952,7 @@ This repository contains my solutions to LeetCode problems. The history is fully
 | [0094-binary-tree-inorder-traversal](https://github.com/Deepanshu954/LeetCode/tree/main/0094-binary-tree-inorder-traversal/) | Easy |
 | [0096-unique-binary-search-trees](https://github.com/Deepanshu954/LeetCode/tree/main/0096-unique-binary-search-trees/) | Medium |
 | [0102-binary-tree-level-order-traversal](https://github.com/Deepanshu954/LeetCode/tree/main/0102-binary-tree-level-order-traversal/) | Medium |
+| [0103-binary-tree-zigzag-level-order-traversal](https://github.com/Deepanshu954/LeetCode/tree/main/0103-binary-tree-zigzag-level-order-traversal/) | Medium |
 | [0104-maximum-depth-of-binary-tree](https://github.com/Deepanshu954/LeetCode/tree/main/0104-maximum-depth-of-binary-tree/) | Easy |
 | [0110-balanced-binary-tree](https://github.com/Deepanshu954/LeetCode/tree/main/0110-balanced-binary-tree/) | Easy |
 | [0113-path-sum-ii](https://github.com/Deepanshu954/LeetCode/tree/main/0113-path-sum-ii/) | Medium |
@@ -969,6 +971,7 @@ This repository contains my solutions to LeetCode problems. The history is fully
 | [0094-binary-tree-inorder-traversal](https://github.com/Deepanshu954/LeetCode/tree/main/0094-binary-tree-inorder-traversal/) | Easy |
 | [0096-unique-binary-search-trees](https://github.com/Deepanshu954/LeetCode/tree/main/0096-unique-binary-search-trees/) | Medium |
 | [0102-binary-tree-level-order-traversal](https://github.com/Deepanshu954/LeetCode/tree/main/0102-binary-tree-level-order-traversal/) | Medium |
+| [0103-binary-tree-zigzag-level-order-traversal](https://github.com/Deepanshu954/LeetCode/tree/main/0103-binary-tree-zigzag-level-order-traversal/) | Medium |
 | [0104-maximum-depth-of-binary-tree](https://github.com/Deepanshu954/LeetCode/tree/main/0104-maximum-depth-of-binary-tree/) | Easy |
 | [0110-balanced-binary-tree](https://github.com/Deepanshu954/LeetCode/tree/main/0110-balanced-binary-tree/) | Easy |
 | [0113-path-sum-ii](https://github.com/Deepanshu954/LeetCode/tree/main/0113-path-sum-ii/) | Medium |
