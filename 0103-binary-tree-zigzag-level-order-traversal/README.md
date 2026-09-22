@@ -1,31 +1,31 @@
-# 103. Binary Tree Zigzag Level Order Traversal
+<h2><a href="https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal">103. Binary Tree Zigzag Level Order Traversal</a></h2><h3>Medium</h3><hr><p>Given the <code>root</code> of a binary tree, return <em>the zigzag level order traversal of its nodes&#39; values</em>. (i.e., from left to right, then right to left for the next level and alternate between).</p>
 
-Given the `root` of a binary tree, return *the zigzag level order traversal of its nodes' values*. (i.e., from left to right, then right to left for the next level and alternate between).
+<p>&nbsp;</p>
+<p><strong class="example">Example 1:</strong></p>
+<img alt="" src="https://assets.leetcode.com/uploads/2021/02/19/tree1.jpg" style="width: 277px; height: 302px;" />
+<pre>
+<strong>Input:</strong> root = [3,9,20,null,null,15,7]
+<strong>Output:</strong> [[3],[20,9],[15,7]]
+</pre>
 
-**Example 1:**
+<p><strong class="example">Example 2:</strong></p>
 
-![](https://assets.leetcode.com/uploads/2021/02/19/tree1.jpg)
+<pre>
+<strong>Input:</strong> root = [1]
+<strong>Output:</strong> [[1]]
+</pre>
 
-```
-Input: root = [3,9,20,null,null,15,7]
-Output: [[3],[20,9],[15,7]]
-```
+<p><strong class="example">Example 3:</strong></p>
 
-**Example 2:**
+<pre>
+<strong>Input:</strong> root = []
+<strong>Output:</strong> []
+</pre>
 
-```
-Input: root = [1]
-Output: [[1]]
-```
+<p>&nbsp;</p>
+<p><strong>Constraints:</strong></p>
 
-**Example 3:**
-
-```
-Input: root = []
-Output: []
-```
-
-**Constraints:**
-
-* The number of nodes in the tree is in the range `[0, 2000]`.
-* `-100 <= Node.val <= 100`
+<ul>
+	<li>The number of nodes in the tree is in the range <code>[0, 2000]</code>.</li>
+	<li><code>-100 &lt;= Node.val &lt;= 100</code></li>
+</ul>
