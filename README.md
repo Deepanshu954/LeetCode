@@ -918,6 +918,7 @@ This repository contains my solutions to LeetCode problems. The history is fully
 | [0110-balanced-binary-tree](https://github.com/Deepanshu954/LeetCode/tree/main/0110-balanced-binary-tree/) | Easy |
 | [0113-path-sum-ii](https://github.com/Deepanshu954/LeetCode/tree/main/0113-path-sum-ii/) | Medium |
 | [0144-binary-tree-preorder-traversal](https://github.com/Deepanshu954/LeetCode/tree/main/0144-binary-tree-preorder-traversal/) | Easy |
+| [0543-diameter-of-binary-tree](https://github.com/Deepanshu954/LeetCode/tree/main/0543-diameter-of-binary-tree/) | Easy |
 | [0987-vertical-order-traversal-of-a-binary-tree](https://github.com/Deepanshu954/LeetCode/tree/main/0987-vertical-order-traversal-of-a-binary-tree/) | Hard |
 | [2265-count-nodes-equal-to-average-of-subtree](https://github.com/Deepanshu954/LeetCode/tree/main/2265-count-nodes-equal-to-average-of-subtree/) | Medium |
 | [3310-remove-methods-from-project](https://github.com/Deepanshu954/LeetCode/tree/main/3310-remove-methods-from-project/) | Medium |
@@ -952,6 +953,7 @@ This repository contains my solutions to LeetCode problems. The history is fully
 | [0110-balanced-binary-tree](https://github.com/Deepanshu954/LeetCode/tree/main/0110-balanced-binary-tree/) | Easy |
 | [0113-path-sum-ii](https://github.com/Deepanshu954/LeetCode/tree/main/0113-path-sum-ii/) | Medium |
 | [0144-binary-tree-preorder-traversal](https://github.com/Deepanshu954/LeetCode/tree/main/0144-binary-tree-preorder-traversal/) | Easy |
+| [0543-diameter-of-binary-tree](https://github.com/Deepanshu954/LeetCode/tree/main/0543-diameter-of-binary-tree/) | Easy |
 | [0987-vertical-order-traversal-of-a-binary-tree](https://github.com/Deepanshu954/LeetCode/tree/main/0987-vertical-order-traversal-of-a-binary-tree/) | Hard |
 | [2265-count-nodes-equal-to-average-of-subtree](https://github.com/Deepanshu954/LeetCode/tree/main/2265-count-nodes-equal-to-average-of-subtree/) | Medium |
 ## Binary Search Tree
@@ -968,6 +970,7 @@ This repository contains my solutions to LeetCode problems. The history is fully
 | [0110-balanced-binary-tree](https://github.com/Deepanshu954/LeetCode/tree/main/0110-balanced-binary-tree/) | Easy |
 | [0113-path-sum-ii](https://github.com/Deepanshu954/LeetCode/tree/main/0113-path-sum-ii/) | Medium |
 | [0144-binary-tree-preorder-traversal](https://github.com/Deepanshu954/LeetCode/tree/main/0144-binary-tree-preorder-traversal/) | Easy |
+| [0543-diameter-of-binary-tree](https://github.com/Deepanshu954/LeetCode/tree/main/0543-diameter-of-binary-tree/) | Easy |
 | [0987-vertical-order-traversal-of-a-binary-tree](https://github.com/Deepanshu954/LeetCode/tree/main/0987-vertical-order-traversal-of-a-binary-tree/) | Hard |
 | [2265-count-nodes-equal-to-average-of-subtree](https://github.com/Deepanshu954/LeetCode/tree/main/2265-count-nodes-equal-to-average-of-subtree/) | Medium |
 ## Minimax
@@ -1028,4 +1031,8 @@ This repository contains my solutions to LeetCode problems. The history is fully
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0037-sudoku-solver](https://github.com/Deepanshu954/LeetCode/tree/main/0037-sudoku-solver/) | Hard |
+## DP on Trees
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0543-diameter-of-binary-tree](https://github.com/Deepanshu954/LeetCode/tree/main/0543-diameter-of-binary-tree/) | Easy |
 <!---LeetCode Topics End-->
