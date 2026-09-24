@@ -763,6 +763,7 @@ This repository contains my solutions to LeetCode problems. The history is fully
 | [0055-jump-game](https://github.com/Deepanshu954/LeetCode/tree/main/0055-jump-game/) | Medium |
 | [0096-unique-binary-search-trees](https://github.com/Deepanshu954/LeetCode/tree/main/0096-unique-binary-search-trees/) | Medium |
 | [0115-distinct-subsequences](https://github.com/Deepanshu954/LeetCode/tree/main/0115-distinct-subsequences/) | Hard |
+| [0124-binary-tree-maximum-path-sum](https://github.com/Deepanshu954/LeetCode/tree/main/0124-binary-tree-maximum-path-sum/) | Hard |
 | [0410-split-array-largest-sum](https://github.com/Deepanshu954/LeetCode/tree/main/0410-split-array-largest-sum/) | Hard |
 | [0486-predict-the-winner](https://github.com/Deepanshu954/LeetCode/tree/main/0486-predict-the-winner/) | Medium |
 | [0877-stone-game](https://github.com/Deepanshu954/LeetCode/tree/main/0877-stone-game/) | Medium |
@@ -917,6 +918,7 @@ This repository contains my solutions to LeetCode problems. The history is fully
 | [0104-maximum-depth-of-binary-tree](https://github.com/Deepanshu954/LeetCode/tree/main/0104-maximum-depth-of-binary-tree/) | Easy |
 | [0110-balanced-binary-tree](https://github.com/Deepanshu954/LeetCode/tree/main/0110-balanced-binary-tree/) | Easy |
 | [0113-path-sum-ii](https://github.com/Deepanshu954/LeetCode/tree/main/0113-path-sum-ii/) | Medium |
+| [0124-binary-tree-maximum-path-sum](https://github.com/Deepanshu954/LeetCode/tree/main/0124-binary-tree-maximum-path-sum/) | Hard |
 | [0144-binary-tree-preorder-traversal](https://github.com/Deepanshu954/LeetCode/tree/main/0144-binary-tree-preorder-traversal/) | Easy |
 | [0226-invert-binary-tree](https://github.com/Deepanshu954/LeetCode/tree/main/0226-invert-binary-tree/) | Easy |
 | [0543-diameter-of-binary-tree](https://github.com/Deepanshu954/LeetCode/tree/main/0543-diameter-of-binary-tree/) | Easy |
@@ -961,6 +963,7 @@ This repository contains my solutions to LeetCode problems. The history is fully
 | [0104-maximum-depth-of-binary-tree](https://github.com/Deepanshu954/LeetCode/tree/main/0104-maximum-depth-of-binary-tree/) | Easy |
 | [0110-balanced-binary-tree](https://github.com/Deepanshu954/LeetCode/tree/main/0110-balanced-binary-tree/) | Easy |
 | [0113-path-sum-ii](https://github.com/Deepanshu954/LeetCode/tree/main/0113-path-sum-ii/) | Medium |
+| [0124-binary-tree-maximum-path-sum](https://github.com/Deepanshu954/LeetCode/tree/main/0124-binary-tree-maximum-path-sum/) | Hard |
 | [0144-binary-tree-preorder-traversal](https://github.com/Deepanshu954/LeetCode/tree/main/0144-binary-tree-preorder-traversal/) | Easy |
 | [0226-invert-binary-tree](https://github.com/Deepanshu954/LeetCode/tree/main/0226-invert-binary-tree/) | Easy |
 | [0543-diameter-of-binary-tree](https://github.com/Deepanshu954/LeetCode/tree/main/0543-diameter-of-binary-tree/) | Easy |
@@ -981,6 +984,7 @@ This repository contains my solutions to LeetCode problems. The history is fully
 | [0104-maximum-depth-of-binary-tree](https://github.com/Deepanshu954/LeetCode/tree/main/0104-maximum-depth-of-binary-tree/) | Easy |
 | [0110-balanced-binary-tree](https://github.com/Deepanshu954/LeetCode/tree/main/0110-balanced-binary-tree/) | Easy |
 | [0113-path-sum-ii](https://github.com/Deepanshu954/LeetCode/tree/main/0113-path-sum-ii/) | Medium |
+| [0124-binary-tree-maximum-path-sum](https://github.com/Deepanshu954/LeetCode/tree/main/0124-binary-tree-maximum-path-sum/) | Hard |
 | [0144-binary-tree-preorder-traversal](https://github.com/Deepanshu954/LeetCode/tree/main/0144-binary-tree-preorder-traversal/) | Easy |
 | [0226-invert-binary-tree](https://github.com/Deepanshu954/LeetCode/tree/main/0226-invert-binary-tree/) | Easy |
 | [0543-diameter-of-binary-tree](https://github.com/Deepanshu954/LeetCode/tree/main/0543-diameter-of-binary-tree/) | Easy |
@@ -1049,5 +1053,6 @@ This repository contains my solutions to LeetCode problems. The history is fully
 ## DP on Trees
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0124-binary-tree-maximum-path-sum](https://github.com/Deepanshu954/LeetCode/tree/main/0124-binary-tree-maximum-path-sum/) | Hard |
 | [0543-diameter-of-binary-tree](https://github.com/Deepanshu954/LeetCode/tree/main/0543-diameter-of-binary-tree/) | Easy |
 <!---LeetCode Topics End-->
