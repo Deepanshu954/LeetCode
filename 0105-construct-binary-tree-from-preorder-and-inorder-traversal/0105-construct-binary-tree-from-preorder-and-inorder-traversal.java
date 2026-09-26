@@ -1,22 +1,21 @@
-
 class Solution {
-    public TreeNode buildTree(int[] preorder, int[] inorder) {
-        if(preorder.length == 0) return null;
+    public TreeNode buildTree(int[] pre, int[] in) {
+        int n = pre.length;
+        if(n == 0) return null;
 
-        int r = preorder[0];
-        int index = 0;
+        int r = pre[0];
+        int idx = 0;
 
-        for(int i = 0; i < inorder.length; i++) {
-            if(r == inorder[i]) index = i;
+        for(int i = 0; i < n; i++) {
+            if(r == in[i]) idx = i;
         }
 
         TreeNode node = new TreeNode(r);
 
-        node.left = buildTree(Arrays.copyOfRange(preorder, 1, index + 1), Arrays.copyOfRange(inorder, 0, index));
+        node.left = buildTree(Arrays.copyOfRange(pre, 1, idx+1), Arrays.copyOfRange(in, 0, idx));
 
-        node.right = buildTree(Arrays.copyOfRange(preorder, index + 1, preorder.length), Arrays.copyOfRange(inorder, index + 1, inorder.length));
+        node.right = buildTree(Arrays.copyOfRange(pre, idx+1, n), Arrays.copyOfRange(in, idx+1, n));
 
         return node;
-
     }
 }
