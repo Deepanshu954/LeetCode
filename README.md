@@ -531,6 +531,7 @@ This repository contains my solutions to LeetCode problems. The history is fully
 | [0321-create-maximum-number](https://github.com/Deepanshu954/LeetCode/tree/main/0321-create-maximum-number/) | Hard |
 | [0410-split-array-largest-sum](https://github.com/Deepanshu954/LeetCode/tree/main/0410-split-array-largest-sum/) | Hard |
 | [0486-predict-the-winner](https://github.com/Deepanshu954/LeetCode/tree/main/0486-predict-the-winner/) | Medium |
+| [0542-01-matrix](https://github.com/Deepanshu954/LeetCode/tree/main/0542-01-matrix/) | Medium |
 | [0628-maximum-product-of-three-numbers](https://github.com/Deepanshu954/LeetCode/tree/main/0628-maximum-product-of-three-numbers/) | Easy |
 | [0674-longest-continuous-increasing-subsequence](https://github.com/Deepanshu954/LeetCode/tree/main/0674-longest-continuous-increasing-subsequence/) | Easy |
 | [0713-subarray-product-less-than-k](https://github.com/Deepanshu954/LeetCode/tree/main/0713-subarray-product-less-than-k/) | Medium |
@@ -736,6 +737,7 @@ This repository contains my solutions to LeetCode problems. The history is fully
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0037-sudoku-solver](https://github.com/Deepanshu954/LeetCode/tree/main/0037-sudoku-solver/) | Hard |
+| [0542-01-matrix](https://github.com/Deepanshu954/LeetCode/tree/main/0542-01-matrix/) | Medium |
 | [0835-image-overlap](https://github.com/Deepanshu954/LeetCode/tree/main/0835-image-overlap/) | Medium |
 | [1260-shift-2d-grid](https://github.com/Deepanshu954/LeetCode/tree/main/1260-shift-2d-grid/) | Easy |
 | [1337-the-k-weakest-rows-in-a-matrix](https://github.com/Deepanshu954/LeetCode/tree/main/1337-the-k-weakest-rows-in-a-matrix/) | Easy |
@@ -768,6 +770,7 @@ This repository contains my solutions to LeetCode problems. The history is fully
 | [0124-binary-tree-maximum-path-sum](https://github.com/Deepanshu954/LeetCode/tree/main/0124-binary-tree-maximum-path-sum/) | Hard |
 | [0410-split-array-largest-sum](https://github.com/Deepanshu954/LeetCode/tree/main/0410-split-array-largest-sum/) | Hard |
 | [0486-predict-the-winner](https://github.com/Deepanshu954/LeetCode/tree/main/0486-predict-the-winner/) | Medium |
+| [0542-01-matrix](https://github.com/Deepanshu954/LeetCode/tree/main/0542-01-matrix/) | Medium |
 | [0877-stone-game](https://github.com/Deepanshu954/LeetCode/tree/main/0877-stone-game/) | Medium |
 | [0940-distinct-subsequences-ii](https://github.com/Deepanshu954/LeetCode/tree/main/0940-distinct-subsequences-ii/) | Hard |
 | [1406-stone-game-iii](https://github.com/Deepanshu954/LeetCode/tree/main/1406-stone-game-iii/) | Hard |
@@ -936,6 +939,7 @@ This repository contains my solutions to LeetCode problems. The history is fully
 | [0103-binary-tree-zigzag-level-order-traversal](https://github.com/Deepanshu954/LeetCode/tree/main/0103-binary-tree-zigzag-level-order-traversal/) | Medium |
 | [0104-maximum-depth-of-binary-tree](https://github.com/Deepanshu954/LeetCode/tree/main/0104-maximum-depth-of-binary-tree/) | Easy |
 | [0226-invert-binary-tree](https://github.com/Deepanshu954/LeetCode/tree/main/0226-invert-binary-tree/) | Easy |
+| [0542-01-matrix](https://github.com/Deepanshu954/LeetCode/tree/main/0542-01-matrix/) | Medium |
 | [0547-number-of-provinces](https://github.com/Deepanshu954/LeetCode/tree/main/0547-number-of-provinces/) | Medium |
 | [0662-maximum-width-of-binary-tree](https://github.com/Deepanshu954/LeetCode/tree/main/0662-maximum-width-of-binary-tree/) | Medium |
 | [0987-vertical-order-traversal-of-a-binary-tree](https://github.com/Deepanshu954/LeetCode/tree/main/0987-vertical-order-traversal-of-a-binary-tree/) | Hard |
