@@ -1,34 +1,33 @@
-# 542. 01 Matrix
+<h2><a href="https://leetcode.com/problems/01-matrix">542. 01 Matrix</a></h2><h3>Medium</h3><hr><p>Given an <code>m x n</code> binary matrix <code>mat</code>, return <em>the distance of the nearest </em><code>0</code><em> for each cell</em>.</p>
 
-Given an `m x n` binary matrix `mat`, return *the distance of the nearest* `0` *for each cell*.
+<p>The distance between two cells sharing a common edge is <code>1</code>.</p>
 
-The distance between two cells sharing a common edge is `1`.
+<p>&nbsp;</p>
+<p><strong class="example">Example 1:</strong></p>
+<img alt="" src="https://assets.leetcode.com/uploads/2021/04/24/01-1-grid.jpg" style="width: 253px; height: 253px;" />
+<pre>
+<strong>Input:</strong> mat = [[0,0,0],[0,1,0],[0,0,0]]
+<strong>Output:</strong> [[0,0,0],[0,1,0],[0,0,0]]
+</pre>
 
-**Example 1:**
+<p><strong class="example">Example 2:</strong></p>
+<img alt="" src="https://assets.leetcode.com/uploads/2021/04/24/01-2-grid.jpg" style="width: 253px; height: 253px;" />
+<pre>
+<strong>Input:</strong> mat = [[0,0,0],[0,1,0],[1,1,1]]
+<strong>Output:</strong> [[0,0,0],[0,1,0],[1,2,1]]
+</pre>
 
-![](https://assets.leetcode.com/uploads/2021/04/24/01-1-grid.jpg)
+<p>&nbsp;</p>
+<p><strong>Constraints:</strong></p>
 
-```
-Input: mat = [[0,0,0],[0,1,0],[0,0,0]]
-Output: [[0,0,0],[0,1,0],[0,0,0]]
-```
+<ul>
+	<li><code>m == mat.length</code></li>
+	<li><code>n == mat[i].length</code></li>
+	<li><code>1 &lt;= m, n &lt;= 10<sup>4</sup></code></li>
+	<li><code>1 &lt;= m * n &lt;= 10<sup>4</sup></code></li>
+	<li><code>mat[i][j]</code> is either <code>0</code> or <code>1</code>.</li>
+	<li>There is at least one <code>0</code> in <code>mat</code>.</li>
+</ul>
 
-**Example 2:**
-
-![](https://assets.leetcode.com/uploads/2021/04/24/01-2-grid.jpg)
-
-```
-Input: mat = [[0,0,0],[0,1,0],[1,1,1]]
-Output: [[0,0,0],[0,1,0],[1,2,1]]
-```
-
-**Constraints:**
-
-* `m == mat.length`
-* `n == mat[i].length`
-* `1 <= m, n <= 104`
-* `1 <= m * n <= 104`
-* `mat[i][j]` is either `0` or `1`.
-* There is at least one `0` in `mat`.
-
-**Note:** This question is the same as 1765: [https://leetcode.com/problems/map-of-highest-peak/](https://leetcode.com/problems/map-of-highest-peak/description/)
+<p>&nbsp;</p>
+<p><strong>Note:</strong> This question is the same as 1765: <a href="https://leetcode.com/problems/map-of-highest-peak/description/" target="_blank">https://leetcode.com/problems/map-of-highest-peak/</a></p>
