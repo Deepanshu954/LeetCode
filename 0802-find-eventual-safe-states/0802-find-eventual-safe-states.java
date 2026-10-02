@@ -1,42 +1,44 @@
 class Solution {
+    // terminal node -> no outgoing edges
+    // safe node -> every path from there end's at a terminal node
+    // return all the safe node
+    // sort the result
+
     public List<Integer> eventualSafeNodes(int[][] graph) {
-        int n = graph.length;
+        List<Integer> res = new ArrayList<>();
 
+        // reverse graph
         List<List<Integer>> adj = new ArrayList<>();
-        for(int i = 0; i < n; i++) adj.add(new ArrayList<>());
 
-        int[] indegree = new int[n];
+        for(int i = 0; i < graph.length; i++) {
+            adj.add(new ArrayList<>());
+        }
 
-        // reverse graph + build indegree
-        for(int i = 0; i < n; i++) {
-            for(int v : graph[i]) {
-                adj.get(v).add(i); // reverse edge
-                indegree[i]++;
+        int[] indegree = new int[graph.length];
+        for(int u = 0; u < graph.length; u++) {
+            for(int v : graph[u]) {
+                adj.get(v).add(u);
+                indegree[u]++;
             }
         }
 
-        Queue<Integer> q = new LinkedList<>();
-        for(int i = 0; i < n; i++) {
+        // queue
+        Queue<Integer> q = new ArrayDeque<>();
+
+        for(int i = 0; i < graph.length; i++) {
             if(indegree[i] == 0) q.offer(i);
         }
 
-        boolean[] safe = new boolean[n];
-
         while(!q.isEmpty()) {
             int node = q.poll();
-            safe[node] = true;
+            res.add(node);
 
             for(int nei : adj.get(node)) {
-                if(--indegree[nei] == 0) {
-                    q.offer(nei);
-                }
+                if(--indegree[nei] == 0) q.offer(nei);
             }
         }
 
-        List<Integer> res = new ArrayList<>();
-        for(int i = 0; i < n; i++) {
-            if(safe[i]) res.add(i);
-        }
+        Collections.sort(res);
 
         return res;
     }
