@@ -1,34 +1,40 @@
 class Solution {
+
     public boolean canFinish(int V, int[][] edges) {
-        List<List<Integer>> adj = new ArrayList<>();
-        
-        for(int i = 0; i < V; i++) adj.add(new ArrayList<>());
-        
-        for(int[] e : edges) {
-            adj.get(e[1]).add(e[0]); // prerequisite → course
-        }
-        
-        int[] ind = new int[V];
+        List<Integer>[] adj = new ArrayList[V];
+
         for(int i = 0; i < V; i++) {
-            for(int nei : adj.get(i)) ind[nei]++;
+            adj[i] = new ArrayList<>();
         }
-        
-        Queue<Integer> q = new ArrayDeque<>();
+
+        for(int[] edge : edges) {
+            int u = edge[0];
+            int v = edge[1];
+
+            adj[u].add(v);
+            //. adj[ edge[0] ].add[ edge[1] ];
+        }
+
+        int[] state = new int[V];
         for(int i = 0; i < V; i++) {
-            if(ind[i] == 0) q.offer(i);
+            if(dfs(i, adj, state)) return false;
         }
-        
-        int count = 0;
-        
-        while(!q.isEmpty()) {
-            int node = q.poll();
-            count++;
-            
-            for(int nei : adj.get(node)) {
-                if(--ind[nei] == 0) q.offer(nei);
-            }
+
+        return true;
+    }
+
+    private boolean dfs(int node, List<Integer>[] adj, int[] state) {
+        if(state[node] == 1) return true; // cycle
+        if(state[node] == 2) return false; // already reached
+
+        state[node] = 1;
+
+        for(int nei : adj[node]) {
+            if(dfs(nei, adj, state)) return true;
         }
-        
-        return count == V; // all courses finished
+
+        state[node] = 2;
+
+        return false;
     }
 }
