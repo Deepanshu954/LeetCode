@@ -764,6 +764,7 @@ This repository contains my solutions to LeetCode problems. The history is fully
 ## Dynamic Programming
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0022-generate-parentheses](https://github.com/Deepanshu954/LeetCode/tree/main/0022-generate-parentheses/) | Medium |
 | [0055-jump-game](https://github.com/Deepanshu954/LeetCode/tree/main/0055-jump-game/) | Medium |
 | [0096-unique-binary-search-trees](https://github.com/Deepanshu954/LeetCode/tree/main/0096-unique-binary-search-trees/) | Medium |
 | [0115-distinct-subsequences](https://github.com/Deepanshu954/LeetCode/tree/main/0115-distinct-subsequences/) | Hard |
@@ -787,6 +788,7 @@ This repository contains my solutions to LeetCode problems. The history is fully
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0020-valid-parentheses](https://github.com/Deepanshu954/LeetCode/tree/main/0020-valid-parentheses/) | Easy |
+| [0022-generate-parentheses](https://github.com/Deepanshu954/LeetCode/tree/main/0022-generate-parentheses/) | Medium |
 | [0028-find-the-index-of-the-first-occurrence-in-a-string](https://github.com/Deepanshu954/LeetCode/tree/main/0028-find-the-index-of-the-first-occurrence-in-a-string/) | Easy |
 | [0065-valid-number](https://github.com/Deepanshu954/LeetCode/tree/main/0065-valid-number/) | Hard |
 | [0115-distinct-subsequences](https://github.com/Deepanshu954/LeetCode/tree/main/0115-distinct-subsequences/) | Hard |
@@ -871,6 +873,7 @@ This repository contains my solutions to LeetCode problems. The history is fully
 ## Backtracking
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0022-generate-parentheses](https://github.com/Deepanshu954/LeetCode/tree/main/0022-generate-parentheses/) | Medium |
 | [0037-sudoku-solver](https://github.com/Deepanshu954/LeetCode/tree/main/0037-sudoku-solver/) | Hard |
 | [0113-path-sum-ii](https://github.com/Deepanshu954/LeetCode/tree/main/0113-path-sum-ii/) | Medium |
 | [0784-letter-case-permutation](https://github.com/Deepanshu954/LeetCode/tree/main/0784-letter-case-permutation/) | Medium |
@@ -963,6 +966,7 @@ This repository contains my solutions to LeetCode problems. The history is fully
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0020-valid-parentheses](https://github.com/Deepanshu954/LeetCode/tree/main/0020-valid-parentheses/) | Easy |
+| [0022-generate-parentheses](https://github.com/Deepanshu954/LeetCode/tree/main/0022-generate-parentheses/) | Medium |
 ## Design
 | Problem Name | Difficulty |
 | ------- | ------- |
