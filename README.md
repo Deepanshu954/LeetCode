@@ -749,6 +749,7 @@ This repository contains my solutions to LeetCode problems. The history is fully
 | [0321-create-maximum-number](https://github.com/Deepanshu954/LeetCode/tree/main/0321-create-maximum-number/) | Hard |
 | [0410-split-array-largest-sum](https://github.com/Deepanshu954/LeetCode/tree/main/0410-split-array-largest-sum/) | Hard |
 | [0881-boats-to-save-people](https://github.com/Deepanshu954/LeetCode/tree/main/0881-boats-to-save-people/) | Medium |
+| [0921-minimum-add-to-make-parentheses-valid](https://github.com/Deepanshu954/LeetCode/tree/main/0921-minimum-add-to-make-parentheses-valid/) | Medium |
 | [1520-maximum-number-of-non-overlapping-substrings](https://github.com/Deepanshu954/LeetCode/tree/main/1520-maximum-number-of-non-overlapping-substrings/) | Hard |
 | [1802-maximum-value-at-a-given-index-in-a-bounded-array](https://github.com/Deepanshu954/LeetCode/tree/main/1802-maximum-value-at-a-given-index-in-a-bounded-array/) | Medium |
 | [1927-sum-game](https://github.com/Deepanshu954/LeetCode/tree/main/1927-sum-game/) | Medium |
@@ -796,6 +797,7 @@ This repository contains my solutions to LeetCode problems. The history is fully
 | [0556-next-greater-element-iii](https://github.com/Deepanshu954/LeetCode/tree/main/0556-next-greater-element-iii/) | Medium |
 | [0784-letter-case-permutation](https://github.com/Deepanshu954/LeetCode/tree/main/0784-letter-case-permutation/) | Medium |
 | [0844-backspace-string-compare](https://github.com/Deepanshu954/LeetCode/tree/main/0844-backspace-string-compare/) | Easy |
+| [0921-minimum-add-to-make-parentheses-valid](https://github.com/Deepanshu954/LeetCode/tree/main/0921-minimum-add-to-make-parentheses-valid/) | Medium |
 | [0925-long-pressed-name](https://github.com/Deepanshu954/LeetCode/tree/main/0925-long-pressed-name/) | Easy |
 | [0940-distinct-subsequences-ii](https://github.com/Deepanshu954/LeetCode/tree/main/0940-distinct-subsequences-ii/) | Hard |
 | [1079-letter-tile-possibilities](https://github.com/Deepanshu954/LeetCode/tree/main/1079-letter-tile-possibilities/) | Medium |
@@ -826,6 +828,7 @@ This repository contains my solutions to LeetCode problems. The history is fully
 | [0155-min-stack](https://github.com/Deepanshu954/LeetCode/tree/main/0155-min-stack/) | Medium |
 | [0321-create-maximum-number](https://github.com/Deepanshu954/LeetCode/tree/main/0321-create-maximum-number/) | Hard |
 | [0844-backspace-string-compare](https://github.com/Deepanshu954/LeetCode/tree/main/0844-backspace-string-compare/) | Easy |
+| [0921-minimum-add-to-make-parentheses-valid](https://github.com/Deepanshu954/LeetCode/tree/main/0921-minimum-add-to-make-parentheses-valid/) | Medium |
 ## Sliding Window
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -970,6 +973,7 @@ This repository contains my solutions to LeetCode problems. The history is fully
 | ------- | ------- |
 | [0020-valid-parentheses](https://github.com/Deepanshu954/LeetCode/tree/main/0020-valid-parentheses/) | Easy |
 | [0022-generate-parentheses](https://github.com/Deepanshu954/LeetCode/tree/main/0022-generate-parentheses/) | Medium |
+| [0921-minimum-add-to-make-parentheses-valid](https://github.com/Deepanshu954/LeetCode/tree/main/0921-minimum-add-to-make-parentheses-valid/) | Medium |
 ## Design
 | Problem Name | Difficulty |
 | ------- | ------- |
