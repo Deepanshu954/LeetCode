@@ -792,6 +792,7 @@ This repository contains my solutions to LeetCode problems. The history is fully
 | [0028-find-the-index-of-the-first-occurrence-in-a-string](https://github.com/Deepanshu954/LeetCode/tree/main/0028-find-the-index-of-the-first-occurrence-in-a-string/) | Easy |
 | [0065-valid-number](https://github.com/Deepanshu954/LeetCode/tree/main/0065-valid-number/) | Hard |
 | [0115-distinct-subsequences](https://github.com/Deepanshu954/LeetCode/tree/main/0115-distinct-subsequences/) | Hard |
+| [0301-remove-invalid-parentheses](https://github.com/Deepanshu954/LeetCode/tree/main/0301-remove-invalid-parentheses/) | Hard |
 | [0556-next-greater-element-iii](https://github.com/Deepanshu954/LeetCode/tree/main/0556-next-greater-element-iii/) | Medium |
 | [0784-letter-case-permutation](https://github.com/Deepanshu954/LeetCode/tree/main/0784-letter-case-permutation/) | Medium |
 | [0844-backspace-string-compare](https://github.com/Deepanshu954/LeetCode/tree/main/0844-backspace-string-compare/) | Easy |
@@ -876,6 +877,7 @@ This repository contains my solutions to LeetCode problems. The history is fully
 | [0022-generate-parentheses](https://github.com/Deepanshu954/LeetCode/tree/main/0022-generate-parentheses/) | Medium |
 | [0037-sudoku-solver](https://github.com/Deepanshu954/LeetCode/tree/main/0037-sudoku-solver/) | Hard |
 | [0113-path-sum-ii](https://github.com/Deepanshu954/LeetCode/tree/main/0113-path-sum-ii/) | Medium |
+| [0301-remove-invalid-parentheses](https://github.com/Deepanshu954/LeetCode/tree/main/0301-remove-invalid-parentheses/) | Hard |
 | [0784-letter-case-permutation](https://github.com/Deepanshu954/LeetCode/tree/main/0784-letter-case-permutation/) | Medium |
 | [1079-letter-tile-possibilities](https://github.com/Deepanshu954/LeetCode/tree/main/1079-letter-tile-possibilities/) | Medium |
 | [3348-smallest-divisible-digit-product-ii](https://github.com/Deepanshu954/LeetCode/tree/main/3348-smallest-divisible-digit-product-ii/) | Hard |
@@ -947,6 +949,7 @@ This repository contains my solutions to LeetCode problems. The history is fully
 | [0207-course-schedule](https://github.com/Deepanshu954/LeetCode/tree/main/0207-course-schedule/) | Medium |
 | [0210-course-schedule-ii](https://github.com/Deepanshu954/LeetCode/tree/main/0210-course-schedule-ii/) | Medium |
 | [0226-invert-binary-tree](https://github.com/Deepanshu954/LeetCode/tree/main/0226-invert-binary-tree/) | Easy |
+| [0301-remove-invalid-parentheses](https://github.com/Deepanshu954/LeetCode/tree/main/0301-remove-invalid-parentheses/) | Hard |
 | [0542-01-matrix](https://github.com/Deepanshu954/LeetCode/tree/main/0542-01-matrix/) | Medium |
 | [0547-number-of-provinces](https://github.com/Deepanshu954/LeetCode/tree/main/0547-number-of-provinces/) | Medium |
 | [0662-maximum-width-of-binary-tree](https://github.com/Deepanshu954/LeetCode/tree/main/0662-maximum-width-of-binary-tree/) | Medium |
