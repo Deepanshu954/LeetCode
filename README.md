@@ -800,6 +800,7 @@ This repository contains my solutions to LeetCode problems. The history is fully
 | [0921-minimum-add-to-make-parentheses-valid](https://github.com/Deepanshu954/LeetCode/tree/main/0921-minimum-add-to-make-parentheses-valid/) | Medium |
 | [0925-long-pressed-name](https://github.com/Deepanshu954/LeetCode/tree/main/0925-long-pressed-name/) | Easy |
 | [0940-distinct-subsequences-ii](https://github.com/Deepanshu954/LeetCode/tree/main/0940-distinct-subsequences-ii/) | Hard |
+| [1021-remove-outermost-parentheses](https://github.com/Deepanshu954/LeetCode/tree/main/1021-remove-outermost-parentheses/) | Easy |
 | [1079-letter-tile-possibilities](https://github.com/Deepanshu954/LeetCode/tree/main/1079-letter-tile-possibilities/) | Medium |
 | [1456-maximum-number-of-vowels-in-a-substring-of-given-length](https://github.com/Deepanshu954/LeetCode/tree/main/1456-maximum-number-of-vowels-in-a-substring-of-given-length/) | Medium |
 | [1520-maximum-number-of-non-overlapping-substrings](https://github.com/Deepanshu954/LeetCode/tree/main/1520-maximum-number-of-non-overlapping-substrings/) | Hard |
@@ -829,6 +830,7 @@ This repository contains my solutions to LeetCode problems. The history is fully
 | [0321-create-maximum-number](https://github.com/Deepanshu954/LeetCode/tree/main/0321-create-maximum-number/) | Hard |
 | [0844-backspace-string-compare](https://github.com/Deepanshu954/LeetCode/tree/main/0844-backspace-string-compare/) | Easy |
 | [0921-minimum-add-to-make-parentheses-valid](https://github.com/Deepanshu954/LeetCode/tree/main/0921-minimum-add-to-make-parentheses-valid/) | Medium |
+| [1021-remove-outermost-parentheses](https://github.com/Deepanshu954/LeetCode/tree/main/1021-remove-outermost-parentheses/) | Easy |
 ## Sliding Window
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -974,6 +976,7 @@ This repository contains my solutions to LeetCode problems. The history is fully
 | [0020-valid-parentheses](https://github.com/Deepanshu954/LeetCode/tree/main/0020-valid-parentheses/) | Easy |
 | [0022-generate-parentheses](https://github.com/Deepanshu954/LeetCode/tree/main/0022-generate-parentheses/) | Medium |
 | [0921-minimum-add-to-make-parentheses-valid](https://github.com/Deepanshu954/LeetCode/tree/main/0921-minimum-add-to-make-parentheses-valid/) | Medium |
+| [1021-remove-outermost-parentheses](https://github.com/Deepanshu954/LeetCode/tree/main/1021-remove-outermost-parentheses/) | Easy |
 ## Design
 | Problem Name | Difficulty |
 | ------- | ------- |
