@@ -29,10 +29,7 @@ class Solution {
 
         int val = sq.get(idx);
 
-        if(n >= val) {
-            helper(n - val, idx, cnt + 1);
-        } 
-        
+        if(n >= val) helper(n - val, idx, cnt + 1);
         helper(n, idx - 1, cnt);
     }
 }
