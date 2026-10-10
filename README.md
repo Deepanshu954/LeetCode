@@ -507,6 +507,7 @@ This repository contains my solutions to LeetCode problems. The history is fully
 | [2035-partition-array-into-two-arrays-to-minimize-sum-difference](https://github.com/Deepanshu954/LeetCode/tree/main/2035-partition-array-into-two-arrays-to-minimize-sum-difference/) | Hard |
 | [2040-kth-smallest-product-of-two-sorted-arrays](https://github.com/Deepanshu954/LeetCode/tree/main/2040-kth-smallest-product-of-two-sorted-arrays/) | Hard |
 | [2141-maximum-running-time-of-n-computers](https://github.com/Deepanshu954/LeetCode/tree/main/2141-maximum-running-time-of-n-computers/) | Hard |
+| [2333-minimum-sum-of-squared-difference](https://github.com/Deepanshu954/LeetCode/tree/main/2333-minimum-sum-of-squared-difference/) | Medium |
 | [2824-count-pairs-whose-sum-is-less-than-target](https://github.com/Deepanshu954/LeetCode/tree/main/2824-count-pairs-whose-sum-is-less-than-target/) | Easy |
 | [3312-sorted-gcd-pair-queries](https://github.com/Deepanshu954/LeetCode/tree/main/3312-sorted-gcd-pair-queries/) | Hard |
 | [3414-maximum-score-of-non-overlapping-intervals](https://github.com/Deepanshu954/LeetCode/tree/main/3414-maximum-score-of-non-overlapping-intervals/) | Hard |
@@ -560,6 +561,7 @@ This repository contains my solutions to LeetCode problems. The history is fully
 | [2040-kth-smallest-product-of-two-sorted-arrays](https://github.com/Deepanshu954/LeetCode/tree/main/2040-kth-smallest-product-of-two-sorted-arrays/) | Hard |
 | [2091-removing-minimum-and-maximum-from-array](https://github.com/Deepanshu954/LeetCode/tree/main/2091-removing-minimum-and-maximum-from-array/) | Medium |
 | [2141-maximum-running-time-of-n-computers](https://github.com/Deepanshu954/LeetCode/tree/main/2141-maximum-running-time-of-n-computers/) | Hard |
+| [2333-minimum-sum-of-squared-difference](https://github.com/Deepanshu954/LeetCode/tree/main/2333-minimum-sum-of-squared-difference/) | Medium |
 | [2444-count-subarrays-with-fixed-bounds](https://github.com/Deepanshu954/LeetCode/tree/main/2444-count-subarrays-with-fixed-bounds/) | Hard |
 | [2824-count-pairs-whose-sum-is-less-than-target](https://github.com/Deepanshu954/LeetCode/tree/main/2824-count-pairs-whose-sum-is-less-than-target/) | Easy |
 | [2948-make-lexicographically-smallest-array-by-swapping-elements](https://github.com/Deepanshu954/LeetCode/tree/main/2948-make-lexicographically-smallest-array-by-swapping-elements/) | Medium |
@@ -657,6 +659,7 @@ This repository contains my solutions to LeetCode problems. The history is fully
 | [2035-partition-array-into-two-arrays-to-minimize-sum-difference](https://github.com/Deepanshu954/LeetCode/tree/main/2035-partition-array-into-two-arrays-to-minimize-sum-difference/) | Hard |
 | [2141-maximum-running-time-of-n-computers](https://github.com/Deepanshu954/LeetCode/tree/main/2141-maximum-running-time-of-n-computers/) | Hard |
 | [2231-largest-number-after-digit-swaps-by-parity](https://github.com/Deepanshu954/LeetCode/tree/main/2231-largest-number-after-digit-swaps-by-parity/) | Easy |
+| [2333-minimum-sum-of-squared-difference](https://github.com/Deepanshu954/LeetCode/tree/main/2333-minimum-sum-of-squared-difference/) | Medium |
 | [2824-count-pairs-whose-sum-is-less-than-target](https://github.com/Deepanshu954/LeetCode/tree/main/2824-count-pairs-whose-sum-is-less-than-target/) | Easy |
 | [2948-make-lexicographically-smallest-array-by-swapping-elements](https://github.com/Deepanshu954/LeetCode/tree/main/2948-make-lexicographically-smallest-array-by-swapping-elements/) | Medium |
 | [2996-smallest-missing-integer-greater-than-sequential-prefix-sum](https://github.com/Deepanshu954/LeetCode/tree/main/2996-smallest-missing-integer-greater-than-sequential-prefix-sum/) | Easy |
@@ -737,6 +740,7 @@ This repository contains my solutions to LeetCode problems. The history is fully
 | [1438-longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit](https://github.com/Deepanshu954/LeetCode/tree/main/1438-longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit/) | Medium |
 | [1464-maximum-product-of-two-elements-in-an-array](https://github.com/Deepanshu954/LeetCode/tree/main/1464-maximum-product-of-two-elements-in-an-array/) | Easy |
 | [2231-largest-number-after-digit-swaps-by-parity](https://github.com/Deepanshu954/LeetCode/tree/main/2231-largest-number-after-digit-swaps-by-parity/) | Easy |
+| [2333-minimum-sum-of-squared-difference](https://github.com/Deepanshu954/LeetCode/tree/main/2333-minimum-sum-of-squared-difference/) | Medium |
 ## Matrix
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -761,6 +765,7 @@ This repository contains my solutions to LeetCode problems. The history is fully
 | [2029-stone-game-ix](https://github.com/Deepanshu954/LeetCode/tree/main/2029-stone-game-ix/) | Medium |
 | [2091-removing-minimum-and-maximum-from-array](https://github.com/Deepanshu954/LeetCode/tree/main/2091-removing-minimum-and-maximum-from-array/) | Medium |
 | [2141-maximum-running-time-of-n-computers](https://github.com/Deepanshu954/LeetCode/tree/main/2141-maximum-running-time-of-n-computers/) | Hard |
+| [2333-minimum-sum-of-squared-difference](https://github.com/Deepanshu954/LeetCode/tree/main/2333-minimum-sum-of-squared-difference/) | Medium |
 | [2472-maximum-number-of-non-overlapping-palindrome-substrings](https://github.com/Deepanshu954/LeetCode/tree/main/2472-maximum-number-of-non-overlapping-palindrome-substrings/) | Hard |
 | [3014-minimum-number-of-pushes-to-type-word-i](https://github.com/Deepanshu954/LeetCode/tree/main/3014-minimum-number-of-pushes-to-type-word-i/) | Easy |
 | [3016-minimum-number-of-pushes-to-type-word-ii](https://github.com/Deepanshu954/LeetCode/tree/main/3016-minimum-number-of-pushes-to-type-word-ii/) | Medium |
