@@ -28,16 +28,6 @@ class Solution {
             k -= move;
         }
 
-        // Step 2: shave the biggest differences, level by level
-        for (int i = max; i > 0 && k > 0; i--) {
-            long move = Math.min(k, diff[i]);
-
-            diff[i] -= move;
-            diff[i-1] += move;
-
-            k -= move;
-        }
-
         // add up all the sq
 
         long res = 0;
@@ -47,12 +37,5 @@ class Solution {
         }
 
         return res;
-
-        // // Step 3: add up the squares
-        // long ans = 0;
-        // for (int i = 0; i <= max; i++)
-        //     ans += (long) i * i * d[i];
-
-        // return ans;
     }
 }
