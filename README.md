@@ -565,6 +565,7 @@ This repository contains my solutions to LeetCode problems. The history is fully
 | [2444-count-subarrays-with-fixed-bounds](https://github.com/Deepanshu954/LeetCode/tree/main/2444-count-subarrays-with-fixed-bounds/) | Hard |
 | [2778-sum-of-squares-of-special-elements](https://github.com/Deepanshu954/LeetCode/tree/main/2778-sum-of-squares-of-special-elements/) | Easy |
 | [2824-count-pairs-whose-sum-is-less-than-target](https://github.com/Deepanshu954/LeetCode/tree/main/2824-count-pairs-whose-sum-is-less-than-target/) | Easy |
+| [2897-apply-operations-on-array-to-maximize-sum-of-squares](https://github.com/Deepanshu954/LeetCode/tree/main/2897-apply-operations-on-array-to-maximize-sum-of-squares/) | Hard |
 | [2948-make-lexicographically-smallest-array-by-swapping-elements](https://github.com/Deepanshu954/LeetCode/tree/main/2948-make-lexicographically-smallest-array-by-swapping-elements/) | Medium |
 | [2996-smallest-missing-integer-greater-than-sequential-prefix-sum](https://github.com/Deepanshu954/LeetCode/tree/main/2996-smallest-missing-integer-greater-than-sequential-prefix-sum/) | Easy |
 | [3010-divide-an-array-into-subarrays-with-minimum-cost-i](https://github.com/Deepanshu954/LeetCode/tree/main/3010-divide-an-array-into-subarrays-with-minimum-cost-i/) | Easy |
@@ -693,6 +694,7 @@ This repository contains my solutions to LeetCode problems. The history is fully
 | [1477-find-two-non-overlapping-sub-arrays-each-with-target-sum](https://github.com/Deepanshu954/LeetCode/tree/main/1477-find-two-non-overlapping-sub-arrays-each-with-target-sum/) | Medium |
 | [1520-maximum-number-of-non-overlapping-substrings](https://github.com/Deepanshu954/LeetCode/tree/main/1520-maximum-number-of-non-overlapping-substrings/) | Hard |
 | [1876-substrings-of-size-three-with-distinct-characters](https://github.com/Deepanshu954/LeetCode/tree/main/1876-substrings-of-size-three-with-distinct-characters/) | Easy |
+| [2897-apply-operations-on-array-to-maximize-sum-of-squares](https://github.com/Deepanshu954/LeetCode/tree/main/2897-apply-operations-on-array-to-maximize-sum-of-squares/) | Hard |
 | [2996-smallest-missing-integer-greater-than-sequential-prefix-sum](https://github.com/Deepanshu954/LeetCode/tree/main/2996-smallest-missing-integer-greater-than-sequential-prefix-sum/) | Easy |
 | [3016-minimum-number-of-pushes-to-type-word-ii](https://github.com/Deepanshu954/LeetCode/tree/main/3016-minimum-number-of-pushes-to-type-word-ii/) | Medium |
 | [3090-maximum-length-substring-with-two-occurrences](https://github.com/Deepanshu954/LeetCode/tree/main/3090-maximum-length-substring-with-two-occurrences/) | Easy |
@@ -768,6 +770,7 @@ This repository contains my solutions to LeetCode problems. The history is fully
 | [2141-maximum-running-time-of-n-computers](https://github.com/Deepanshu954/LeetCode/tree/main/2141-maximum-running-time-of-n-computers/) | Hard |
 | [2333-minimum-sum-of-squared-difference](https://github.com/Deepanshu954/LeetCode/tree/main/2333-minimum-sum-of-squared-difference/) | Medium |
 | [2472-maximum-number-of-non-overlapping-palindrome-substrings](https://github.com/Deepanshu954/LeetCode/tree/main/2472-maximum-number-of-non-overlapping-palindrome-substrings/) | Hard |
+| [2897-apply-operations-on-array-to-maximize-sum-of-squares](https://github.com/Deepanshu954/LeetCode/tree/main/2897-apply-operations-on-array-to-maximize-sum-of-squares/) | Hard |
 | [3014-minimum-number-of-pushes-to-type-word-i](https://github.com/Deepanshu954/LeetCode/tree/main/3014-minimum-number-of-pushes-to-type-word-i/) | Easy |
 | [3016-minimum-number-of-pushes-to-type-word-ii](https://github.com/Deepanshu954/LeetCode/tree/main/3016-minimum-number-of-pushes-to-type-word-ii/) | Medium |
 | [3302-find-the-lexicographically-smallest-valid-sequence](https://github.com/Deepanshu954/LeetCode/tree/main/3302-find-the-lexicographically-smallest-valid-sequence/) | Medium |
@@ -862,6 +865,7 @@ This repository contains my solutions to LeetCode problems. The history is fully
 | ------- | ------- |
 | [0784-letter-case-permutation](https://github.com/Deepanshu954/LeetCode/tree/main/0784-letter-case-permutation/) | Medium |
 | [2035-partition-array-into-two-arrays-to-minimize-sum-difference](https://github.com/Deepanshu954/LeetCode/tree/main/2035-partition-array-into-two-arrays-to-minimize-sum-difference/) | Hard |
+| [2897-apply-operations-on-array-to-maximize-sum-of-squares](https://github.com/Deepanshu954/LeetCode/tree/main/2897-apply-operations-on-array-to-maximize-sum-of-squares/) | Hard |
 | [3513-number-of-unique-xor-triplets-i](https://github.com/Deepanshu954/LeetCode/tree/main/3513-number-of-unique-xor-triplets-i/) | Medium |
 | [3514-number-of-unique-xor-triplets-ii](https://github.com/Deepanshu954/LeetCode/tree/main/3514-number-of-unique-xor-triplets-ii/) | Medium |
 | [3568-minimum-moves-to-clean-the-classroom](https://github.com/Deepanshu954/LeetCode/tree/main/3568-minimum-moves-to-clean-the-classroom/) | Medium |
