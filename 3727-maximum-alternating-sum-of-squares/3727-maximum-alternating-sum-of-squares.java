@@ -40,16 +40,16 @@ class Solution {
         Arrays.sort(nums);
         
         int size = n / 2;
-        long totalSum = 0;
+        long sum = 0;
         
         for (int i = 0; i < size; i++) {
-            totalSum -= nums[i];
+            sum -= nums[i];
         }
         
         for (int i = size; i < n; i++) {
-            totalSum += nums[i];
+            sum += nums[i];
         }
         
-        return totalSum;
+        return sum;
     }
 }
