@@ -1,25 +1,14 @@
 class Solution {
-    public String maxSumOfSquares(int num, int sum) {
-        if(num * 9 < sum) return "";
+    public String maxSumOfSquares(int n, int s) {
+        if(s > n*9) return "";
 
-        StringBuilder sb = new StringBuilder();
+        int q = s / 9;
+        int r = s % 9;
 
-        int currSum = 0;
-        for(int i = 0; i < num; i++) {
-            int diff = sum - currSum;
+        StringBuilder sb = new StringBuilder().repeat('9', q);
+        if(r > 0) sb.append(r);
 
-            if(diff == 0) {
-                sb.append(0);
-            }
-            else if(diff <= 9) {
-                sb.append(diff);
-                currSum += diff;
-            } else {
-                sb.append(9);
-                currSum += 9;
-            }
-        }
-
+        sb.repeat('0', n - sb.length());
         return sb.toString();
     }
 }
