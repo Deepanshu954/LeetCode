@@ -1,26 +1,21 @@
-# 540. Single Element in a Sorted Array
+<h2><a href="https://leetcode.com/problems/single-element-in-a-sorted-array">540. Single Element in a Sorted Array</a></h2><h3>Medium</h3><hr><p>You are given a sorted array consisting of only integers where every element appears exactly twice, except for one element which appears exactly once.</p>
 
-You are given a sorted array consisting of only integers where every element appears exactly twice, except for one element which appears exactly once.
+<p>Return <em>the single element that appears only once</em>.</p>
 
-Return *the single element that appears only once*.
+<p>Your solution must run in <code>O(log n)</code> time and <code>O(1)</code> space.</p>
 
-Your solution must run in `O(log n)` time and `O(1)` space.
+<p>&nbsp;</p>
+<p><strong class="example">Example 1:</strong></p>
+<pre><strong>Input:</strong> nums = [1,1,2,3,3,4,4,8,8]
+<strong>Output:</strong> 2
+</pre><p><strong class="example">Example 2:</strong></p>
+<pre><strong>Input:</strong> nums = [3,3,7,7,10,11,11]
+<strong>Output:</strong> 10
+</pre>
+<p>&nbsp;</p>
+<p><strong>Constraints:</strong></p>
 
-**Example 1:**
-
-```
-Input: nums = [1,1,2,3,3,4,4,8,8]
-Output: 2
-```
-
-**Example 2:**
-
-```
-Input: nums = [3,3,7,7,10,11,11]
-Output: 10
-```
-
-**Constraints:**
-
-* `1 <= nums.length <= 105`
-* `0 <= nums[i] <= 105`
+<ul>
+	<li><code>1 &lt;= nums.length &lt;= 10<sup>5</sup></code></li>
+	<li><code>0 &lt;= nums[i] &lt;= 10<sup>5</sup></code></li>
+</ul>
