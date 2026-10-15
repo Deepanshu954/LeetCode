@@ -556,6 +556,7 @@ This repository contains my solutions to LeetCode problems. The history is fully
 | [1477-find-two-non-overlapping-sub-arrays-each-with-target-sum](https://github.com/Deepanshu954/LeetCode/tree/main/1477-find-two-non-overlapping-sub-arrays-each-with-target-sum/) | Medium |
 | [1539-kth-missing-positive-number](https://github.com/Deepanshu954/LeetCode/tree/main/1539-kth-missing-positive-number/) | Easy |
 | [1563-stone-game-v](https://github.com/Deepanshu954/LeetCode/tree/main/1563-stone-game-v/) | Hard |
+| [1695-maximum-erasure-value](https://github.com/Deepanshu954/LeetCode/tree/main/1695-maximum-erasure-value/) | Medium |
 | [1872-stone-game-viii](https://github.com/Deepanshu954/LeetCode/tree/main/1872-stone-game-viii/) | Hard |
 | [1979-find-greatest-common-divisor-of-array](https://github.com/Deepanshu954/LeetCode/tree/main/1979-find-greatest-common-divisor-of-array/) | Easy |
 | [2029-stone-game-ix](https://github.com/Deepanshu954/LeetCode/tree/main/2029-stone-game-ix/) | Medium |
@@ -699,6 +700,7 @@ This repository contains my solutions to LeetCode problems. The history is fully
 | [1079-letter-tile-possibilities](https://github.com/Deepanshu954/LeetCode/tree/main/1079-letter-tile-possibilities/) | Medium |
 | [1477-find-two-non-overlapping-sub-arrays-each-with-target-sum](https://github.com/Deepanshu954/LeetCode/tree/main/1477-find-two-non-overlapping-sub-arrays-each-with-target-sum/) | Medium |
 | [1520-maximum-number-of-non-overlapping-substrings](https://github.com/Deepanshu954/LeetCode/tree/main/1520-maximum-number-of-non-overlapping-substrings/) | Hard |
+| [1695-maximum-erasure-value](https://github.com/Deepanshu954/LeetCode/tree/main/1695-maximum-erasure-value/) | Medium |
 | [1876-substrings-of-size-three-with-distinct-characters](https://github.com/Deepanshu954/LeetCode/tree/main/1876-substrings-of-size-three-with-distinct-characters/) | Easy |
 | [2897-apply-operations-on-array-to-maximize-sum-of-squares](https://github.com/Deepanshu954/LeetCode/tree/main/2897-apply-operations-on-array-to-maximize-sum-of-squares/) | Hard |
 | [2913-subarrays-distinct-element-sum-of-squares-i](https://github.com/Deepanshu954/LeetCode/tree/main/2913-subarrays-distinct-element-sum-of-squares-i/) | Easy |
@@ -865,6 +867,7 @@ This repository contains my solutions to LeetCode problems. The history is fully
 | [1438-longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit](https://github.com/Deepanshu954/LeetCode/tree/main/1438-longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit/) | Medium |
 | [1456-maximum-number-of-vowels-in-a-substring-of-given-length](https://github.com/Deepanshu954/LeetCode/tree/main/1456-maximum-number-of-vowels-in-a-substring-of-given-length/) | Medium |
 | [1477-find-two-non-overlapping-sub-arrays-each-with-target-sum](https://github.com/Deepanshu954/LeetCode/tree/main/1477-find-two-non-overlapping-sub-arrays-each-with-target-sum/) | Medium |
+| [1695-maximum-erasure-value](https://github.com/Deepanshu954/LeetCode/tree/main/1695-maximum-erasure-value/) | Medium |
 | [1876-substrings-of-size-three-with-distinct-characters](https://github.com/Deepanshu954/LeetCode/tree/main/1876-substrings-of-size-three-with-distinct-characters/) | Easy |
 | [2444-count-subarrays-with-fixed-bounds](https://github.com/Deepanshu954/LeetCode/tree/main/2444-count-subarrays-with-fixed-bounds/) | Hard |
 | [2904-shortest-and-lexicographically-smallest-beautiful-string](https://github.com/Deepanshu954/LeetCode/tree/main/2904-shortest-and-lexicographically-smallest-beautiful-string/) | Medium |
