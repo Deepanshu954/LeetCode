@@ -1151,4 +1151,8 @@ This repository contains my solutions to LeetCode problems. The history is fully
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [2913-subarrays-distinct-element-sum-of-squares-i](https://github.com/Deepanshu954/LeetCode/tree/main/2913-subarrays-distinct-element-sum-of-squares-i/) | Easy |
+## Concurrency
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [1116-print-zero-even-odd](https://github.com/Deepanshu954/LeetCode/tree/main/1116-print-zero-even-odd/) | Medium |
 <!---LeetCode Topics End-->
