@@ -1,6 +1,6 @@
 -- Write your PostgreSQL query statement below
 select
     name
-from Customer as c
+from Customer
 where referee_id != 2
 or referee_id is null
