@@ -1167,4 +1167,8 @@ This repository contains my solutions to LeetCode problems. The history is fully
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [1116-print-zero-even-odd](https://github.com/Deepanshu954/LeetCode/tree/main/1116-print-zero-even-odd/) | Medium |
+## Database
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [1757-recyclable-and-low-fat-products](https://github.com/Deepanshu954/LeetCode/tree/main/1757-recyclable-and-low-fat-products/) | Easy |
 <!---LeetCode Topics End-->
