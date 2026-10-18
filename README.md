@@ -496,6 +496,7 @@ This repository contains my solutions to LeetCode problems. The history is fully
 | [0154-find-minimum-in-rotated-sorted-array-ii](https://github.com/Deepanshu954/LeetCode/tree/main/0154-find-minimum-in-rotated-sorted-array-ii/) | Hard |
 | [0278-first-bad-version](https://github.com/Deepanshu954/LeetCode/tree/main/0278-first-bad-version/) | Easy |
 | [0410-split-array-largest-sum](https://github.com/Deepanshu954/LeetCode/tree/main/0410-split-array-largest-sum/) | Hard |
+| [0475-heaters](https://github.com/Deepanshu954/LeetCode/tree/main/0475-heaters/) | Medium |
 | [0540-single-element-in-a-sorted-array](https://github.com/Deepanshu954/LeetCode/tree/main/0540-single-element-in-a-sorted-array/) | Medium |
 | [0713-subarray-product-less-than-k](https://github.com/Deepanshu954/LeetCode/tree/main/0713-subarray-product-less-than-k/) | Medium |
 | [0732-my-calendar-iii](https://github.com/Deepanshu954/LeetCode/tree/main/0732-my-calendar-iii/) | Hard |
@@ -533,6 +534,7 @@ This repository contains my solutions to LeetCode problems. The history is fully
 | [0239-sliding-window-maximum](https://github.com/Deepanshu954/LeetCode/tree/main/0239-sliding-window-maximum/) | Hard |
 | [0321-create-maximum-number](https://github.com/Deepanshu954/LeetCode/tree/main/0321-create-maximum-number/) | Hard |
 | [0410-split-array-largest-sum](https://github.com/Deepanshu954/LeetCode/tree/main/0410-split-array-largest-sum/) | Hard |
+| [0475-heaters](https://github.com/Deepanshu954/LeetCode/tree/main/0475-heaters/) | Medium |
 | [0486-predict-the-winner](https://github.com/Deepanshu954/LeetCode/tree/main/0486-predict-the-winner/) | Medium |
 | [0540-single-element-in-a-sorted-array](https://github.com/Deepanshu954/LeetCode/tree/main/0540-single-element-in-a-sorted-array/) | Medium |
 | [0542-01-matrix](https://github.com/Deepanshu954/LeetCode/tree/main/0542-01-matrix/) | Medium |
@@ -642,6 +644,7 @@ This repository contains my solutions to LeetCode problems. The history is fully
 | ------- | ------- |
 | [0028-find-the-index-of-the-first-occurrence-in-a-string](https://github.com/Deepanshu954/LeetCode/tree/main/0028-find-the-index-of-the-first-occurrence-in-a-string/) | Easy |
 | [0321-create-maximum-number](https://github.com/Deepanshu954/LeetCode/tree/main/0321-create-maximum-number/) | Hard |
+| [0475-heaters](https://github.com/Deepanshu954/LeetCode/tree/main/0475-heaters/) | Medium |
 | [0556-next-greater-element-iii](https://github.com/Deepanshu954/LeetCode/tree/main/0556-next-greater-element-iii/) | Medium |
 | [0844-backspace-string-compare](https://github.com/Deepanshu954/LeetCode/tree/main/0844-backspace-string-compare/) | Easy |
 | [0881-boats-to-save-people](https://github.com/Deepanshu954/LeetCode/tree/main/0881-boats-to-save-people/) | Medium |
@@ -659,6 +662,7 @@ This repository contains my solutions to LeetCode problems. The history is fully
 | ------- | ------- |
 | [0056-merge-intervals](https://github.com/Deepanshu954/LeetCode/tree/main/0056-merge-intervals/) | Medium |
 | [0217-contains-duplicate](https://github.com/Deepanshu954/LeetCode/tree/main/0217-contains-duplicate/) | Easy |
+| [0475-heaters](https://github.com/Deepanshu954/LeetCode/tree/main/0475-heaters/) | Medium |
 | [0628-maximum-product-of-three-numbers](https://github.com/Deepanshu954/LeetCode/tree/main/0628-maximum-product-of-three-numbers/) | Easy |
 | [0881-boats-to-save-people](https://github.com/Deepanshu954/LeetCode/tree/main/0881-boats-to-save-people/) | Medium |
 | [0905-sort-array-by-parity](https://github.com/Deepanshu954/LeetCode/tree/main/0905-sort-array-by-parity/) | Easy |
