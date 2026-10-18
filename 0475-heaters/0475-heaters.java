@@ -1,8 +1,8 @@
 class Solution {
     public int findRadius(int[] houses, int[] heaters) {
-        if(houses == null || houses.length == 0 || heaters == null || heaters.length == 0){
-            return 0;
-        }
+        // if(houses == null || houses.length == 0 || heaters == null || heaters.length == 0){
+        //     return 0;
+        // }
         
         Arrays.sort(houses);
         Arrays.sort(heaters);
