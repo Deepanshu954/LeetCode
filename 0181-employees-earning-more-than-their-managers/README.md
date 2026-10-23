@@ -1,8 +1,6 @@
-# 181. Employees Earning More Than Their Managers
+<h2><a href="https://leetcode.com/problems/employees-earning-more-than-their-managers">181. Employees Earning More Than Their Managers</a></h2><h3>Easy</h3><hr><p>Table: <code>Employee</code></p>
 
-Table: `Employee`
-
-```
+<pre>
 +-------------+---------+
 | Column Name | Type    |
 +-------------+---------+
@@ -13,18 +11,21 @@ Table: `Employee`
 +-------------+---------+
 id is the primary key (column with unique values) for this table.
 Each row of this table indicates the ID of an employee, their name, salary, and the ID of their manager.
-```
+</pre>
 
-Write a solution to find the employees who earn more than their managers.
+<p>&nbsp;</p>
 
-Return the result table in **any order**.
+<p>Write a solution&nbsp;to find the employees who earn more than their managers.</p>
 
-The result format is in the following example.
+<p>Return the result table in <strong>any order</strong>.</p>
 
-**Example 1:**
+<p>The result format is in the following example.</p>
 
-```
-Input: 
+<p>&nbsp;</p>
+<p><strong class="example">Example 1:</strong></p>
+
+<pre>
+<strong>Input:</strong> 
 Employee table:
 +----+-------+--------+-----------+
 | id | name  | salary | managerId |
@@ -34,11 +35,11 @@ Employee table:
 | 3  | Sam   | 60000  | Null      |
 | 4  | Max   | 90000  | Null      |
 +----+-------+--------+-----------+
-Output: 
+<strong>Output:</strong> 
 +----------+
 | Employee |
 +----------+
 | Joe      |
 +----------+
-Explanation: Joe is the only employee who earns more than his manager.
-```
+<strong>Explanation:</strong> Joe is the only employee who earns more than his manager.
+</pre>
