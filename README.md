@@ -1201,6 +1201,7 @@ This repository contains my solutions to LeetCode problems. The history is fully
 | [0181-employees-earning-more-than-their-managers](https://github.com/Deepanshu954/LeetCode/tree/main/0181-employees-earning-more-than-their-managers/) | Easy |
 | [0183-customers-who-never-order](https://github.com/Deepanshu954/LeetCode/tree/main/0183-customers-who-never-order/) | Easy |
 | [0197-rising-temperature](https://github.com/Deepanshu954/LeetCode/tree/main/0197-rising-temperature/) | Easy |
+| [0570-managers-with-at-least-5-direct-reports](https://github.com/Deepanshu954/LeetCode/tree/main/0570-managers-with-at-least-5-direct-reports/) | Medium |
 | [0577-employee-bonus](https://github.com/Deepanshu954/LeetCode/tree/main/0577-employee-bonus/) | Easy |
 | [0584-find-customer-referee](https://github.com/Deepanshu954/LeetCode/tree/main/0584-find-customer-referee/) | Easy |
 | [0595-big-countries](https://github.com/Deepanshu954/LeetCode/tree/main/0595-big-countries/) | Easy |
