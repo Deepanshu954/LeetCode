@@ -583,6 +583,7 @@ This repository contains my solutions to LeetCode problems. The history is fully
 | [2996-smallest-missing-integer-greater-than-sequential-prefix-sum](https://github.com/Deepanshu954/LeetCode/tree/main/2996-smallest-missing-integer-greater-than-sequential-prefix-sum/) | Easy |
 | [3010-divide-an-array-into-subarrays-with-minimum-cost-i](https://github.com/Deepanshu954/LeetCode/tree/main/3010-divide-an-array-into-subarrays-with-minimum-cost-i/) | Easy |
 | [3069-distribute-elements-into-two-arrays-i](https://github.com/Deepanshu954/LeetCode/tree/main/3069-distribute-elements-into-two-arrays-i/) | Easy |
+| [3079-find-the-sum-of-encrypted-integers](https://github.com/Deepanshu954/LeetCode/tree/main/3079-find-the-sum-of-encrypted-integers/) | Easy |
 | [3312-sorted-gcd-pair-queries](https://github.com/Deepanshu954/LeetCode/tree/main/3312-sorted-gcd-pair-queries/) | Hard |
 | [3414-maximum-score-of-non-overlapping-intervals](https://github.com/Deepanshu954/LeetCode/tree/main/3414-maximum-score-of-non-overlapping-intervals/) | Hard |
 | [3471-find-the-largest-almost-missing-integer](https://github.com/Deepanshu954/LeetCode/tree/main/3471-find-the-largest-almost-missing-integer/) | Easy |
@@ -628,6 +629,7 @@ This repository contains my solutions to LeetCode problems. The history is fully
 | [2235-add-two-integers](https://github.com/Deepanshu954/LeetCode/tree/main/2235-add-two-integers/) | Easy |
 | [2409-count-days-spent-together](https://github.com/Deepanshu954/LeetCode/tree/main/2409-count-days-spent-together/) | Easy |
 | [3014-minimum-number-of-pushes-to-type-word-i](https://github.com/Deepanshu954/LeetCode/tree/main/3014-minimum-number-of-pushes-to-type-word-i/) | Easy |
+| [3079-find-the-sum-of-encrypted-integers](https://github.com/Deepanshu954/LeetCode/tree/main/3079-find-the-sum-of-encrypted-integers/) | Easy |
 | [3312-sorted-gcd-pair-queries](https://github.com/Deepanshu954/LeetCode/tree/main/3312-sorted-gcd-pair-queries/) | Hard |
 | [3348-smallest-divisible-digit-product-ii](https://github.com/Deepanshu954/LeetCode/tree/main/3348-smallest-divisible-digit-product-ii/) | Hard |
 | [3513-number-of-unique-xor-triplets-i](https://github.com/Deepanshu954/LeetCode/tree/main/3513-number-of-unique-xor-triplets-i/) | Medium |
