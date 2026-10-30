@@ -540,6 +540,7 @@ This repository contains my solutions to LeetCode problems. The history is fully
 | [0486-predict-the-winner](https://github.com/Deepanshu954/LeetCode/tree/main/0486-predict-the-winner/) | Medium |
 | [0540-single-element-in-a-sorted-array](https://github.com/Deepanshu954/LeetCode/tree/main/0540-single-element-in-a-sorted-array/) | Medium |
 | [0542-01-matrix](https://github.com/Deepanshu954/LeetCode/tree/main/0542-01-matrix/) | Medium |
+| [0566-reshape-the-matrix](https://github.com/Deepanshu954/LeetCode/tree/main/0566-reshape-the-matrix/) | Easy |
 | [0628-maximum-product-of-three-numbers](https://github.com/Deepanshu954/LeetCode/tree/main/0628-maximum-product-of-three-numbers/) | Easy |
 | [0674-longest-continuous-increasing-subsequence](https://github.com/Deepanshu954/LeetCode/tree/main/0674-longest-continuous-increasing-subsequence/) | Easy |
 | [0713-subarray-product-less-than-k](https://github.com/Deepanshu954/LeetCode/tree/main/0713-subarray-product-less-than-k/) | Medium |
@@ -705,6 +706,7 @@ This repository contains my solutions to LeetCode problems. The history is fully
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0258-add-digits](https://github.com/Deepanshu954/LeetCode/tree/main/0258-add-digits/) | Easy |
+| [0566-reshape-the-matrix](https://github.com/Deepanshu954/LeetCode/tree/main/0566-reshape-the-matrix/) | Easy |
 | [0844-backspace-string-compare](https://github.com/Deepanshu954/LeetCode/tree/main/0844-backspace-string-compare/) | Easy |
 | [1094-car-pooling](https://github.com/Deepanshu954/LeetCode/tree/main/1094-car-pooling/) | Medium |
 | [1260-shift-2d-grid](https://github.com/Deepanshu954/LeetCode/tree/main/1260-shift-2d-grid/) | Easy |
@@ -783,6 +785,7 @@ This repository contains my solutions to LeetCode problems. The history is fully
 | ------- | ------- |
 | [0037-sudoku-solver](https://github.com/Deepanshu954/LeetCode/tree/main/0037-sudoku-solver/) | Hard |
 | [0542-01-matrix](https://github.com/Deepanshu954/LeetCode/tree/main/0542-01-matrix/) | Medium |
+| [0566-reshape-the-matrix](https://github.com/Deepanshu954/LeetCode/tree/main/0566-reshape-the-matrix/) | Easy |
 | [0835-image-overlap](https://github.com/Deepanshu954/LeetCode/tree/main/0835-image-overlap/) | Medium |
 | [1260-shift-2d-grid](https://github.com/Deepanshu954/LeetCode/tree/main/1260-shift-2d-grid/) | Easy |
 | [1337-the-k-weakest-rows-in-a-matrix](https://github.com/Deepanshu954/LeetCode/tree/main/1337-the-k-weakest-rows-in-a-matrix/) | Easy |
