@@ -536,6 +536,7 @@ This repository contains my solutions to LeetCode problems. The history is fully
 | [0239-sliding-window-maximum](https://github.com/Deepanshu954/LeetCode/tree/main/0239-sliding-window-maximum/) | Hard |
 | [0321-create-maximum-number](https://github.com/Deepanshu954/LeetCode/tree/main/0321-create-maximum-number/) | Hard |
 | [0410-split-array-largest-sum](https://github.com/Deepanshu954/LeetCode/tree/main/0410-split-array-largest-sum/) | Hard |
+| [0453-minimum-moves-to-equal-array-elements](https://github.com/Deepanshu954/LeetCode/tree/main/0453-minimum-moves-to-equal-array-elements/) | Medium |
 | [0475-heaters](https://github.com/Deepanshu954/LeetCode/tree/main/0475-heaters/) | Medium |
 | [0486-predict-the-winner](https://github.com/Deepanshu954/LeetCode/tree/main/0486-predict-the-winner/) | Medium |
 | [0540-single-element-in-a-sorted-array](https://github.com/Deepanshu954/LeetCode/tree/main/0540-single-element-in-a-sorted-array/) | Medium |
@@ -609,6 +610,7 @@ This repository contains my solutions to LeetCode problems. The history is fully
 | [0096-unique-binary-search-trees](https://github.com/Deepanshu954/LeetCode/tree/main/0096-unique-binary-search-trees/) | Medium |
 | [0258-add-digits](https://github.com/Deepanshu954/LeetCode/tree/main/0258-add-digits/) | Easy |
 | [0279-perfect-squares](https://github.com/Deepanshu954/LeetCode/tree/main/0279-perfect-squares/) | Medium |
+| [0453-minimum-moves-to-equal-array-elements](https://github.com/Deepanshu954/LeetCode/tree/main/0453-minimum-moves-to-equal-array-elements/) | Medium |
 | [0486-predict-the-winner](https://github.com/Deepanshu954/LeetCode/tree/main/0486-predict-the-winner/) | Medium |
 | [0556-next-greater-element-iii](https://github.com/Deepanshu954/LeetCode/tree/main/0556-next-greater-element-iii/) | Medium |
 | [0628-maximum-product-of-three-numbers](https://github.com/Deepanshu954/LeetCode/tree/main/0628-maximum-product-of-three-numbers/) | Easy |
