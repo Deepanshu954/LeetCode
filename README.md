@@ -557,6 +557,7 @@ This repository contains my solutions to LeetCode problems. The history is fully
 | [1046-last-stone-weight](https://github.com/Deepanshu954/LeetCode/tree/main/1046-last-stone-weight/) | Easy |
 | [1094-car-pooling](https://github.com/Deepanshu954/LeetCode/tree/main/1094-car-pooling/) | Medium |
 | [1260-shift-2d-grid](https://github.com/Deepanshu954/LeetCode/tree/main/1260-shift-2d-grid/) | Easy |
+| [1267-count-servers-that-communicate](https://github.com/Deepanshu954/LeetCode/tree/main/1267-count-servers-that-communicate/) | Medium |
 | [1337-the-k-weakest-rows-in-a-matrix](https://github.com/Deepanshu954/LeetCode/tree/main/1337-the-k-weakest-rows-in-a-matrix/) | Easy |
 | [1351-count-negative-numbers-in-a-sorted-matrix](https://github.com/Deepanshu954/LeetCode/tree/main/1351-count-negative-numbers-in-a-sorted-matrix/) | Easy |
 | [1385-find-the-distance-value-between-two-arrays](https://github.com/Deepanshu954/LeetCode/tree/main/1385-find-the-distance-value-between-two-arrays/) | Easy |
@@ -765,6 +766,7 @@ This repository contains my solutions to LeetCode problems. The history is fully
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [1079-letter-tile-possibilities](https://github.com/Deepanshu954/LeetCode/tree/main/1079-letter-tile-possibilities/) | Medium |
+| [1267-count-servers-that-communicate](https://github.com/Deepanshu954/LeetCode/tree/main/1267-count-servers-that-communicate/) | Medium |
 | [1876-substrings-of-size-three-with-distinct-characters](https://github.com/Deepanshu954/LeetCode/tree/main/1876-substrings-of-size-three-with-distinct-characters/) | Easy |
 | [2029-stone-game-ix](https://github.com/Deepanshu954/LeetCode/tree/main/2029-stone-game-ix/) | Medium |
 | [3016-minimum-number-of-pushes-to-type-word-ii](https://github.com/Deepanshu954/LeetCode/tree/main/3016-minimum-number-of-pushes-to-type-word-ii/) | Medium |
@@ -801,6 +803,7 @@ This repository contains my solutions to LeetCode problems. The history is fully
 | [0566-reshape-the-matrix](https://github.com/Deepanshu954/LeetCode/tree/main/0566-reshape-the-matrix/) | Easy |
 | [0835-image-overlap](https://github.com/Deepanshu954/LeetCode/tree/main/0835-image-overlap/) | Medium |
 | [1260-shift-2d-grid](https://github.com/Deepanshu954/LeetCode/tree/main/1260-shift-2d-grid/) | Easy |
+| [1267-count-servers-that-communicate](https://github.com/Deepanshu954/LeetCode/tree/main/1267-count-servers-that-communicate/) | Medium |
 | [1337-the-k-weakest-rows-in-a-matrix](https://github.com/Deepanshu954/LeetCode/tree/main/1337-the-k-weakest-rows-in-a-matrix/) | Easy |
 | [1351-count-negative-numbers-in-a-sorted-matrix](https://github.com/Deepanshu954/LeetCode/tree/main/1351-count-negative-numbers-in-a-sorted-matrix/) | Easy |
 | [3568-minimum-moves-to-clean-the-classroom](https://github.com/Deepanshu954/LeetCode/tree/main/3568-minimum-moves-to-clean-the-classroom/) | Medium |
@@ -1031,6 +1034,7 @@ This repository contains my solutions to LeetCode problems. The history is fully
 | [0662-maximum-width-of-binary-tree](https://github.com/Deepanshu954/LeetCode/tree/main/0662-maximum-width-of-binary-tree/) | Medium |
 | [0802-find-eventual-safe-states](https://github.com/Deepanshu954/LeetCode/tree/main/0802-find-eventual-safe-states/) | Medium |
 | [0987-vertical-order-traversal-of-a-binary-tree](https://github.com/Deepanshu954/LeetCode/tree/main/0987-vertical-order-traversal-of-a-binary-tree/) | Hard |
+| [1267-count-servers-that-communicate](https://github.com/Deepanshu954/LeetCode/tree/main/1267-count-servers-that-communicate/) | Medium |
 | [2265-count-nodes-equal-to-average-of-subtree](https://github.com/Deepanshu954/LeetCode/tree/main/2265-count-nodes-equal-to-average-of-subtree/) | Medium |
 | [3310-remove-methods-from-project](https://github.com/Deepanshu954/LeetCode/tree/main/3310-remove-methods-from-project/) | Medium |
 | [3619-count-islands-with-total-value-divisible-by-k](https://github.com/Deepanshu954/LeetCode/tree/main/3619-count-islands-with-total-value-divisible-by-k/) | Medium |
@@ -1050,6 +1054,7 @@ This repository contains my solutions to LeetCode problems. The history is fully
 | [0662-maximum-width-of-binary-tree](https://github.com/Deepanshu954/LeetCode/tree/main/0662-maximum-width-of-binary-tree/) | Medium |
 | [0802-find-eventual-safe-states](https://github.com/Deepanshu954/LeetCode/tree/main/0802-find-eventual-safe-states/) | Medium |
 | [0987-vertical-order-traversal-of-a-binary-tree](https://github.com/Deepanshu954/LeetCode/tree/main/0987-vertical-order-traversal-of-a-binary-tree/) | Hard |
+| [1267-count-servers-that-communicate](https://github.com/Deepanshu954/LeetCode/tree/main/1267-count-servers-that-communicate/) | Medium |
 | [3310-remove-methods-from-project](https://github.com/Deepanshu954/LeetCode/tree/main/3310-remove-methods-from-project/) | Medium |
 | [3568-minimum-moves-to-clean-the-classroom](https://github.com/Deepanshu954/LeetCode/tree/main/3568-minimum-moves-to-clean-the-classroom/) | Medium |
 | [3619-count-islands-with-total-value-divisible-by-k](https://github.com/Deepanshu954/LeetCode/tree/main/3619-count-islands-with-total-value-divisible-by-k/) | Medium |
@@ -1157,6 +1162,7 @@ This repository contains my solutions to LeetCode problems. The history is fully
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0547-number-of-provinces](https://github.com/Deepanshu954/LeetCode/tree/main/0547-number-of-provinces/) | Medium |
+| [1267-count-servers-that-communicate](https://github.com/Deepanshu954/LeetCode/tree/main/1267-count-servers-that-communicate/) | Medium |
 | [1569-number-of-ways-to-reorder-array-to-get-same-bst](https://github.com/Deepanshu954/LeetCode/tree/main/1569-number-of-ways-to-reorder-array-to-get-same-bst/) | Hard |
 | [2948-make-lexicographically-smallest-array-by-swapping-elements](https://github.com/Deepanshu954/LeetCode/tree/main/2948-make-lexicographically-smallest-array-by-swapping-elements/) | Medium |
 | [3619-count-islands-with-total-value-divisible-by-k](https://github.com/Deepanshu954/LeetCode/tree/main/3619-count-islands-with-total-value-divisible-by-k/) | Medium |
