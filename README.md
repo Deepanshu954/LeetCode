@@ -590,6 +590,7 @@ This repository contains my solutions to LeetCode problems. The history is fully
 | [3069-distribute-elements-into-two-arrays-i](https://github.com/Deepanshu954/LeetCode/tree/main/3069-distribute-elements-into-two-arrays-i/) | Easy |
 | [3079-find-the-sum-of-encrypted-integers](https://github.com/Deepanshu954/LeetCode/tree/main/3079-find-the-sum-of-encrypted-integers/) | Easy |
 | [3312-sorted-gcd-pair-queries](https://github.com/Deepanshu954/LeetCode/tree/main/3312-sorted-gcd-pair-queries/) | Hard |
+| [3364-minimum-positive-sum-subarray](https://github.com/Deepanshu954/LeetCode/tree/main/3364-minimum-positive-sum-subarray/) | Easy |
 | [3414-maximum-score-of-non-overlapping-intervals](https://github.com/Deepanshu954/LeetCode/tree/main/3414-maximum-score-of-non-overlapping-intervals/) | Hard |
 | [3471-find-the-largest-almost-missing-integer](https://github.com/Deepanshu954/LeetCode/tree/main/3471-find-the-largest-almost-missing-integer/) | Easy |
 | [3483-unique-3-digit-even-numbers](https://github.com/Deepanshu954/LeetCode/tree/main/3483-unique-3-digit-even-numbers/) | Easy |
@@ -786,6 +787,7 @@ This repository contains my solutions to LeetCode problems. The history is fully
 | [1621-number-of-sets-of-k-non-overlapping-line-segments](https://github.com/Deepanshu954/LeetCode/tree/main/1621-number-of-sets-of-k-non-overlapping-line-segments/) | Medium |
 | [1872-stone-game-viii](https://github.com/Deepanshu954/LeetCode/tree/main/1872-stone-game-viii/) | Hard |
 | [3312-sorted-gcd-pair-queries](https://github.com/Deepanshu954/LeetCode/tree/main/3312-sorted-gcd-pair-queries/) | Hard |
+| [3364-minimum-positive-sum-subarray](https://github.com/Deepanshu954/LeetCode/tree/main/3364-minimum-positive-sum-subarray/) | Easy |
 ## Heap (Priority Queue)
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -932,6 +934,7 @@ This repository contains my solutions to LeetCode problems. The history is fully
 | [2444-count-subarrays-with-fixed-bounds](https://github.com/Deepanshu954/LeetCode/tree/main/2444-count-subarrays-with-fixed-bounds/) | Hard |
 | [2904-shortest-and-lexicographically-smallest-beautiful-string](https://github.com/Deepanshu954/LeetCode/tree/main/2904-shortest-and-lexicographically-smallest-beautiful-string/) | Medium |
 | [3090-maximum-length-substring-with-two-occurrences](https://github.com/Deepanshu954/LeetCode/tree/main/3090-maximum-length-substring-with-two-occurrences/) | Easy |
+| [3364-minimum-positive-sum-subarray](https://github.com/Deepanshu954/LeetCode/tree/main/3364-minimum-positive-sum-subarray/) | Easy |
 ## Bit Manipulation
 | Problem Name | Difficulty |
 | ------- | ------- |
