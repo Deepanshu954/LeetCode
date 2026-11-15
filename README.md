@@ -565,6 +565,7 @@ This repository contains my solutions to LeetCode problems. The history is fully
 | [1438-longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit](https://github.com/Deepanshu954/LeetCode/tree/main/1438-longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit/) | Medium |
 | [1464-maximum-product-of-two-elements-in-an-array](https://github.com/Deepanshu954/LeetCode/tree/main/1464-maximum-product-of-two-elements-in-an-array/) | Easy |
 | [1477-find-two-non-overlapping-sub-arrays-each-with-target-sum](https://github.com/Deepanshu954/LeetCode/tree/main/1477-find-two-non-overlapping-sub-arrays-each-with-target-sum/) | Medium |
+| [1524-number-of-sub-arrays-with-odd-sum](https://github.com/Deepanshu954/LeetCode/tree/main/1524-number-of-sub-arrays-with-odd-sum/) | Medium |
 | [1539-kth-missing-positive-number](https://github.com/Deepanshu954/LeetCode/tree/main/1539-kth-missing-positive-number/) | Easy |
 | [1563-stone-game-v](https://github.com/Deepanshu954/LeetCode/tree/main/1563-stone-game-v/) | Hard |
 | [1569-number-of-ways-to-reorder-array-to-get-same-bst](https://github.com/Deepanshu954/LeetCode/tree/main/1569-number-of-ways-to-reorder-array-to-get-same-bst/) | Hard |
@@ -628,6 +629,7 @@ This repository contains my solutions to LeetCode problems. The history is fully
 | [1401-circle-and-rectangle-overlapping](https://github.com/Deepanshu954/LeetCode/tree/main/1401-circle-and-rectangle-overlapping/) | Medium |
 | [1406-stone-game-iii](https://github.com/Deepanshu954/LeetCode/tree/main/1406-stone-game-iii/) | Hard |
 | [1510-stone-game-iv](https://github.com/Deepanshu954/LeetCode/tree/main/1510-stone-game-iv/) | Hard |
+| [1524-number-of-sub-arrays-with-odd-sum](https://github.com/Deepanshu954/LeetCode/tree/main/1524-number-of-sub-arrays-with-odd-sum/) | Medium |
 | [1563-stone-game-v](https://github.com/Deepanshu954/LeetCode/tree/main/1563-stone-game-v/) | Hard |
 | [1569-number-of-ways-to-reorder-array-to-get-same-bst](https://github.com/Deepanshu954/LeetCode/tree/main/1569-number-of-ways-to-reorder-array-to-get-same-bst/) | Hard |
 | [1621-number-of-sets-of-k-non-overlapping-line-segments](https://github.com/Deepanshu954/LeetCode/tree/main/1621-number-of-sets-of-k-non-overlapping-line-segments/) | Medium |
@@ -784,6 +786,7 @@ This repository contains my solutions to LeetCode problems. The history is fully
 | [0713-subarray-product-less-than-k](https://github.com/Deepanshu954/LeetCode/tree/main/0713-subarray-product-less-than-k/) | Medium |
 | [0732-my-calendar-iii](https://github.com/Deepanshu954/LeetCode/tree/main/0732-my-calendar-iii/) | Hard |
 | [1094-car-pooling](https://github.com/Deepanshu954/LeetCode/tree/main/1094-car-pooling/) | Medium |
+| [1524-number-of-sub-arrays-with-odd-sum](https://github.com/Deepanshu954/LeetCode/tree/main/1524-number-of-sub-arrays-with-odd-sum/) | Medium |
 | [1621-number-of-sets-of-k-non-overlapping-line-segments](https://github.com/Deepanshu954/LeetCode/tree/main/1621-number-of-sets-of-k-non-overlapping-line-segments/) | Medium |
 | [1872-stone-game-viii](https://github.com/Deepanshu954/LeetCode/tree/main/1872-stone-game-viii/) | Hard |
 | [3312-sorted-gcd-pair-queries](https://github.com/Deepanshu954/LeetCode/tree/main/3312-sorted-gcd-pair-queries/) | Hard |
@@ -858,6 +861,7 @@ This repository contains my solutions to LeetCode problems. The history is fully
 | [1406-stone-game-iii](https://github.com/Deepanshu954/LeetCode/tree/main/1406-stone-game-iii/) | Hard |
 | [1477-find-two-non-overlapping-sub-arrays-each-with-target-sum](https://github.com/Deepanshu954/LeetCode/tree/main/1477-find-two-non-overlapping-sub-arrays-each-with-target-sum/) | Medium |
 | [1510-stone-game-iv](https://github.com/Deepanshu954/LeetCode/tree/main/1510-stone-game-iv/) | Hard |
+| [1524-number-of-sub-arrays-with-odd-sum](https://github.com/Deepanshu954/LeetCode/tree/main/1524-number-of-sub-arrays-with-odd-sum/) | Medium |
 | [1563-stone-game-v](https://github.com/Deepanshu954/LeetCode/tree/main/1563-stone-game-v/) | Hard |
 | [1569-number-of-ways-to-reorder-array-to-get-same-bst](https://github.com/Deepanshu954/LeetCode/tree/main/1569-number-of-ways-to-reorder-array-to-get-same-bst/) | Hard |
 | [1621-number-of-sets-of-k-non-overlapping-line-segments](https://github.com/Deepanshu954/LeetCode/tree/main/1621-number-of-sets-of-k-non-overlapping-line-segments/) | Medium |
