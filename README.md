@@ -541,6 +541,7 @@ This repository contains my solutions to LeetCode problems. The history is fully
 | [0462-minimum-moves-to-equal-array-elements-ii](https://github.com/Deepanshu954/LeetCode/tree/main/0462-minimum-moves-to-equal-array-elements-ii/) | Medium |
 | [0475-heaters](https://github.com/Deepanshu954/LeetCode/tree/main/0475-heaters/) | Medium |
 | [0486-predict-the-winner](https://github.com/Deepanshu954/LeetCode/tree/main/0486-predict-the-winner/) | Medium |
+| [0494-target-sum](https://github.com/Deepanshu954/LeetCode/tree/main/0494-target-sum/) | Medium |
 | [0540-single-element-in-a-sorted-array](https://github.com/Deepanshu954/LeetCode/tree/main/0540-single-element-in-a-sorted-array/) | Medium |
 | [0542-01-matrix](https://github.com/Deepanshu954/LeetCode/tree/main/0542-01-matrix/) | Medium |
 | [0566-reshape-the-matrix](https://github.com/Deepanshu954/LeetCode/tree/main/0566-reshape-the-matrix/) | Easy |
@@ -855,6 +856,7 @@ This repository contains my solutions to LeetCode problems. The history is fully
 | [0279-perfect-squares](https://github.com/Deepanshu954/LeetCode/tree/main/0279-perfect-squares/) | Medium |
 | [0410-split-array-largest-sum](https://github.com/Deepanshu954/LeetCode/tree/main/0410-split-array-largest-sum/) | Hard |
 | [0486-predict-the-winner](https://github.com/Deepanshu954/LeetCode/tree/main/0486-predict-the-winner/) | Medium |
+| [0494-target-sum](https://github.com/Deepanshu954/LeetCode/tree/main/0494-target-sum/) | Medium |
 | [0542-01-matrix](https://github.com/Deepanshu954/LeetCode/tree/main/0542-01-matrix/) | Medium |
 | [0678-valid-parenthesis-string](https://github.com/Deepanshu954/LeetCode/tree/main/0678-valid-parenthesis-string/) | Medium |
 | [0877-stone-game](https://github.com/Deepanshu954/LeetCode/tree/main/0877-stone-game/) | Medium |
@@ -987,6 +989,7 @@ This repository contains my solutions to LeetCode problems. The history is fully
 | [0037-sudoku-solver](https://github.com/Deepanshu954/LeetCode/tree/main/0037-sudoku-solver/) | Hard |
 | [0113-path-sum-ii](https://github.com/Deepanshu954/LeetCode/tree/main/0113-path-sum-ii/) | Medium |
 | [0301-remove-invalid-parentheses](https://github.com/Deepanshu954/LeetCode/tree/main/0301-remove-invalid-parentheses/) | Hard |
+| [0494-target-sum](https://github.com/Deepanshu954/LeetCode/tree/main/0494-target-sum/) | Medium |
 | [0784-letter-case-permutation](https://github.com/Deepanshu954/LeetCode/tree/main/0784-letter-case-permutation/) | Medium |
 | [1079-letter-tile-possibilities](https://github.com/Deepanshu954/LeetCode/tree/main/1079-letter-tile-possibilities/) | Medium |
 | [3348-smallest-divisible-digit-product-ii](https://github.com/Deepanshu954/LeetCode/tree/main/3348-smallest-divisible-digit-product-ii/) | Hard |
@@ -1227,6 +1230,7 @@ This repository contains my solutions to LeetCode problems. The history is fully
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0279-perfect-squares](https://github.com/Deepanshu954/LeetCode/tree/main/0279-perfect-squares/) | Medium |
+| [0494-target-sum](https://github.com/Deepanshu954/LeetCode/tree/main/0494-target-sum/) | Medium |
 ## Complete Knapsack
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -1273,4 +1277,8 @@ This repository contains my solutions to LeetCode problems. The history is fully
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [1569-number-of-ways-to-reorder-array-to-get-same-bst](https://github.com/Deepanshu954/LeetCode/tree/main/1569-number-of-ways-to-reorder-array-to-get-same-bst/) | Hard |
+## 0-1 Knapsack
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0494-target-sum](https://github.com/Deepanshu954/LeetCode/tree/main/0494-target-sum/) | Medium |
 <!---LeetCode Topics End-->
