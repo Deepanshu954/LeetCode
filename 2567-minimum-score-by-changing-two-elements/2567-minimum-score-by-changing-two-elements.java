@@ -1,9 +1,8 @@
 class Solution {
     public int minimizeSum(int[] nums) {
         int n = nums.length;
-        if(n == 3) return 0;
+        //if(n == 3) return 0;
 
-        int res = 0;
         Arrays.sort(nums);
 
         return Math.min(
