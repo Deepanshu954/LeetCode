@@ -12,6 +12,5 @@ class Solution {
                 nums[n-3] - nums[0]
             )
         );
-
     }
 }
