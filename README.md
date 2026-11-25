@@ -527,6 +527,7 @@ This repository contains my solutions to LeetCode problems. The history is fully
 | [0001-two-sum](https://github.com/Deepanshu954/LeetCode/tree/main/0001-two-sum/) | Easy |
 | [0004-median-of-two-sorted-arrays](https://github.com/Deepanshu954/LeetCode/tree/main/0004-median-of-two-sorted-arrays/) | Hard |
 | [0015-3sum](https://github.com/Deepanshu954/LeetCode/tree/main/0015-3sum/) | Medium |
+| [0018-4sum](https://github.com/Deepanshu954/LeetCode/tree/main/0018-4sum/) | Medium |
 | [0037-sudoku-solver](https://github.com/Deepanshu954/LeetCode/tree/main/0037-sudoku-solver/) | Hard |
 | [0055-jump-game](https://github.com/Deepanshu954/LeetCode/tree/main/0055-jump-game/) | Medium |
 | [0056-merge-intervals](https://github.com/Deepanshu954/LeetCode/tree/main/0056-merge-intervals/) | Medium |
@@ -677,6 +678,7 @@ This repository contains my solutions to LeetCode problems. The history is fully
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0015-3sum](https://github.com/Deepanshu954/LeetCode/tree/main/0015-3sum/) | Medium |
+| [0018-4sum](https://github.com/Deepanshu954/LeetCode/tree/main/0018-4sum/) | Medium |
 | [0028-find-the-index-of-the-first-occurrence-in-a-string](https://github.com/Deepanshu954/LeetCode/tree/main/0028-find-the-index-of-the-first-occurrence-in-a-string/) | Easy |
 | [0321-create-maximum-number](https://github.com/Deepanshu954/LeetCode/tree/main/0321-create-maximum-number/) | Hard |
 | [0475-heaters](https://github.com/Deepanshu954/LeetCode/tree/main/0475-heaters/) | Medium |
@@ -697,6 +699,7 @@ This repository contains my solutions to LeetCode problems. The history is fully
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0015-3sum](https://github.com/Deepanshu954/LeetCode/tree/main/0015-3sum/) | Medium |
+| [0018-4sum](https://github.com/Deepanshu954/LeetCode/tree/main/0018-4sum/) | Medium |
 | [0056-merge-intervals](https://github.com/Deepanshu954/LeetCode/tree/main/0056-merge-intervals/) | Medium |
 | [0217-contains-duplicate](https://github.com/Deepanshu954/LeetCode/tree/main/0217-contains-duplicate/) | Easy |
 | [0462-minimum-moves-to-equal-array-elements-ii](https://github.com/Deepanshu954/LeetCode/tree/main/0462-minimum-moves-to-equal-array-elements-ii/) | Medium |
