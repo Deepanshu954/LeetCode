@@ -17,8 +17,7 @@ class Solution {
 
             maxProd = Math.max(maxProd * curr, curr);
             minProd = Math.min(minProd * curr, curr);
-
-            if(res < maxProd) res = maxProd;
+            res = Math.max(res, maxProd);
         }
         
         return res;
