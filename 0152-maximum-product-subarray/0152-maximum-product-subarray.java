@@ -15,11 +15,14 @@ class Solution {
 
             int temp = curr;
 
-            maxProd = maxProd * curr;
-            if(maxProd < curr) maxProd = curr;
+            // maxProd = maxProd * curr;
+            // if(maxProd < curr) maxProd = curr;
 
-            minProd = minProd * temp;
-            if(minProd > temp) minProd = temp;
+            maxProd = Math.max(maxProd * curr, curr);
+            minProd = Math.min(minProd * temp, temp);
+
+            // minProd = minProd * temp;
+            // if(minProd > temp) minProd = temp;
 
 
             if(res < maxProd) res = maxProd;
