@@ -534,6 +534,7 @@ This repository contains my solutions to LeetCode problems. The history is fully
 | [0056-merge-intervals](https://github.com/Deepanshu954/LeetCode/tree/main/0056-merge-intervals/) | Medium |
 | [0081-search-in-rotated-sorted-array-ii](https://github.com/Deepanshu954/LeetCode/tree/main/0081-search-in-rotated-sorted-array-ii/) | Medium |
 | [0105-construct-binary-tree-from-preorder-and-inorder-traversal](https://github.com/Deepanshu954/LeetCode/tree/main/0105-construct-binary-tree-from-preorder-and-inorder-traversal/) | Medium |
+| [0121-best-time-to-buy-and-sell-stock](https://github.com/Deepanshu954/LeetCode/tree/main/0121-best-time-to-buy-and-sell-stock/) | Easy |
 | [0152-maximum-product-subarray](https://github.com/Deepanshu954/LeetCode/tree/main/0152-maximum-product-subarray/) | Medium |
 | [0154-find-minimum-in-rotated-sorted-array-ii](https://github.com/Deepanshu954/LeetCode/tree/main/0154-find-minimum-in-rotated-sorted-array-ii/) | Hard |
 | [0217-contains-duplicate](https://github.com/Deepanshu954/LeetCode/tree/main/0217-contains-duplicate/) | Easy |
@@ -869,6 +870,7 @@ This repository contains my solutions to LeetCode problems. The history is fully
 | [0055-jump-game](https://github.com/Deepanshu954/LeetCode/tree/main/0055-jump-game/) | Medium |
 | [0096-unique-binary-search-trees](https://github.com/Deepanshu954/LeetCode/tree/main/0096-unique-binary-search-trees/) | Medium |
 | [0115-distinct-subsequences](https://github.com/Deepanshu954/LeetCode/tree/main/0115-distinct-subsequences/) | Hard |
+| [0121-best-time-to-buy-and-sell-stock](https://github.com/Deepanshu954/LeetCode/tree/main/0121-best-time-to-buy-and-sell-stock/) | Easy |
 | [0124-binary-tree-maximum-path-sum](https://github.com/Deepanshu954/LeetCode/tree/main/0124-binary-tree-maximum-path-sum/) | Hard |
 | [0152-maximum-product-subarray](https://github.com/Deepanshu954/LeetCode/tree/main/0152-maximum-product-subarray/) | Medium |
 | [0279-perfect-squares](https://github.com/Deepanshu954/LeetCode/tree/main/0279-perfect-squares/) | Medium |
