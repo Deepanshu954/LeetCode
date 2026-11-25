@@ -6,8 +6,7 @@ class Solution {
 
         for(int num : prices) {
             min = Math.min(min, num);
-            pro = num - min;
-            max = Math.max(max, pro);
+            max = Math.max(max, num - min);
         }
 
         return max;
