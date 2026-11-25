@@ -5,18 +5,16 @@ class Solution {
         int res = nums[0];
 
         for(int i = 1; i < nums.length; i++){
-            int curr = nums[i];
+            int num = nums[i];
 
-            if(curr < 0){
+            if(num < 0){
                 int temp = maxProd;
                 maxProd = minProd;
                 minProd = temp;
             }
 
-            int temp = curr;
-
-            maxProd = Math.max(maxProd * curr, curr);
-            minProd = Math.min(minProd * curr, curr);
+            maxProd = Math.max(maxProd * num, num);
+            minProd = Math.min(minProd * num, num);
             res = Math.max(res, maxProd);
         }
         
