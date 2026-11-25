@@ -5,10 +5,12 @@ class Solution {
         int min = prices[0];
 
         for(int num : prices) {
-            if(min > num) {
-                min = num;
-                pro = 0;
-            }
+            // if(min > num) {
+            //     min = num;
+            //     pro = 0;
+            // }
+
+            min = Math.min(min, num);
 
             pro = num - min;
             max = Math.max(max, pro);
