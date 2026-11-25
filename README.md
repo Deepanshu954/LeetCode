@@ -534,6 +534,7 @@ This repository contains my solutions to LeetCode problems. The history is fully
 | [0056-merge-intervals](https://github.com/Deepanshu954/LeetCode/tree/main/0056-merge-intervals/) | Medium |
 | [0081-search-in-rotated-sorted-array-ii](https://github.com/Deepanshu954/LeetCode/tree/main/0081-search-in-rotated-sorted-array-ii/) | Medium |
 | [0105-construct-binary-tree-from-preorder-and-inorder-traversal](https://github.com/Deepanshu954/LeetCode/tree/main/0105-construct-binary-tree-from-preorder-and-inorder-traversal/) | Medium |
+| [0152-maximum-product-subarray](https://github.com/Deepanshu954/LeetCode/tree/main/0152-maximum-product-subarray/) | Medium |
 | [0154-find-minimum-in-rotated-sorted-array-ii](https://github.com/Deepanshu954/LeetCode/tree/main/0154-find-minimum-in-rotated-sorted-array-ii/) | Hard |
 | [0217-contains-duplicate](https://github.com/Deepanshu954/LeetCode/tree/main/0217-contains-duplicate/) | Easy |
 | [0238-product-of-array-except-self](https://github.com/Deepanshu954/LeetCode/tree/main/0238-product-of-array-except-self/) | Medium |
@@ -869,6 +870,7 @@ This repository contains my solutions to LeetCode problems. The history is fully
 | [0096-unique-binary-search-trees](https://github.com/Deepanshu954/LeetCode/tree/main/0096-unique-binary-search-trees/) | Medium |
 | [0115-distinct-subsequences](https://github.com/Deepanshu954/LeetCode/tree/main/0115-distinct-subsequences/) | Hard |
 | [0124-binary-tree-maximum-path-sum](https://github.com/Deepanshu954/LeetCode/tree/main/0124-binary-tree-maximum-path-sum/) | Hard |
+| [0152-maximum-product-subarray](https://github.com/Deepanshu954/LeetCode/tree/main/0152-maximum-product-subarray/) | Medium |
 | [0279-perfect-squares](https://github.com/Deepanshu954/LeetCode/tree/main/0279-perfect-squares/) | Medium |
 | [0410-split-array-largest-sum](https://github.com/Deepanshu954/LeetCode/tree/main/0410-split-array-largest-sum/) | Hard |
 | [0486-predict-the-winner](https://github.com/Deepanshu954/LeetCode/tree/main/0486-predict-the-winner/) | Medium |
