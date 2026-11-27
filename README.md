@@ -621,6 +621,7 @@ This repository contains my solutions to LeetCode problems. The history is fully
 | [3875-construct-uniform-parity-array-i](https://github.com/Deepanshu954/LeetCode/tree/main/3875-construct-uniform-parity-array-i/) | Easy |
 | [3886-sum-of-sortable-integers](https://github.com/Deepanshu954/LeetCode/tree/main/3886-sum-of-sortable-integers/) | Hard |
 | [3942-minimum-operations-to-sort-a-permutation](https://github.com/Deepanshu954/LeetCode/tree/main/3942-minimum-operations-to-sort-a-permutation/) | Medium |
+| [3946-maximum-number-of-items-from-sale-i](https://github.com/Deepanshu954/LeetCode/tree/main/3946-maximum-number-of-items-from-sale-i/) | Medium |
 ## Math
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -862,6 +863,7 @@ This repository contains my solutions to LeetCode problems. The history is fully
 | [3723-maximize-sum-of-squares-of-digits](https://github.com/Deepanshu954/LeetCode/tree/main/3723-maximize-sum-of-squares-of-digits/) | Medium |
 | [3727-maximum-alternating-sum-of-squares](https://github.com/Deepanshu954/LeetCode/tree/main/3727-maximum-alternating-sum-of-squares/) | Medium |
 | [3789-minimum-cost-to-acquire-required-items](https://github.com/Deepanshu954/LeetCode/tree/main/3789-minimum-cost-to-acquire-required-items/) | Medium |
+| [3946-maximum-number-of-items-from-sale-i](https://github.com/Deepanshu954/LeetCode/tree/main/3946-maximum-number-of-items-from-sale-i/) | Medium |
 ## Dynamic Programming
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -894,6 +896,7 @@ This repository contains my solutions to LeetCode problems. The history is fully
 | [3302-find-the-lexicographically-smallest-valid-sequence](https://github.com/Deepanshu954/LeetCode/tree/main/3302-find-the-lexicographically-smallest-valid-sequence/) | Medium |
 | [3414-maximum-score-of-non-overlapping-intervals](https://github.com/Deepanshu954/LeetCode/tree/main/3414-maximum-score-of-non-overlapping-intervals/) | Hard |
 | [3693-climbing-stairs-ii](https://github.com/Deepanshu954/LeetCode/tree/main/3693-climbing-stairs-ii/) | Medium |
+| [3946-maximum-number-of-items-from-sale-i](https://github.com/Deepanshu954/LeetCode/tree/main/3946-maximum-number-of-items-from-sale-i/) | Medium |
 ## String
 | Problem Name | Difficulty |
 | ------- | ------- |
